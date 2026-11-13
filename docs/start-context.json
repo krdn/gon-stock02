@@ -1,7 +1,28 @@
 {
-  "checked_at": "2026-11-13T05:39:42.725545+00:00",
-  "objective": "",
-  "sources": [],
-  "decisions": "",
-  "status": "pending_research"
+  "checked_at": "2026-11-13T06:08:44+00:00",
+  "objective": "4종목의 당일~다음 거래일 단기매매를 Buzz 전문가 리서치와 한국투자증권 모의 자동매매로 검증하는 3단계 계획 수립",
+  "sources": [
+    {
+      "url": "https://github.com/koreainvestment/open-trading-api",
+      "finding": "공식 API 예제와 전략/백테스트 코드 제공 확인. 실제 연동 및 전략 성과는 미검증."
+    },
+    {
+      "url": "https://github.com/koreainvestment/open-trading-api/blob/main/examples_llm/domestic_stock/order_cash/order_cash.py",
+      "finding": "demo 환경 구분과 KRX 모의 현금주문 예시 확인. NXT 모의주문 지원을 증명하지 않음."
+    },
+    {
+      "url": "https://github.com/koreainvestment/open-trading-api/blob/main/examples_user/domestic_stock/domestic_stock_functions_ws.py",
+      "finding": "공식 NXT 실시간호가 구독 함수 확인. 모의 권한과 실제 수신은 확인하지 않음."
+    },
+    {
+      "url": "https://www.nextrade.co.kr/menu/transactionSys.do",
+      "finding": "공식 검색 결과에서 프리마켓 08:00~08:50 확인. 본문 직접 열기는 403 실패; 실제 거래일 일정은 실행 전 재확인."
+    },
+    {
+      "url": "https://github.com/block/buzz/blob/main/crates/buzz-acp/README.md",
+      "finding": "채널 이벤트와 ACP 에이전트 연결 구조 확인. 로컬 채널 조회 성공과 실제 에이전트 응답은 구분."
+    }
+  ],
+  "decisions": "사용자 선택: 전용 Buzz 신규 구성, 한도 내 모의 자동매매, NXT 포함, 다음 거래일까지 청산, 수익/손실 균형 검증, 기존 구독 우선 및 추가 유료 지출 보류. 운영 연결-전략 검증-모의 성과 검증의 3단계 계획. 위험 수치와 NXT 지원 범위는 미확정. reviewed는 기술 출처 조사 상태이며 계획 승인, 구현 또는 수익성 검증 완료를 뜻하지 않음.",
+  "status": "reviewed"
 }
