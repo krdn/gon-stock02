@@ -9,6 +9,7 @@ from gon_stock02.kis import KisFailure, PaperClient, SYMBOLS, load_credentials
 from gon_stock02.feed import probe_feed
 from gon_stock02.orders import OrderService
 from gon_stock02.history import collect_history
+from gon_stock02.capture import capture_minutes
 
 
 def probe(client):
@@ -55,7 +56,7 @@ def check_orders(service):
 
 def main():
     parser = argparse.ArgumentParser(description="KIS connection checks; no orders")
-    parser.add_argument("command", choices=("probe", "feed-probe", "order-check", "history"))
+    parser.add_argument("command", choices=("probe", "feed-probe", "order-check", "history", "capture"))
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--venue", choices=("KRX", "NXT"), default="KRX")
     parser.add_argument("--seconds", type=int, default=15)
@@ -66,7 +67,20 @@ def main():
     args = parser.parse_args()
     if args.command == 'history' and any(value is None for value in (args.start, args.end, args.minute_start)):
         parser.error('history requires --start, --end and --minute-start')
+    if args.command == 'capture' and not 1 <= args.seconds <= 120:
+        parser.error('capture requires --seconds between 1 and 120')
+    if args.command == 'capture' and args.venue != 'KRX':
+        parser.error('capture supports --venue KRX only')
     try:
+        if args.command == 'capture':
+            with PaperClient(load_credentials()) as client:
+                report = capture_minutes(client, args.seconds, args.output)
+            print(json.dumps({'report': str(args.output / 'manifest.json'),
+                              'collection_complete': report['collection_complete'], 'backtest_ready': False,
+                              'error': report.get('error'), 'orders_sent': 0}))
+            if not report['collection_complete']:
+                raise SystemExit(1)
+            return
         if args.command == 'history':
             with PaperClient(load_credentials()) as client:
                 report = collect_history(client, args.start, args.end, args.minute_start, args.output)
