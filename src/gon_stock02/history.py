@@ -110,6 +110,7 @@ def collect_history(client, start, end, minute_start, output):
     report = {'environment': 'mock', 'market_requested': 'KRX', 'started_at': datetime.now(timezone.utc).isoformat(),
               'request': {'start': start.isoformat(), 'end': end.isoformat(), 'minute_start': minute_start.isoformat()},
               'orders_sent': 0, 'datasets': [], 'backtest_ready': False, 'session_calendar_verified': False,
+              'coverage_verified': False,
               'adjustment': 'unadjusted', 'historical_received_at_available': False,
               'contract_source': 'https://apiportal.koreainvestment.com/files/download/apiCollection/API_COLLECTION',
               'limitations': ['historical_minute_mock_unsupported', 'calendar_and_no_trade_unverified', 'corporate_actions_unverified',
@@ -123,6 +124,9 @@ def collect_history(client, start, end, minute_start, output):
             for timeframe in SOURCES:
                 dataset = {'symbol': symbol, 'timeframe': timeframe, 'contract_mock_supported': timeframe == '1d',
                            'pages': 0, 'outside_window_rows': 0, 'status': 'not_run'}
+                if timeframe == '1m':
+                    dataset['requested_time_window'] = {'start': '09:00:00', 'end': '15:30:00',
+                                                        'timezone': 'Asia/Seoul', 'calendar_adjusted': False}
                 report['datasets'].append(dataset)
                 if stop:
                     continue

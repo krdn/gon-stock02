@@ -95,6 +95,25 @@ class HistoryTests(unittest.TestCase):
         self.assertIn('historical_minute_mock_unsupported', report['limitations'])
         self.assertFalse(report['backtest_ready'])
 
+    def test_empty_early_page_exposes_fixed_time_scope_and_unverified_coverage(self):
+        def truncated(request):
+            if request.url.path.endswith('inquire-time-dailychartprice'):
+                cutoff = request.url.params['FID_INPUT_HOUR_1']
+                values = [row(request.url.params['FID_INPUT_DATE_1'], hour)
+                          for hour in ('163000', '153000', '130000', '120000') if hour <= cutoff]
+                return httpx.Response(200, json={'rt_cd': '0', 'output2': values[:2] if cutoff >= '120000' else []})
+            return self.market(request)
+        report = self.collect(truncated)
+        self.assertTrue(report['collection_complete'])
+        self.assertFalse(report.get('coverage_verified', True))
+        minute = [dataset for dataset in report['datasets'] if dataset['timeframe'] == '1m']
+        self.assertEqual(len(minute), 4)
+        for dataset in minute:
+            self.assertEqual(dataset.get('requested_time_window'), {'start': '09:00:00', 'end': '15:30:00', 'timezone': 'Asia/Seoul', 'calendar_adjusted': False})
+            self.assertEqual(dataset['pages'], 6)
+            self.assertEqual(dataset['rows'], 6)
+            self.assertGreater(dataset['candidate_missing_minutes'], 0)
+
     def test_invalid_dates_and_existing_output_fail_before_network(self):
         for args in ({'start': date(2026, 1, 10)}, {'end': date(2099, 1, 9)},
                      {'minute_start': date(2026, 1, 4)}):

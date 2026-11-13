@@ -286,8 +286,8 @@
   },
   "tests": {
     "status": "PASS",
-    "count": 68,
-    "new_history_tests": 8,
+    "count": 69,
+    "new_history_tests": 9,
     "build": "wheel and sdist PASS"
   },
   "docs_checks": {
@@ -306,18 +306,43 @@
     "current_day_finality_unverified"
   ],
   "review": {
-    "status": "NOT_RUN",
+    "status": "NO_BLOCKING_FINDINGS",
     "provider": "claude",
     "requested_model": "claude-opus-5-5",
-    "effort": "high",
-    "exit_code": 1,
-    "is_error": true,
-    "returned_model": null,
-    "modelUsage": {},
-    "reason": "5-hour usage limit; reset 안내 2026-11-13 23:30 Asia/Seoul",
-    "response_body": "You've hit your 5-hour limit · resets 11:30pm (Asia/Seoul)",
-    "packet_sha256": "ab5d9b1722e199a274fe90b85fe85d20ad8d78fb154ad646e85269a0650ca3e2",
-    "no_fallback_used": true
+    "effort_requested": "high",
+    "returned_models": [
+      "claude-opus-5-5"
+    ],
+    "exit_code": 0,
+    "is_error": false,
+    "reviewed_commit": "28a053a0801b50df6373f4a9dbb4eec83176887f",
+    "packet_sha256": "2574496ad4d0eaad4c0a6d478c7cbc6a2cb153f56dbf1e6d46ba8017871835fd",
+    "initial_failed_attempt": {
+      "status": "NOT_RUN",
+      "provider": "claude",
+      "requested_model": "claude-opus-5-5",
+      "effort": "high",
+      "exit_code": 1,
+      "is_error": true,
+      "returned_model": null,
+      "modelUsage": {},
+      "reason": "5-hour usage limit; reset 안내 2026-11-13 23:30 Asia/Seoul",
+      "response_body": "You've hit your 5-hour limit · resets 11:30pm (Asia/Seoul)",
+      "packet_sha256": "ab5d9b1722e199a274fe90b85fe85d20ad8d78fb154ad646e85269a0650ca3e2",
+      "no_fallback_used": true
+    },
+    "followup": {
+      "exit_code": 0,
+      "is_error": false,
+      "returned_models": [
+        "claude-opus-5-5"
+      ],
+      "packet_sha256": "cd36a304bc9e578823f0690ec3db582904f653765be406bf972d0997619f74d4",
+      "blocking_findings": false,
+      "last_low_doc_and_assertions_corrected_locally": true
+    },
+    "report": "docs/reviews/historical-data-2026-11-13.md",
+    "scope_limits_issue": "https://github.com/krdn/gon-stock02/issues/11"
   },
   "sources": [
     "https://github.com/koreainvestment/open-trading-api/blob/main/examples_llm/domestic_stock/inquire_daily_itemchartprice/inquire_daily_itemchartprice.py",
@@ -329,9 +354,9 @@
     "tests/test_history.py": "4b1047189e2f8198c93e1ef38f7fecb39a8debce3de35dab2d0e7359f19f8416"
   },
   "current_code_sha256": {
-    "src/gon_stock02/history.py": "90b125c16fe4dd54eda504e376b6d44bfae27d50a9c78f328e2633bd909704a0",
+    "src/gon_stock02/history.py": "b84dac168779230c2a8c2976fe688dabb3ff08d154cd792af088ab0fae58cd11",
     "src/gon_stock02/cli.py": "fb033f774176a48b3190722dd6c1a5da944e95652eef5933cffb3c4402c037bd",
-    "tests/test_history.py": "170c1f80757bb25bf9e190c93ba006ba5387975b4da13de1a3c4856aeeeed84d"
+    "tests/test_history.py": "21c7aac48af31aef60e41cdff2524a805f063e2426acae169db126da417f25c3"
   },
   "followup": "docs/evidence/data-readiness-2026-11-13.json",
   "contract_mock_support": {
