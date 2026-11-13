@@ -1,0 +1,704 @@
+{
+  "checked_at": "2026-11-13T15:05:16.182607+00:00",
+  "issue": "https://github.com/krdn/gon-stock02/issues/11",
+  "base_commit": "84fc50c5f1c3480f8cc5182128e8777c3975a738",
+  "sources": {
+    "api-spec.xlsx": {
+      "url": "https://apiportal.koreainvestment.com/files/download/apiCollection/API_COLLECTION",
+      "checked_at": "2026-11-13T14:50:49.300125+00:00",
+      "sha256": "193c303a6580f0d5592ebf3da63af30afacbc6f281e167bd36f67a9d349e9ee0",
+      "bytes": 1269515
+    },
+    "public-vts-app.js": {
+      "url": "https://vts3.koreainvestment.com/js/app_vts_hantoo_bundle.js",
+      "checked_at": "2026-11-13T14:50:49.404651+00:00",
+      "sha256": "bcf4d2e43227bd4fae3a6476ac35ba3018e631fb106c869d553386df4b36873a",
+      "bytes": 930665
+    },
+    "krx-market-hours.html": {
+      "url": "https://regulation.krx.co.kr/contents/RGL/03/03020401/RGL03020401.jsp",
+      "checked_at": "2026-11-13T14:50:49.543077+00:00",
+      "sha256": "5879d2545776f09d9b06a228b65f62b286d91bef7892aa430d8239b06e2ec5d9",
+      "bytes": 220943
+    },
+    "broker-fees.html": {
+      "url": "https://securities.koreainvestment.com/main/customer/guide/_static/TF04ae010000.jsp",
+      "checked_at": "2026-11-13T14:50:49.624921+00:00",
+      "sha256": "7b74c7f8503bf4c23fbb93e739def06f8bf11190a26c860a949b883d69d52581",
+      "bytes": 281795
+    },
+    "nabo-tax-2026.pdf": {
+      "url": "https://korea.nabo.go.kr/board/file/down.do?fid=33319156",
+      "checked_at": "2026-11-13T14:52:24.529695+00:00",
+      "sha256": "bcfcdaee1f0e87ff3fa56b14801cdaa1a226caee4c498dd035b8f7ad3f279c0c",
+      "bytes": 24422686
+    }
+  },
+  "api_contract_rows": {
+    "주식일별분봉조회": [
+      [
+        "모의 TR_ID",
+        "모의투자 미지원"
+      ],
+      [
+        "모의 Domain",
+        "모의투자 미지원"
+      ]
+    ],
+    "국내주식기간별시세(일_주_월_년)": [
+      [
+        "모의 TR_ID",
+        "FHKST03010100"
+      ],
+      [
+        "모의 Domain",
+        "https://openapivts.koreainvestment.com:29443"
+      ]
+    ],
+    "주식당일분봉조회": [
+      [
+        "모의 TR_ID",
+        "FHKST03010200"
+      ],
+      [
+        "모의 Domain",
+        "https://openapivts.koreainvestment.com:29443"
+      ]
+    ],
+    "국내휴장일조회": [
+      [
+        "모의 TR_ID",
+        "모의투자 미지원"
+      ],
+      [
+        "모의 Domain",
+        "모의투자 미지원"
+      ]
+    ]
+  },
+  "previous_source_comparison": {
+    "api-spec.xlsx": {
+      "previous_sha256": "193c303a6580f0d5592ebf3da63af30afacbc6f281e167bd36f67a9d349e9ee0",
+      "current_sha256": "193c303a6580f0d5592ebf3da63af30afacbc6f281e167bd36f67a9d349e9ee0"
+    },
+    "public-vts-app.js": {
+      "previous_sha256": "bcf4d2e43227bd4fae3a6476ac35ba3018e631fb106c869d553386df4b36873a",
+      "current_sha256": "bcf4d2e43227bd4fae3a6476ac35ba3018e631fb106c869d553386df4b36873a"
+    }
+  },
+  "corporate_action_code_meanings": {
+    "source_sheet": "국내주식기간별시세(일_주_월_년)",
+    "source_field": "flng_cls_code",
+    "extracted_meanings": {
+      "02": "배당락",
+      "05": "중간(분기)배당락"
+    }
+  },
+  "manual_source_reading": {
+    "max_30_rows_previous_day_unavailable_and_latest_bar_caveats": "Archived API XLSX, 주식당일분봉조회 overview; manually checked, not automatically extracted.",
+    "legal_tax_rates_and_effective_intervals": "Archived NABO PDF printed pp.407,410; manually checked, not automatically extracted."
+  },
+  "inputs": {
+    "local_bundle": ".local/history-20261113-run2",
+    "sha256": {
+      "pages.jsonl": "33fcb37abab6712ba5ff19b60625ff496f7b88cceb462a8b351d0b1588f8eee2",
+      "bars.jsonl": "f42b4b14bdb04638626897293a35f90cff23abbf9acf707718cb6fe873bb84d9"
+    },
+    "analysis_script": ".local/issue11-contract-20261113/check.py",
+    "analysis_script_sha256": "257c7b15eadeabb83e424c0a75eebb13dea9e2074b74de56da2765f9f5a9205c"
+  },
+  "raw_checks": {
+    "pages": 92,
+    "normalized_rows": 8593,
+    "daily_rows": 976,
+    "minute_rows": 7617,
+    "unique_keys": true,
+    "input_hashes_match": true,
+    "daily_metadata_counts": {
+      "flng_cls_code": {
+        "00": 968,
+        "05": 4,
+        "02": 4
+      },
+      "prtt_rate": {
+        "0.00": 976
+      },
+      "mod_yn": {
+        "N": 976
+      },
+      "revl_issu_reas": {
+        "": 976
+      }
+    },
+    "corporate_action_markers": [
+      {
+        "symbol": "000660",
+        "date": "2025-11-27",
+        "flng_cls_code": "05",
+        "prtt_rate": "0.00",
+        "independently_verified": false,
+        "eligibility": "HOLD"
+      },
+      {
+        "symbol": "000660",
+        "date": "2026-02-26",
+        "flng_cls_code": "02",
+        "prtt_rate": "0.00",
+        "independently_verified": false,
+        "eligibility": "HOLD"
+      },
+      {
+        "symbol": "000660",
+        "date": "2026-05-28",
+        "flng_cls_code": "05",
+        "prtt_rate": "0.00",
+        "independently_verified": false,
+        "eligibility": "HOLD"
+      },
+      {
+        "symbol": "000660",
+        "date": "2026-08-28",
+        "flng_cls_code": "05",
+        "prtt_rate": "0.00",
+        "independently_verified": false,
+        "eligibility": "HOLD"
+      },
+      {
+        "symbol": "005930",
+        "date": "2025-12-29",
+        "flng_cls_code": "02",
+        "prtt_rate": "0.00",
+        "independently_verified": false,
+        "eligibility": "HOLD"
+      },
+      {
+        "symbol": "005930",
+        "date": "2026-09-29",
+        "flng_cls_code": "05",
+        "prtt_rate": "0.00",
+        "independently_verified": false,
+        "eligibility": "HOLD"
+      },
+      {
+        "symbol": "009150",
+        "date": "2025-12-29",
+        "flng_cls_code": "02",
+        "prtt_rate": "0.00",
+        "independently_verified": false,
+        "eligibility": "HOLD"
+      },
+      {
+        "symbol": "036930",
+        "date": "2025-12-29",
+        "flng_cls_code": "02",
+        "prtt_rate": "0.00",
+        "independently_verified": false,
+        "eligibility": "HOLD"
+      }
+    ],
+    "absent_weekdays_unclassified": [
+      "2025-12-25",
+      "2025-12-31",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-06-03",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ],
+    "snapshot_receipt_utc_dates": [
+      "2026-11-13"
+    ],
+    "historical_available_at": null
+  },
+  "historical_use_policy": {
+    "backtest_ready": false,
+    "all_minute_windows_eligible": false,
+    "global_reason_codes": [
+      "historical_minute_mock_unsupported",
+      "dated_calendar_unverified",
+      "bar_finality_unverified",
+      "historical_availability_unknown",
+      "corporate_actions_unverified",
+      "account_cost_unverified",
+      "quote_execution_inputs_missing"
+    ],
+    "grid_basis": "Unverified 09:00..15:19 plus observed 15:30 stamp; not a dated exchange calendar.",
+    "checks": [
+      {
+        "symbol": "000660",
+        "date": "2026-11-09",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "000660",
+        "date": "2026-11-10",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "000660",
+        "date": "2026-11-11",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "000660",
+        "date": "2026-11-12",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "000660",
+        "date": "2026-11-13",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "005930",
+        "date": "2026-11-09",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "005930",
+        "date": "2026-11-10",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "005930",
+        "date": "2026-11-11",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "005930",
+        "date": "2026-11-12",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "005930",
+        "date": "2026-11-13",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "009150",
+        "date": "2026-11-09",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "009150",
+        "date": "2026-11-10",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "009150",
+        "date": "2026-11-11",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "009150",
+        "date": "2026-11-12",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "009150",
+        "date": "2026-11-13",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "036930",
+        "date": "2026-11-09",
+        "rows": 380,
+        "missing_observed_grid": [
+          "10:43"
+        ],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved",
+          "unclassified_missing_minutes"
+        ]
+      },
+      {
+        "symbol": "036930",
+        "date": "2026-11-10",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "036930",
+        "date": "2026-11-11",
+        "rows": 379,
+        "missing_observed_grid": [
+          "09:52",
+          "09:53"
+        ],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved",
+          "unclassified_missing_minutes"
+        ]
+      },
+      {
+        "symbol": "036930",
+        "date": "2026-11-12",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      },
+      {
+        "symbol": "036930",
+        "date": "2026-11-13",
+        "rows": 381,
+        "missing_observed_grid": [],
+        "unexpected_observed_grid": [],
+        "daily_volume_match": false,
+        "coverage_verified": false,
+        "eligibility": "HOLD",
+        "local_reason_codes": [
+          "daily_minute_scope_unresolved"
+        ]
+      }
+    ],
+    "interpolation_allowed": false,
+    "corporate_action_policy": "All history remains HOLD. Markers require verified action date, cash/share adjustment and publication time before use."
+  },
+  "forward_scope": {
+    "status": "CONTRACT_DEFINED_NOT_IMPLEMENTED",
+    "environment": "mock",
+    "market": "KRX",
+    "symbols": [
+      "005930",
+      "000660",
+      "009150",
+      "036930"
+    ],
+    "endpoint": "/uapi/domestic-stock/v1/quotations/inquire-time-itemchartprice",
+    "tr_id": "FHKST03010200",
+    "contract_mock_supported": true,
+    "max_rows_per_call": 30,
+    "previous_day_available": false,
+    "available_at_policy": "Actual receipt time only; retain versions and original broker timestamp.",
+    "unfinished_bar_policy": "No signal from current/newest provisional bar. A later receipt alone is not proof of finality; verify bar timestamp/finality semantics.",
+    "session_policy": "Dated official session and halt checks required; no fixed-window completeness approval.",
+    "quote_policy": "Require timestamped bid/ask and size in same market before any execution simulation.",
+    "runtime_capture_verified": false
+  },
+  "supported_today_probe": {
+    "run": {
+      "started_at": "2026-11-13T14:56:52.282102+00:00",
+      "date": "2026-11-13",
+      "environment": "mock",
+      "endpoint": "inquire-time-itemchartprice",
+      "tr_id": "FHKST03010200",
+      "contract_mock_supported": true,
+      "orders_sent": 0,
+      "quote_get_requests": 17,
+      "datasets": [
+        {
+          "symbol": "005930",
+          "pages": 14,
+          "rows": 391,
+          "same_as_stored_historical_endpoint": false,
+          "coverage_verified": false,
+          "eligibility": "HOLD"
+        }
+      ],
+      "live_intraday_capture": false,
+      "backtest_ready": false,
+      "error": "rate_limited",
+      "finished_at": "2026-11-13T14:57:16.860540+00:00",
+      "all_four_read": false,
+      "sha256": {
+        "pages.jsonl": "9b8c6aff8933650e9d4abfbf946c7ec90856cebb174b6bc3f9ad477fa8262fd3",
+        "bars.jsonl": "a5d1b5eb609f255422b9018d5d95918a2302c1f8a3254014ac0c02937158c659"
+      }
+    },
+    "local_bundle": ".local/issue11-contract-20261113/today-supported",
+    "saved_pages_by_symbol": {
+      "005930": 14,
+      "000660": 2
+    },
+    "saved_raw_rows": 451,
+    "completed_normalized_rows": 391,
+    "comparison": {
+      "symbol": "005930",
+      "date": "2026-11-13",
+      "common_rows": 381,
+      "common_rows_identical": 381,
+      "additional_stamps": [
+        "2026-11-13T15:20:00+09:00",
+        "2026-11-13T15:21:00+09:00",
+        "2026-11-13T15:22:00+09:00",
+        "2026-11-13T15:23:00+09:00",
+        "2026-11-13T15:24:00+09:00",
+        "2026-11-13T15:25:00+09:00",
+        "2026-11-13T15:26:00+09:00",
+        "2026-11-13T15:27:00+09:00",
+        "2026-11-13T15:28:00+09:00",
+        "2026-11-13T15:29:00+09:00"
+      ],
+      "additional_zero_volume_rows": 10,
+      "independent_provider_check": false,
+      "coverage_verified": false
+    },
+    "partial_symbol": {
+      "symbol": "000660",
+      "raw_pages": 2,
+      "raw_rows": 60,
+      "status": "INCOMPLETE_RATE_LIMITED",
+      "usable": false
+    },
+    "not_run_symbols": [
+      "009150",
+      "036930"
+    ],
+    "further_requests_after_rate_limit": 0,
+    "stop_evidence_basis": "Outer KisFailure handler ends the loop; client _get/_request inspected with no retry loop. This is code evidence, not a packet capture.",
+    "client_source_sha256": "4db28cf30afe8cf45476958fe9ae8e439c0528f5b116f0a6a0ffc1f3928218da",
+    "code_hash_attestation": "Post-run audit hashes; not captured in the original request-time journal. Runtime code identity was not attested at collection time.",
+    "ongoing_collector_implemented": false,
+    "script": ".local/issue11-contract-20261113/probe_today.py",
+    "script_sha256": "1b0ed73dab5f8cc9429ef45f847f6b7d45506207640cf9a241d5586a679ac0ce"
+  },
+  "cost_contract": {
+    "status": "HOLD",
+    "bundle_rate_observations": [
+      {
+        "commission_percent": "0.0140527",
+        "occurrences": [
+          {
+            "utf8_byte_offset": 249410,
+            "loan_simulation_context": false,
+            "ai_league_context": true,
+            "old_2020_competition_context": false
+          },
+          {
+            "utf8_byte_offset": 266799,
+            "loan_simulation_context": false,
+            "ai_league_context": false,
+            "old_2020_competition_context": true
+          },
+          {
+            "utf8_byte_offset": 297850,
+            "loan_simulation_context": false,
+            "ai_league_context": true,
+            "old_2020_competition_context": false
+          }
+        ],
+        "applies_to_this_account": null
+      },
+      {
+        "commission_percent": "0.0142",
+        "occurrences": [
+          {
+            "utf8_byte_offset": 705304,
+            "loan_simulation_context": true,
+            "ai_league_context": false,
+            "old_2020_competition_context": false
+          },
+          {
+            "utf8_byte_offset": 784440,
+            "loan_simulation_context": true,
+            "ai_league_context": false,
+            "old_2020_competition_context": false
+          },
+          {
+            "utf8_byte_offset": 784540,
+            "loan_simulation_context": true,
+            "ai_league_context": false,
+            "old_2020_competition_context": false
+          }
+        ],
+        "applies_to_this_account": null
+      }
+    ],
+    "active_account_commission_rate": null,
+    "rounding": null,
+    "aggregation": null,
+    "debit_timing": null,
+    "spread": null,
+    "slippage": null,
+    "public_legal_tax_schedule": [
+      {
+        "effective_from": "2025-01-01",
+        "effective_before": "2026-01-01",
+        "kospi_transaction_percent": "0",
+        "kospi_rural_percent": "0.15",
+        "kosdaq_transaction_percent": "0.15"
+      },
+      {
+        "effective_from": "2026-01-01",
+        "observed_through": "2026-11-13",
+        "kospi_transaction_percent": "0.05",
+        "kospi_rural_percent": "0.15",
+        "kosdaq_transaction_percent": "0.20"
+      }
+    ],
+    "tax_source_location": "NABO 2026 대한민국 조세, printed pp.407,410; not mock account evidence.",
+    "tax_date_basis": "Legal transfer applicability; trade/settlement mapping in mock account unverified.",
+    "runtime_deduction_verified": false,
+    "risk_model_wired": false,
+    "next_evidence": [
+      "same mock account/program fee terms",
+      "order/fill/account snapshots before and after authorized intraday trades",
+      "end-of-day and settlement cost records",
+      "distinct non-integral fee bases and split/combined fills to distinguish rounding and aggregation"
+    ]
+  },
+  "acceptance": {
+    "supported_forward_scope_defined": true,
+    "dated_sessions_actions_and_availability_verified": false,
+    "full_volume_and_missingness_resolved": false,
+    "actual_cost_contract_verified": false,
+    "conservative_execution_inputs_complete": false
+  },
+  "orders_sent_this_run": 0,
+  "authenticated_quote_get_attempts_this_run": 17,
+  "authenticated_quote_get_successes_this_run": 16,
+  "originals_changed": false,
+  "backtest_ready": false,
+  "verdict": "HOLD"
+}
