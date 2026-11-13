@@ -1,0 +1,148 @@
+{
+  "checked_at": "2026-11-13T15:31:40.309571+00:00",
+  "issue": "https://github.com/krdn/gon-stock02/issues/11",
+  "base_commit": "655df195cff47dfcec37cb004a73c49564e0d05a",
+  "tested_working_tree": true,
+  "official_source": {
+    "url": "https://apiportal.koreainvestment.com/files/download/apiCollection/API_COLLECTION",
+    "checked_at": "2026-11-13T15:16:39.454615+00:00",
+    "sha256": "193c303a6580f0d5592ebf3da63af30afacbc6f281e167bd36f67a9d349e9ee0"
+  },
+  "source_findings": {
+    "historical_mock_minutes_supported": false,
+    "current_day_mock_minutes_supported": true,
+    "latest_volume_revises": true,
+    "bar_timestamp_and_finality_verified": false,
+    "current_halt_fields": [
+      "iscd_stat_cls_code=58",
+      "temp_stop_yn",
+      "TRHT_YN"
+    ],
+    "current_halt_flags_prove_past_halts": false,
+    "dated_calendar_verified": false,
+    "method": "Archived official XLSX overview and response-field descriptions read manually; not a confirmation of complete provider guidance."
+  },
+  "implementation": {
+    "command": "gs02 capture --seconds 60 --output NEW_DIRECTORY",
+    "maximum_seconds_argument": 120,
+    "duration_limit": "Polling deadline; in-flight authentication/request/rate-slot wait can finish later.",
+    "supported_market": "KRX",
+    "tr_id": "FHKST03010200",
+    "response_versions_preserved": true,
+    "available_at": "actual process receipt time of that version",
+    "bar_finality": "unverified",
+    "strategy_eligible": false,
+    "session_calendar_verified": false,
+    "halt_history_verified": false,
+    "coverage_verified": false,
+    "scheduler_installed": false,
+    "orders_enabled": false,
+    "requested_at_meaning": "Call-decision time before authentication and rate-slot wait, not wire-send time.",
+    "short_deadline_behavior": "1..3 seconds can retain only part of the symbol set, return incomplete and exit 1."
+  },
+  "red_evidence": {
+    "missing_collector": "red-tests.txt: assertion failures before capture.py existed",
+    "missing_cli": "cli-red-tests.txt: unsupported capture command",
+    "venue_mismatch": "venue-red-tests.txt: NXT input not rejected before credential boundary"
+  },
+  "tests": {
+    "command": "uv run python -m unittest discover -s tests -v",
+    "passed": 79,
+    "new_capture_tests": 10,
+    "http": "httpx.MockTransport",
+    "clock": "synthetic timestamps, not market observations",
+    "validated": [
+      "version and receipt retention",
+      "no finality or strategy eligibility claim",
+      "no fixed 15:30 clamp",
+      "rate-limit stop without retry",
+      "partial raw preservation",
+      "empty/old/future/duplicate/fractional-volume rejection",
+      "running manifest before first response",
+      "network timeout",
+      "no overwrite",
+      "duration/input venue guards before credentials",
+      "midnight rollover",
+      "short deadline with rate-slot wait linked to the same synthetic clock"
+    ]
+  },
+  "build": {
+    "wheel": "PASS",
+    "sdist": "PASS"
+  },
+  "code_sha256": {
+    "src/gon_stock02/capture.py": "057968a8a5974e61a14e451a8820769a01a7016754b25aa83f5568af37730b73",
+    "src/gon_stock02/cli.py": "3969cad481bf8fc3da89b35f56e8af5cce07e08ae90fbc74468484e3e0ddf6a1",
+    "tests/test_capture.py": "1f64c825994524fa1090f66c1a873122bec88bfbc916685e4a1618d01adefdea"
+  },
+  "local_evidence_sha256": {
+    ".local/minute-capture-20261114/source.json": "c1ab558563acf0ef442f0641e852cdf1b7a70549174530e8445f053a93227840",
+    ".local/minute-capture-20261114/red-tests.txt": "2111f3b628859bc9d34678e17ffc5bff0a711ab2b3ae97a4f29038afeb4cbcef",
+    ".local/minute-capture-20261114/cli-red-tests.txt": "9b3af0e6efefc0666cd39f90bc707d79413082e0fb498149418a964ad6ff282a",
+    ".local/minute-capture-20261114/venue-red-tests.txt": "867a5b078943580f04122821471ecf2c7a22ff24d59e27c770b4017778a37a21",
+    ".local/minute-capture-20261114/tests.txt": "2e97254eaa61a63ddb4a646e85c8ea73eb0089d2653068038fd1c39563bab7f8",
+    ".local/minute-capture-20261114/tests-final.txt": "35d30f9549bd07c76c8945146fff0de2fd9a46f089cd1528d12fb1649afbf73b"
+  },
+  "live_market_capture": {
+    "status": "NOT_RUN",
+    "reason": "2026-11-14 KST Saturday; no authenticated broker calls in this change."
+  },
+  "authenticated_broker_requests_this_work": 0,
+  "orders_sent_this_work": 0,
+  "backtest_ready": false,
+  "issue11_remaining": [
+    "dated official sessions and halt history",
+    "corporate-action disclosure reconciliation",
+    "bar finality and historical availability",
+    "complete session and missingness reconciliation",
+    "same-account fee terms and actual debit",
+    "quote/spread/slippage execution inputs"
+  ],
+  "offline_cli_smoke": {
+    "mode": "offline_http_and_clock_fixtures",
+    "stdout": {
+      "report": ".local/minute-capture-20261114/offline-cli/capture/manifest.json",
+      "collection_complete": true,
+      "backtest_ready": false,
+      "error": null,
+      "orders_sent": 0
+    },
+    "http_requests_intercepted": 7,
+    "responses_saved": 6,
+    "real_broker_requests": 0,
+    "market_observation": false,
+    "summary_sha256": "7a8b566f5a2319e26f7652719f318d85df7d29517f3e4cf0be02d14f03702fb7"
+  },
+  "docs_checks": {
+    "relative_links_checked": 27,
+    "broken_links": 0,
+    "json_parse": "PASS",
+    "git_diff_check": "PASS",
+    "ste_lint": "NOT_RUN: repository standard file missing"
+  },
+  "initial_green_tests_passed": 78,
+  "source_access_limits": [
+    "KRX general-regulation page direct web fetch returned HTTP 403; dated calendar and halt history remain unverified."
+  ],
+  "review": {
+    "models": [
+      "claude-opus-5-5"
+    ],
+    "effort": "high",
+    "blocking_or_high_findings": false,
+    "low_findings_addressed": 2,
+    "report": "docs/reviews/minute-capture-2026-11-14.md",
+    "calls": [
+      {
+        "call": "review",
+        "input_sha256": "e567cd2db57b7551f5a56a2555f5c7c555d54dc6fcb4ea501bd204e543218755",
+        "output_sha256": "9e2a30aa46f1a61df5ea9a2f8f224ec410d128cdbfc54651de8891d4845f4aac"
+      },
+      {
+        "call": "review-followup",
+        "input_sha256": "38e0ce32fd136367ef9b8d99d04cfb7c5baece64069319ff89cd031dbc22f78e",
+        "output_sha256": "d72ff598696cc2c3227aac13a2d782e5327673e70318fd98c41d1d4c0c217f68"
+      }
+    ]
+  }
+}
