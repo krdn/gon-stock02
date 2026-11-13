@@ -1,5 +1,5 @@
 import argparse
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 import json
 from pathlib import Path
 import sys
@@ -8,6 +8,7 @@ import sqlite3
 from gon_stock02.kis import KisFailure, PaperClient, SYMBOLS, load_credentials
 from gon_stock02.feed import probe_feed
 from gon_stock02.orders import OrderService
+from gon_stock02.history import collect_history
 
 
 def probe(client):
@@ -54,13 +55,26 @@ def check_orders(service):
 
 def main():
     parser = argparse.ArgumentParser(description="KIS connection checks; no orders")
-    parser.add_argument("command", choices=("probe", "feed-probe", "order-check"))
+    parser.add_argument("command", choices=("probe", "feed-probe", "order-check", "history"))
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--venue", choices=("KRX", "NXT"), default="KRX")
     parser.add_argument("--seconds", type=int, default=15)
     parser.add_argument("--policy", type=Path, default=Path("config/paper.json"))
+    parser.add_argument("--start", type=date.fromisoformat)
+    parser.add_argument("--end", type=date.fromisoformat)
+    parser.add_argument("--minute-start", type=date.fromisoformat)
     args = parser.parse_args()
+    if args.command == 'history' and any(value is None for value in (args.start, args.end, args.minute_start)):
+        parser.error('history requires --start, --end and --minute-start')
     try:
+        if args.command == 'history':
+            with PaperClient(load_credentials()) as client:
+                report = collect_history(client, args.start, args.end, args.minute_start, args.output)
+            print(json.dumps({'report': str(args.output / 'manifest.json'), 'collection_complete': report['collection_complete'],
+                              'structural_checks_passed': report['structural_checks_passed'], 'orders_sent': 0}))
+            if not report['structural_checks_passed']:
+                raise SystemExit(1)
+            return
         if args.command == "feed-probe":
             report = probe_feed(args.venue, args.seconds)
         elif args.command == "order-check":

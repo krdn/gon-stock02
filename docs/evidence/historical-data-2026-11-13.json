@@ -1,0 +1,367 @@
+{
+  "checked_at": "2026-11-13T14:04:47.917946+00:00",
+  "issue": "https://github.com/krdn/gon-stock02/issues/9",
+  "environment": "mock",
+  "orders_sent": 0,
+  "request": {
+    "start": "2025-11-14",
+    "end": "2026-11-13",
+    "minute_start": "2026-11-09"
+  },
+  "collection_complete": true,
+  "structural_checks_passed": true,
+  "started_at": "2026-11-13T14:00:47.827753+00:00",
+  "finished_at": "2026-11-13T14:02:29.092173+00:00",
+  "local_bundle": ".local/history-20261113-run2",
+  "sha256": {
+    "pages.jsonl": "33fcb37abab6712ba5ff19b60625ff496f7b88cceb462a8b351d0b1588f8eee2",
+    "bars.jsonl": "f42b4b14bdb04638626897293a35f90cff23abbf9acf707718cb6fe873bb84d9"
+  },
+  "datasets": [
+    {
+      "symbol": "005930",
+      "timeframe": "1d",
+      "status": "read_ok",
+      "pages": 3,
+      "rows": 244,
+      "first": "2025-11-14",
+      "last": "2026-11-13",
+      "zero_price_rows": 0,
+      "missing_vs_other_symbols": [],
+      "absent_weekdays_unclassified": [
+        "2025-12-25",
+        "2025-12-31",
+        "2026-01-01",
+        "2026-02-16",
+        "2026-02-17",
+        "2026-02-18",
+        "2026-03-02",
+        "2026-05-01",
+        "2026-05-05",
+        "2026-05-25",
+        "2026-06-03",
+        "2026-07-17",
+        "2026-08-17",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-10-05",
+        "2026-10-09"
+      ]
+    },
+    {
+      "symbol": "005930",
+      "timeframe": "1m",
+      "status": "read_ok",
+      "pages": 20,
+      "rows": 1905,
+      "first": "2026-11-09T09:00:00+09:00",
+      "last": "2026-11-13T15:30:00+09:00",
+      "zero_price_rows": 0,
+      "candidate_missing_minutes": 0
+    },
+    {
+      "symbol": "000660",
+      "timeframe": "1d",
+      "status": "read_ok",
+      "pages": 3,
+      "rows": 244,
+      "first": "2025-11-14",
+      "last": "2026-11-13",
+      "zero_price_rows": 0,
+      "missing_vs_other_symbols": [],
+      "absent_weekdays_unclassified": [
+        "2025-12-25",
+        "2025-12-31",
+        "2026-01-01",
+        "2026-02-16",
+        "2026-02-17",
+        "2026-02-18",
+        "2026-03-02",
+        "2026-05-01",
+        "2026-05-05",
+        "2026-05-25",
+        "2026-06-03",
+        "2026-07-17",
+        "2026-08-17",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-10-05",
+        "2026-10-09"
+      ]
+    },
+    {
+      "symbol": "000660",
+      "timeframe": "1m",
+      "status": "read_ok",
+      "pages": 20,
+      "rows": 1905,
+      "first": "2026-11-09T09:00:00+09:00",
+      "last": "2026-11-13T15:30:00+09:00",
+      "zero_price_rows": 0,
+      "candidate_missing_minutes": 0
+    },
+    {
+      "symbol": "009150",
+      "timeframe": "1d",
+      "status": "read_ok",
+      "pages": 3,
+      "rows": 244,
+      "first": "2025-11-14",
+      "last": "2026-11-13",
+      "zero_price_rows": 0,
+      "missing_vs_other_symbols": [],
+      "absent_weekdays_unclassified": [
+        "2025-12-25",
+        "2025-12-31",
+        "2026-01-01",
+        "2026-02-16",
+        "2026-02-17",
+        "2026-02-18",
+        "2026-03-02",
+        "2026-05-01",
+        "2026-05-05",
+        "2026-05-25",
+        "2026-06-03",
+        "2026-07-17",
+        "2026-08-17",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-10-05",
+        "2026-10-09"
+      ]
+    },
+    {
+      "symbol": "009150",
+      "timeframe": "1m",
+      "status": "read_ok",
+      "pages": 20,
+      "rows": 1905,
+      "first": "2026-11-09T09:00:00+09:00",
+      "last": "2026-11-13T15:30:00+09:00",
+      "zero_price_rows": 0,
+      "candidate_missing_minutes": 0
+    },
+    {
+      "symbol": "036930",
+      "timeframe": "1d",
+      "status": "read_ok",
+      "pages": 3,
+      "rows": 244,
+      "first": "2025-11-14",
+      "last": "2026-11-13",
+      "zero_price_rows": 0,
+      "missing_vs_other_symbols": [],
+      "absent_weekdays_unclassified": [
+        "2025-12-25",
+        "2025-12-31",
+        "2026-01-01",
+        "2026-02-16",
+        "2026-02-17",
+        "2026-02-18",
+        "2026-03-02",
+        "2026-05-01",
+        "2026-05-05",
+        "2026-05-25",
+        "2026-06-03",
+        "2026-07-17",
+        "2026-08-17",
+        "2026-09-24",
+        "2026-09-25",
+        "2026-10-05",
+        "2026-10-09"
+      ]
+    },
+    {
+      "symbol": "036930",
+      "timeframe": "1m",
+      "status": "read_ok",
+      "pages": 20,
+      "rows": 1902,
+      "first": "2026-11-09T09:00:00+09:00",
+      "last": "2026-11-13T15:30:00+09:00",
+      "zero_price_rows": 0,
+      "candidate_missing_minutes": 3
+    }
+  ],
+  "lineage_check": {
+    "status": "PASS",
+    "pages": 92,
+    "rows": 8593,
+    "unique_keys": 8593,
+    "raw_normalized_ohlcv_match": true,
+    "sha256_match": true
+  },
+  "gap_rechecks": {
+    "checked_at": "2026-11-13T14:03:14.721505+00:00",
+    "environment": "mock",
+    "orders_sent": 0,
+    "checks": [
+      {
+        "symbol": "036930",
+        "date": "2026-11-09",
+        "candidate_minute": "10:43",
+        "params": {
+          "FID_COND_MRKT_DIV_CODE": "J",
+          "FID_INPUT_ISCD": "036930",
+          "FID_INPUT_DATE_1": "20261109",
+          "FID_INPUT_HOUR_1": "104300",
+          "FID_PW_DATA_INCU_YN": "N",
+          "FID_FAKE_TICK_INCU_YN": ""
+        },
+        "status": "read_ok",
+        "returned_rows": 103,
+        "candidate_returned": false,
+        "first_time": "104200",
+        "last_time": "090000"
+      },
+      {
+        "symbol": "036930",
+        "date": "2026-11-11",
+        "candidate_minute": "09:52",
+        "params": {
+          "FID_COND_MRKT_DIV_CODE": "J",
+          "FID_INPUT_ISCD": "036930",
+          "FID_INPUT_DATE_1": "20261111",
+          "FID_INPUT_HOUR_1": "095200",
+          "FID_PW_DATA_INCU_YN": "N",
+          "FID_FAKE_TICK_INCU_YN": ""
+        },
+        "status": "read_ok",
+        "returned_rows": 52,
+        "candidate_returned": false,
+        "first_time": "095100",
+        "last_time": "090000"
+      },
+      {
+        "symbol": "036930",
+        "date": "2026-11-11",
+        "candidate_minute": "09:53",
+        "params": {
+          "FID_COND_MRKT_DIV_CODE": "J",
+          "FID_INPUT_ISCD": "036930",
+          "FID_INPUT_DATE_1": "20261111",
+          "FID_INPUT_HOUR_1": "095300",
+          "FID_PW_DATA_INCU_YN": "N",
+          "FID_FAKE_TICK_INCU_YN": ""
+        },
+        "status": "read_ok",
+        "returned_rows": 52,
+        "candidate_returned": false,
+        "first_time": "095100",
+        "last_time": "090000"
+      }
+    ],
+    "interpretation": "Same-provider narrow-window recheck; absence does not prove no trading."
+  },
+  "first_attempt": {
+    "collection_complete": false,
+    "reason": "분봉 요청의 초 단위를 서버가 다음 분으로 올려 페이지 경계가 반복됐다. 이전 분 정각 커서로 수정.",
+    "minute_series": [
+      {
+        "symbol": "005930",
+        "status": "failed",
+        "reason": "invalid_history_time"
+      },
+      {
+        "symbol": "000660",
+        "status": "failed",
+        "reason": "invalid_history_time"
+      },
+      {
+        "symbol": "009150",
+        "status": "failed",
+        "reason": "invalid_history_time"
+      },
+      {
+        "symbol": "036930",
+        "status": "failed",
+        "reason": "invalid_history_time"
+      }
+    ],
+    "sha256": {
+      "pages.jsonl": "cd6631aef6f604b9242bae9c257303c019cc43809709150ccd01415c6ff3c8de",
+      "bars.jsonl": "f28688618f39e551df36d374e99bb25971cf7bcc10ab078593bbf289ae62516a"
+    },
+    "local_bundle": ".local/history-20261113-run1"
+  },
+  "tests": {
+    "status": "PASS",
+    "count": 69,
+    "new_history_tests": 9,
+    "build": "wheel and sdist PASS"
+  },
+  "docs_checks": {
+    "ste_lint": "NOT_RUN: docs/conventions/ste100-writing.md absent",
+    "relative_links": "PASS"
+  },
+  "backtest_ready": false,
+  "session_calendar_verified": false,
+  "limitations": [
+    "calendar_and_no_trade_unverified",
+    "corporate_actions_unverified",
+    "historical_receipt_time_unavailable",
+    "order_book_and_costs_unavailable",
+    "minute_turnover_is_cumulative",
+    "data_usage_rights_not_reviewed",
+    "current_day_finality_unverified"
+  ],
+  "review": {
+    "status": "NO_BLOCKING_FINDINGS",
+    "provider": "claude",
+    "requested_model": "claude-opus-5-5",
+    "effort_requested": "high",
+    "returned_models": [
+      "claude-opus-5-5"
+    ],
+    "exit_code": 0,
+    "is_error": false,
+    "reviewed_commit": "28a053a0801b50df6373f4a9dbb4eec83176887f",
+    "packet_sha256": "2574496ad4d0eaad4c0a6d478c7cbc6a2cb153f56dbf1e6d46ba8017871835fd",
+    "initial_failed_attempt": {
+      "status": "NOT_RUN",
+      "provider": "claude",
+      "requested_model": "claude-opus-5-5",
+      "effort": "high",
+      "exit_code": 1,
+      "is_error": true,
+      "returned_model": null,
+      "modelUsage": {},
+      "reason": "5-hour usage limit; reset 안내 2026-11-13 23:30 Asia/Seoul",
+      "response_body": "You've hit your 5-hour limit · resets 11:30pm (Asia/Seoul)",
+      "packet_sha256": "ab5d9b1722e199a274fe90b85fe85d20ad8d78fb154ad646e85269a0650ca3e2",
+      "no_fallback_used": true
+    },
+    "followup": {
+      "exit_code": 0,
+      "is_error": false,
+      "returned_models": [
+        "claude-opus-5-5"
+      ],
+      "packet_sha256": "cd36a304bc9e578823f0690ec3db582904f653765be406bf972d0997619f74d4",
+      "blocking_findings": false,
+      "last_low_doc_and_assertions_corrected_locally": true
+    },
+    "report": "docs/reviews/historical-data-2026-11-13.md",
+    "scope_limits_issue": "https://github.com/krdn/gon-stock02/issues/11"
+  },
+  "sources": [
+    "https://github.com/koreainvestment/open-trading-api/blob/main/examples_llm/domestic_stock/inquire_daily_itemchartprice/inquire_daily_itemchartprice.py",
+    "https://github.com/koreainvestment/open-trading-api/blob/main/examples_llm/domestic_stock/inquire_time_dailychartprice/inquire_time_dailychartprice.py"
+  ],
+  "initial_verification_code_sha256": {
+    "src/gon_stock02/history.py": "f64ef4e7d1d569b43df56de0ba178bfb0181553a1a2669a3553f1675111d5081",
+    "src/gon_stock02/cli.py": "fb033f774176a48b3190722dd6c1a5da944e95652eef5933cffb3c4402c037bd",
+    "tests/test_history.py": "4b1047189e2f8198c93e1ef38f7fecb39a8debce3de35dab2d0e7359f19f8416"
+  },
+  "current_code_sha256": {
+    "src/gon_stock02/history.py": "b84dac168779230c2a8c2976fe688dabb3ff08d154cd792af088ab0fae58cd11",
+    "src/gon_stock02/cli.py": "fb033f774176a48b3190722dd6c1a5da944e95652eef5933cffb3c4402c037bd",
+    "tests/test_history.py": "21c7aac48af31aef60e41cdff2524a805f063e2426acae169db126da417f25c3"
+  },
+  "followup": "docs/evidence/data-readiness-2026-11-13.json",
+  "contract_mock_support": {
+    "1d": true,
+    "1m": false,
+    "note": "Latest public API collection explicitly marks historical-minute mock unsupported; runtime responses are observations only."
+  }
+}

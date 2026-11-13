@@ -1,0 +1,347 @@
+{
+  "checked_at": "2026-11-13T14:20:38.443167+00:00",
+  "issue": "https://github.com/krdn/gon-stock02/issues/9",
+  "api_contract": {
+    "checked_at": "2026-11-13T14:14:34.313504+00:00",
+    "url": "https://apiportal.koreainvestment.com/files/download/apiCollection/API_COLLECTION",
+    "sha256": "193c303a6580f0d5592ebf3da63af30afacbc6f281e167bd36f67a9d349e9ee0",
+    "contracts": {
+      "주식일별분봉조회": [
+        "모의 TR_ID | 모의투자 미지원",
+        "모의 Domain | 모의투자 미지원",
+        "개요 | 주식일별분봉조회 API입니다. \r\n\r\n실전계좌의 경우, 한 번의 호출에 최대 120건까지 확인 가능하며, \r\nFID_INPUT_DATE_1, FID_INPUT_HOUR_1 이용하여 과거일자 분봉조회 가능합니다.\r\n\r\n※ 과거 분봉 조회 시, 당사 서버에서 보관하고 있는 만큼의 데이터만 확인이 가능합니다. (최대 1년 분봉 보관)",
+        "acml_tr_pbmn | 누적 거래 대금 | string | Y | 18 |  ",
+        "acml_tr_pbmn | 누적 거래 대금 | string | Y | 18 |  "
+      ],
+      "국내주식기간별시세(일_주_월_년)": [
+        "모의 TR_ID | FHKST03010100",
+        "모의 Domain | https://openapivts.koreainvestment.com:29443",
+        "acml_tr_pbmn | 누적 거래 대금 | string | Y | 18 |  ",
+        "acml_tr_pbmn | 누적 거래 대금 | string | Y | 18 |  "
+      ],
+      "국내휴장일조회": [
+        "모의 TR_ID | 모의투자 미지원",
+        "모의 Domain | 모의투자 미지원"
+      ]
+    }
+  },
+  "scope_reconciliation": {
+    "population": "4 symbols x 5 dates, 2026-11-09 through 2026-11-13",
+    "regular_day_volume_matches": 0,
+    "comparisons": 20,
+    "extended_session_probe": {
+      "checked_at": "2026-11-13T14:17:42.805381+00:00",
+      "environment": "mock",
+      "contract_mock_support": false,
+      "orders_sent": 0,
+      "pages": 80,
+      "checks": [
+        {
+          "symbol": "000660",
+          "date": "2026-11-09",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.995528",
+          "last_turnover_matches_daily": false,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "000660",
+          "date": "2026-11-10",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 238,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.996323",
+          "last_turnover_matches_daily": false,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "000660",
+          "date": "2026-11-11",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.933646",
+          "last_turnover_matches_daily": false,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "000660",
+          "date": "2026-11-12",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.978593",
+          "last_turnover_matches_daily": false,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "000660",
+          "date": "2026-11-13",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.995074",
+          "last_turnover_matches_daily": false,
+          "last_extended_close_matches_daily": true
+        },
+        {
+          "symbol": "005930",
+          "date": "2026-11-09",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.998724",
+          "last_turnover_matches_daily": false,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "005930",
+          "date": "2026-11-10",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.992370",
+          "last_turnover_matches_daily": false,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "005930",
+          "date": "2026-11-11",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.979189",
+          "last_turnover_matches_daily": false,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "005930",
+          "date": "2026-11-12",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 238,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.988961",
+          "last_turnover_matches_daily": false,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "005930",
+          "date": "2026-11-13",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.999213",
+          "last_turnover_matches_daily": false,
+          "last_extended_close_matches_daily": true
+        },
+        {
+          "symbol": "009150",
+          "date": "2026-11-09",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.999429",
+          "last_turnover_matches_daily": true,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "009150",
+          "date": "2026-11-10",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 228,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.998423",
+          "last_turnover_matches_daily": true,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "009150",
+          "date": "2026-11-11",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 239,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.999690",
+          "last_turnover_matches_daily": true,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "009150",
+          "date": "2026-11-12",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 236,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.999969",
+          "last_turnover_matches_daily": true,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "009150",
+          "date": "2026-11-13",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 239,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.999981",
+          "last_turnover_matches_daily": true,
+          "last_extended_close_matches_daily": true
+        },
+        {
+          "symbol": "036930",
+          "date": "2026-11-09",
+          "status": "read_ok",
+          "regular_rows": 380,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.999432",
+          "last_turnover_matches_daily": true,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "036930",
+          "date": "2026-11-10",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.999416",
+          "last_turnover_matches_daily": true,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "036930",
+          "date": "2026-11-11",
+          "status": "read_ok",
+          "regular_rows": 379,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.999024",
+          "last_turnover_matches_daily": true,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "036930",
+          "date": "2026-11-12",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.998921",
+          "last_turnover_matches_daily": true,
+          "last_extended_close_matches_daily": false
+        },
+        {
+          "symbol": "036930",
+          "date": "2026-11-13",
+          "status": "read_ok",
+          "regular_rows": 381,
+          "extended_rows": 240,
+          "combined_volume_matches_daily": false,
+          "combined_volume_ratio": "0.999061",
+          "last_turnover_matches_daily": true,
+          "last_extended_close_matches_daily": true
+        }
+      ]
+    },
+    "interpretation": "Observed additional sessions do not reconcile every daily total. Venue/session/aggregation definition remains unresolved; do not replace daily totals with summed regular minutes or infer collection loss."
+  },
+  "turnover_semantics": {
+    "adjacent_checks": 7575,
+    "passed": 7575,
+    "failed": 0,
+    "method": "For adjacent one-minute stamps only, low*volume <= cumulative_turnover_delta <= high*volume; excludes first and nonadjacent rows. Same-provider semantic consistency, not exchange-source validation."
+  },
+  "gap_turnover_bounds": [
+    {
+      "symbol": "036930",
+      "before": "2026-11-09T10:42:00+09:00",
+      "after": "2026-11-09T10:44:00+09:00",
+      "missing_minutes": 1,
+      "unexplained_turnover_upper_is_zero": false,
+      "unexplained_turnover_lower_is_positive": false,
+      "caveat": "Uses same-provider cumulative turnover and OHLC bounds, not independent proof of no trades."
+    },
+    {
+      "symbol": "036930",
+      "before": "2026-11-11T09:51:00+09:00",
+      "after": "2026-11-11T09:54:00+09:00",
+      "missing_minutes": 2,
+      "unexplained_turnover_upper_is_zero": false,
+      "unexplained_turnover_lower_is_positive": false,
+      "caveat": "Uses same-provider cumulative turnover and OHLC bounds, not independent proof of no trades."
+    }
+  ],
+  "published_mock_costs": {
+    "checked_at": "2026-11-13T14:16:49.465888+00:00",
+    "url": "https://vts3.koreainvestment.com/js/app_vts_hantoo_bundle.js",
+    "sha256": "bcf4d2e43227bd4fae3a6476ac35ba3018e631fb106c869d553386df4b36873a",
+    "observed_stock_commission_percent": "0.0142",
+    "observed_kospi_sell_tax_percent": "0.20",
+    "observed_kosdaq_sell_tax_percent": "0.20",
+    "runtime_deduction_verified": false,
+    "fee_rounding_verified": false,
+    "historical_effective_dates_verified": false
+  },
+  "legal_tax_source": "https://www.law.go.kr/lsLinkCommonInfo.do?lspttninfSeq=64014&chrClsCd=010202",
+  "broker_tax_source": "https://securities.koreainvestment.com/main/customer/guide/_static/TF04ae010000.jsp",
+  "cost_example": {
+    "kind": "unrounded published-schedule arithmetic only",
+    "buy_notional_krw": "1000000",
+    "sell_notional_krw": "1000000",
+    "commission_rate_per_side": "0.000142",
+    "sell_tax_total_rate": "0.002",
+    "buy_commission_krw": "142",
+    "sell_commission_krw": "142",
+    "sell_tax_krw": "2000",
+    "total_before_spread_slippage_krw": "2284",
+    "runtime_verified": false
+  },
+  "cost_readiness": {
+    "public_current_schedule_observed": true,
+    "actual_broker_debit_verified": false,
+    "rounding_aggregation_verified": false,
+    "historical_applicability_verified": false,
+    "spread_slippage_measured": false,
+    "automatic_risk_model_wired": false
+  },
+  "replay": {
+    "source": ".local/history-20261113-run2",
+    "output": ".local/history-20261113-contract-replay",
+    "pages": 92,
+    "normalized_rows": 8593,
+    "bars_identical": true,
+    "real_network_requests": 0,
+    "contract_metadata_verified": true
+  },
+  "local_evidence_sha256": {
+    ".local/history-extended-session-20261113/pages.jsonl": "ad369c7e01f13d00d56c637b6548ce478f5a6b985bb8d812d49aa91ca90b723a",
+    ".local/history-contract-refresh-20261113/api-spec.xlsx": "193c303a6580f0d5592ebf3da63af30afacbc6f281e167bd36f67a9d349e9ee0",
+    ".local/history-contract-refresh-20261113/public-vts-app.js": "bcf4d2e43227bd4fae3a6476ac35ba3018e631fb106c869d553386df4b36873a"
+  },
+  "orders_sent": 0,
+  "backtest_ready": false,
+  "readiness_verdict": "HOLD",
+  "remaining": [
+    "official historical-minute mock support",
+    "session scope and full-volume reconciliation",
+    "missing-minute classification",
+    "historical calendar/corporate actions/receipt times",
+    "cost rounding/actual debit and historical rates",
+    "order book and slippage"
+  ]
+}
