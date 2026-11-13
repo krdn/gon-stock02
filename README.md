@@ -6,4 +6,9 @@
 
 [3단계 계획](docs/plans/short-term-trading-2026-11.md) · [현재 상태](docs/STATE.md)
 
-현재는 사용자 답변을 반영한 계획 수립 단계입니다. 매매 코드·Buzz 전문가 가동·모의 주문·수익성은 아직 검증하지 않았습니다.
+1단계의 KIS 모의 조회·KRX/NXT 시세 수신·위험 계산·Buzz 연구 경로를 구현했습니다.
+자동 주문·백테스트·수익성 검증은 아직 시작하지 않았습니다.
+
+[실행 방법과 검증 범위](docs/operations/stage1-foundation.md) · [실제 검증 기록](docs/evidence/stage1-2026-11-13.json)
+
+[KIS·NXT 지원 조사](docs/research/kis-nxt-support-2026-11.md) · [전략 후보·검증 설계](docs/research/validation-design-2026-11.md)

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gon-stock02"
+version = "0.1.0"
+description = "Four-stock paper trading research and validation"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28,<0.29",
+    "cryptography>=43",
+    "websockets>=15,<18",
+]
+
+[project.scripts]
+gs02-buzz = "gon_stock02.buzz:main"
+gs02 = "gon_stock02.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gon_stock02"]
+
+[tool.hatch.build.targets.sdist]
+only-include = ["src/gon_stock02", "tests", "config", "docs", "agents", "README.md", "pyproject.toml", "uv.lock"]

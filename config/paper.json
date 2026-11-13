@@ -1,0 +1,20 @@
+{
+  "version": "paper-v1",
+  "environment": "mock",
+  "symbols": ["005930", "000660", "009150", "036930"],
+  "initial_capital_krw": "10000000",
+  "risk_per_trade": "0.0025",
+  "daily_loss_limit": "0.0075",
+  "drawdown_limit": "0.03",
+  "max_symbol_allocation": "0.25",
+  "max_gross_allocation": "0.50",
+  "max_positions": 2,
+  "max_entries_per_symbol_per_day": 2,
+  "max_quote_age_seconds": 5,
+  "max_holding_trading_nights": 1,
+  "allow_holiday_hold": false,
+  "paper_order_venues": ["KRX"],
+  "nxt_paper_support": "unsupported_by_broker_spec",
+  "order_submission_enabled": false,
+  "activation_requirement": "API/order lifecycle and strategy validation must pass before automatic operation"
+}
