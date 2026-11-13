@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "repo": "krdn/gon-stock02",
+  "files": {
+    ".github/ISSUE_TEMPLATE/task.yml": "f498ab7fd40361979c6a7bcfd9d03564dfa57761451a50f9254d7717b293516d",
+    ".github/project-management.md": "ae0f98d7b21b9499c357eb23a96a6f05adb9531859cb841fdcc3dcaaf41432d7",
+    ".github/pull_request_template.md": "974e44a3e096bb0086da9339b45f36fc0b2ede95100e3bcf1da3b8aab92ed461",
+    ".github/workflows/workflow-config.yml": "11f1a58ef54314cf976cbd289ee53cdf08c2dc9cf272be8eeb744ddd9750aba2",
+    "AGENTS.md": "0f35dd582479b953ae74274c126243349864e1073356e78729deb422459c228b",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "docs/WORKFLOW.md": "3eedb94f1b7144c06a21c756e081e62ebe78f89f582c1054d54c71ade5b4597f"
+  },
+  "seed_files": [
+    ".github/dependabot.yml",
+    ".gitignore",
+    "README.md",
+    "docs/STATE.md",
+    "docs/start-context.json"
+  ]
+}
