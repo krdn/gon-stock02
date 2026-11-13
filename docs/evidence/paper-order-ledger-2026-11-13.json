@@ -1,0 +1,58 @@
+{
+  "observed_on": "2026-11-13",
+  "environment": "mock",
+  "orders_sent": 0,
+  "order_lifecycle_verified": false,
+  "first_process": {
+    "environment": "mock",
+    "checked_at": "2026-11-13T12:33:06.335107+00:00",
+    "consistent": true,
+    "orders_checked": 0,
+    "positions_checked": 0,
+    "orders_sent": 0,
+    "states": {},
+    "private_values_logged": false,
+    "broker_order_lifecycle_verified": false
+  },
+  "restart_process": {
+    "environment": "mock",
+    "checked_at": "2026-11-13T12:34:43.692515+00:00",
+    "consistent": true,
+    "orders_checked": 0,
+    "positions_checked": 0,
+    "orders_sent": 0,
+    "states": {},
+    "private_values_logged": false,
+    "broker_order_lifecycle_verified": false
+  },
+  "local_tests": {
+    "command": "uv run python -m unittest discover -s tests -v",
+    "passed": 60,
+    "network": "synthetic fixtures; live read-only checks listed separately"
+  },
+  "research_proof": {
+    "event_id": "b57099eab1d95186f41a72e180dd12029eb8b87a1ec35b71f1c0436b30685ac7",
+    "author_verified": true,
+    "content_matches_file": true,
+    "file": "docs/research/kis-order-contract-2026-11.md",
+    "sha256": "ac697c4b411f02509c0adef938911af717dfbd84ce977a22d2c632f88d0afa84"
+  },
+  "final_process": {
+    "environment": "mock",
+    "checked_at": "2026-11-13T12:38:49.486941+00:00",
+    "consistent": true,
+    "orders_checked": 0,
+    "positions_checked": 0,
+    "orders_sent": 0,
+    "states": {},
+    "private_values_logged": false,
+    "broker_order_lifecycle_verified": false
+  },
+  "independent_review": {
+    "status": "not_executed_quota_exceeded",
+    "requested_model": "claude-opus-5-5",
+    "effort": "high",
+    "returned_model": null,
+    "reported_reset": "2026-11-13T23:30:00+09:00"
+  }
+}

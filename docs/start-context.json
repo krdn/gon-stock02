@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-13T07:05:54.841019+00:00",
-  "objective": "4종목 단기매매 1단계: Buzz 연구 경로, KIS 모의 조회, KRX/NXT 시세 수신, 위험 한도 계산 기반 구현·검증",
+  "checked_at": "2026-11-13T12:36:03.835003+00:00",
+  "objective": "1단계 후속: KRX 모의 주문 영속 장부, 단일 제출, 취소·체결·잔고 대조, 계좌 호출 간격과 실패 복구",
   "sources": [
     {
       "url": "https://github.com/koreainvestment/open-trading-api",
@@ -37,8 +37,16 @@
     {
       "url": "https://websockets.readthedocs.io/en/stable/reference/sync/client.html",
       "finding": "동기 connect/recv timeout, proxy 설정 확인. 유한 시간 시세 프로브 구현; 재접속·상시 수집기는 미구현."
+    },
+    {
+      "url": "https://github.com/koreainvestment/open-trading-api/blob/4a51f9126e719c352072b14b7df9222cb2691720/examples_llm/domestic_stock/inquire_daily_ccld/inquire_daily_ccld.py",
+      "finding": "VTTC0081R 전체 주문 조회와 15건 페이지·연속조회 계약 확인. 응답 불명 주문의 사용자 멱등 키는 제공되지 않아 자동 재전송 금지."
+    },
+    {
+      "url": "https://github.com/koreainvestment/open-trading-api/blob/4a51f9126e719c352072b14b7df9222cb2691720/examples_llm/domestic_stock/order_rvsecncl/order_rvsecncl.py",
+      "finding": "VTTC0013U 취소 응답은 주문 식별자만 반환. 취소 완료 수량과 잔고를 별도로 대조해야 함. 신 TR 전량취소 0/0 실제 접수는 미검증."
     }
   ],
-  "decisions": "사용자 자율 진행 위임에 따라 초기 위험 설정 채택. 주문은 꺼둠. Python 3.12+, uv, httpx와 websockets, OS 인증 저장소를 사용한다. KIS 모의 조회와 NXT 실전환경의 시세 전용 접속을 분리하며 실주문 기능은 없다. Buzz는 Herdr 독립 연구 패널 두 개로 실제 요청·회신을 검증했다. 1단계 전체 완료나 수익성 통과를 의미하지 않는다.",
+  "decisions": "사용자 자율 진행 위임에 따라 초기 위험 설정 채택. 주문은 꺼둠. Python 3.12+, uv, httpx와 websockets, OS 인증 저장소를 사용한다. KIS 모의 조회와 NXT 실전환경의 시세 전용 접속을 분리하며 실주문 기능은 없다. Buzz는 Herdr 독립 연구 패널 두 개로 실제 요청·회신을 검증했다. 1단계 전체 완료나 수익성 통과를 의미하지 않는다. 이번 구현은 SQLite/FULL·계좌 파일 잠금·한 번의 주문 전송과 읽기 복구로 제한. 전용 모의계좌를 사용하며 세션 확인은 호출자 책임, 기본 주문은 비활성 유지.",
   "status": "reviewed"
 }

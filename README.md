@@ -12,3 +12,7 @@
 [실행 방법과 검증 범위](docs/operations/stage1-foundation.md) · [실제 검증 기록](docs/evidence/stage1-2026-11-13.json)
 
 [KIS·NXT 지원 조사](docs/research/kis-nxt-support-2026-11.md) · [전략 후보·검증 설계](docs/research/validation-design-2026-11.md)
+
+[모의 주문 장부·복구 운영](docs/operations/paper-order-ledger.md) · [주문 API 계약](docs/research/kis-order-contract-2026-11.md)
+
+주문 장부와 실패 복구를 구현했으며 기본 주문은 꺼져 있습니다. 실제 접수·체결·취소는 장중 검증 전입니다.
