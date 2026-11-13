@@ -1,0 +1,283 @@
+{
+  "status": "foundation_verified_stage1_incomplete",
+  "orders_sent": 0,
+  "rest": {
+    "started_at": "2026-11-13T06:38:42.150073+00:00",
+    "finished_at": "2026-11-13T06:39:00.863274+00:00",
+    "source": {
+      "local_file": ".local/evidence/kis-probe-20261113.json",
+      "sha256": "a43b3d5b6194ce19af5829a33c7dce09ada41022aaa4bf212687980d046c85e9"
+    },
+    "checks": [
+      {
+        "operation": "balance",
+        "symbol": null,
+        "venue": null,
+        "status": "read_ok"
+      },
+      {
+        "operation": "quote",
+        "symbol": "005930",
+        "venue": "KRX",
+        "status": "read_ok"
+      },
+      {
+        "operation": "quote",
+        "symbol": "005930",
+        "venue": "NXT",
+        "status": "read_ok"
+      },
+      {
+        "operation": "quote",
+        "symbol": "005930",
+        "venue": "UNIFIED",
+        "status": "read_ok"
+      },
+      {
+        "operation": "quote",
+        "symbol": "000660",
+        "venue": "KRX",
+        "status": "read_ok"
+      },
+      {
+        "operation": "quote",
+        "symbol": "000660",
+        "venue": "NXT",
+        "status": "read_ok"
+      },
+      {
+        "operation": "quote",
+        "symbol": "000660",
+        "venue": "UNIFIED",
+        "status": "read_ok"
+      },
+      {
+        "operation": "quote",
+        "symbol": "009150",
+        "venue": "KRX",
+        "status": "read_ok"
+      },
+      {
+        "operation": "quote",
+        "symbol": "009150",
+        "venue": "NXT",
+        "status": "read_ok"
+      },
+      {
+        "operation": "quote",
+        "symbol": "009150",
+        "venue": "UNIFIED",
+        "status": "read_ok"
+      },
+      {
+        "operation": "quote",
+        "symbol": "036930",
+        "venue": "KRX",
+        "status": "read_ok"
+      },
+      {
+        "operation": "quote",
+        "symbol": "036930",
+        "venue": "NXT",
+        "status": "failed",
+        "reason": "invalid_market_data"
+      },
+      {
+        "operation": "quote",
+        "symbol": "036930",
+        "venue": "UNIFIED",
+        "status": "read_ok"
+      },
+      {
+        "operation": "bars",
+        "symbol": "005930",
+        "venue": null,
+        "status": "read_ok",
+        "count": 30,
+        "first": "2026-11-13T15:01:00+09:00",
+        "last": "2026-11-13T15:30:00+09:00"
+      },
+      {
+        "operation": "bars",
+        "symbol": "000660",
+        "venue": null,
+        "status": "read_ok",
+        "count": 30,
+        "first": "2026-11-13T15:01:00+09:00",
+        "last": "2026-11-13T15:30:00+09:00"
+      },
+      {
+        "operation": "bars",
+        "symbol": "009150",
+        "venue": null,
+        "status": "read_ok",
+        "count": 30,
+        "first": "2026-11-13T15:01:00+09:00",
+        "last": "2026-11-13T15:30:00+09:00"
+      },
+      {
+        "operation": "bars",
+        "symbol": "036930",
+        "venue": null,
+        "status": "read_ok",
+        "count": 30,
+        "first": "2026-11-13T15:01:00+09:00",
+        "last": "2026-11-13T15:30:00+09:00"
+      }
+    ]
+  },
+  "feeds": {
+    "krx": {
+      "venue": "KRX",
+      "credential_environment": "mock",
+      "purpose": "market_data_only",
+      "started_at": "2026-11-13T07:02:37.054032+00:00",
+      "finished_at": "2026-11-13T07:02:52.518119+00:00",
+      "subscriptions": [
+        "005930",
+        "000660",
+        "009150",
+        "036930"
+      ],
+      "tick_counts": {
+        "005930": 4,
+        "000660": 11,
+        "009150": 8,
+        "036930": 8
+      },
+      "fresh_tick_counts": {
+        "005930": 4,
+        "000660": 11,
+        "009150": 8,
+        "036930": 8
+      },
+      "fresh_ticks_received_for_all": true,
+      "source": {
+        "local_file": ".local/evidence/krx-feed-20261113.json",
+        "sha256": "2585f00b405147c6d6842bbf989512ccda13153b29f9ce502a553a6e2b7150f1"
+      },
+      "latest": {
+        "005930": {
+          "event_time": "2026-11-13T16:02:51+09:00",
+          "received_at": "2026-11-13T07:02:51.113570+00:00",
+          "event_age_seconds": 0.11357,
+          "halt_code": "N",
+          "hour_class": "0",
+          "market_class": "3",
+          "valid_two_sided_quote": true
+        },
+        "036930": {
+          "event_time": "2026-11-13T16:02:48+09:00",
+          "received_at": "2026-11-13T07:02:48.898375+00:00",
+          "event_age_seconds": 0.898375,
+          "halt_code": "N",
+          "hour_class": "0",
+          "market_class": "3",
+          "valid_two_sided_quote": true
+        },
+        "009150": {
+          "event_time": "2026-11-13T16:02:45+09:00",
+          "received_at": "2026-11-13T07:02:46.081362+00:00",
+          "event_age_seconds": 1.081362,
+          "halt_code": "N",
+          "hour_class": "0",
+          "market_class": "3",
+          "valid_two_sided_quote": true
+        },
+        "000660": {
+          "event_time": "2026-11-13T16:02:50+09:00",
+          "received_at": "2026-11-13T07:02:50.909581+00:00",
+          "event_age_seconds": 0.909581,
+          "halt_code": "N",
+          "hour_class": "0",
+          "market_class": "3",
+          "valid_two_sided_quote": true
+        }
+      }
+    },
+    "nxt": {
+      "venue": "NXT",
+      "credential_environment": "real",
+      "purpose": "market_data_only",
+      "started_at": "2026-11-13T07:02:35.776511+00:00",
+      "finished_at": "2026-11-13T07:02:51.134678+00:00",
+      "subscriptions": [
+        "005930",
+        "000660",
+        "009150"
+      ],
+      "tick_counts": {
+        "005930": 37,
+        "000660": 73,
+        "009150": 21
+      },
+      "fresh_tick_counts": {
+        "005930": 37,
+        "000660": 73,
+        "009150": 21
+      },
+      "fresh_ticks_received_for_all": true,
+      "source": {
+        "local_file": ".local/evidence/nxt-feed-20261113.json",
+        "sha256": "160ef0fcbc9b2ebb0e3ebd7b6cf5a7771e7f157125e3ea9fb3440e806e1a3e64"
+      },
+      "latest": {
+        "000660": {
+          "event_time": "2026-11-13T16:02:50+09:00",
+          "received_at": "2026-11-13T07:02:50.736574+00:00",
+          "event_age_seconds": 0.736574,
+          "halt_code": "N",
+          "hour_class": "0",
+          "market_class": "3",
+          "valid_two_sided_quote": true
+        },
+        "005930": {
+          "event_time": "2026-11-13T16:02:50+09:00",
+          "received_at": "2026-11-13T07:02:50.736785+00:00",
+          "event_age_seconds": 0.736785,
+          "halt_code": "N",
+          "hour_class": "0",
+          "market_class": "3",
+          "valid_two_sided_quote": true
+        },
+        "009150": {
+          "event_time": "2026-11-13T16:02:50+09:00",
+          "received_at": "2026-11-13T07:02:50.939527+00:00",
+          "event_age_seconds": 0.939527,
+          "halt_code": "N",
+          "hour_class": "0",
+          "market_class": "3",
+          "valid_two_sided_quote": true
+        }
+      }
+    }
+  },
+  "research": {
+    "risk": {
+      "event_id": "559a9a7d09797cc2e5badfc11c7623e8dd834f747ed3c905f73c63798298734a",
+      "author_verified": true,
+      "content_matches_file": true,
+      "file": "docs/research/validation-design-2026-11.md",
+      "file_sha256": "6b51bb38b059c03e994728532cd7285bb6f81644853c7da9730bf4a4647491bd",
+      "runtime_recorded_model": "gpt-6-astra",
+      "independent_provider_response_model_verified": false
+    },
+    "quant": {
+      "event_id": "649fe829e2c353919abe0607a873dedcca4923c6b23aded5547977190b3c5291",
+      "author_verified": true,
+      "content_matches_file": true,
+      "file": "docs/research/kis-nxt-support-2026-11.md",
+      "file_sha256": "093144a477f8b7165f52bd746ebcd9038029f8c1a708a672b8f3abb7681ee09c",
+      "runtime_recorded_model": "gpt-6-astra",
+      "independent_provider_response_model_verified": false
+    }
+  },
+  "limitations": [
+    "Short finite probes only; no continuous collector or scheduler",
+    "No mock order/cancel/fill/reconciliation tested",
+    "NXT market-data feed uses existing real-environment credentials; no account or trading requests",
+    "No historical backtest or profitability evidence",
+    "Seven other Buzz roles registered but not runtime-tested",
+    "Risk inputs and reservations must come from a future reconciled ledger; no live risk enforcement claimed"
+  ]
+}

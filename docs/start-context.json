@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-11-13T06:08:44+00:00",
-  "objective": "4종목의 당일~다음 거래일 단기매매를 Buzz 전문가 리서치와 한국투자증권 모의 자동매매로 검증하는 3단계 계획 수립",
+  "checked_at": "2026-11-13T07:05:54.841019+00:00",
+  "objective": "4종목 단기매매 1단계: Buzz 연구 경로, KIS 모의 조회, KRX/NXT 시세 수신, 위험 한도 계산 기반 구현·검증",
   "sources": [
     {
       "url": "https://github.com/koreainvestment/open-trading-api",
@@ -21,8 +21,24 @@
     {
       "url": "https://github.com/block/buzz/blob/main/crates/buzz-acp/README.md",
       "finding": "채널 이벤트와 ACP 에이전트 연결 구조 확인. 로컬 채널 조회 성공과 실제 에이전트 응답은 구분."
+    },
+    {
+      "url": "https://apiportal.koreainvestment.com/files/download/apiCollection/API_COLLECTION",
+      "finding": "2026-11-13 공식 규격에서 KRX만 모의주문 지원, NXT WS 모의 미지원 확인. NXT 체결가는 응답 47필드; GitHub ccnl_nxt 컬럼 예시가 호가 배열인 차이를 규격 기준으로 처리."
+    },
+    {
+      "url": "https://apiportal.koreainvestment.com/community/10000000-0000-0011-0000-000000000001/post/d0d1a83f-6f8d-4437-9700-6d26702fd989",
+      "finding": "모의 REST 계좌당 초당 1건 한도. 현재 단일 클라이언트 1.1초 간격; 여러 프로세스의 공통 큐는 후속 필요."
+    },
+    {
+      "url": "https://nextrade.co.kr/menu/transactionStatusMain/menuList.do",
+      "finding": "공식 전체 603종목 조회와 분기·제외 공지로 주성의 현재 NXT 비대상 판단. 나머지 3종목만 NXT 관측 프로브."
+    },
+    {
+      "url": "https://websockets.readthedocs.io/en/stable/reference/sync/client.html",
+      "finding": "동기 connect/recv timeout, proxy 설정 확인. 유한 시간 시세 프로브 구현; 재접속·상시 수집기는 미구현."
     }
   ],
-  "decisions": "사용자 선택: 전용 Buzz 신규 구성, 한도 내 모의 자동매매, NXT 포함, 다음 거래일까지 청산, 수익/손실 균형 검증, 기존 구독 우선 및 추가 유료 지출 보류. 운영 연결-전략 검증-모의 성과 검증의 3단계 계획. 위험 수치와 NXT 지원 범위는 미확정. reviewed는 기술 출처 조사 상태이며 계획 승인, 구현 또는 수익성 검증 완료를 뜻하지 않음.",
+  "decisions": "사용자 자율 진행 위임에 따라 초기 위험 설정 채택. 주문은 꺼둠. Python 3.12+, uv, httpx와 websockets, OS 인증 저장소를 사용한다. KIS 모의 조회와 NXT 실전환경의 시세 전용 접속을 분리하며 실주문 기능은 없다. Buzz는 Herdr 독립 연구 패널 두 개로 실제 요청·회신을 검증했다. 1단계 전체 완료나 수익성 통과를 의미하지 않는다.",
   "status": "reviewed"
 }
