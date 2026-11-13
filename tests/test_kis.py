@@ -1,6 +1,8 @@
 import json
 from datetime import datetime, timedelta
 import subprocess
+import tempfile
+from pathlib import Path
 import unittest
 from unittest.mock import patch
 from zoneinfo import ZoneInfo
@@ -15,6 +17,8 @@ class KisTests(unittest.TestCase):
     def setUp(self):
         self.credentials = Credentials("fixture-app", "fixture-secret", "12345678", "01")
         self.requests = []
+        self.temp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp.cleanup)
         patcher = patch("gon_stock02.kis.time.sleep")
         patcher.start()
         self.addCleanup(patcher.stop)
@@ -25,7 +29,7 @@ class KisTests(unittest.TestCase):
             if request.url.path == "/oauth2/tokenP":
                 return httpx.Response(200, json={"access_token": "fixture-token", "expires_in": 86400, "token_type": "Bearer"})
             return handler(request)
-        client = PaperClient(self.credentials, transport=httpx.MockTransport(transport))
+        client = PaperClient(self.credentials, transport=httpx.MockTransport(transport), state_root=Path(self.temp.name))
         self.addCleanup(client.__exit__, None, None, None)
         return client
 
@@ -118,7 +122,7 @@ class KisTests(unittest.TestCase):
                     client.bars("005930")
 
     def test_authentication_failure_returns_sanitized_probe_evidence(self):
-        with PaperClient(self.credentials, transport=httpx.MockTransport(lambda _: httpx.Response(401, json={"msg1": "fixture-secret"}))) as client:
+        with PaperClient(self.credentials, transport=httpx.MockTransport(lambda _: httpx.Response(401, json={"msg1": "fixture-secret"})), state_root=Path(self.temp.name)) as client:
             try:
                 report = probe(client)
             except KisFailure:
