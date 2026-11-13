@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-11-13T15:46:46.615544+00:00",
+  "status": "CONFIGURED_EXECUTION_BLOCKED",
+  "upstream_version": "23.2.1",
+  "upstream_commit": "577f1b88708154769bdcf3231bd2ae8b194f15a9",
+  "native_setup_apply": "success",
+  "resolved_phases": 12,
+  "unresolved": [],
+  "pin_violations": [],
+  "policy_error": null,
+  "dispatch_attempts": {
+    "check": {
+      "exit_code": 3,
+      "output": "evolve 23.2.1 linked-worktree Git isolation is unsupported on linux; no model or cycle dispatched"
+    },
+    "start": {
+      "exit_code": 3,
+      "output": "evolve 23.2.1 linked-worktree Git isolation is unsupported on linux; no model or cycle dispatched"
+    },
+    "resume": {
+      "exit_code": 3,
+      "output": "evolve 23.2.1 linked-worktree Git isolation is unsupported on linux; no model or cycle dispatched"
+    },
+    "auto-resume": {
+      "exit_code": 3,
+      "output": "evolve 23.2.1 linked-worktree Git isolation is unsupported on linux; no model or cycle dispatched"
+    }
+  },
+  "workflow": {
+    "max_cycles_cap": 3,
+    "max_consecutive_fails": 1,
+    "universal_fallback": false
+  },
+  "chain": {
+    "enabled": true,
+    "max_batches": 3
+  },
+  "checks": {
+    "unit_tests": 92,
+    "launcher_tests": 13,
+    "build": "passed",
+    "sdist_launcher": "included",
+    "sdist_private_files": [],
+    "relative_links": "passed",
+    "ste_lint": "NOT_RUN: missing docs/conventions/ste100-writing.md"
+  },
+  "native_phase_runs": 0,
+  "full_cycle": "NOT_RUN",
+  "fresh_session_handoff": "NOT_RUN",
+  "checkpoint_resume": "NOT_RUN",
+  "scheduled_auto_resume": "NOT_INSTALLED",
+  "broker_requests": 0,
+  "orders_enabled": false,
+  "backtest_ready": false,
+  "failure_preserved": "runtime-prepare-failed-20261114",
+  "source_baseline": "3f0577b9961f5ba8aec1a45e9980d2288e13a0b8",
+  "binary_version_command": "evolve --version",
+  "binary_version_output": "evolve 23.2.1 (577f1b887, built 2026-11-07T00:27:03Z)"
+}
