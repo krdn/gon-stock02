@@ -21,4 +21,4 @@ gs02 = "gon_stock02.cli:main"
 packages = ["src/gon_stock02"]
 
 [tool.hatch.build.targets.sdist]
-only-include = ["src/gon_stock02", "tests", "config", "docs", "agents", "README.md", "pyproject.toml", "uv.lock"]
+only-include = ["src/gon_stock02", "tests", "config", "docs", "agents", "scripts/evolve_runtime.py", "README.md", "pyproject.toml", "uv.lock"]
