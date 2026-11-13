@@ -88,6 +88,13 @@ class HistoryTests(unittest.TestCase):
         self.assertTrue(all(dataset['rows'] == 8 for dataset in minute))
         self.assertIn('calendar_and_no_trade_unverified', report['limitations'])
 
+    def test_successful_mock_response_does_not_claim_official_minute_support(self):
+        report = self.collect(self.market)
+        for dataset in report['datasets']:
+            self.assertEqual(dataset.get('contract_mock_supported'), dataset['timeframe'] == '1d')
+        self.assertIn('historical_minute_mock_unsupported', report['limitations'])
+        self.assertFalse(report['backtest_ready'])
+
     def test_invalid_dates_and_existing_output_fail_before_network(self):
         for args in ({'start': date(2026, 1, 10)}, {'end': date(2099, 1, 9)},
                      {'minute_start': date(2026, 1, 4)}):

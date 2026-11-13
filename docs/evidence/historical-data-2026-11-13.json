@@ -286,8 +286,8 @@
   },
   "tests": {
     "status": "PASS",
-    "count": 67,
-    "new_history_tests": 7,
+    "count": 68,
+    "new_history_tests": 8,
     "build": "wheel and sdist PASS"
   },
   "docs_checks": {
@@ -305,11 +305,6 @@
     "data_usage_rights_not_reviewed",
     "current_day_finality_unverified"
   ],
-  "code_sha256": {
-    "src/gon_stock02/history.py": "f64ef4e7d1d569b43df56de0ba178bfb0181553a1a2669a3553f1675111d5081",
-    "src/gon_stock02/cli.py": "fb033f774176a48b3190722dd6c1a5da944e95652eef5933cffb3c4402c037bd",
-    "tests/test_history.py": "4b1047189e2f8198c93e1ef38f7fecb39a8debce3de35dab2d0e7359f19f8416"
-  },
   "review": {
     "status": "NOT_RUN",
     "provider": "claude",
@@ -327,5 +322,21 @@
   "sources": [
     "https://github.com/koreainvestment/open-trading-api/blob/main/examples_llm/domestic_stock/inquire_daily_itemchartprice/inquire_daily_itemchartprice.py",
     "https://github.com/koreainvestment/open-trading-api/blob/main/examples_llm/domestic_stock/inquire_time_dailychartprice/inquire_time_dailychartprice.py"
-  ]
+  ],
+  "initial_verification_code_sha256": {
+    "src/gon_stock02/history.py": "f64ef4e7d1d569b43df56de0ba178bfb0181553a1a2669a3553f1675111d5081",
+    "src/gon_stock02/cli.py": "fb033f774176a48b3190722dd6c1a5da944e95652eef5933cffb3c4402c037bd",
+    "tests/test_history.py": "4b1047189e2f8198c93e1ef38f7fecb39a8debce3de35dab2d0e7359f19f8416"
+  },
+  "current_code_sha256": {
+    "src/gon_stock02/history.py": "90b125c16fe4dd54eda504e376b6d44bfae27d50a9c78f328e2633bd909704a0",
+    "src/gon_stock02/cli.py": "fb033f774176a48b3190722dd6c1a5da944e95652eef5933cffb3c4402c037bd",
+    "tests/test_history.py": "170c1f80757bb25bf9e190c93ba006ba5387975b4da13de1a3c4856aeeeed84d"
+  },
+  "followup": "docs/evidence/data-readiness-2026-11-13.json",
+  "contract_mock_support": {
+    "1d": true,
+    "1m": false,
+    "note": "Latest public API collection explicitly marks historical-minute mock unsupported; runtime responses are observations only."
+  }
 }

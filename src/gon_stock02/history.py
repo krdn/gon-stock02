@@ -111,7 +111,8 @@ def collect_history(client, start, end, minute_start, output):
               'request': {'start': start.isoformat(), 'end': end.isoformat(), 'minute_start': minute_start.isoformat()},
               'orders_sent': 0, 'datasets': [], 'backtest_ready': False, 'session_calendar_verified': False,
               'adjustment': 'unadjusted', 'historical_received_at_available': False,
-              'limitations': ['calendar_and_no_trade_unverified', 'corporate_actions_unverified',
+              'contract_source': 'https://apiportal.koreainvestment.com/files/download/apiCollection/API_COLLECTION',
+              'limitations': ['historical_minute_mock_unsupported', 'calendar_and_no_trade_unverified', 'corporate_actions_unverified',
                               'historical_receipt_time_unavailable', 'order_book_and_costs_unavailable',
                               'minute_turnover_is_cumulative', 'data_usage_rights_not_reviewed',
                               'current_day_finality_unverified' if end == today else 'historical_revision_possible']}
@@ -120,7 +121,8 @@ def collect_history(client, start, end, minute_start, output):
     with (output / 'pages.jsonl').open('x') as journal:
         for symbol in SYMBOLS:
             for timeframe in SOURCES:
-                dataset = {'symbol': symbol, 'timeframe': timeframe, 'pages': 0, 'outside_window_rows': 0, 'status': 'not_run'}
+                dataset = {'symbol': symbol, 'timeframe': timeframe, 'contract_mock_supported': timeframe == '1d',
+                           'pages': 0, 'outside_window_rows': 0, 'status': 'not_run'}
                 report['datasets'].append(dataset)
                 if stop:
                     continue
