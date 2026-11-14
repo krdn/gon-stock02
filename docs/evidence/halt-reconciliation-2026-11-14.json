@@ -1,0 +1,477 @@
+{
+  "checked_at": "2026-11-14T03:34:17.209449+00:00",
+  "issue": "https://github.com/krdn/gon-stock02/issues/11",
+  "stage": "11-halt-reconciliation-20261114",
+  "authorization_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6870991517",
+  "owner_thread_id": "01a1d7da-b8cf-7031-ac86-0b8c5a680972",
+  "base_commit": "511d4b4de8f972f3b706a0e9af3913e4fd5a234f",
+  "existing_separate_changes": [
+    "?? .infisical.yaml"
+  ],
+  "session_choice": "Continue in current task; no new Codex task needed or created. Isolated research browser closed after capture.",
+  "sources": [
+    {
+      "id": "krx-dated-halt",
+      "url": "https://data.krx.co.kr/contents/MDC/STAT/issue/MDCSTAT213.jsp",
+      "access_method": "Isolated Chromium through agent-browser",
+      "http_status": 403,
+      "observed_response": "Service unavailable; temporary access instability.",
+      "query_form_reached": false,
+      "target_symbol_date_queries_submitted": 0,
+      "daily_result_rows_obtained": 0
+    },
+    {
+      "id": "krx-main-recovery",
+      "url": "https://data.krx.co.kr/contents/MDC/MAIN/main/index.cmd",
+      "access_method": "Followed the displayed MAIN link, which reached HTTPS.",
+      "http_status": null,
+      "observed_response": "Service unavailable; temporary access instability.",
+      "visible_text_file": "/mnt/data/tmp/gs02-halts-20261114/krx-browser-error.txt",
+      "visible_text_sha256": "3ee66c0e216c7c71f23696098d902a56510655f8d0c43b5b12b720bdfa4f5dd5",
+      "hash_kind": "Browser-readable text, not raw HTTP body.",
+      "text_captured_at": "2026-11-14T03:33:03.920083+00:00"
+    },
+    {
+      "id": "kind-current-halts",
+      "url": "https://kind.krx.co.kr/investwarn/tradinghaltissue.do?method=searchTradingHaltIssueMain",
+      "as_of_date": "2026-11-14",
+      "total_rows_reported_by_page": 117,
+      "pages_observed": 1,
+      "rows_observed_on_page": 15,
+      "historical_date_filter_available": false,
+      "visible_text_file": "/mnt/data/tmp/gs02-halts-20261114/kind-current-list.txt",
+      "visible_text_sha256": "d42fbe4a926bcd81bded42d500288796ae48092bca5b2fa51f4819f561c81dad",
+      "limitation": "Current snapshot only; not historical halt evidence. The full 117-row list was not read.",
+      "text_captured_at": "2026-11-14T03:30:41.357298+00:00"
+    },
+    {
+      "id": "kind-disclosure-search",
+      "url": "https://kind.krx.co.kr/disclosure/searchdisclosurebycorp.do?method=searchDisclosureByCorpMain",
+      "date_filter_meaning": "Disclosure publication dates, not halt effective dates.",
+      "report_title_filter": "",
+      "final_reports_only": false,
+      "query_count": 4,
+      "total_disclosures_read": 17,
+      "query_method": "Filled visible company/date inputs, clicked Search, waited for network idle, then extracted live rendered results and confirmed hidden selected stock code.",
+      "observed_at_range": [
+        "2026-11-14T03:32:07.889Z",
+        "2026-11-14T03:32:25.097Z"
+      ],
+      "absence_interpretation": "No matching halt/resumption title within these results; not a no-halt certificate."
+    }
+  ],
+  "company_disclosure_results": [
+    {
+      "symbol": "005930",
+      "query": {
+        "company": "삼성전자",
+        "final_reports_only": false,
+        "from_date": "2026-11-09",
+        "report_title": "",
+        "symbol": "A005930",
+        "to_date": "2026-11-13"
+      },
+      "observed_at": "2026-11-14T03:32:07.889Z",
+      "total_results": 11,
+      "complete_result_pages": true,
+      "rows": [
+        {
+          "company": "삼성전자",
+          "published_at_kst": "2026-11-13 17:15",
+          "title": "최대주주등소유주식변동신고서",
+          "disclosure_id": "20261113001935"
+        },
+        {
+          "company": "삼성전자",
+          "published_at_kst": "2026-11-13 17:04",
+          "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+          "disclosure_id": "20261113001876"
+        },
+        {
+          "company": "삼성전자",
+          "published_at_kst": "2026-11-13 16:31",
+          "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
+          "disclosure_id": "20261113001625"
+        },
+        {
+          "company": "삼성전자",
+          "published_at_kst": "2026-11-13 16:25",
+          "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
+          "disclosure_id": "20261113001580"
+        },
+        {
+          "company": "삼성전자",
+          "published_at_kst": "2026-11-13 16:23",
+          "title": "동일인등출자계열회사와의상품ㆍ용역거래변경",
+          "disclosure_id": "20261113001560"
+        },
+        {
+          "company": "삼성전자",
+          "published_at_kst": "2026-11-13 15:36",
+          "title": "기업설명회(IR) 개최(안내공시)",
+          "disclosure_id": "20261113001115"
+        },
+        {
+          "company": "삼성전자",
+          "published_at_kst": "2026-11-12 09:02",
+          "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+          "disclosure_id": "20261112000145"
+        },
+        {
+          "company": "삼성전자",
+          "published_at_kst": "2026-11-11 11:11",
+          "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+          "disclosure_id": "20261111000184"
+        },
+        {
+          "company": "삼성전자",
+          "published_at_kst": "2026-11-10 15:59",
+          "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+          "disclosure_id": "20261110000571"
+        },
+        {
+          "company": "삼성전자",
+          "published_at_kst": "2026-11-10 09:19",
+          "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+          "disclosure_id": "20261110000128"
+        },
+        {
+          "company": "삼성전자",
+          "published_at_kst": "2026-11-09 08:36",
+          "title": "임원ㆍ주요주주특정증권등소유상황보고서",
+          "disclosure_id": "20261109000086"
+        }
+      ],
+      "local_dom_capture": "/mnt/data/tmp/gs02-halts-20261114/005930-dom.json",
+      "capture_sha256": "732a90f76c7cca29898a10672e0f1db83e7429eb489395782168712434417c1b",
+      "halt_or_resume_title_match_count": 0,
+      "limitation": "All company-disclosure result pages within the publication-date window were read. This does not cover pre-window halts, VI, market-wide interruptions or a date-level halt feed."
+    },
+    {
+      "symbol": "000660",
+      "query": {
+        "company": "SK하이닉스",
+        "final_reports_only": false,
+        "from_date": "2026-11-09",
+        "report_title": "",
+        "symbol": "A000660",
+        "to_date": "2026-11-13"
+      },
+      "observed_at": "2026-11-14T03:32:23.192Z",
+      "total_results": 2,
+      "complete_result_pages": true,
+      "rows": [
+        {
+          "company": "SK하이닉스",
+          "published_at_kst": "2026-11-12 17:03",
+          "title": "변경상장(주식소각)",
+          "disclosure_id": "20261112000210"
+        },
+        {
+          "company": "SK하이닉스",
+          "published_at_kst": "2026-11-10 09:16",
+          "title": "주식선물ㆍ주식옵션 2단계 가격제한폭 확대요건 도달(상승)",
+          "disclosure_id": "20261110000123"
+        }
+      ],
+      "local_dom_capture": "/mnt/data/tmp/gs02-halts-20261114/000660-dom.json",
+      "capture_sha256": "3e0af0aca18720ec1cb4e0e918b7d5f61d91b4eb17b0bd49855070ca8cbafb65",
+      "halt_or_resume_title_match_count": 0,
+      "limitation": "All company-disclosure result pages within the publication-date window were read. This does not cover pre-window halts, VI, market-wide interruptions or a date-level halt feed."
+    },
+    {
+      "symbol": "009150",
+      "query": {
+        "company": "삼성전기",
+        "final_reports_only": false,
+        "from_date": "2026-11-09",
+        "report_title": "",
+        "symbol": "A009150",
+        "to_date": "2026-11-13"
+      },
+      "observed_at": "2026-11-14T03:32:24.143Z",
+      "total_results": 0,
+      "complete_result_pages": true,
+      "rows": [],
+      "local_dom_capture": "/mnt/data/tmp/gs02-halts-20261114/009150-dom.json",
+      "capture_sha256": "8edba9ae29cd99992e61acb572bdd7fc7fe537606403642587c6f0388a2896e9",
+      "halt_or_resume_title_match_count": 0,
+      "limitation": "All company-disclosure result pages within the publication-date window were read. This does not cover pre-window halts, VI, market-wide interruptions or a date-level halt feed."
+    },
+    {
+      "symbol": "036930",
+      "query": {
+        "company": "주성엔지니어링",
+        "final_reports_only": false,
+        "from_date": "2026-11-09",
+        "report_title": "",
+        "symbol": "A036930",
+        "to_date": "2026-11-13"
+      },
+      "observed_at": "2026-11-14T03:32:25.097Z",
+      "total_results": 4,
+      "complete_result_pages": true,
+      "rows": [
+        {
+          "company": "주성엔지니어링",
+          "published_at_kst": "2026-11-13 12:59",
+          "title": "분기보고서(일반법인)",
+          "disclosure_id": "20261113000594"
+        },
+        {
+          "company": "주성엔지니어링",
+          "published_at_kst": "2026-11-11 09:50",
+          "title": "주식선물 2단계 가격제한폭 확대요건 도달(상승)",
+          "disclosure_id": "20261111000093"
+        },
+        {
+          "company": "주성엔지니어링",
+          "published_at_kst": "2026-11-10 09:09",
+          "title": "주식선물 2단계 가격제한폭 확대요건 도달(상승)",
+          "disclosure_id": "20261110000105"
+        },
+        {
+          "company": "주성엔지니어링",
+          "published_at_kst": "2026-11-09 10:41",
+          "title": "주식선물 2단계 가격제한폭 확대요건 도달(상승)",
+          "disclosure_id": "20261109000195"
+        }
+      ],
+      "local_dom_capture": "/mnt/data/tmp/gs02-halts-20261114/036930-dom.json",
+      "capture_sha256": "3738e3a01bc2e02c3fa176bf4afdcb0d76d7d4fc77d18941dcee1191da48b36c",
+      "halt_or_resume_title_match_count": 0,
+      "limitation": "All company-disclosure result pages within the publication-date window were read. This does not cover pre-window halts, VI, market-wide interruptions or a date-level halt feed."
+    }
+  ],
+  "intervals": [
+    {
+      "symbol": "005930",
+      "date": "2026-11-09",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "005930",
+      "date": "2026-11-10",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "005930",
+      "date": "2026-11-11",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "005930",
+      "date": "2026-11-12",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "005930",
+      "date": "2026-11-13",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "000660",
+      "date": "2026-11-09",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "000660",
+      "date": "2026-11-10",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "000660",
+      "date": "2026-11-11",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "000660",
+      "date": "2026-11-12",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "000660",
+      "date": "2026-11-13",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "009150",
+      "date": "2026-11-09",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "009150",
+      "date": "2026-11-10",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "009150",
+      "date": "2026-11-11",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "009150",
+      "date": "2026-11-12",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "009150",
+      "date": "2026-11-13",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "036930",
+      "date": "2026-11-09",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "036930",
+      "date": "2026-11-10",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "036930",
+      "date": "2026-11-11",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "036930",
+      "date": "2026-11-12",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "036930",
+      "date": "2026-11-13",
+      "dated_halt_result": "NOT_OBTAINED",
+      "halt_occurrence": null,
+      "halt_start_end": null,
+      "eligibility": "HOLD"
+    }
+  ],
+  "cross_checks": {
+    "symbol_codes_match_queries": true,
+    "publication_date_bounds_match": true,
+    "all_result_pages_read": true,
+    "declared_counts_match_parsed_rows": true,
+    "halt_or_resume_title_search_pattern": "거래정지|거래재개",
+    "halt_or_resume_title_matches": 0,
+    "new_leads": [
+      {
+        "symbol": "000660",
+        "published_at_kst": "2026-11-12 17:03",
+        "disclosure_id": "20261112000210",
+        "title": "변경상장(주식소각)",
+        "status": "TITLE_OBSERVED_ONLY",
+        "limitation": "No corporate-action adjustment or halt conclusion; inspect the original separately."
+      },
+      {
+        "symbol": "036930",
+        "title": "주식선물 2단계 가격제한폭 확대요건 도달(상승)",
+        "status": "DERIVATIVES_NOTICE_TITLE_OBSERVED",
+        "limitation": "Not evidence of a halt in the underlying equity or the cause of the three missing minute bars."
+      }
+    ]
+  },
+  "decision": {
+    "status": "PARTIAL",
+    "dated_halt_history_verified": false,
+    "no_halt_asserted": false,
+    "minute_halt_intervals_verified": false,
+    "corporate_actions_verified": false,
+    "missing_minute_bars_explained": false,
+    "issue11_acceptance_checked": [
+      1
+    ],
+    "issue11_acceptance_unchecked": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "backtest_ready": false,
+    "orders_enabled": false,
+    "authenticated_broker_requests": 0,
+    "orders_sent": 0,
+    "new_codex_task_created": false
+  },
+  "next_conditions": [
+    "Obtain the official date-level halt output for the four symbols and five dates from the normal public KRX service when accessible, or a separately authorized official export. Do not replace it with a current snapshot or disclosure-title absence.",
+    "If a halt is present, reconcile its effective start/resumption times and any earlier still-active notice; check VI and market-wide interruptions separately where relevant.",
+    "Read the SK hynix share-cancellation notice as a separate corporate-action follow-up. The existing eight provider flags and price/quantity adjustments remain unverified."
+  ],
+  "retention": {
+    "local_temporary_directory": "/mnt/data/tmp/gs02-halts-20261114",
+    "repository_contains": "Filtered query inputs, parsed result titles and IDs, observations, capture hashes and 20 HOLD decisions. Full browser envelopes/text remain local.",
+    "credentials_captured": false,
+    "old_raw_data_overwritten": false
+  },
+  "validation": {
+    "json_parse": "PASS",
+    "source_capture_hashes": "PASS",
+    "relative_links": {
+      "checked": 24,
+      "broken": 0
+    },
+    "git_diff_check": "PASS",
+    "market_runtime": "NOT_RUN",
+    "local_code_tests": "NOT_RUN: no code changes; repository PR CI required.",
+    "query_and_result_reconciliation": "PASS: 4 correct stock codes, date bounds, 17 rows, complete pages and 20 HOLD intervals."
+  }
+}
