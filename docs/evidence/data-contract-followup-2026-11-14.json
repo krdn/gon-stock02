@@ -1,0 +1,310 @@
+{
+  "checked_at": "2026-11-14T02:26:19.823694+00:00",
+  "issue": "https://github.com/krdn/gon-stock02/issues/11",
+  "stage": "11-contract-research-20261114",
+  "transition_id": "issue11-contract-research-20261114",
+  "authorization_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6870021801",
+  "started_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6870100966",
+  "handoff_verification": {
+    "thread_id": "01a1d7da-b8cf-7031-ac86-0b8c5a680972",
+    "identity_sources": [
+      "CODEX_THREAD_ID",
+      "app read_thread",
+      "Issue #11 started"
+    ],
+    "base_commit": "8417c5f27506a9ee307d3a44bf0f5293aa26c26b",
+    "handoff_blob_id": "ff1aa37faa2fd002af30421a84396d0930418a3d",
+    "remote_blob_content_matches": true,
+    "existing_separate_changes": [
+      "?? .infisical.yaml"
+    ],
+    "identity_head_blob_changes_match": true,
+    "handoff_pr": "https://github.com/krdn/gon-stock02/pull/18",
+    "handoff_pr_merged": true,
+    "base_main_ci": [
+      "https://github.com/krdn/gon-stock02/actions/runs/43545492453",
+      "https://github.com/krdn/gon-stock02/actions/runs/43545492462"
+    ],
+    "base_main_ci_conclusions": [
+      "success",
+      "success"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://apiportal.koreainvestment.com/files/download/apiCollection/API_COLLECTION",
+      "final_url": "https://apiportal.koreainvestment.com/files/download/apiCollection/API_COLLECTION",
+      "http_status": 200,
+      "checked_at": "2026-11-14T02:21:44.874342+00:00",
+      "sha256": "620315e4b3bede5a150b253b9cb984ccc65523a7b13ed089bcbc26454b3ad983",
+      "bytes": 1269515,
+      "id": "kis-xlsx",
+      "locator": "주식당일분봉조회 B7/B14/B52:G59; 국내휴장일조회 B7/B14/B41:G46"
+    },
+    {
+      "id": "vts-js",
+      "url": "https://vts3.koreainvestment.com/js/app_vts_hantoo_bundle.js",
+      "http_status": 200,
+      "final_url": "https://vts3.koreainvestment.com/js/app_vts_hantoo_bundle.js",
+      "sha256": "bcf4d2e43227bd4fae3a6476ac35ba3018e631fb106c869d553386df4b36873a",
+      "bytes": 930665,
+      "charset": "utf-8",
+      "checked_at": "2026-11-14T02:22:37.988137+00:00"
+    },
+    {
+      "id": "fees",
+      "url": "https://securities.koreainvestment.com/main/customer/guide/_static/TF04ae010000.jsp",
+      "http_status": 200,
+      "final_url": "https://securities.koreainvestment.com/main/customer/guide/_static/TF04ae010000.jsp",
+      "sha256": "35de975388d2c711e6b102389e24ff3bb86f8432137cee6e858a331ca3e12062",
+      "bytes": 281715,
+      "charset": "utf-8",
+      "checked_at": "2026-11-14T02:22:38.066646+00:00"
+    },
+    {
+      "id": "halt",
+      "url": "https://data.krx.co.kr/contents/MDC/STAT/issue/MDCSTAT213.jsp",
+      "error": "HTTP Error 403: Forbidden",
+      "checked_at": "2026-11-14T02:22:37.936379+00:00",
+      "web_checked_at": "2026-11-14T02:24:11+00:00",
+      "web_observed": "Public page title, date/symbol/halt columns and temporary-halt note; result table empty; no query results obtained.",
+      "web_body_sha256": null
+    },
+    {
+      "id": "session-hanwha",
+      "url": "https://www.hanwhawm.com/main/bbs/indexView.cmd?cc_gubun=1&mode=center&nn_id=69155&num=1975&pageVal=1&vc_bid=notice",
+      "http_status": 200,
+      "final_url": "https://www.hanwhawm.com/main/bbs/indexView.cmd?cc_gubun=1&mode=center&nn_id=69155&num=1975&pageVal=1&vc_bid=notice",
+      "sha256": "84e1fb5b0eba092935b73021aa64b33f208fac6fd39e15c686f32a6139d4d374",
+      "bytes": 22173,
+      "charset": "utf-8",
+      "checked_at": "2026-11-14T02:22:37.988037+00:00"
+    },
+    {
+      "id": "session-yuanta",
+      "url": "https://04.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202611131405580000000004&gubun=norNotice",
+      "http_status": 200,
+      "final_url": "https://04.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202611131405580000000004&gubun=norNotice",
+      "sha256": "d147632da29e81af2cf7d446018a39c9c356539e03292f10c4d6b8e2339da8c8",
+      "bytes": 112118,
+      "charset": "utf-8",
+      "checked_at": "2026-11-14T02:22:38.625614+00:00"
+    },
+    {
+      "id": "krx-regulation",
+      "url": "https://regulation.krx.co.kr/contents/RGL/03/03020401/RGL03020401.jsp",
+      "http_status": 200,
+      "final_url": "https://regulation.krx.co.kr/contents/RGL/03/03020401/RGL03020401.jsp",
+      "sha256": "c8cfdb425fbad1e65da1fa243e3a2cc86128564eea6edbafda97ef8366396f5b",
+      "bytes": 220943,
+      "charset": "utf-8",
+      "checked_at": "2026-11-14T02:22:38.150327+00:00"
+    }
+  ],
+  "xlsx_version_comparison": {
+    "previous_local_path": ".local/minute-capture-20261114/api-spec.xlsx",
+    "previous_sha256": "193c303a6580f0d5592ebf3da63af30afacbc6f281e167bd36f67a9d349e9ee0",
+    "current_sha256": "620315e4b3bede5a150b253b9cb984ccc65523a7b13ed089bcbc26454b3ad983",
+    "binary_equal": false,
+    "sheets": [
+      {
+        "sheet": "주식당일분봉조회",
+        "comparison": "Decoded nonempty-cell address/value maps, including example cells; formatting/other sheets not compared.",
+        "cell_maps_equal": true,
+        "changed_cells": [],
+        "decoded_cells_sha256": "85ff8ca3583255f069a9942316f11666360474ef2b7f2b0a5a4a76c234a09531"
+      },
+      {
+        "sheet": "국내휴장일조회",
+        "comparison": "Decoded nonempty-cell address/value maps, including example cells; formatting/other sheets not compared.",
+        "cell_maps_equal": true,
+        "changed_cells": [],
+        "decoded_cells_sha256": "0cc9d5520d58294f9683623219b4c20198f401b87f390aae3610002dd0345d71"
+      }
+    ],
+    "whole_workbook_change_reviewed": false
+  },
+  "sessions": {
+    "timezone": "Asia/Seoul",
+    "general_table": {
+      "source_id": "krx-regulation",
+      "market": "KOSDAQ",
+      "regular": [
+        "09:00:00",
+        "15:30:00"
+      ],
+      "after_market": [
+        "16:00:00",
+        "20:00:00"
+      ],
+      "scope": "Current general operating table only; effective date and historical applicability not established."
+    },
+    "dated_findings": [
+      {
+        "date": "2026-11-14",
+        "regular_session": null,
+        "status": "CLOSED_RULE_DERIVED",
+        "basis": "Saturday under KRX KOSDAQ closure rule; calendar weekday, not a dated bulletin."
+      },
+      {
+        "date": "2026-11-19",
+        "market": "KRX KOSPI/KOSDAQ/KONEX regular market",
+        "regular": [
+          "10:00:00",
+          "16:30:00"
+        ],
+        "status": "BROKER_NOTICES_AGREE",
+        "source_ids": [
+          "session-yuanta",
+          "session-hanwha"
+        ],
+        "notice_published_dates": [
+          "2026-11-13",
+          "2026-11-10"
+        ],
+        "krx_dated_original_obtained": false,
+        "broker_mock_operating_window_verified": false
+      }
+    ],
+    "conflict": {
+      "source_ids": [
+        "session-yuanta",
+        "session-hanwha"
+      ],
+      "field": "2026-11-19 KRX after-market close",
+      "values": [
+        "20:00:00",
+        "18:00:00"
+      ],
+      "resolved": false,
+      "consequence": "Do not adopt either notice as the complete dated-session contract."
+    },
+    "historical_target_dates": [
+      "2026-11-09",
+      "2026-11-10",
+      "2026-11-11",
+      "2026-11-12",
+      "2026-11-13"
+    ],
+    "historical_dated_sessions_verified": false,
+    "previous_unclassified_weekdays_count": 17,
+    "unclassified_weekdays_reclassified_this_stage": 0,
+    "holiday_api": {
+      "source_id": "kis-xlsx",
+      "sheet": "국내휴장일조회",
+      "mock_supported": false,
+      "opening_flag": "opnd_yn",
+      "settlement_flag": "sttl_day_yn",
+      "session_time_fields_present_in_inspected_schema": false,
+      "called": false
+    }
+  },
+  "halts": {
+    "source_id": "halt",
+    "public_screen": "20011 매매거래정지 내역(개별종목)",
+    "observed_columns": [
+      "일자",
+      "종목코드",
+      "종목명",
+      "시장구분",
+      "정지여부"
+    ],
+    "daily_temporary_halt_included_by_screen_note": true,
+    "symbols": [
+      "005930",
+      "000660",
+      "009150",
+      "036930"
+    ],
+    "target_symbol_date_pairs": 20,
+    "result_rows_obtained": 0,
+    "historical_halt_verified": false,
+    "halt_occurrence": null,
+    "minute_intervals_verified": false,
+    "next_evidence": "Save date/symbol query results, then reconcile halt/resumption timestamps with KIND notices. Empty or inaccessible results are unknown, not no-halt."
+  },
+  "bars": {
+    "source_id": "kis-xlsx",
+    "sheet": "주식당일분봉조회",
+    "tr_id": "FHKST03010200",
+    "mock_supported": true,
+    "maximum_rows_per_call": 30,
+    "current_day_only": true,
+    "future_input_current_value_warning": true,
+    "latest_volume_rolls_from_prior_bar_until_first_trade": true,
+    "timestamp_field": "stck_cntg_hour",
+    "timestamp_label": "주식 체결시간",
+    "boundary_start_end_semantics": null,
+    "no_trade_minute_semantics": null,
+    "explicit_finality_field_in_inspected_output2_schema": false,
+    "finality_or_correction_deadline": null,
+    "finality": "unverified",
+    "strategy_eligible": false,
+    "live_version_capture": "NOT_RUN"
+  },
+  "costs": {
+    "source_ids": [
+      "fees",
+      "vts-js"
+    ],
+    "general_bankis_krx_online_rate_percent": "0.0140527",
+    "general_table_basis_date": "2025-10-27",
+    "general_table_is_current_mock_account_contract": false,
+    "bundle_contexts": {
+      "rate_0_0140527_percent": "Three occurrences in AI-league/contest templates, including mixed dated templates.",
+      "rate_0_0142_percent": "Three occurrences in stock-borrow mock-trading guidance."
+    },
+    "same_account_program_link_verified": false,
+    "account_fee_rate_percent": null,
+    "account_tax_rate_percent": null,
+    "rounding_rule": null,
+    "aggregation_unit": null,
+    "debit_time": null,
+    "actual_debit_verified": false,
+    "statutory_tax_periods": "Prior 2025/2026 separation retained; no account-application validation in this stage."
+  },
+  "decision": {
+    "research_stage": "COMPLETED_PUBLIC_RESEARCH",
+    "issue11_acceptance_checked": [
+      1
+    ],
+    "issue11_acceptance_unchecked": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "issue11_complete": false,
+    "backtest_ready": false,
+    "orders_enabled": false,
+    "authenticated_broker_requests_this_stage": 0,
+    "orders_sent_this_stage": 0,
+    "followup_session_created": false,
+    "code_changed": false,
+    "corporate_action_disclosures_verified": false,
+    "full_session_coverage_verified": false,
+    "quote_spread_slippage_inputs_verified": false
+  },
+  "next_validation_conditions": [
+    "Fix dated KRX session notices for each target date; preserve all 20 historical intervals as HOLD and 17 weekdays as unclassified until reconciled.",
+    "Obtain four-symbol date-level halt results and exact halt/resumption notices; separately reconcile the eight corporate-action flags.",
+    "Obtain provider bar-boundary, no-trade and finality/correction rules; observe real response versions on a confirmed open day under a separately authorized capture task.",
+    "Link the same mock account to its applicable program and effective fee terms; compare real fee/tax postings, split fills and settlement under existing separately authorized order-validation scope."
+  ],
+  "source_retention": {
+    "raw_files_committed": false,
+    "local_temporary_directory": "/mnt/data/tmp/gs02-contract-20261114-lvr5gter",
+    "repository_contains": "Public source URLs, receipt times, hashes, locators, selected parsed facts and limits; not a self-contained raw-source archive.",
+    "original_project_data_overwritten": false
+  },
+  "validation": {
+    "document_links": {
+      "checked": 21,
+      "broken": 0
+    },
+    "json_parse": "PASS",
+    "git_diff_check": "PASS",
+    "runtime_market_capture": "NOT_RUN",
+    "code_tests_this_stage": "NOT_RUN: documentation research only; PR CI will run repository checks."
+  }
+}
