@@ -1,0 +1,1188 @@
+{
+  "schema_version": 1,
+  "issue": "https://github.com/krdn/gon-stock02/issues/11",
+  "stage_id": "11-settlement-reconciliation-20261114",
+  "transition_id": "issue11-settlement-reconciliation-20261114",
+  "checked_at": "2026-11-14T06:44:12.105401+00:00",
+  "authorization_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6873164444",
+  "start_gate": {
+    "thread_id": "01a1d8c5-8628-7101-87cb-daabc2312d13",
+    "app_read_thread_matches": true,
+    "pending_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6873213758",
+    "started_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6873230559",
+    "baseline_sha": "eda6d4d1b7b08d11bd01ebfaace124907e69ed16",
+    "handoff_blob": "dc97764eb63b1330b71f5b625cfc401dea13534c",
+    "state_blob": "d8b206a377cdff44f254dc489e78e7c2ffe40726",
+    "tab_verified": true,
+    "herdr_space_id": "spe9ca489d725352f3d193a2cee71fb8c4",
+    "herdr_tab_id": "tb87aa68cdb8ad8d845af72d7d523e45f3",
+    "herdr_terminal_id": "t61",
+    "tab_proof_path": "/mnt/data/tmp/gs02-settlement-handoff-20261114/tab-proof.json",
+    "tab_proof_sha256": "c50981ef0b095908f652b934b7cf34b312f63fbf110b830dd39450301409b635",
+    "rendering_path": "/mnt/data/tmp/gs02-settlement-handoff-20261114/new-tab.png",
+    "rendering_sha256": "46ad4c1aa4d7e0a528e009979e4e220c934022f311e614f032a5da84e531fc5d",
+    "existing_separate_changes": [
+      "?? .infisical.yaml"
+    ],
+    "matched_before_public_research": true
+  },
+  "inputs": {
+    "prior_evidence_path": "docs/evidence/calendar-reconciliation-2026-11-14.json",
+    "prior_evidence_sha256": "ba221a99a32073e1923d734648558da431010e9d64826b7d21e1ce41eb50f815",
+    "target_definition": "직전16일 중 broker_reported_settlement_day=null인 15일. 기존06-03과12-31은 대상 밖이다.",
+    "target_dates": [
+      "2025-12-25",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ],
+    "original_unclassified_dates_preserved": [
+      "2025-12-25",
+      "2025-12-31",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-06-03",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ],
+    "baseline_hashes": {
+      "docs/evidence/corporate-actions-2026-11-14.json": "ba0156e63abd7b2b4af18e99112a84fbc3567f1e0b33ce4b41f2515a9b18e20b",
+      "docs/evidence/data-contract-2026-11-13.json": "83c4356ed1b2d46194bb9e513ae8ffd3ea7e789d96ae067f102e4c9b88828f08",
+      "docs/evidence/data-contract-followup-2026-11-14.json": "9c42ddd3adcb41e7d9c0401f9c9e58ea0fa337d6e84570008fa7326fdc052921",
+      "docs/evidence/data-readiness-2026-11-13.json": "238373fd557b2fcca789adb47de5bc6a8d98fccabf8322fd6a9a1491770cef44",
+      "docs/evidence/dividend-followup-2026-11-14.json": "9639f44249708a2b1b32dda69887f6bcac4b08cb4c766a4868c99a3d5e249343",
+      "docs/evidence/dividend-gaps-2026-11-14.json": "d2814675755ce9f47708fd92782256cbabc18ea9c32169f236f6afbe24683fad",
+      "docs/evidence/evolve-runtime-2026-11-14.json": "380939e1209cdae39d4c910d8510526f725ee846cbe59eaba5bc4582d0b4241f",
+      "docs/evidence/halt-reconciliation-2026-11-14.json": "c88cae861a032a28efc7cf5dfcdc3fa88b8688e6a288180de9d8a7c52f9fc9d7",
+      "docs/evidence/historical-data-2026-11-13.json": "340c8f1802a5f68101ac47bf62a515ab39be8737769f2e671608e0f35631fdeb",
+      "docs/evidence/minute-capture-2026-11-14.json": "b57aff3e2fa691b9d6761078ee5c283adc3a5adbefb19db8d203fc73cb8cd989",
+      "docs/evidence/native-session-handoff-2026-11-14.json": "9117df4bb6aa4050e26193daeb442290c896a524aeb2ed006aecdc423bd179f1",
+      "docs/evidence/paper-order-ledger-2026-11-13.json": "05b2af32b54bcb8c34e1869e5b024edef3b6a38541ede7aee02772a738f80800",
+      "docs/evidence/stage1-2026-11-13.json": "22f95ae7831c10eef0ced9fae1958810870d5aad7b127cff92e6417b4bb69233",
+      ".local/history-20261113-run2/pages.jsonl": "33fcb37abab6712ba5ff19b60625ff496f7b88cceb462a8b351d0b1588f8eee2",
+      ".local/history-20261113-run2/bars.jsonl": "f42b4b14bdb04638626897293a35f90cff23abbf9acf707718cb6fe873bb84d9",
+      ".local/issue11-contract-20261113/check.py": "257c7b15eadeabb83e424c0a75eebb13dea9e2074b74de56da2765f9f5a9205c",
+      "docs/evidence/calendar-reconciliation-2026-11-14.json": "ba221a99a32073e1923d734648558da431010e9d64826b7d21e1ce41eb50f815",
+      ".local/history-20261113-run2/manifest.json": "0d7320cb041e37edd5baa08cb8d888a735e7fb9e37b97260769788939ccda345"
+    }
+  },
+  "evidence_policy": {
+    "krx_general_guide_is_date_specific_proof": false,
+    "regulator_period_deferral_is_krx_or_broker_date_output": false,
+    "holiday_or_missing_bar_alone_proves_non_settlement": false,
+    "search_snippet_adopted_without_original": false,
+    "current_guide_backdated_to_target_date": false,
+    "first_publication_or_correction_history_verified": false,
+    "rule_inference_scope": "기존 국내주식 휴장 정보와 현재 KRX 일반 안내의 정합성만 표시한다. 과거 적용·예외·계좌 계약을 확정하지 않는다."
+  },
+  "public_sources": [
+    {
+      "id": "krx-rule-guide",
+      "url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T1.jsp",
+      "final_url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T1.jsp",
+      "http_status": 200,
+      "bytes": 4278,
+      "checked_at": "2026-11-14T06:40:31.034675+00:00",
+      "sha256": "fb10f1d109b37e8ab1f06c277a7f4a091a73fd398e4c7b3890caae12efdc1ffb",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/krx-rule-guide.html",
+      "published_at_kst": null,
+      "publication_precision": "not_displayed",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "account_application_verified": false,
+      "adopted_as_date_specific_krx_settlement_output": false,
+      "publisher": "한국거래소",
+      "source_type": "official_krx_general_guide",
+      "identifier": "RGL03010100T1.jsp",
+      "locator": "매매거래의 일반절차; 휴장일",
+      "market_scope_as_published": "거래소시장 유가증권 매매 및 결제의 일반절차",
+      "summary": "휴장일의 매매·결제 중단 원칙과 T+2 납부 절차를 설명한다. 개별 연도/날짜와 과거 적용 규정 버전은 제시하지 않는다.",
+      "dated_settlement_dates": [],
+      "effective_version_for_target_dates": null,
+      "transport_note": "직접 공개 HTTP 조회는200/4278바이트 본문을 수신했다. 웹 검색 도구의 같은 URL 조회는403이었으며 검색 색인을 채택하지 않았다."
+    },
+    {
+      "id": "fsc-seollal",
+      "url": "https://www.fsc.go.kr/no010101/86226",
+      "final_url": "https://www.fsc.go.kr/no010101/86226",
+      "http_status": 200,
+      "bytes": 153218,
+      "checked_at": "2026-11-14T06:40:43.146043+00:00",
+      "sha256": "1c2f44300df7349a807a73ed8421859d40ee792138b591a72cb18dfb36fcfcba",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/fsc-seollal.html",
+      "published_at_kst": "2026-02-09",
+      "publication_precision": "date_only",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "account_application_verified": false,
+      "adopted_as_date_specific_krx_settlement_output": false,
+      "publisher": "금융위원회",
+      "source_type": "official_regulator_period_notice",
+      "identifier": "no010101/86226",
+      "locator": "도입부 연휴 기간; II (3) 증권 매매대금 지급일",
+      "market_scope_as_published": "주식(ETF 포함) 매도대금; 해외주식은 증권사 별도 안내",
+      "period": {
+        "start": "2026-02-14",
+        "end": "2026-02-18"
+      },
+      "target_dates": [
+        "2026-02-16",
+        "2026-02-17",
+        "2026-02-18"
+      ],
+      "reported_payment_window": [
+        "2026-02-19",
+        "2026-02-20"
+      ],
+      "reported_example": {
+        "trade_date": "2026-02-13",
+        "before_payment_date": "2026-02-17",
+        "deferred_payment_date": "2026-02-20"
+      },
+      "summary": "해당 연휴 중 도래하는 주식·ETF 매도대금의 연휴 이후 지급 순연과 구체적인 거래일 사례를 안내한다. KRX 날짜별 원출력이나 한국투자 계좌 관측은 아니다."
+    },
+    {
+      "id": "fsc-chuseok",
+      "url": "https://www.fsc.go.kr/no010101/87706",
+      "final_url": "https://www.fsc.go.kr/no010101/87706",
+      "http_status": 200,
+      "bytes": 155604,
+      "checked_at": "2026-11-14T06:40:43.169197+00:00",
+      "sha256": "e2382be8abdaeea830d633575166e76d3e52e7e13d61794d197b15a052ca4d5e",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/fsc-chuseok.html",
+      "published_at_kst": "2026-09-14",
+      "publication_precision": "date_only",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "account_application_verified": false,
+      "adopted_as_date_specific_krx_settlement_output": false,
+      "publisher": "금융위원회",
+      "source_type": "official_regulator_period_notice",
+      "identifier": "no010101/87706",
+      "locator": "도입부 연휴 기간; II (3) 증권 매매대금 지급일",
+      "market_scope_as_published": "주식(ETF 포함) 매도대금; 해외주식은 증권사 별도 안내",
+      "period": {
+        "start": "2026-09-24",
+        "end": "2026-09-27"
+      },
+      "target_dates": [
+        "2026-09-24",
+        "2026-09-25"
+      ],
+      "reported_payment_window": [
+        "2026-09-28",
+        "2026-09-30"
+      ],
+      "reported_example": {
+        "trade_date": "2026-09-23",
+        "before_payment_date": "2026-09-25",
+        "deferred_payment_date": "2026-09-29"
+      },
+      "summary": "해당 연휴 중 도래하는 주식·ETF 매도대금의 연휴 이후 지급 순연과 구체적인 거래일 사례를 안내한다. KRX 날짜별 원출력이나 한국투자 계좌 관측은 아니다."
+    }
+  ],
+  "broker_candidates_not_adopted_for_target": [
+    {
+      "id": "yuanta-yearend",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202512241055430000000004&gubun=norNotice",
+      "final_url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202512241055430000000004&gubun=norNotice",
+      "http_status": 200,
+      "bytes": 114605,
+      "checked_at": "2026-11-14T06:42:29.784984+00:00",
+      "sha256": "bc93122aa482348b3934c4e09bea6da0edb0020cc7cd9bcbe4e33e4716e41feb",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/yuanta-yearend.html",
+      "publisher": "유안타증권",
+      "source_type": "official_broker_notice",
+      "identifier": "202512241055430000000004",
+      "published_at_kst": "2025-12-24",
+      "first_available_at": null,
+      "market_scope_as_published": "2025 연말 휴장일 및 2026 연초 개장일",
+      "adopted_for_target_settlement": false,
+      "exclusion_reason": "12-31 결제일 제외를 명시하지만 이는 대상 15일 밖의 기존 주석 날짜다. 01-01 결제 제외로 확대하지 않는다."
+    },
+    {
+      "id": "yuanta-seollal-night",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202602041008070000000004&gubun=norNotice",
+      "final_url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202602041008070000000004&gubun=norNotice",
+      "http_status": 200,
+      "bytes": 98321,
+      "checked_at": "2026-11-14T06:42:29.774460+00:00",
+      "sha256": "6196185c11c4e53d4c6f8d0aaf7360709ca4215b7f6374dc9fcda7153a0eac88",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/yuanta-seollal-night.html",
+      "publisher": "유안타증권",
+      "source_type": "official_broker_notice",
+      "identifier": "202602041008070000000004",
+      "published_at_kst": "2026-02-04",
+      "first_available_at": null,
+      "market_scope_as_published": "파생상품 야간거래",
+      "adopted_for_target_settlement": false,
+      "exclusion_reason": "주식 결제에 관한 공지가 아니며 연휴 전일 파생 야간거래만 설명한다."
+    },
+    {
+      "id": "yuanta-chuseok-night",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202609170903160000000004&gubun=norNotice",
+      "final_url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202609170903160000000004&gubun=norNotice",
+      "http_status": 200,
+      "bytes": 98582,
+      "checked_at": "2026-11-14T06:42:29.774431+00:00",
+      "sha256": "c5e80174604d63e9947f72b863b133c8adf1282b28aef222a570cbb02ca9849c",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/yuanta-chuseok-night.html",
+      "publisher": "유안타증권",
+      "source_type": "official_broker_notice",
+      "identifier": "202609170903160000000004",
+      "published_at_kst": "2026-09-17",
+      "first_available_at": null,
+      "market_scope_as_published": "파생상품 야간거래",
+      "adopted_for_target_settlement": false,
+      "exclusion_reason": "주식 결제에 관한 공지가 아니며 연휴 전일 파생 야간거래만 설명한다."
+    }
+  ],
+  "date_results": [
+    {
+      "date": "2025-12-25",
+      "reason": "크리스마스",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-6889"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=6889",
+        "source_identifier": "notice id=6889",
+        "source_sha256": "b88a9b1c596f99382a481b2134bc2ac14e7fbb8fa8a2c3c9271f939b4b16779b",
+        "published_at_kst": "2025-11-10T09:59:14+09:00",
+        "checked_at": "2026-11-14T06:07:22.567318+00:00",
+        "source_locator": "국내주식 > 12월 25일(목)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": null,
+      "regulator_reported_period_payment_deferral": null,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide"
+      ]
+    },
+    {
+      "date": "2026-01-01",
+      "reason": "신정",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-6944"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=6944",
+        "source_identifier": "notice id=6944",
+        "source_sha256": "6600772a9e4d4976519fc661f90bf8a418a44bf3d461fc262ae3cb0806f970e8",
+        "published_at_kst": "2025-12-12T14:43:46+09:00",
+        "checked_at": "2026-11-14T06:07:38.477795+00:00",
+        "source_locator": "국내주식 > 1월 1일(목)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": null,
+      "regulator_reported_period_payment_deferral": null,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide"
+      ]
+    },
+    {
+      "date": "2026-02-16",
+      "reason": "설 연휴",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7013"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7013",
+        "source_identifier": "notice id=7013",
+        "source_sha256": "96d118e0e71012d13bf9fa2e826c4ea4681e932b55b83b3151774754bf28effb",
+        "published_at_kst": "2026-01-23T14:55:44+09:00",
+        "checked_at": "2026-11-14T06:07:22.625293+00:00",
+        "source_locator": "국내주식 > 2월 16일(월) ~ 18일(수)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": "fsc-seollal",
+      "regulator_reported_period_payment_deferral": true,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide",
+        "fsc-seollal"
+      ]
+    },
+    {
+      "date": "2026-02-17",
+      "reason": "설날",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7013"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7013",
+        "source_identifier": "notice id=7013",
+        "source_sha256": "96d118e0e71012d13bf9fa2e826c4ea4681e932b55b83b3151774754bf28effb",
+        "published_at_kst": "2026-01-23T14:55:44+09:00",
+        "checked_at": "2026-11-14T06:07:22.625293+00:00",
+        "source_locator": "국내주식 > 2월 16일(월) ~ 18일(수)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": "fsc-seollal",
+      "regulator_reported_period_payment_deferral": true,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide",
+        "fsc-seollal"
+      ]
+    },
+    {
+      "date": "2026-02-18",
+      "reason": "설 연휴",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7013"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7013",
+        "source_identifier": "notice id=7013",
+        "source_sha256": "96d118e0e71012d13bf9fa2e826c4ea4681e932b55b83b3151774754bf28effb",
+        "published_at_kst": "2026-01-23T14:55:44+09:00",
+        "checked_at": "2026-11-14T06:07:22.625293+00:00",
+        "source_locator": "국내주식 > 2월 16일(월) ~ 18일(수)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": "fsc-seollal",
+      "regulator_reported_period_payment_deferral": true,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide",
+        "fsc-seollal"
+      ]
+    },
+    {
+      "date": "2026-03-02",
+      "reason": "삼일절 대체휴일",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7043"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7043",
+        "source_identifier": "notice id=7043",
+        "source_sha256": "a17dc201b2d2e886d18ae37be53287b91342cbd1b1e8516a3fc35beed39b8329",
+        "published_at_kst": "2026-02-11T08:06:13+09:00",
+        "checked_at": "2026-11-14T06:07:22.618151+00:00",
+        "source_locator": "국내주식 > 3월 2일 (월)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": null,
+      "regulator_reported_period_payment_deferral": null,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide"
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "reason": "근로자의 날",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7163"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7163",
+        "source_identifier": "notice id=7163",
+        "source_sha256": "917a5279d11f59f37b76124a65af3dfdaa63599a48746590315168ca383a3438",
+        "published_at_kst": "2026-04-13T16:50:59+09:00",
+        "checked_at": "2026-11-14T06:07:22.692381+00:00",
+        "source_locator": "국내주식 > 5월 1일(금)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": null,
+      "regulator_reported_period_payment_deferral": null,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide"
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "reason": "어린이날",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7163"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7163",
+        "source_identifier": "notice id=7163",
+        "source_sha256": "917a5279d11f59f37b76124a65af3dfdaa63599a48746590315168ca383a3438",
+        "published_at_kst": "2026-04-13T16:50:59+09:00",
+        "checked_at": "2026-11-14T06:07:22.692381+00:00",
+        "source_locator": "국내주식 > 5월 5일(화)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": null,
+      "regulator_reported_period_payment_deferral": null,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide"
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "reason": "부처님오신날 대체휴일",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7163"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7163",
+        "source_identifier": "notice id=7163",
+        "source_sha256": "917a5279d11f59f37b76124a65af3dfdaa63599a48746590315168ca383a3438",
+        "published_at_kst": "2026-04-13T16:50:59+09:00",
+        "checked_at": "2026-11-14T06:07:22.692381+00:00",
+        "source_locator": "국내주식 > 5월 25일(월)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": null,
+      "regulator_reported_period_payment_deferral": null,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide"
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "reason": "제헌절",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7298"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7298",
+        "source_identifier": "notice id=7298",
+        "source_sha256": "1f01ac50b300ed621b88cc6a6deb794287e6e8e21e7ecc23dbf16273b6aef41b",
+        "published_at_kst": "2026-06-16T23:26:34+09:00",
+        "checked_at": "2026-11-14T06:07:22.768835+00:00",
+        "source_locator": "국내주식 > 7월 17일(금)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": null,
+      "regulator_reported_period_payment_deferral": null,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide"
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "reason": "광복절 대체휴일",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7353"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7353",
+        "source_identifier": "notice id=7353",
+        "source_sha256": "09bd94334eee046249ea091d0411e11fd4fd429907f7a580f23fa070587d370b",
+        "published_at_kst": "2026-07-21T06:48:31+09:00",
+        "checked_at": "2026-11-14T06:07:22.879350+00:00",
+        "source_locator": "국내주식 > 8월 17일(월)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": null,
+      "regulator_reported_period_payment_deferral": null,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "reason": "추석 연휴",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7402"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7402",
+        "source_identifier": "notice id=7402",
+        "source_sha256": "5bf961bb64667dbb7b21ae168a1f151422a53a13887b32633ea85aaa5fc79bcf",
+        "published_at_kst": "2026-08-11T13:39:15+09:00",
+        "checked_at": "2026-11-14T06:07:22.955782+00:00",
+        "source_locator": "국내주식 > 9월 24일(목)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": "fsc-chuseok",
+      "regulator_reported_period_payment_deferral": true,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide",
+        "fsc-chuseok"
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "reason": "추석",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7402"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7402",
+        "source_identifier": "notice id=7402",
+        "source_sha256": "5bf961bb64667dbb7b21ae168a1f151422a53a13887b32633ea85aaa5fc79bcf",
+        "published_at_kst": "2026-08-11T13:39:15+09:00",
+        "checked_at": "2026-11-14T06:07:22.955782+00:00",
+        "source_locator": "국내주식 > 9월 25일(금)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": "fsc-chuseok",
+      "regulator_reported_period_payment_deferral": true,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide",
+        "fsc-chuseok"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "reason": "개천절 대체휴일",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7478"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7478",
+        "source_identifier": "notice id=7478",
+        "source_sha256": "d6890c86f397ac81edcc31c8b9f491886becc9344e43584666e08d264d044a35",
+        "published_at_kst": "2026-09-16T13:30:05+09:00",
+        "checked_at": "2026-11-14T06:07:22.905473+00:00",
+        "source_locator": "국내주식 > 10월 5일(월)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": null,
+      "regulator_reported_period_payment_deferral": null,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "reason": "한글날",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7478"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7478",
+        "source_identifier": "notice id=7478",
+        "source_sha256": "d6890c86f397ac81edcc31c8b9f491886becc9344e43584666e08d264d044a35",
+        "published_at_kst": "2026-09-16T13:30:05+09:00",
+        "checked_at": "2026-11-14T06:07:22.905473+00:00",
+        "source_locator": "국내주식 > 10월 9일(금)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "general_rule_source_id": "krx-rule-guide",
+      "general_rule_consistent_with_non_settlement_inference": true,
+      "regulator_period_deferral_source_id": null,
+      "regulator_reported_period_payment_deferral": null,
+      "date_specific_krx_source_url": null,
+      "date_specific_krx_settlement_day": null,
+      "date_specific_broker_source_url": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "settlement_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 해당 국내주식 결제일을 명시한 증권사 원공지 미확보.",
+        "일반 안내의 해당 과거 날짜 적용 버전·예외와 한국투자 현재 계좌 적용 미확정."
+      ],
+      "checked_at": "2026-11-14T06:44:12.105401+00:00",
+      "source_ids": [
+        "krx-rule-guide"
+      ]
+    }
+  ],
+  "inherited_settlement_annotations": [
+    {
+      "date": "2026-06-03",
+      "prior_evidence_path": "docs/evidence/calendar-reconciliation-2026-11-14.json",
+      "prior_source_id": "yuanta-2026-06-03",
+      "url": "https://account.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202605281454350000000004&gubun=norNotice",
+      "published_at_kst": "2026-05-28",
+      "checked_at": "2026-11-14T06:09:46.212293+00:00",
+      "sha256": "f616c7b8777c4b9e344d316d7da14188831ac58befad291ce7ba0c36bc84296a",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/yuanta-2026-06-03.html",
+      "local_snapshot_hash_matches": true,
+      "http_refetched_this_run": false,
+      "broker_reported_settlement_day": false
+    },
+    {
+      "date": "2025-12-31",
+      "prior_evidence_path": "docs/evidence/dividend-followup-2026-11-14.json",
+      "prior_evidence_sha256": "9639f44249708a2b1b32dda69887f6bcac4b08cb4c766a4868c99a3d5e249343",
+      "prior_source_id": "kis-yearend",
+      "url": "https://securities.koreainvestment.com/main/customer/notice/Notice.jsp?cmd=TF04ga000002&num=45922",
+      "published_at_kst": "2025-12-26 10:12",
+      "prior_http_checked_at": "2026-11-14T05:06:11.662070+00:00",
+      "source_sha256": "9cecc9659e31784c79b1fc4502e1daf7eb621dad4ff1fa7729244b83650d646f",
+      "local_source": "/mnt/data/tmp/gs02-dividend-followup-20261114/kis-yearend.html",
+      "local_snapshot_rehashed_at": "2026-11-14T06:12:52.205934+00:00",
+      "local_snapshot_hash_matches": true,
+      "http_refetched_this_run": false,
+      "broker_reported_market_open": false,
+      "broker_reported_settlement_day": false,
+      "krx_original_verified": false,
+      "scope": "Inherited year-end broker notice; prior annotation preserved, not upgraded to direct KRX or full settlement-contract verification."
+    }
+  ],
+  "access_attempts": [
+    {
+      "id": "samsung-domestic-rule",
+      "url": "https://www.samsungpop.com/ux/kor/customer/guide/workproductguide/domesticStockTab2.do",
+      "final_url": "https://www.samsungpop.com/ux/kor/customer/guide/workproductguide/domesticStockTab2.do",
+      "http_status": 410,
+      "bytes": 1300,
+      "checked_at": "2026-11-14T06:40:30.972977+00:00",
+      "sha256": "962fe9b3bee9583701ec707c2967d6e31df7713522ba5f7d44c978e3c2c7b6b1",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/samsung-domestic-rule.html",
+      "adopted_as_settlement_evidence": false,
+      "outcome": "HTTP410; 검색 색인에 있는 일반 안내 문장을 원문 확보로 채택하지 않았다."
+    },
+    {
+      "id": "kis-notice-list",
+      "url": "https://securities.koreainvestment.com/main/customer/notice/Notice.jsp?cmd=TF04ga000001",
+      "final_url": "https://securities.koreainvestment.com/main/customer/notice/Notice.jsp?cmd=TF04ga000001",
+      "http_status": 200,
+      "bytes": 86,
+      "checked_at": "2026-11-14T06:40:33.079234+00:00",
+      "sha256": "6e23f62225d1bc7336189c832288bf07b41d4cd7e0082529def55f68f31c4358",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/kis-notice-list.html",
+      "adopted_as_settlement_evidence": false,
+      "outcome": "86바이트 meta refresh가 공개 오류 페이지를 가리킴. 정상 공지 목록/날짜행 미수신. HTTP200은 성공 근거가 아니다."
+    },
+    {
+      "term": "설",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%EC%84%A4&page=1",
+      "status": 200,
+      "checked_at": "2026-11-14T06:39:16.349698+00:00",
+      "sha256": "58d8b1a68fb36319821c9f354f49b26271bb583d42def85503e93b148c55576b",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/search-설.html",
+      "total": [
+        "94"
+      ],
+      "id": "yuanta-search-설",
+      "returned_count": 15,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "term": "대체",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%EB%8C%80%EC%B2%B4&page=1",
+      "status": 200,
+      "checked_at": "2026-11-14T06:39:16.345540+00:00",
+      "sha256": "db77b1f63732155bd79205c9767dda35f436c26047d2da7d361c14b6d04c900d",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/search-대체.html",
+      "total": [
+        "2"
+      ],
+      "id": "yuanta-search-대체",
+      "returned_count": 2,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "term": "근로",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%EA%B7%BC%EB%A1%9C&page=1",
+      "status": 200,
+      "checked_at": "2026-11-14T06:39:16.342678+00:00",
+      "sha256": "f0e689665915060e3f4361f3a46dbd3624887906097a8cf0c3fbab7c040350be",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/search-근로.html",
+      "total": [
+        "0"
+      ],
+      "id": "yuanta-search-근로",
+      "returned_count": 0,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "term": "제헌",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%EC%A0%9C%ED%97%8C&page=1",
+      "status": 200,
+      "checked_at": "2026-11-14T06:39:16.346940+00:00",
+      "sha256": "99c81296753c43e501fc25e923661de8cc2ee080d3ce560c8d84d02deca2986b",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/search-제헌.html",
+      "total": [
+        "0"
+      ],
+      "id": "yuanta-search-제헌",
+      "returned_count": 0,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "term": "성탄",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%EC%84%B1%ED%83%84&page=1",
+      "status": 200,
+      "checked_at": "2026-11-14T06:39:16.460217+00:00",
+      "sha256": "07f95a7a48e0d5c7f7cd2ff0d1de51c436914a866e25e5d781abf89738dbbb13",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/search-성탄.html",
+      "total": [
+        "0"
+      ],
+      "id": "yuanta-search-성탄",
+      "returned_count": 0,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "term": "신정",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%EC%8B%A0%EC%A0%95&page=1",
+      "status": 200,
+      "checked_at": "2026-11-14T06:39:16.456081+00:00",
+      "sha256": "d5f2a81653f82cf0c55a8bc750e2691d90db990732f85873eaadde8fbe434706",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/search-신정.html",
+      "total": [
+        "0"
+      ],
+      "id": "yuanta-search-신정",
+      "returned_count": 0,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "term": "추석",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%EC%B6%94%EC%84%9D&page=1",
+      "status": 200,
+      "checked_at": "2026-11-14T06:39:16.458376+00:00",
+      "sha256": "19f6ff666cd4f10426ba493381ba0793359f012fcf5c063944830de57a4560e0",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/search-추석.html",
+      "total": [
+        "4"
+      ],
+      "id": "yuanta-search-추석",
+      "returned_count": 4,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "term": "한글",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%ED%95%9C%EA%B8%80&page=1",
+      "status": 200,
+      "checked_at": "2026-11-14T06:39:16.458975+00:00",
+      "sha256": "eebcab67931dba9296f35061a39480eb95c7acedf9252ddd8b416ee28390be90",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/search-한글.html",
+      "total": [
+        "1"
+      ],
+      "id": "yuanta-search-한글",
+      "returned_count": 1,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "term": "어린이",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%EC%96%B4%EB%A6%B0%EC%9D%B4&page=1",
+      "status": 200,
+      "checked_at": "2026-11-14T06:39:16.560841+00:00",
+      "sha256": "bfa440bc1243e0308cb3ccde6cdf9143767c542689715e382423938cf85e1250",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/search-어린이.html",
+      "total": [
+        "0"
+      ],
+      "id": "yuanta-search-어린이",
+      "returned_count": 0,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "term": "설연휴",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%EC%84%A4%EC%97%B0%ED%9C%B4&page=1",
+      "status": 200,
+      "checked_at": "2026-11-14T06:39:27.616226+00:00",
+      "sha256": "82cc07dc65c3b0a1002cd39f75882ee1e62d81bbf765e111d7d753d8f68ba7d8",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/search-설연휴.html",
+      "total": [
+        "0"
+      ],
+      "id": "yuanta-search-설연휴",
+      "returned_count": 0,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "term": "휴장",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%ED%9C%B4%EC%9E%A5&page=1",
+      "status": 200,
+      "checked_at": "2026-11-14T06:39:27.728363+00:00",
+      "sha256": "5fc708782435b67255bae4c6eb8291747892af578efc923843d602b581c3b7e5",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/search-휴장.html",
+      "total": [
+        "66"
+      ],
+      "id": "yuanta-search-휴장",
+      "returned_count": 15,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "term": "크리스마스",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4&page=1",
+      "status": 200,
+      "checked_at": "2026-11-14T06:39:27.843241+00:00",
+      "sha256": "3383f3763bfa18c7ec35ff83882d65529e4d9b38febd9fb91fb2f03d6aa2afd8",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/search-크리스마스.html",
+      "total": [
+        "1"
+      ],
+      "id": "yuanta-search-크리스마스",
+      "returned_count": 1,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "id": "yuanta-holiday-page2",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%ED%9C%B4%EC%9E%A5&page=2",
+      "page": 2,
+      "http_status": 200,
+      "checked_at": "2026-11-14T06:42:18.688970+00:00",
+      "sha256": "e933826733a1e158bfbad1b84a2cdf5ed81f4796821ac1cfaf658974661591c6",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/yuanta-holiday-page2.html",
+      "total": [
+        "66"
+      ],
+      "returned_count": 15,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "id": "yuanta-holiday-page3",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%ED%9C%B4%EC%9E%A5&page=3",
+      "page": 3,
+      "http_status": 200,
+      "checked_at": "2026-11-14T06:42:18.690817+00:00",
+      "sha256": "6ec58c99793ba34efc8120bae42e1ca982445bd0e3e2006120a66f034f345622",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/yuanta-holiday-page3.html",
+      "total": [
+        "66"
+      ],
+      "returned_count": 15,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "id": "yuanta-holiday-page4",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%ED%9C%B4%EC%9E%A5&page=4",
+      "page": 4,
+      "http_status": 200,
+      "checked_at": "2026-11-14T06:42:18.695297+00:00",
+      "sha256": "8d53c1356f113551144921623cb370d0c0602034be2050a04f63811df6be2fd3",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/yuanta-holiday-page4.html",
+      "total": [
+        "66"
+      ],
+      "returned_count": 15,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    },
+    {
+      "id": "yuanta-holiday-page5",
+      "url": "https://www.myasset.com/myasset/customer/notice/CU_0201000_P1.cmd?gubun=norNotice&keyword=%ED%9C%B4%EC%9E%A5&page=5",
+      "page": 5,
+      "http_status": 200,
+      "checked_at": "2026-11-14T06:42:18.683373+00:00",
+      "sha256": "6b55a8430f9009665b601805470994937602a1af46f5e9cf13b0669fc35530b8",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/yuanta-holiday-page5.html",
+      "total": [
+        "66"
+      ],
+      "returned_count": 6,
+      "adopted_as_settlement_evidence": false,
+      "outcome": "공식 제목 검색의 후보 탐색 결과다. 결과 0건/제목 부재는 공지 자체의 부재를 뜻하지 않는다."
+    }
+  ],
+  "search_coverage": {
+    "yuanta_holiday_title_search": {
+      "pages": 5,
+      "reported_total": 66,
+      "returned_unique_count": 66,
+      "date_specific_target_cash_equity_settlement_notice_adopted": 0,
+      "scope_limit": "제목 검색의 표시66건만 대조했다. 전체 사이트/모든 단어/삭제·미색인 공지의 부재를 주장하지 않는다."
+    },
+    "search_discovery_manifest": "/mnt/data/tmp/gs02-settlement-20261114/discovery.json",
+    "search_discovery_manifest_sha256": "2af7f4325fea6ab86ec1dc92111886f6c56509150b62160daf86f5e29bc792f5",
+    "search_more_manifest": "/mnt/data/tmp/gs02-settlement-20261114/discovery-more.json",
+    "search_more_manifest_sha256": "3294688a97fb402831d9830fd62ccfa8804c5762be9811123656e2ccc526c0a6",
+    "holiday_pages_manifest": "/mnt/data/tmp/gs02-settlement-20261114/yuanta-holiday-pages.json",
+    "holiday_pages_manifest_sha256": "c718e004ec6c4404f751ab9ac45d234e55fb262edd652f0da9b2f5aa47ec0ebb",
+    "web_search_scope": "대상일의 결제·휴장·순연을 KRX·증권사 공식 자료에서 탐색했다. 해외주식·다른 연도·비공식 계산은 채택하지 않았다."
+  },
+  "prior_failures_reused": {
+    "prior_evidence_path": "docs/evidence/calendar-reconciliation-2026-11-14.json",
+    "prior_evidence_sha256": "ba221a99a32073e1923d734648558da431010e9d64826b7d21e1ce41eb50f815",
+    "access_attempt_ids": [
+      "krx-holidays-2026",
+      "krx-holidays-2025",
+      "krx-press-search",
+      "kind-holiday-search",
+      "kind-holiday-search-may",
+      "kind-holiday-search-deriv-may",
+      "krx-calendar",
+      "krx-strn",
+      "krx-main-page",
+      "krx-otp-probe"
+    ],
+    "repeated_same_condition_requests": 0,
+    "summary": "KRX2025/2026 휴장 표 날짜행 미수신·보존된 HTTP200 빈 본문·연별PDF 미확보·접근 거부·KIND 검색0건을 재사용했다. 새로운 규정 안내 URL을 별도 출력으로 수신했다."
+  },
+  "summary": {
+    "target_count": 15,
+    "new_krx_general_guide_count": 1,
+    "new_regulator_period_notice_count": 2,
+    "regulator_period_deferral_supported_target_count": 5,
+    "general_rule_consistent_inference_count": 15,
+    "new_date_specific_krx_settlement_verified_count": 0,
+    "new_date_specific_broker_settlement_supported_count": 0,
+    "date_specific_krx_or_broker_unresolved_count": 15,
+    "account_application_verified_count": 0,
+    "target_hold_count": 15,
+    "inherited_broker_non_settlement_dates_preserved": [
+      "2025-12-31",
+      "2026-06-03"
+    ],
+    "original_unclassified_count_preserved": 17
+  },
+  "integrity": {
+    "baseline_checked_at": "2026-11-14T06:44:12.105401+00:00",
+    "baseline_hashes_match": true,
+    "baseline_file_count": 18,
+    "source_snapshots_rehashed": true,
+    "originals_or_prior_evidence_overwritten": false,
+    "target_count": 15,
+    "regulator_period_targets": 5,
+    "baseline_files_unchanged": 18,
+    "new_source_snapshots_rehashed": 24,
+    "inherited_source_snapshots_rehashed": 2,
+    "relative_links_valid": 25,
+    "prior_research_prefix_unchanged": true,
+    "json_valid": true,
+    "hold_preserved": true,
+    "owned_files_only": true
+  },
+  "runtime": {
+    "broker_authenticated_requests": 0,
+    "order_requests": 0,
+    "orders_enabled": false,
+    "backtest_ready": false,
+    "corporate_action_hold_count": 8,
+    "intraday_validation": "NOT_RUN",
+    "local_code_tests": "NOT_RUN_document_research",
+    "external_review": "NOT_RUN_document_research",
+    "additional_threads_created": 0,
+    "issue_remains_open": true,
+    "infisical_read_modified_or_staged": false
+  }
+}
