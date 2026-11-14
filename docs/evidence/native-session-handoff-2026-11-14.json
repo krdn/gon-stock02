@@ -1,0 +1,145 @@
+{
+  "checked_at": "2026-11-14T01:57:46.834659+00:00",
+  "scope": "Real Codex app session creation with synthetic artifacts. Existing separately requested capability probe reused, then artifacts rechecked here. No trading or backtest execution.",
+  "result": "PASS",
+  "session_ids": {
+    "A": "01a1d7c2-7989-7ac1-8cff-9b579013cf0b",
+    "B": "01a1d7c3-3bcc-7640-8021-3890af2c302e",
+    "C": "01a1d7c5-0d24-7531-bfc9-494bac5fc02f"
+  },
+  "sequence": [
+    "Coordinator creates A",
+    "A validates artifact and creates B",
+    "B validates handoff; intentional gate exit 23; no C or final artifact",
+    "Test coordinator changes gate and sends explicit resume to B",
+    "B rechecks gate and creates fresh C",
+    "C verifies saved checkpoint and writes final artifact"
+  ],
+  "failure_snapshot": {
+    "verified_at": "2026-11-14T01:55:41.971837+00:00",
+    "independent_gate_exit_code": 23,
+    "no_spawn_c": true,
+    "no_final_artifact": true,
+    "stage_a_sha256": "e644750d1ccc7118f3def84c1149594132a117f1523617bdf18bd0d462c5998d",
+    "checkpoint_sha256": "72f99438fe56f56f85659c2ec3380f9e80b02e5703e41f31eac352bcd09f0df6"
+  },
+  "resume_action": {
+    "action": "test coordinator enabled gate after independently verifying the completed blocked turn",
+    "at": "2026-11-14T01:55:41.972430+00:00"
+  },
+  "artifacts": {
+    "input.json": {
+      "sha256": "b6cfa8f395f31ecfda6d43e7ebc70a699496c70f4d3db893b5f776fea296e6ce",
+      "content": "{\n  \"run_id\": \"20261114T015307Z-d35d49\",\n  \"nonce\": \"2c4aca11e100590e48efb56d\",\n  \"numbers\": [\n    94,\n    61,\n    52,\n    28,\n    29,\n    36\n  ]\n}\n"
+    },
+    "stage-a.json": {
+      "sha256": "e644750d1ccc7118f3def84c1149594132a117f1523617bdf18bd0d462c5998d",
+      "content": "{\n  \"run_id\": \"20261114T015307Z-d35d49\",\n  \"nonce\": \"2c4aca11e100590e48efb56d\",\n  \"numbers_sum\": 300,\n  \"input_sha256\": \"b6cfa8f395f31ecfda6d43e7ebc70a699496c70f4d3db893b5f776fea296e6ce\",\n  \"status\": \"complete\"\n}\n"
+    },
+    "b-checkpoint.json": {
+      "sha256": "72f99438fe56f56f85659c2ec3380f9e80b02e5703e41f31eac352bcd09f0df6",
+      "content": "{\n  \"status\": \"blocked\",\n  \"gate_exit_code\": 23,\n  \"numbers_sum\": 300,\n  \"stage_a_sha256\": \"e644750d1ccc7118f3def84c1149594132a117f1523617bdf18bd0d462c5998d\",\n  \"pending_stage\": \"C\",\n  \"next_instruction\": \"After the coordinator enables the gate, start a fresh C session using C.md\"\n}\n"
+    },
+    "final.json": {
+      "sha256": "8306ade42f1233f60446d5050d8a9605d3d2f4954db12d757ed1d1a2f6c8ec7d",
+      "content": "{\n  \"status\": \"complete\",\n  \"run_id\": \"20261114T015307Z-d35d49\",\n  \"nonce\": \"2c4aca11e100590e48efb56d\",\n  \"numbers_sum\": 300,\n  \"doubled_sum\": 600,\n  \"input_sha256\": \"b6cfa8f395f31ecfda6d43e7ebc70a699496c70f4d3db893b5f776fea296e6ce\",\n  \"stage_a_sha256\": \"e644750d1ccc7118f3def84c1149594132a117f1523617bdf18bd0d462c5998d\",\n  \"checkpoint_sha256\": \"72f99438fe56f56f85659c2ec3380f9e80b02e5703e41f31eac352bcd09f0df6\",\n  \"resumed_from\": \"b-checkpoint.json\"\n}\n"
+    }
+  },
+  "verified": {
+    "distinct_session_ids": true,
+    "input_sum": 300,
+    "continued_doubled_sum": 600,
+    "input_and_handoff_hashes_match": true,
+    "a_handoff_lines": 8
+  },
+  "not_verified": [
+    "Full large-project completion",
+    "Production GitHub checkpoint-to-next-session automation",
+    "Unattended recovery after host/app restart",
+    "Exactly-once dispatch under crash or concurrent controllers",
+    "Token savings versus compact",
+    "Dedicated worktree transition"
+  ],
+  "observed_app_thread_states": [
+    {
+      "id": "01a1d7c2-7989-7ac1-8cff-9b579013cf0b",
+      "status": {
+        "type": "idle"
+      },
+      "hasMore": false,
+      "turns": [
+        {
+          "id": "01a1d7c2-79d2-7663-a1e2-b45d2dac39a4",
+          "status": "completed",
+          "error": null,
+          "delegations": [],
+          "create_calls": []
+        }
+      ]
+    },
+    {
+      "id": "01a1d7c3-3bcc-7640-8021-3890af2c302e",
+      "status": {
+        "type": "idle"
+      },
+      "hasMore": false,
+      "turns": [
+        {
+          "id": "01a1d7c4-95a2-76d1-a39b-d054ecb08519",
+          "status": "completed",
+          "error": null,
+          "delegations": [],
+          "create_calls": []
+        },
+        {
+          "id": "01a1d7c3-3db2-7270-9fdb-94f6d3881d10",
+          "status": "completed",
+          "error": null,
+          "delegations": [],
+          "create_calls": []
+        }
+      ]
+    },
+    {
+      "id": "01a1d7c5-0d24-7531-bfc9-494bac5fc02f",
+      "status": {
+        "type": "idle"
+      },
+      "hasMore": false,
+      "turns": [
+        {
+          "id": "01a1d7c5-0d7e-7540-a1aa-c586763cff6e",
+          "status": "completed",
+          "error": null,
+          "created": 1794621377,
+          "completed": 1794621433,
+          "delegations": [
+            {
+              "sourceThreadId": "01a1d7c3-3bcc-7640-8021-3890af2c302e",
+              "input": "사용자가 승인한 새 세션 인계 재개 검증 C입니다. /home/gon/llm-projects/gon-stock02/.local/session-capability-20261114T015307Z-d35d49/C.md를 읽고 그 단계만 실행하세요. 기존 프로젝트 작업은 재개하지 마세요."
+            }
+          ],
+          "create_calls": []
+        }
+      ]
+    }
+  ],
+  "repository_validation": {
+    "unit_tests": {
+      "command": "uv run python -m unittest discover -s tests -v",
+      "passed": 92,
+      "elapsed_seconds": 2.466
+    },
+    "build": {
+      "command": "uv build",
+      "wheel": "PASS",
+      "sdist": "PASS"
+    },
+    "markdown_local_links": "PASS",
+    "json_parse": "PASS",
+    "previous_state_preserved": "PASS (same content, heading and relative links adjusted for relocation)",
+    "state_characters_before": 5436,
+    "state_characters_after": 1376,
+    "token_savings_measured": false
+  }
+}

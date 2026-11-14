@@ -6,6 +6,8 @@
 
 [3단계 계획](docs/plans/short-term-trading-2026-11.md) · [현재 상태](docs/STATE.md)
 
+[AI의 단계별 새 세션 전환](docs/operations/session-handoff.md) · [적용·검증 기록](docs/tasks/16-native-session-handoff.md)
+
 1단계의 KIS 모의 조회·KRX/NXT 시세 수신·위험 계산·Buzz 연구 경로를 구현했습니다.
 자동 주문·백테스트·수익성 검증은 아직 시작하지 않았습니다.
 
