@@ -1,0 +1,835 @@
+{
+  "schema_version": 1,
+  "task": "Issue #11 — 2405/2433 개정 범위와 결제 판정의 의존관계",
+  "stage_id": "11-settlement-amendment-scope-20261114",
+  "transition_id": "issue11-settlement-amendment-scope-20261114",
+  "created_at": "2026-11-14T11:05:38.123169+00:00",
+  "authorization_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6876202040",
+  "started_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6876271124",
+  "session_gate": {
+    "thread_id": "01a1d9b6-00a4-79d0-98f7-f14d5e778d2b",
+    "read_thread_id_matched": true,
+    "baseline_sha": "e3a7d9427f257a5cff340c1851dfe8dde10f208b",
+    "handoff_blob": "20fb97a73968a2285d78873f6a2a774fd0c574b6",
+    "state_blob": "d3ddb869b1c2b1cf3445e024f9b418dc8acb5948",
+    "existing_separate_changes": [
+      "?? .infisical.yaml"
+    ],
+    "started_found_on_requery": 3,
+    "tab_verified": true,
+    "herdr_space_id": "spe9ca489d725352f3d193a2cee71fb8c4",
+    "herdr_tab_id": "tb660603f11c9b8a5bf3d98bda9e5fbece",
+    "herdr_terminal_id": "t67",
+    "tab_proof_path": "/mnt/data/tmp/gs02-amendment-scope-handoff-20261114/tab-proof.json",
+    "tab_proof_sha256": "81172067b6761bcab4a1c64d57b03882463e56bf49e32d2dfb030acb8d087998",
+    "rendering_path": "/mnt/data/tmp/gs02-amendment-scope-handoff-20261114/new-tab.png",
+    "rendering_sha256": "256c185b3c7a4e21ccdd01fc4fb1425492f735dcd69c0fd09915fca7ea4ab246",
+    "gate_result": "PASS: same-ID foreground/cwd/tab and preserved rendering/hash verified before investigation"
+  },
+  "inputs": {
+    "prior_evidence_path": "docs/evidence/notice-final-linkage-2026-11-14.json",
+    "prior_evidence_sha256": "611c623b4f80588e2ec9a12ba0183e4c1927fed1fe8af6517d491e235a235e98",
+    "baseline_hashes": {
+      "docs/evidence/corporate-actions-2026-11-14.json": "ba0156e63abd7b2b4af18e99112a84fbc3567f1e0b33ce4b41f2515a9b18e20b",
+      "docs/evidence/data-contract-2026-11-13.json": "83c4356ed1b2d46194bb9e513ae8ffd3ea7e789d96ae067f102e4c9b88828f08",
+      "docs/evidence/data-contract-followup-2026-11-14.json": "9c42ddd3adcb41e7d9c0401f9c9e58ea0fa337d6e84570008fa7326fdc052921",
+      "docs/evidence/data-readiness-2026-11-13.json": "238373fd557b2fcca789adb47de5bc6a8d98fccabf8322fd6a9a1491770cef44",
+      "docs/evidence/dividend-followup-2026-11-14.json": "9639f44249708a2b1b32dda69887f6bcac4b08cb4c766a4868c99a3d5e249343",
+      "docs/evidence/dividend-gaps-2026-11-14.json": "d2814675755ce9f47708fd92782256cbabc18ea9c32169f236f6afbe24683fad",
+      "docs/evidence/evolve-runtime-2026-11-14.json": "380939e1209cdae39d4c910d8510526f725ee846cbe59eaba5bc4582d0b4241f",
+      "docs/evidence/halt-reconciliation-2026-11-14.json": "c88cae861a032a28efc7cf5dfcdc3fa88b8688e6a288180de9d8a7c52f9fc9d7",
+      "docs/evidence/historical-data-2026-11-13.json": "340c8f1802a5f68101ac47bf62a515ab39be8737769f2e671608e0f35631fdeb",
+      "docs/evidence/minute-capture-2026-11-14.json": "b57aff3e2fa691b9d6761078ee5c283adc3a5adbefb19db8d203fc73cb8cd989",
+      "docs/evidence/native-session-handoff-2026-11-14.json": "9117df4bb6aa4050e26193daeb442290c896a524aeb2ed006aecdc423bd179f1",
+      "docs/evidence/paper-order-ledger-2026-11-13.json": "05b2af32b54bcb8c34e1869e5b024edef3b6a38541ede7aee02772a738f80800",
+      "docs/evidence/stage1-2026-11-13.json": "22f95ae7831c10eef0ced9fae1958810870d5aad7b127cff92e6417b4bb69233",
+      ".local/history-20261113-run2/pages.jsonl": "33fcb37abab6712ba5ff19b60625ff496f7b88cceb462a8b351d0b1588f8eee2",
+      ".local/history-20261113-run2/bars.jsonl": "f42b4b14bdb04638626897293a35f90cff23abbf9acf707718cb6fe873bb84d9",
+      ".local/issue11-contract-20261113/check.py": "257c7b15eadeabb83e424c0a75eebb13dea9e2074b74de56da2765f9f5a9205c",
+      "docs/evidence/calendar-reconciliation-2026-11-14.json": "ba221a99a32073e1923d734648558da431010e9d64826b7d21e1ce41eb50f815",
+      ".local/history-20261113-run2/manifest.json": "0d7320cb041e37edd5baa08cb8d888a735e7fb9e37b97260769788939ccda345",
+      "docs/evidence/settlement-reconciliation-2026-11-14.json": "62eef6e39e70d7406318d711f0622ebf2d16489a28b600c41a00e57e88686d8a",
+      "docs/evidence/settlement-rule-versions-2026-11-14.json": "3f405862dd8818552bf62ef7d3c25134b04386e3f031db41b5ef2412c1395246",
+      "docs/evidence/settlement-effective-boundaries-2026-11-14.json": "f6bbd44954036343da9fd6faf339015fdd898dea05ad4735239a921c5147e243",
+      "docs/evidence/promulgation-provenance-2026-11-14.json": "fee4385f884cbc7c65178fd1e6cb83f7b5952686c6b173df377c0901932f9600",
+      "docs/evidence/notice-final-linkage-2026-11-14.json": "611c623b4f80588e2ec9a12ba0183e4c1927fed1fe8af6517d491e235a235e98"
+    },
+    "target_dates": [
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25"
+    ],
+    "other_dates_unchanged": [
+      "2025-12-25",
+      "2026-01-01",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ],
+    "all_settlement_hold_dates": [
+      "2025-12-25",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ],
+    "original_unclassified_dates_preserved": [
+      "2025-12-25",
+      "2025-12-31",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-06-03",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ]
+  },
+  "method": {
+    "reuse_policy": "11 existing official bodies reused after raw/extracted hash checks. No new original attachment/output fetched; no prior failed request repeated.",
+    "live_navigation_check": {
+      "url": "https://rule.krx.co.kr/",
+      "resolved_url": "https://rule.krx.co.kr/out/index.do",
+      "purpose": "공식 포털 공개 화면 접근만 확인; 새 법령 원문이나 과거 적용의 증거로 세지 않음.",
+      "checked_at": "2026-11-14T11:05:38.123169+00:00"
+    },
+    "normalization": "Whitespace removal and curly/straight quotation normalization only for main article comparisons. HWP editorial-note-stripped comparison is explicitly separate.",
+    "comparison_scope": "업무규정2285→2405→2433의 Mjo 본문177조문씩; 2405 등록개정문/이유서/전문과2433 업무규정 전문 전재 부칙; 관련 세칙/청산결제 조문 표본. 전체연혁/상장규정 전체/예외 발동 확인이 아님.",
+    "initial_extraction_failures": [
+      "system python에bs4 없음. 설치 없이 stdlib HTMLParser 사용.",
+      "최초 단순 깊이 계산은2285의제98조 앞 잉여 </span>로 조문누락. 대응태그스택으로 수정 후177개 bon앵커와 정규식 목록을 대조. 법문 누락을 개정으로 채택하지 않음."
+    ],
+    "first_available_at": null,
+    "effective_boundary_research": false,
+    "notice_final_link_search": false
+  },
+  "reused_public_sources": [
+    {
+      "id": "kospi-210025251",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210025251",
+        "noformyn": "N"
+      },
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-210025251.html",
+      "sha256": "ce90a711ae6f37726a5b9162280a98a76e1b117d6c33ec9c83dca61a5c3eb030",
+      "checked_at": "2026-11-14T07:09:17.429109+00:00",
+      "reused_at": "2026-11-14T11:05:38.123169+00:00",
+      "network_requeried": false,
+      "published_at": null,
+      "first_available_at": null,
+      "text_extraction": {
+        "source_id": "kospi-210025251",
+        "article_count": 177,
+        "text_file": "/mnt/data/tmp/gs02-amendment-scope-20261114/kospi-210025251.articles.json",
+        "sha256": "dba32ba92cc9acdf9bf77a7e955bdbcb3334a78e10aa842c85a1f8c4bc33999e",
+        "method": "stdlib HTMLParser; Mjo main-body divs keyed by bon anchors; all nested text retained; unmatched closing tags ignored. Excludes addenda, outer editorial notes, attachments and linked-document bodies."
+      }
+    },
+    {
+      "id": "kospi-210163555",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210163555",
+        "noformyn": "N"
+      },
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-210163555.html",
+      "sha256": "2678ae00ecf22b045a5877a448d69cb576e95e62c3f29ce94fffe36195a10707",
+      "checked_at": "2026-11-14T07:09:17.939528+00:00",
+      "reused_at": "2026-11-14T11:05:38.123169+00:00",
+      "network_requeried": false,
+      "published_at": null,
+      "first_available_at": null,
+      "text_extraction": {
+        "source_id": "kospi-210163555",
+        "article_count": 177,
+        "text_file": "/mnt/data/tmp/gs02-amendment-scope-20261114/kospi-210163555.articles.json",
+        "sha256": "b94ce3c0cf4d8c06e4ce11c3fee37d167fa9ed2798a0de90cbc8c0f464d57a21",
+        "method": "stdlib HTMLParser; Mjo main-body divs keyed by bon anchors; all nested text retained; unmatched closing tags ignored. Excludes addenda, outer editorial notes, attachments and linked-document bodies."
+      }
+    },
+    {
+      "id": "kospi-210200859",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210200859",
+        "noformyn": "N"
+      },
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-210200859.html",
+      "sha256": "7a405b1cf77155d9107238afbb4ee54195b53650fbfcf86c69c2e6b6fc1b5868",
+      "checked_at": "2026-11-14T07:09:18.455498+00:00",
+      "reused_at": "2026-11-14T11:05:38.123169+00:00",
+      "network_requeried": false,
+      "published_at": null,
+      "first_available_at": null,
+      "text_extraction": {
+        "source_id": "kospi-210200859",
+        "article_count": 177,
+        "text_file": "/mnt/data/tmp/gs02-amendment-scope-20261114/kospi-210200859.articles.json",
+        "sha256": "d645edb4f3e6bc297123e9fad3cf8807f6770644ddefb5aaf25886e7dbd3d417",
+        "method": "stdlib HTMLParser; Mjo main-body divs keyed by bon anchors; all nested text retained; unmatched closing tags ignored. Excludes addenda, outer editorial notes, attachments and linked-document bodies."
+      }
+    },
+    {
+      "id": "kospi-enforcement-210162119",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210162119",
+        "noformyn": "N"
+      },
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-enforcement-210162119.html",
+      "sha256": "3dcdf7ed8daf8f4d13ffb5e7dd7056ddad2c6fb7260a53c3f337f7fffa840861",
+      "checked_at": "2026-11-14T07:09:22.423686+00:00",
+      "reused_at": "2026-11-14T11:05:38.123169+00:00",
+      "network_requeried": false,
+      "published_at": null,
+      "first_available_at": null,
+      "text_extraction": {
+        "source_id": "kospi-enforcement-210162119",
+        "article_count": 270,
+        "text_file": "/mnt/data/tmp/gs02-amendment-scope-20261114/kospi-enforcement-210162119.articles.json",
+        "sha256": "f53ea610cf225af53ba072a07116d58d4187e8d397161c62da1c2fc06e0d1052",
+        "method": "stdlib HTMLParser; Mjo main-body divs keyed by bon anchors; all nested text retained; unmatched closing tags ignored. Excludes addenda, outer editorial notes, attachments and linked-document bodies."
+      }
+    },
+    {
+      "id": "kospi-enforcement-210203562",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210203562",
+        "noformyn": "N"
+      },
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-enforcement-210203562.html",
+      "sha256": "1e94054e2805ae76a92b4f9204188b3aa2522c0f74a80b17b4748f934cf6e8e2",
+      "checked_at": "2026-11-14T07:09:23.308134+00:00",
+      "reused_at": "2026-11-14T11:05:38.123169+00:00",
+      "network_requeried": false,
+      "published_at": null,
+      "first_available_at": null,
+      "text_extraction": {
+        "source_id": "kospi-enforcement-210203562",
+        "article_count": 270,
+        "text_file": "/mnt/data/tmp/gs02-amendment-scope-20261114/kospi-enforcement-210203562.articles.json",
+        "sha256": "0c566b46f9563dd067c007133361a0dc48ef9a488c40a813759346bdfb1dcd1b",
+        "method": "stdlib HTMLParser; Mjo main-body divs keyed by bon anchors; all nested text retained; unmatched closing tags ignored. Excludes addenda, outer editorial notes, attachments and linked-document bodies."
+      }
+    },
+    {
+      "id": "clearing-210018187",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210018187",
+        "noformyn": "N"
+      },
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/clearing-210018187.html",
+      "sha256": "872658412272bd0c788272da8cd2f6c66e0bb18eb1131d2f6df44bb4b9fd223d",
+      "checked_at": "2026-11-14T07:12:07.053596+00:00",
+      "reused_at": "2026-11-14T11:05:38.123169+00:00",
+      "network_requeried": false,
+      "published_at": null,
+      "first_available_at": null,
+      "text_extraction": {
+        "source_id": "clearing-210018187",
+        "article_count": 43,
+        "text_file": "/mnt/data/tmp/gs02-amendment-scope-20261114/clearing-210018187.articles.json",
+        "sha256": "0efc9892114e3473318aa0cf1f58e9a9c6f6c22ae6ce127378c4bf23b257211c",
+        "method": "stdlib HTMLParser; Mjo main-body divs keyed by bon anchors; all nested text retained; unmatched closing tags ignored. Excludes addenda, outer editorial notes, attachments and linked-document bodies."
+      }
+    },
+    {
+      "id": "clearing-view",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210185757",
+        "noformyn": "N"
+      },
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/clearing-view.html",
+      "sha256": "c3194ce7776b822e195679a98026e1c94878ff482389860ac5a65b3ceb79c3ca",
+      "checked_at": "2026-11-14T07:11:19.363564+00:00",
+      "reused_at": "2026-11-14T11:05:38.123169+00:00",
+      "network_requeried": false,
+      "published_at": null,
+      "first_available_at": null,
+      "text_extraction": {
+        "source_id": "clearing-view",
+        "article_count": 43,
+        "text_file": "/mnt/data/tmp/gs02-amendment-scope-20261114/clearing-view.articles.json",
+        "sha256": "4fea57115392c9b8955396cf60b853191412dce5815b925573c58230ce6d4b26",
+        "method": "stdlib HTMLParser; Mjo main-body divs keyed by bon anchors; all nested text retained; unmatched closing tags ignored. Excludes addenda, outer editorial notes, attachments and linked-document bodies."
+      }
+    },
+    {
+      "id": "krx-2405-amending-document",
+      "url": "https://rule.krx.co.kr/Download.do",
+      "method": "POST",
+      "parameters": {
+        "Serverfile": "210163636.hwp",
+        "Pcfilename": "210163770.hwp",
+        "folder": "ATTACH"
+      },
+      "publisher": "한국거래소",
+      "source_type": "krx_registered_amending_attachment",
+      "local_source": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210163555-GAE-ui-flow.bin",
+      "sha256": "5b4bef6e2307a25b8e3c13d7bb117e893d7d50653a34e43d881b7204f254fe3a",
+      "checked_at": "2026-11-14T08:43:18.705723+00:00",
+      "reused_at": "2026-11-14T11:05:38.123169+00:00",
+      "network_requeried": false,
+      "published_at": null,
+      "first_available_at": null,
+      "text_extraction": {
+        "source_file": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210163555-GAE-ui-flow.bin",
+        "text_file": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210163555-GAE-ui-flow.text.txt",
+        "sha256": "4ec031f19a79d63ff386476741aac01bf51017a025c8911f92cb2272cb76d9be",
+        "method": "OLE BodyText sections; deflate per FileHeader flag; HWPTAG_PARA_TEXT records; strip 8-unit HWP controls; preserve paragraphs",
+        "characters": 424
+      }
+    },
+    {
+      "id": "krx-2405-reason",
+      "url": "https://rule.krx.co.kr/Download.do",
+      "method": "POST",
+      "parameters": {
+        "Serverfile": "210163635.hwp",
+        "Pcfilename": "210163621.hwp",
+        "folder": "ATTACH"
+      },
+      "publisher": "한국거래소",
+      "source_type": "krx_registered_reason_attachment",
+      "local_source": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210163555-REA-ui-flow.hwp",
+      "sha256": "87eb9e3a71c4b82a890258cdaabfe83abe0b66ee5068038bf3c2ba2973dd6e31",
+      "checked_at": "2026-11-14T08:44:43.159087+00:00",
+      "reused_at": "2026-11-14T11:05:38.123169+00:00",
+      "network_requeried": false,
+      "published_at": null,
+      "first_available_at": null,
+      "text_extraction": {
+        "source_file": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210163555-REA-ui-flow.hwp",
+        "text_file": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210163555-REA-ui-flow.text.txt",
+        "sha256": "22d3413aeb59a27535efe4705639b43bb3b9210f3177fb57e7f8268c6ac3a622",
+        "method": "OLE BodyText sections; deflate per FileHeader flag; HWPTAG_PARA_TEXT records; strip 8-unit HWP controls; preserve paragraphs",
+        "characters": 567
+      }
+    },
+    {
+      "id": "krx-2405-full",
+      "url": "https://rule.krx.co.kr/Download.do",
+      "method": "POST",
+      "parameters": {
+        "Serverfile": "210163638.hwp",
+        "Pcfilename": "210163632.hwp",
+        "folder": "ATTACH"
+      },
+      "publisher": "한국거래소",
+      "source_type": "krx_registered_full_text_attachment",
+      "local_source": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210163555-JUN-fresh-ui.hwp",
+      "sha256": "c302b4685363c48b378bbe146e56f47afcbc86bd407f6e40be683fd08c8894a2",
+      "checked_at": "2026-11-14T08:45:23.155759+00:00",
+      "reused_at": "2026-11-14T11:05:38.123169+00:00",
+      "network_requeried": false,
+      "published_at": null,
+      "first_available_at": null,
+      "text_extraction": {
+        "source_file": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210163555-JUN-fresh-ui.hwp",
+        "text_file": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210163555-JUN-fresh-ui.text.txt",
+        "sha256": "d39cc26b8470e1c0a6ed4371a124ed5f5c12c82bfde825f64f92f16bb7dd7127",
+        "method": "OLE BodyText sections; deflate per FileHeader flag; HWPTAG_PARA_TEXT records; strip 8-unit HWP controls; preserve paragraphs",
+        "characters": 77150
+      }
+    },
+    {
+      "id": "krx-2433-full",
+      "url": "https://rule.krx.co.kr/Download.do",
+      "method": "POST",
+      "parameters": {
+        "Serverfile": "210200894.hwp",
+        "Pcfilename": "210200891.hwp",
+        "folder": "ATTACH"
+      },
+      "publisher": "한국거래소",
+      "source_type": "krx_registered_full_text_attachment",
+      "local_source": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210200859-JUN-fresh-ui.hwp",
+      "sha256": "c9d716840819bdc04ddecc903f493da596ea67aca62846907dcfdaa4211a89c7",
+      "checked_at": "2026-11-14T08:45:23.630110+00:00",
+      "reused_at": "2026-11-14T11:05:38.123169+00:00",
+      "network_requeried": false,
+      "published_at": null,
+      "first_available_at": null,
+      "text_extraction": {
+        "source_file": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210200859-JUN-fresh-ui.hwp",
+        "text_file": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210200859-JUN-fresh-ui.text.txt",
+        "sha256": "4cf4adf700a27e750c681865cb00edcb3ce41162822d91a6b1ae54c21236a9d4",
+        "method": "OLE BodyText sections; deflate per FileHeader flag; HWPTAG_PARA_TEXT records; strip 8-unit HWP controls; preserve paragraphs",
+        "characters": 77579
+      }
+    }
+  ],
+  "article_comparisons": [
+    {
+      "before": "kospi-210025251",
+      "after": "kospi-210163555",
+      "article_count": 177,
+      "changed_anchors": [
+        "bon18bu2"
+      ],
+      "unchanged_article_count": 176,
+      "locator": "Mjo main-body bon anchors; deleted article headings included in count",
+      "comparison": "Whitespace removed; curly quotation marks mapped to straight quotes. Amendment annotations inside Mjo retained. No date or legal text removed.",
+      "changed_article_hashes": {
+        "bon18bu2": {
+          "kospi-210025251": "d3205ec926184ac5b4997e67715b85aedcdb2ae5e0d948cd510d41e3f3d1b807",
+          "kospi-210163555": "051c36e74d6013f88edc5ed326ff9594076b059fc2117219abfc89405bb16aeb"
+        }
+      },
+      "artifact": {
+        "path": "/mnt/data/tmp/gs02-amendment-scope-20261114/kospi-210025251-kospi-210163555-bon18bu2.diff.txt",
+        "sha256": "96193978031fa58cd9e00fe394c3a7821f613ed808fb0ea912c643bc9e4fc1af"
+      }
+    },
+    {
+      "before": "kospi-210163555",
+      "after": "kospi-210200859",
+      "article_count": 177,
+      "changed_anchors": [
+        "bon26"
+      ],
+      "unchanged_article_count": 176,
+      "locator": "Mjo main-body bon anchors; deleted article headings included in count",
+      "comparison": "Whitespace removed; curly quotation marks mapped to straight quotes. Amendment annotations inside Mjo retained. No date or legal text removed.",
+      "changed_article_hashes": {
+        "bon26": {
+          "kospi-210163555": "f2b43e57654e027481f3b9e69ddb206a8b18f61bfc10599c76070ccde54d73ef",
+          "kospi-210200859": "60b31f57dd02dc162f809d86c12a696e87f610d77dd04b32739a552256c8c48d"
+        }
+      },
+      "artifact": {
+        "path": "/mnt/data/tmp/gs02-amendment-scope-20261114/kospi-210163555-kospi-210200859-bon26.diff.txt",
+        "sha256": "aeb426d7470b2bc26b4b9bb5fd8399eab221868d54effa9bfc09b90d2a7310fd"
+      }
+    }
+  ],
+  "unchanged_calendar_clause_checks": [
+    {
+      "anchor": "bon5",
+      "source_ids": [
+        "kospi-210025251",
+        "kospi-210163555",
+        "kospi-210200859"
+      ],
+      "meaning": "휴장일 열거와 시장관리상 휴장 재량",
+      "normalized_sha256": "7cb6d263eed26e6e7551b848d1a4122f446f13443d682993033e79e666e4382e",
+      "all_equal": true,
+      "inference_limit": "해당 조문 텍스트의 표본 버전 간 동일성. 날짜별 발동/비발동, 전체 버전 완전성, 계좌 적용을 증명하지 않는다."
+    },
+    {
+      "anchor": "bon7",
+      "source_ids": [
+        "kospi-210025251",
+        "kospi-210163555",
+        "kospi-210200859"
+      ],
+      "meaning": "보통거래 체결일부터3일째·휴장일 제외·비상 결제일 변경·세칙 예외",
+      "normalized_sha256": "21d71d3fc238fd14f23d329286a7214e58100c58cef44ceaabcbec85fae89a43",
+      "all_equal": true,
+      "inference_limit": "해당 조문 텍스트의 표본 버전 간 동일성. 날짜별 발동/비발동, 전체 버전 완전성, 계좌 적용을 증명하지 않는다."
+    },
+    {
+      "anchor": "bon9",
+      "source_ids": [
+        "kospi-enforcement-210162119",
+        "kospi-enforcement-210203562"
+      ],
+      "meaning": "국채/채무증권·단일회원 신청거래·거래소 매입인도의 결제종류 예외",
+      "normalized_sha256": "7c80ff174d8b772ec9a1ea84cda772c51f06ab2377e7a4a21547ae5892c3b402",
+      "all_equal": true,
+      "inference_limit": "해당 조문 텍스트의 표본 버전 간 동일성. 날짜별 발동/비발동, 전체 버전 완전성, 계좌 적용을 증명하지 않는다."
+    },
+    {
+      "anchor": "bon3",
+      "source_ids": [
+        "clearing-210018187",
+        "clearing-view"
+      ],
+      "meaning": "청산 휴장일과 휴장일 청산업무 재량",
+      "normalized_sha256": "9ca04f1e7e24d033d8959f9b21333dcf202ef7aca575b9716045d485ab173857",
+      "all_equal": true,
+      "inference_limit": "해당 조문 텍스트의 표본 버전 간 동일성. 날짜별 발동/비발동, 전체 버전 완전성, 계좌 적용을 증명하지 않는다."
+    },
+    {
+      "anchor": "bon6",
+      "source_ids": [
+        "clearing-210018187",
+        "clearing-view"
+      ],
+      "meaning": "청산결제 보통거래·휴장일 제외·비상 결제일 변경",
+      "normalized_sha256": "e7fde0e9d6a599428e82e84499903e8635d00c5a543cfaf9ad596d07741f59c3",
+      "all_equal": true,
+      "inference_limit": "해당 조문 텍스트의 표본 버전 간 동일성. 날짜별 발동/비발동, 전체 버전 완전성, 계좌 적용을 증명하지 않는다."
+    }
+  ],
+  "hwp_html_crosschecks": [
+    {
+      "bookid": "210163555",
+      "anchor": "bon5",
+      "extracted_clause_path": "/mnt/data/tmp/gs02-amendment-scope-20261114/hwp-210163555-bon5.txt",
+      "extracted_clause_sha256": "04b31a3a0ba9258914916ba73311cf46199db1f00c899ad1007fd34c34bf5856",
+      "whitespace_quote_normalized_equal": true,
+      "operative_text_equal_after_editorial_note_removal": true,
+      "annotation_difference": null
+    },
+    {
+      "bookid": "210163555",
+      "anchor": "bon7",
+      "extracted_clause_path": "/mnt/data/tmp/gs02-amendment-scope-20261114/hwp-210163555-bon7.txt",
+      "extracted_clause_sha256": "cafb702f3db776ad06838f0f215f7becc3633e4a8f30fa80671eb58171d1e2aa",
+      "whitespace_quote_normalized_equal": true,
+      "operative_text_equal_after_editorial_note_removal": true,
+      "annotation_difference": null
+    },
+    {
+      "bookid": "210163555",
+      "anchor": "bon18bu2",
+      "extracted_clause_path": "/mnt/data/tmp/gs02-amendment-scope-20261114/hwp-210163555-bon18bu2.txt",
+      "extracted_clause_sha256": "64f7efbd48352636c891a6fb8769aa33b797d527cc68be4e1869fa0c5b9d9d66",
+      "whitespace_quote_normalized_equal": false,
+      "operative_text_equal_after_editorial_note_removal": true,
+      "annotation_difference": "HWP에는 Mjo 밖 본조신설2009.3.4 주기가 포함됨."
+    },
+    {
+      "bookid": "210163555",
+      "anchor": "bon26",
+      "extracted_clause_path": "/mnt/data/tmp/gs02-amendment-scope-20261114/hwp-210163555-bon26.txt",
+      "extracted_clause_sha256": "7349fde974ac34e9606baaa1e8fdf5393ede8df81e430549c03d322e3f781dae",
+      "whitespace_quote_normalized_equal": true,
+      "operative_text_equal_after_editorial_note_removal": true,
+      "annotation_difference": null
+    },
+    {
+      "bookid": "210200859",
+      "anchor": "bon5",
+      "extracted_clause_path": "/mnt/data/tmp/gs02-amendment-scope-20261114/hwp-210200859-bon5.txt",
+      "extracted_clause_sha256": "04b31a3a0ba9258914916ba73311cf46199db1f00c899ad1007fd34c34bf5856",
+      "whitespace_quote_normalized_equal": true,
+      "operative_text_equal_after_editorial_note_removal": true,
+      "annotation_difference": null
+    },
+    {
+      "bookid": "210200859",
+      "anchor": "bon7",
+      "extracted_clause_path": "/mnt/data/tmp/gs02-amendment-scope-20261114/hwp-210200859-bon7.txt",
+      "extracted_clause_sha256": "cafb702f3db776ad06838f0f215f7becc3633e4a8f30fa80671eb58171d1e2aa",
+      "whitespace_quote_normalized_equal": true,
+      "operative_text_equal_after_editorial_note_removal": true,
+      "annotation_difference": null
+    },
+    {
+      "bookid": "210200859",
+      "anchor": "bon18bu2",
+      "extracted_clause_path": "/mnt/data/tmp/gs02-amendment-scope-20261114/hwp-210200859-bon18bu2.txt",
+      "extracted_clause_sha256": "64f7efbd48352636c891a6fb8769aa33b797d527cc68be4e1869fa0c5b9d9d66",
+      "whitespace_quote_normalized_equal": false,
+      "operative_text_equal_after_editorial_note_removal": true,
+      "annotation_difference": "HWP에는 Mjo 밖 본조신설2009.3.4 주기가 포함됨."
+    },
+    {
+      "bookid": "210200859",
+      "anchor": "bon26",
+      "extracted_clause_path": "/mnt/data/tmp/gs02-amendment-scope-20261114/hwp-210200859-bon26.txt",
+      "extracted_clause_sha256": "c865e4ff69d47b822b5540d1ba268c85fe89d23b331dd4f9b9ccbb675bbbdafe",
+      "whitespace_quote_normalized_equal": false,
+      "operative_text_equal_after_editorial_note_removal": true,
+      "annotation_difference": "HWP 제26조제3항 개정주기는0000.0.0, HTML은2026.4.15. 본문의 추가 상품/조건 문구는 일치. 이 주기를 시행일로 사용하지 않음."
+    }
+  ],
+  "comparison_artifact": {
+    "path": "/mnt/data/tmp/gs02-amendment-scope-20261114/article-comparison.json",
+    "sha256": "a8ee568c5a24c94b45ec588c3a1f70c7fff6175a0b84567152d54788dc41fc24"
+  },
+  "cases": [
+    {
+      "id": "kospi-rule-2405",
+      "before_source_id": "kospi-210025251",
+      "after_source_id": "kospi-210163555",
+      "amendment_source_ids": [
+        "krx-2405-amending-document",
+        "krx-2405-reason",
+        "krx-2405-full"
+      ],
+      "changed_clause": "제18조의2제2항 신설; 종전제2~6항을제3~7항으로 이동하고 같은 조 내부 인용 정비",
+      "changed_anchor": "bon18bu2",
+      "applicability": "법 시행령제208조의7제2항제1호라목의 조치 의무가 있는 법인의 매매거래; 개정이유는 NSDS 잔고 보고자라고 설명한다. 현재 모의계좌의 해당 여부는 미검증.",
+      "direct_finding": "결제수량 부족 시 무차입공매도 확인·기록유지 의무제1항을 면제한다. 결제일/결제시한 자체를 변경하거나 결제 불이행을 면제하는 문구는 아니다.",
+      "transitional_scope": "등록 개정문은 이 개정에 별도 경과적용/달력 예외를 두지 않는다. 그 부칙의 기존 시행일 상충/규정안 표시는 해결하지 않는다.",
+      "dependency_direction": "결제일 산정 → 잔고부족 확인 → 사후 확인·기록 의무/그 면제. 제18조의2가 제5조·제7조의 결제일을 재정의하지 않는다.",
+      "calendar_effect": "NO_CHANGE_IN_COMPARED_TEXT",
+      "changed_duty_effect": "CHANGED_FOR_SPECIFIED_REPORTING_CORPORATIONS",
+      "boundary_dependency_for_ordinary_stock_calendar": "NOT_A_MATERIAL_DEPENDENCY_IN_COMPARED_TEXT",
+      "finding_type": "변경범위와 불변조문은 직접대조; 실질적 의존관계 판정은 이 근거의 제한적 추론",
+      "canonical_effective_date": null,
+      "canonical_verdict": "HOLD",
+      "boundary_reinvestigated": false,
+      "target_dates": [
+        "2026-02-16",
+        "2026-02-17",
+        "2026-02-18",
+        "2026-03-02"
+      ]
+    },
+    {
+      "id": "kospi-rule-2433",
+      "before_source_id": "kospi-210163555",
+      "after_source_id": "kospi-210200859",
+      "amendment_source_ids": [
+        "krx-2433-full"
+      ],
+      "changed_clause": "부칙(유가증권시장 상장규정)제2433호제2조제1항이 업무규정제26조제3항을 개정",
+      "changed_anchor": "bon26",
+      "applicability": "기초 주권이 제26조제1항·제27조·제107조로 정지/중단된 경우 그 주권을 기초자산으로 하는 상장규정제113조제2항제4호다목(5)의 단일종목ETF 및 제149조의3제2항제2호다목의 단일종목ETN을 거래정지 가능 대상에 추가한다.",
+      "direct_finding": "개별 기초자산 연계상품의 매매거래정지 범위를 확대한다. 시장 전체의 휴장일/보통거래 결제일 산정이나 일반 주권 자체의 정지 요건을 이번 문구에서 변경하지 않는다.",
+      "transitional_scope": "업무규정 전문에 전재된 해당 부칙제1조의 연동 조건/제2조제1항을 확인했다. 상장규정 전체의 모든 개정·다른 규정 개정의 생략 부분까지 확인한 것은 아니다. 달력 조항에 별도 적용례/경과조건은 전재 범위에서 확인되지 않는다.",
+      "dependency_direction": "기초 주권의 정지/중단 → 해당 단일종목ETF/ETN 정지 가능. 시장 휴장일이나 이미 체결한 보통거래 결제일을 재정의하지 않는다.",
+      "calendar_effect": "NO_CHANGE_IN_COMPARED_TEXT",
+      "product_halt_effect": "CHANGED_FOR_SPECIFIED_SINGLE_STOCK_ETF_ETN",
+      "boundary_dependency_for_ordinary_stock_calendar": "NOT_A_MATERIAL_DEPENDENCY_IN_COMPARED_TEXT",
+      "finding_type": "변경범위와 불변조문은 직접대조; 실질적 의존관계 판정은 이 근거의 제한적 추론",
+      "canonical_effective_date": null,
+      "canonical_verdict": "HOLD",
+      "notice_final_linkage_researched": false,
+      "target_dates": [
+        "2026-05-01",
+        "2026-05-05",
+        "2026-05-25"
+      ]
+    }
+  ],
+  "date_results": [
+    {
+      "date": "2025-12-25",
+      "group": "other-eight",
+      "amendment_calendar_dependency": "NOT_REASSESSED",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-01-01",
+      "group": "other-eight",
+      "amendment_calendar_dependency": "NOT_REASSESSED",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-02-16",
+      "group": "2405-related",
+      "amendment_calendar_dependency": "NOT_A_MATERIAL_DEPENDENCY_IN_COMPARED_TEXT",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-02-17",
+      "group": "2405-related",
+      "amendment_calendar_dependency": "NOT_A_MATERIAL_DEPENDENCY_IN_COMPARED_TEXT",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-02-18",
+      "group": "2405-related",
+      "amendment_calendar_dependency": "NOT_A_MATERIAL_DEPENDENCY_IN_COMPARED_TEXT",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-03-02",
+      "group": "2405-related",
+      "amendment_calendar_dependency": "NOT_A_MATERIAL_DEPENDENCY_IN_COMPARED_TEXT",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-05-01",
+      "group": "2433-related",
+      "amendment_calendar_dependency": "NOT_A_MATERIAL_DEPENDENCY_IN_COMPARED_TEXT",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-05-05",
+      "group": "2433-related",
+      "amendment_calendar_dependency": "NOT_A_MATERIAL_DEPENDENCY_IN_COMPARED_TEXT",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-05-25",
+      "group": "2433-related",
+      "amendment_calendar_dependency": "NOT_A_MATERIAL_DEPENDENCY_IN_COMPARED_TEXT",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-07-17",
+      "group": "other-eight",
+      "amendment_calendar_dependency": "NOT_REASSESSED",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-08-17",
+      "group": "other-eight",
+      "amendment_calendar_dependency": "NOT_REASSESSED",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-09-24",
+      "group": "other-eight",
+      "amendment_calendar_dependency": "NOT_REASSESSED",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-09-25",
+      "group": "other-eight",
+      "amendment_calendar_dependency": "NOT_REASSESSED",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-10-05",
+      "group": "other-eight",
+      "amendment_calendar_dependency": "NOT_REASSESSED",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-10-09",
+      "group": "other-eight",
+      "amendment_calendar_dependency": "NOT_REASSESSED",
+      "settlement_verdict": "HOLD",
+      "date_specific_settlement_verified": false,
+      "account_application_verified": false
+    }
+  ],
+  "remaining_conditions": [
+    "날짜별 결제 운영 출력·공지와 비상/당일결제 등 예외의 실제 발동·비발동 근거.",
+    "같은 OpenAPI 모의계좌의 약관/특약·비용·실제 차감과 결제 대조.",
+    "과거 세션·종목 정지·기업행동·봉 시각/수신/완전성·비용모형 입력 계약.",
+    "2405 시행일 상충·2433 동일안 직접 연결·최초 정보가용/전체정정이력은 독립 미확정으로 보존. 달력 조항의 직접 변경이 확인되거나 해당 의무/상품 적용을 다룰 때 경계의 의존성을 다시 평가. 새 승인 없이 같은 검색을 자동 반복하지 않음."
+  ],
+  "summary": {
+    "reused_source_bodies": 11,
+    "new_legal_source_bodies": 0,
+    "main_articles_per_snapshot": 177,
+    "main_comparison_pairs": 2,
+    "changed_main_articles_per_pair": [
+      1,
+      1
+    ],
+    "unchanged_calendar_clause_groups": 5,
+    "target_dates_count": 7,
+    "other_dates_unchanged_count": 8,
+    "settlement_hold_count": 15,
+    "baseline_unchanged_file_count": 23,
+    "canonical_boundary_resolved_count": 0,
+    "new_date_specific_settlement_verified_count": 0,
+    "account_application_verified_count": 0,
+    "parent_new_tabs_created": 1,
+    "parent_new_sessions_created": 1,
+    "child_new_tabs_created": 0,
+    "child_new_sessions_created": 0,
+    "broker_authenticated_calls": 0,
+    "orders_sent": 0,
+    "evolve_runs": 0,
+    "backtests_run": 0,
+    "automatic_orders": "OFF",
+    "backtest_ready": false,
+    "issue11_state": "OPEN",
+    "issue11_acceptance_completed_count": 1,
+    "corporate_actions_hold_count": 8,
+    "local_code_tests": "NOT_RUN: no code change",
+    "external_review": "NOT_RUN: explicitly scoped public-document investigation",
+    "result": "두 개정의 불확정 경계는 비교한 일반 주식 휴장·결제일 산정 조문에 실질 의존조건이 아니다. 변경 의무/상품 정지의 적용 경계와 날짜별 실제 결제는 별도이며 기존null/HOLD를 보존한다.",
+    "stage_deliverable": "공개 문서 대조와 제한적 의존관계 판정. 전체 계약 완료/사용자 결과 수용 아님."
+  },
+  "validation": {
+    "checked_at": "2026-11-14T11:08:02.190173+00:00",
+    "result": "PASS",
+    "checks": {
+      "baseline_unchanged_file_count": 23,
+      "raw_and_extracted_source_count": 11,
+      "full_main_article_comparison_pairs": 2,
+      "unchanged_calendar_clause_groups": 5,
+      "hwp_html_clause_crosschecks": 8,
+      "session_baseline_and_visibility_hashes": "PASS",
+      "date_groups_and_hold": "7+8=15; original17 and canonicalnull preserved",
+      "prior_research_prefix": "UNCHANGED",
+      "relative_links_and_anchors": 32,
+      "changed_tracked_and_new_owned_files": 4,
+      "unrelated_file": ".infisical.yaml listed only; no read/stage",
+      "local_code_tests": "NOT_RUN",
+      "external_review": "NOT_RUN",
+      "evolve": "NOT_RUN"
+    },
+    "artifact": "/mnt/data/tmp/gs02-amendment-scope-20261114/validation.json",
+    "remote_delivery": "PR/required CI/main SHA and four remote blobs/body verification are recorded in Issue #11 result handoff; not implied by local checks."
+  }
+}
