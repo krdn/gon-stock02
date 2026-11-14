@@ -1,5 +1,7 @@
 # Issue #11 — 공개 계약 조사 재개
 
+> 2026-11-14 작업 분리: 이 파일은 완료된 조사 기록이다. 현재 실행 순서와 재개 조건은 [필수 검증과 조건부 조사](11-validation-routing.md)를 따른다. 아래 과거 단계의 다음 행동만으로 조사를 자동 재개하지 않는다.
+
 - 작업/기준 이슈: https://github.com/krdn/gon-stock02/issues/11
 - 사용자 범위·단계·최초 담당: [authorization](https://github.com/krdn/gon-stock02/issues/11#issuecomment-6870021801). 승인된 단계는 `11-contract-research-20261114` 하나이며 이 단계에서 종료한다.
 - 전환 ID: `issue11-contract-research-20261114`. dispatch·기준 HEAD·인계 blob·기존 별도 변경·자기 세션 ID는 Issue #11의 최신 유효 pending/started 댓글에서 대조한다.
