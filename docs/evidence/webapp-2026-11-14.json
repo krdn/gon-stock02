@@ -1,0 +1,180 @@
+{
+  "checked_at": "2026-11-14T13:24:54.029258+00:00",
+  "issue": "https://github.com/krdn/gon-stock02/issues/41",
+  "baseline_main": "d3285557c8a0b9b840b71d6ec4b097eaef625409",
+  "scope": "Local stored-data web UI; no broker requests or writes",
+  "tests": {
+    "unittest": {
+      "status": "PASS",
+      "total": 113,
+      "web": 21
+    },
+    "javascript_syntax": "PASS",
+    "wheel_sdist": "PASS",
+    "wheel_static_assets": "PASS",
+    "archives_exclude_runtime_data": "PASS",
+    "order_service_integration": "PASS: actual OrderService schema and submit persistence with an in-memory broker stub; no HTTP; all fixture directory bytes unchanged by web read"
+  },
+  "browser": {
+    "engine": "Chromium via agent-browser",
+    "viewports": [
+      [
+        1440,
+        1050
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "verified": [
+      "four-symbol saved prices and chart",
+      "daily/minute and bundle selection",
+      "2026-11-13 minute filter: 381 rows",
+      "browser CSV download: 381 rows, requested date only, all strategy_eligible false",
+      "hypothetical risk: 20 shares / 24000 KRW planned loss",
+      "real local empty ledger; not current broker balance",
+      "temporary empty dataset/ledger states",
+      "temporary corrupt bundle: chart and CSV blocked, stale prices removed",
+      "mobile document width 390; table scroll confined and keyboard focusable",
+      "offline refresh failure shown with stale-data notice; online retry recovered",
+      "zero-price latest observation: no 0 KRW quote or -100% change",
+      "130 observations with two zero-price rows: price line has two valid segments, no fabricated fall to zero",
+      "keyboard symbol activation preserves focus; next Tab reaches next symbol",
+      "pending date edits distinguished from applied filter",
+      "corrupt manifest shows unknown collection state",
+      "isolated valid price between zeros drawn as a point",
+      "synthetic actual OrderService OPEN order rendered in mobile ledger, no undefined fields",
+      "main exists with tabindex -1; menu navigation focuses main",
+      "cross-site top-level link opens app; API and POST remain cross-site blocked"
+    ],
+    "accessibility": {
+      "a11y-data-mobile": {
+        "counts": {
+          "inapplicable": 50,
+          "incomplete": 1,
+          "passes": 39,
+          "violations": 0
+        },
+        "violations": []
+      },
+      "a11y-data": {
+        "counts": {
+          "inapplicable": 51,
+          "incomplete": 1,
+          "passes": 38,
+          "violations": 0
+        },
+        "violations": []
+      },
+      "a11y-desktop": {
+        "counts": {
+          "inapplicable": 45,
+          "incomplete": 1,
+          "passes": 44,
+          "violations": 0
+        },
+        "violations": []
+      },
+      "a11y-fixture-ledger-mobile": {
+        "counts": {
+          "inapplicable": 50,
+          "incomplete": 1,
+          "passes": 39,
+          "violations": 0
+        },
+        "violations": []
+      },
+      "a11y-ledger-mobile": {
+        "counts": {
+          "inapplicable": 58,
+          "incomplete": 1,
+          "passes": 31,
+          "violations": 0
+        },
+        "violations": []
+      },
+      "a11y-mobile": {
+        "counts": {
+          "inapplicable": 44,
+          "incomplete": 1,
+          "passes": 45,
+          "violations": 0
+        },
+        "violations": []
+      },
+      "a11y-risk-mobile": {
+        "counts": {
+          "inapplicable": 52,
+          "incomplete": 1,
+          "passes": 37,
+          "violations": 0
+        },
+        "violations": []
+      }
+    },
+    "accessibility_limit": "axe incomplete icon contrast items require manual judgment; not a full accessibility certification",
+    "console_errors_before_intentional_offline_test": 0
+  },
+  "preservation": {
+    "order_submission_enabled": false,
+    "backtest_ready": false,
+    "broker_requests": 0,
+    "order_requests": 0,
+    "ledger_writes": 0,
+    "original_dataset_writes": 0,
+    "observed_existing_ledger_journal_mode": "delete"
+  },
+  "runtime_artifacts": {
+    "directory": "/tmp/gs02-web-evidence",
+    "published": false,
+    "sha256": {
+      "fixture-ledger-mobile.png": "827a4d5794b5e01546020379a0692bb4353c54ea5e48f478bd2ea54225e70f59",
+      "mobile-final.png": "c3839edbe8f0e748d01f926a81b3fd41e8869a61006a1ef6e1adb2b79eee6caa",
+      "zero-price.csv": "fd934c2e2adefcbafd69d1516854b3571451049ff91017faeb3f9e612b8153a7",
+      "risk-blocked.png": "86a5756d19060b7ab9c55f8200588604373e01c1beeb1e90e65df7c2ea4477c5",
+      "desktop-final.png": "47f27e3b8d3a7ad13e12fd3c5fdb258268de1e7eeb93efacbe14f6238187ccf1",
+      "data-mobile.png": "a485a8b3f58f5fd8a55737b30803723878f96682e28938fefd145292e29bda67",
+      "risk-mobile.png": "31c11ffd64e54819e526051e104e94ca1d9c74d015a9d571df075aa515532081",
+      "mobile.png": "b0a0789b82503df7af453f4c024d9c4005ef58e147b73bda050b59b76e73b0dc",
+      "minute-filtered.csv": "504fdb7d8bd46e593cff40e92aff6b72bcd9bbe6a9a002e298a4ef6bca1ffcab",
+      "risk-before.png": "9b2287ccd8a9ed161eeef2697e01c3e79063752b16cbc73ffb3af20345bdd578",
+      "desktop.png": "47f27e3b8d3a7ad13e12fd3c5fdb258268de1e7eeb93efacbe14f6238187ccf1"
+    }
+  },
+  "review": {
+    "status": "NO_CONFIRMED_CRITICAL_OR_HIGH",
+    "requested_model": "claude-opus-5-5",
+    "effort": "high",
+    "returned_models": [
+      "claude-opus-5-5",
+      "claude-opus-5-5"
+    ],
+    "first_pass": "No CRITICAL/HIGH; zero-price display and keyboard/metadata clarity corrections applied",
+    "first_packet_sha256": "108439b1a904bbc73a4c58912fa65f27c6e2d512fec63e7cfbb577f80c1149c2",
+    "first_result_sha256": "ca2780908cfaae83def4dafdef8e25dc4dff5319d08684d2f7ee108074138261",
+    "corrections_review_exit": 0,
+    "corrections_packet_sha256": "9d7ad099c74533356ea8c799182e4b909cb3a470910d215c3d40972d4337b48c",
+    "corrections_result_sha256": "59ce58d9b1cf2cd1d5a2ad817eb09ecc6bcf39db7727af94d22d2c90a0063805",
+    "local_followup": "Remaining LOW findings corrected or source/browser-verified; top-level HTML navigation exception added after correction review packet, covered by regression and browser test; no third review loop",
+    "report": "docs/reviews/webapp-2026-11-14.md"
+  },
+  "not_verified": [
+    "live quotes",
+    "broker order lifecycle and account fees",
+    "backtest profitability",
+    "remote hosting",
+    "multi-user access",
+    "external WAL ledger sidecar behavior"
+  ],
+  "source_sha256": {
+    "src/gon_stock02/web.py": "f9c446357160283d71176abfa849fd70d77387e1c848bd59a318945be0bc42ff",
+    "src/gon_stock02/web_data.py": "165ae60976f486e0ec15edee8371cad5c205921dc6291da9bbe41ee9725a5a7d",
+    "src/gon_stock02/web_static/index.html": "0571b11a3dca462c0cf529ffda91abb69514438fcf42441c04e94af413ccf79c",
+    "src/gon_stock02/web_static/app.css": "b961396745031189871153bf6d374a48d0e23f6632c452b4a79b4136f956344c",
+    "src/gon_stock02/web_static/app.js": "f4f9d4e2dd724b64aa773f8a3c45ce60b880576044bd05cc8b11207dda68123a",
+    "tests/test_web.py": "0162e77dcfb1a539dece9854e77db23575e8192649cd933491241a0c74956569",
+    "pyproject.toml": "b0be7cd69aea89100cb56dffe51c18e182bf449212e48427d9abca6e667f75a5",
+    "uv.lock": "cee8af1570e7982caf5bb22c887f2bfa3856b9c3580fea5db831c1aa6614711b"
+  }
+}

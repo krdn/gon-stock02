@@ -6,6 +6,19 @@
 
 [3단계 계획](docs/plans/short-term-trading-2026-11.md) · [현재 상태](docs/STATE.md)
 
+## 웹앱
+
+```sh
+uv sync --locked
+uv run gs02-web
+```
+
+[http://127.0.0.1:8787](http://127.0.0.1:8787)에서 대시보드, 4종목 일봉·분봉 차트와 CSV,
+수집 자료의 해시·품질 상태, 위험 수량 계산, 모의 주문 장부를 확인합니다.
+기존 로컬 저장 자료를 사용하며 실시간 시세·주문 실행·백테스트 기능은 활성화하지 않습니다.
+
+[웹앱 사용법](docs/operations/webapp.md) · [구현 범위와 검증](docs/tasks/41-webapp.md)
+
 [AI의 단계별 새 세션 전환](docs/operations/session-handoff.md) · [적용·검증 기록](docs/tasks/16-native-session-handoff.md)
 
 1단계의 KIS 모의 조회·KRX/NXT 시세 수신·위험 계산·Buzz 연구 경로를 구현했습니다.
