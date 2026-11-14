@@ -1,5 +1,7 @@
 # Issue #11 — 개정 범위와 결제 판정의 의존관계
 
+> 2026-11-14 작업 분리: 이 조사는 PR #36으로 종료했다. 이후 작업은 [필수 검증과 조건부 조사](11-validation-routing.md)를 따른다. 아래의 세션 생성·조사 지시는 완료된 단계의 기록이며 다시 실행하지 않는다.
+
 [이번 사용자 지시/승인](https://github.com/krdn/gon-stock02/issues/11#issuecomment-6876202040) · [직전 결과](https://github.com/krdn/gon-stock02/issues/11#issuecomment-6876126042). 허용 목록/마지막 단계는`11-settlement-amendment-scope-20261114` 하나다. 전환ID=`issue11-settlement-amendment-scope-20261114`, 최초 담당=`01a1d94f-05d3-77c0-b955-54ad19fcb0c7`다.
 
 ## 새 탭 확인과 시작 조건
