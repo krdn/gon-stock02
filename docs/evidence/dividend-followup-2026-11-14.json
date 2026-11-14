@@ -1,0 +1,739 @@
+{
+  "checked_at": "2026-11-14T05:22:06.740888+00:00",
+  "issue": "https://github.com/krdn/gon-stock02/issues/11",
+  "stage": "11-dividend-followup-20261114",
+  "authorization_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6872122309",
+  "owner_thread_id": "01a1d7da-b8cf-7031-ac86-0b8c5a680972",
+  "base_commit": "e4f7d96a6c1a6382ed09e2e686599416a17b49c4",
+  "prior_evidence": {
+    "path": "docs/evidence/corporate-actions-2026-11-14.json",
+    "sha256": "ba0156e63abd7b2b4af18e99112a84fbc3567f1e0b33ce4b41f2515a9b18e20b",
+    "changed": false
+  },
+  "public_sources": [
+    {
+      "id": "kis-yearend",
+      "url": "https://securities.koreainvestment.com/main/customer/notice/Notice.jsp?cmd=TF04ga000002&num=45922",
+      "http_status": 200,
+      "final_url": "https://securities.koreainvestment.com/main/customer/notice/Notice.jsp?cmd=TF04ga000002&num=45922",
+      "sha256": "9cecc9659e31784c79b1fc4502e1daf7eb621dad4ff1fa7729244b83650d646f",
+      "local_source": "/mnt/data/tmp/gs02-dividend-followup-20261114/kis-yearend.html",
+      "checked_at": "2026-11-14T05:06:11.662070+00:00",
+      "published_at_kst": "2025-12-26 10:12",
+      "facts": {
+        "year_end_record_date_condition": "Companies that set the dividend record date at year end.",
+        "ex_dividend_date": "2025-12-29",
+        "last_cum_dividend_buy_date": "2025-12-26",
+        "last_trading_date": "2025-12-30",
+        "closed_and_not_settlement_date": "2025-12-31",
+        "trade_2025_12_29_settles": "2026-01-02",
+        "trade_2025_12_30_settles": "2026-01-05"
+      }
+    },
+    {
+      "id": "krx-t2",
+      "url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T1.jsp",
+      "http_status": 200,
+      "final_url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T1.jsp",
+      "sha256": "fb10f1d109b37e8ab1f06c277a7f4a091a73fd398e4c7b3890caae12efdc1ffb",
+      "local_source": "/mnt/data/tmp/gs02-dividend-followup-20261114/krx-t2.html",
+      "checked_at": "2026-11-14T05:06:10.813976+00:00",
+      "facts": {
+        "settlement": "T+2",
+        "normal_trading_days": "Monday through Friday",
+        "closures_excluded_from_trading_and_settlement": true,
+        "historical_rule_version_verified": false
+      }
+    },
+    {
+      "id": "krx-session-rule",
+      "url": "https://regulation.krx.co.kr/contents/RGL/03/03020401/RGL03020401.jsp",
+      "http_status": 200,
+      "final_url": "https://regulation.krx.co.kr/contents/RGL/03/03020401/RGL03020401.jsp",
+      "sha256": "6464ae6a01c0ccabe3e72e979fd21bd5a3c51023b691fd150edea7eda65e48ed",
+      "local_source": "/mnt/data/tmp/gs02-dividend-followup-20261114/krx-session-rule.html",
+      "checked_at": "2026-11-14T05:06:10.873150+00:00",
+      "facts": {
+        "saturday_closed": true,
+        "scope": "General current operating rule, not a dated halt/calendar output."
+      }
+    }
+  ],
+  "approval_sources": [
+    {
+      "id": "20260325001452",
+      "symbol": "000660",
+      "published_at_kst": "2026-03-25 18:09",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260325001452&docno=&viewerhost=&viewerport=",
+      "captured_at": "2026-11-14T05:07:54.874Z",
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/20260325001452-agm-document.json",
+      "sha256": "c921c66c456e4b05f660d3709906a4d4be63784a975ba93ae6779488b68a9467",
+      "text_sha256": "096171605924aa0ebaa64e9abdde0d54cff9b566e1fb32811d61fd1013baeb99",
+      "agm_date": "2026-03-25",
+      "financial_statements_approved": true,
+      "common_final_dividend_krw": 1875,
+      "interim_quarterly_dividend_krw": 1125,
+      "agrees_with_prior_board_decision": true,
+      "payment_verified": false
+    },
+    {
+      "id": "20260318001211",
+      "symbol": "005930",
+      "published_at_kst": "2026-03-18 16:30",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318001211&docno=&viewerhost=&viewerport=",
+      "captured_at": "2026-11-14T05:07:55.567Z",
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/20260318001211-agm-document.json",
+      "sha256": "36715ed6101ea595085629726126609e15b00ecdf1abf8947a99e7a3a708bb88",
+      "text_sha256": "2091e21cefa8216cdc23522578fd97a2541d9b42bd565d7ed3c758449aa79444",
+      "agm_date": "2026-03-18",
+      "financial_statements_approved": true,
+      "common_final_dividend_krw": 566,
+      "interim_quarterly_dividend_krw": 1102,
+      "agrees_with_prior_board_decision": true,
+      "payment_verified": false
+    },
+    {
+      "id": "20260318001829",
+      "symbol": "009150",
+      "published_at_kst": "2026-03-18 17:33",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260318001829&docno=&viewerhost=&viewerport=",
+      "captured_at": "2026-11-14T05:07:56.287Z",
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/20260318001829-agm-document.json",
+      "sha256": "efac2528c2948f247b767703410a96123bca8bf6fdd674a626356a9e291728ce",
+      "text_sha256": "39657d07b9079b3a006d80a1f8bc9dfd780b78e38e4d6736610d446681a3a9fd",
+      "agm_date": "2026-03-18",
+      "financial_statements_approved": true,
+      "common_final_dividend_krw": 2350,
+      "interim_quarterly_dividend_krw": null,
+      "agrees_with_prior_board_decision": true,
+      "payment_verified": false
+    },
+    {
+      "id": "20260326000938",
+      "symbol": "036930",
+      "published_at_kst": "2026-03-26 15:04",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260326000938&docno=&viewerhost=&viewerport=",
+      "captured_at": "2026-11-14T05:07:56.944Z",
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/20260326000938-agm-document.json",
+      "sha256": "6d4f5866d17724f8f553b51090dab708d3676e1c3981ea04b6a063f2f300dcb2",
+      "text_sha256": "d4c673ab1ec75043a10b6c1b5db063cb5a69052394a5264ec05a4d3de4dd387d",
+      "agm_date": "2026-03-26",
+      "financial_statements_approved": true,
+      "common_final_dividend_krw": 53,
+      "interim_quarterly_dividend_krw": null,
+      "agrees_with_prior_board_decision": true,
+      "payment_verified": false
+    }
+  ],
+  "ksd_lookup_sources": [
+    {
+      "id": "ksd-lookup-000660",
+      "symbol": "000660",
+      "source_url": "https://seibro.or.kr/websquare/control.jsp?w2xPath=/IPORTAL/user/company/BIP_CNTS01041V.xml&menuNo=285#",
+      "observed_at": "2026-11-14T05:13:01.297Z",
+      "query": {
+        "Com_ISIN_input_0": "종목",
+        "INPUT_SN2": "에스케이하이닉스",
+        "select_stockKind2_input_0": "보통주",
+        "select_allocation_input_0": "현금배당",
+        "select_marketKind_input_0": "전체",
+        "inputCalendar1_input": "2025/11/15",
+        "inputCalendar2_input": "2026/11/14",
+        "selectbox1_input_0": "1개월"
+      },
+      "visible_row_count": 4,
+      "rows": [
+        {
+          "record_date": "2026-08-31",
+          "cash_payment_date_displayed": "2026-09-30",
+          "common_dividend_krw": 375
+        },
+        {
+          "record_date": "2026-05-31",
+          "cash_payment_date_displayed": "2026-06-30",
+          "common_dividend_krw": 375
+        },
+        {
+          "record_date": "2026-02-28",
+          "cash_payment_date_displayed": "2026-04-24",
+          "common_dividend_krw": 1875
+        },
+        {
+          "record_date": "2025-11-30",
+          "cash_payment_date_displayed": "2025-12-30",
+          "common_dividend_krw": 375
+        }
+      ],
+      "warning": "The page says dividend details may not be final; check the reason-specific dividend-schedule page.",
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/000660-seibro-dividends-visible.json",
+      "sha256": "02d4323e9b24c35ef5a1adfceb082ccc4660db69e3c0568aa83d90e17fe7d81f",
+      "all_visible_rows_read": true
+    },
+    {
+      "id": "ksd-lookup-005930",
+      "symbol": "005930",
+      "source_url": "https://seibro.or.kr/websquare/control.jsp?w2xPath=/IPORTAL/user/company/BIP_CNTS01041V.xml&menuNo=285#",
+      "observed_at": "2026-11-14T05:14:27.685Z",
+      "query": {
+        "Com_ISIN_input_0": "종목",
+        "INPUT_SN2": "삼성전자",
+        "select_stockKind2_input_0": "보통주",
+        "select_allocation_input_0": "현금배당",
+        "select_marketKind_input_0": "전체",
+        "inputCalendar1_input": "2025/11/15",
+        "inputCalendar2_input": "2026/11/14",
+        "selectbox1_input_0": "1개월"
+      },
+      "visible_row_count": 4,
+      "rows": [
+        {
+          "record_date": "2026-09-30",
+          "cash_payment_date_displayed": "2026-11-27",
+          "common_dividend_krw": 4601
+        },
+        {
+          "record_date": "2026-06-30",
+          "cash_payment_date_displayed": "2026-08-28",
+          "common_dividend_krw": 374
+        },
+        {
+          "record_date": "2026-03-31",
+          "cash_payment_date_displayed": "2026-05-29",
+          "common_dividend_krw": 372
+        },
+        {
+          "record_date": "2025-12-31",
+          "cash_payment_date_displayed": "2026-04-17",
+          "common_dividend_krw": 566
+        }
+      ],
+      "warning": "The page says dividend details may not be final; check the reason-specific dividend-schedule page.",
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/005930-seibro-dividends-visible.json",
+      "sha256": "95d25c67986691fe666b7b75d296214932f4d61a187d9c480300e2bc906a0a9d",
+      "all_visible_rows_read": true
+    },
+    {
+      "id": "ksd-lookup-009150",
+      "symbol": "009150",
+      "source_url": "https://seibro.or.kr/websquare/control.jsp?w2xPath=/IPORTAL/user/company/BIP_CNTS01041V.xml&menuNo=285#",
+      "observed_at": "2026-11-14T05:14:30.555Z",
+      "query": {
+        "Com_ISIN_input_0": "종목",
+        "INPUT_SN2": "삼성전기",
+        "select_stockKind2_input_0": "보통주",
+        "select_allocation_input_0": "현금배당",
+        "select_marketKind_input_0": "전체",
+        "inputCalendar1_input": "2025/11/15",
+        "inputCalendar2_input": "2026/11/14",
+        "selectbox1_input_0": "1개월"
+      },
+      "visible_row_count": 1,
+      "rows": [
+        {
+          "record_date": "2025-12-31",
+          "cash_payment_date_displayed": "2026-04-17",
+          "common_dividend_krw": 2350
+        }
+      ],
+      "warning": "The page says dividend details may not be final; check the reason-specific dividend-schedule page.",
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/009150-seibro-dividends-visible.json",
+      "sha256": "0d76f836d1ae9e6a15bc58bde28f1685d05c68ddb02cfa6972df60337650504c",
+      "all_visible_rows_read": true
+    },
+    {
+      "id": "ksd-lookup-036930",
+      "symbol": "036930",
+      "source_url": "https://seibro.or.kr/websquare/control.jsp?w2xPath=/IPORTAL/user/company/BIP_CNTS01041V.xml&menuNo=285#",
+      "observed_at": "2026-11-14T05:14:33.472Z",
+      "query": {
+        "Com_ISIN_input_0": "종목",
+        "INPUT_SN2": "주성엔지니어링",
+        "select_stockKind2_input_0": "보통주",
+        "select_allocation_input_0": "현금배당",
+        "select_marketKind_input_0": "전체",
+        "inputCalendar1_input": "2025/11/15",
+        "inputCalendar2_input": "2026/11/14",
+        "selectbox1_input_0": "1개월"
+      },
+      "visible_row_count": 1,
+      "rows": [
+        {
+          "record_date": "2025-12-31",
+          "cash_payment_date_displayed": "2026-04-23",
+          "common_dividend_krw": 53
+        }
+      ],
+      "warning": "The page says dividend details may not be final; check the reason-specific dividend-schedule page.",
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/036930-seibro-dividends-visible.json",
+      "sha256": "edf922277756a77e47ea6af8f309676708e03d4355c36d0c6c9e9ce15d17bd16",
+      "all_visible_rows_read": true
+    }
+  ],
+  "ksd_confirmation_sources": [
+    {
+      "id": "ksd-confirm-000660-20251130",
+      "symbol": "000660",
+      "record_date": "2025-11-30",
+      "source_url": "https://seibro.or.kr/websquare/control.jsp?w2xPath=/IPORTAL/user/company/BIP_CNTS01027V.xml&menuNo=276&reason=103#",
+      "observed_at": "2026-11-14T05:18:06.220Z",
+      "confirmed_literal": "확정",
+      "common_dividend_krw": 375,
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/000660-20251130-ksd-confirmation.json",
+      "sha256": "9f59f1a2e6a4d122f088adb312f002848882c872bdd4125f8f308c83d023dcd0",
+      "meaning": "Observed dividend-finality field, not proof of a payment transaction or a deposit into this mock account."
+    },
+    {
+      "id": "ksd-confirm-000660-20260228",
+      "symbol": "000660",
+      "record_date": "2026-02-28",
+      "source_url": "https://seibro.or.kr/websquare/control.jsp?w2xPath=/IPORTAL/user/company/BIP_CNTS01027V.xml&menuNo=276&reason=103#",
+      "observed_at": "2026-11-14T05:18:06.991Z",
+      "confirmed_literal": "확정",
+      "common_dividend_krw": 1875,
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/000660-20260228-ksd-confirmation.json",
+      "sha256": "86acf86a86ea8c07d6eca7dd1b9d9bfe4bf65b153452e056e5a2df4479e2bad8",
+      "meaning": "Observed dividend-finality field, not proof of a payment transaction or a deposit into this mock account."
+    },
+    {
+      "id": "ksd-confirm-000660-20260531",
+      "symbol": "000660",
+      "record_date": "2026-05-31",
+      "source_url": "https://seibro.or.kr/websquare/control.jsp?w2xPath=/IPORTAL/user/company/BIP_CNTS01027V.xml&menuNo=276&reason=103#",
+      "observed_at": "2026-11-14T05:18:07.785Z",
+      "confirmed_literal": "확정",
+      "common_dividend_krw": 375,
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/000660-20260531-ksd-confirmation.json",
+      "sha256": "97862a086bdeb00acba1fcfd68103b3f9284a1ce545a050eaaa7aa8418465ec7",
+      "meaning": "Observed dividend-finality field, not proof of a payment transaction or a deposit into this mock account."
+    },
+    {
+      "id": "ksd-confirm-000660-20260831",
+      "symbol": "000660",
+      "record_date": "2026-08-31",
+      "source_url": "https://seibro.or.kr/websquare/control.jsp?w2xPath=/IPORTAL/user/company/BIP_CNTS01027V.xml&menuNo=276&reason=103#",
+      "observed_at": "2026-11-14T05:18:08.557Z",
+      "confirmed_literal": "확정",
+      "common_dividend_krw": 375,
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/000660-20260831-ksd-confirmation.json",
+      "sha256": "cc60964266da79d02c490b1effad48f98ef6dec0c3ec4eeeb7988ac6e3c347d3",
+      "meaning": "Observed dividend-finality field, not proof of a payment transaction or a deposit into this mock account."
+    },
+    {
+      "id": "ksd-confirm-005930-20251231",
+      "symbol": "005930",
+      "record_date": "2025-12-31",
+      "source_url": "https://seibro.or.kr/websquare/control.jsp?w2xPath=/IPORTAL/user/company/BIP_CNTS01027V.xml&menuNo=276&reason=103#",
+      "observed_at": "2026-11-14T05:18:11.316Z",
+      "confirmed_literal": "확정",
+      "common_dividend_krw": 566,
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/005930-20251231-ksd-confirmation.json",
+      "sha256": "f73a7cd808543172a899e8441b5d01a7d353dad2ab0358d4cdd60feadd02aeb3",
+      "meaning": "Observed dividend-finality field, not proof of a payment transaction or a deposit into this mock account."
+    },
+    {
+      "id": "ksd-confirm-005930-20260930",
+      "symbol": "005930",
+      "record_date": "2026-09-30",
+      "source_url": "https://seibro.or.kr/websquare/control.jsp?w2xPath=/IPORTAL/user/company/BIP_CNTS01027V.xml&menuNo=276&reason=103#",
+      "observed_at": "2026-11-14T05:18:12.088Z",
+      "confirmed_literal": "확정",
+      "common_dividend_krw": 4601,
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/005930-20260930-ksd-confirmation.json",
+      "sha256": "d95afc5ca6ef7a7a0dad88ab09d1a7664267500039f1fb73695ed8f4e8cf1823",
+      "meaning": "Observed dividend-finality field, not proof of a payment transaction or a deposit into this mock account."
+    },
+    {
+      "id": "ksd-confirm-009150-20251231",
+      "symbol": "009150",
+      "record_date": "2025-12-31",
+      "source_url": "https://seibro.or.kr/websquare/control.jsp?w2xPath=/IPORTAL/user/company/BIP_CNTS01027V.xml&menuNo=276&reason=103#",
+      "observed_at": "2026-11-14T05:18:14.685Z",
+      "confirmed_literal": "확정",
+      "common_dividend_krw": 2350,
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/009150-20251231-ksd-confirmation.json",
+      "sha256": "6a992e5c0e7c87205dfd49c46012d4f952aa67b74290755a7f99679cf26f58e0",
+      "meaning": "Observed dividend-finality field, not proof of a payment transaction or a deposit into this mock account."
+    },
+    {
+      "id": "ksd-confirm-036930-20251231",
+      "symbol": "036930",
+      "record_date": "2025-12-31",
+      "source_url": "https://seibro.or.kr/websquare/control.jsp?w2xPath=/IPORTAL/user/company/BIP_CNTS01027V.xml&menuNo=276&reason=103#",
+      "observed_at": "2026-11-14T05:18:17.163Z",
+      "confirmed_literal": "확정",
+      "common_dividend_krw": 53,
+      "local_capture": "/mnt/data/tmp/gs02-dividend-followup-20261114/036930-20251231-ksd-confirmation.json",
+      "sha256": "4d48a6e5c7c301f19fe30d5c919fe94c4fb18fe262ab7d3fe7aa4ecad168628b",
+      "meaning": "Observed dividend-finality field, not proof of a payment transaction or a deposit into this mock account."
+    }
+  ],
+  "five_date_followups": [
+    {
+      "symbol": "000660",
+      "supplier_marker_date": "2026-02-26",
+      "record_date": "2026-02-28",
+      "resolved_or_candidate_ex_date": "2026-02-26",
+      "status": "RULE_DERIVED_CANDIDATE",
+      "supporting_source_ids": [
+        "krx-t2",
+        "krx-session-rule"
+      ],
+      "date_specific_official_notice_obtained": false,
+      "historical_settlement_exceptions_verified": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "000660",
+      "supplier_marker_date": "2026-08-28",
+      "record_date": "2026-08-31",
+      "resolved_or_candidate_ex_date": "2026-08-28",
+      "status": "RULE_DERIVED_CANDIDATE",
+      "supporting_source_ids": [
+        "krx-t2",
+        "krx-session-rule"
+      ],
+      "date_specific_official_notice_obtained": false,
+      "historical_settlement_exceptions_verified": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "005930",
+      "supplier_marker_date": "2025-12-29",
+      "record_date": "2025-12-31",
+      "resolved_or_candidate_ex_date": "2025-12-29",
+      "status": "BROKER_YEAR_END_NOTICE_APPLIED_TO_ISSUER_RECORD_DATE",
+      "supporting_source_ids": [
+        "kis-yearend",
+        "20260129000004"
+      ],
+      "date_specific_official_notice_obtained": true,
+      "condition_matches_issuer_record_date": true,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "009150",
+      "supplier_marker_date": "2025-12-29",
+      "record_date": "2025-12-31",
+      "resolved_or_candidate_ex_date": "2025-12-29",
+      "status": "BROKER_YEAR_END_NOTICE_APPLIED_TO_ISSUER_RECORD_DATE",
+      "supporting_source_ids": [
+        "kis-yearend",
+        "20260123000210"
+      ],
+      "date_specific_official_notice_obtained": true,
+      "condition_matches_issuer_record_date": true,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "036930",
+      "supplier_marker_date": "2025-12-29",
+      "record_date": "2025-12-31",
+      "resolved_or_candidate_ex_date": "2025-12-29",
+      "status": "BROKER_YEAR_END_NOTICE_APPLIED_TO_ISSUER_RECORD_DATE",
+      "supporting_source_ids": [
+        "kis-yearend",
+        "20260210000736"
+      ],
+      "date_specific_official_notice_obtained": true,
+      "condition_matches_issuer_record_date": true,
+      "eligibility": "HOLD"
+    }
+  ],
+  "settlement_derivation": {
+    "status": "CONDITIONAL_CANDIDATES_ONLY",
+    "source_ids": [
+      "krx-t2",
+      "krx-session-rule"
+    ],
+    "daily_observations_path": ".local/history-20261113-run2/bars.jsonl",
+    "daily_observations_sha256": "f42b4b14bdb04638626897293a35f90cff23abbf9acf707718cb6fe873bb84d9",
+    "daily_observations": [
+      {
+        "symbol": "000660",
+        "market_requested": "KRX",
+        "timeframe": "1d",
+        "time": "2026-02-25",
+        "volume": "3462525"
+      },
+      {
+        "symbol": "000660",
+        "market_requested": "KRX",
+        "timeframe": "1d",
+        "time": "2026-02-26",
+        "volume": "4461976"
+      },
+      {
+        "symbol": "000660",
+        "market_requested": "KRX",
+        "timeframe": "1d",
+        "time": "2026-02-27",
+        "volume": "6453062"
+      },
+      {
+        "symbol": "000660",
+        "market_requested": "KRX",
+        "timeframe": "1d",
+        "time": "2026-08-27",
+        "volume": "3264042"
+      },
+      {
+        "symbol": "000660",
+        "market_requested": "KRX",
+        "timeframe": "1d",
+        "time": "2026-08-28",
+        "volume": "3531892"
+      },
+      {
+        "symbol": "000660",
+        "market_requested": "KRX",
+        "timeframe": "1d",
+        "time": "2026-08-31",
+        "volume": "3980661"
+      }
+    ],
+    "cases": [
+      {
+        "record_date": "2026-02-28",
+        "last_observed_settlement_day_before_record": "2026-02-27",
+        "last_cum_trade": "2026-02-25",
+        "t_plus_1": "2026-02-26",
+        "t_plus_2": "2026-02-27",
+        "ex_date_candidate": "2026-02-26",
+        "argument": "A 02-26 trade has only 02-27 as a possible normal settlement day before Saturday 02-28, so T+2 completes after the record date."
+      },
+      {
+        "record_date": "2026-08-31",
+        "last_cum_trade": "2026-08-27",
+        "t_plus_1": "2026-08-28",
+        "t_plus_2": "2026-08-31",
+        "ex_date_candidate": "2026-08-28",
+        "argument": "A 08-28 trade has only 08-31 as a possible normal settlement day by the record date after the weekend, so T+2 completes later."
+      }
+    ],
+    "limits": [
+      "The six positive-volume provider daily rows support observed trading dates, not whole-session completeness, absence of halts or an independent settlement calendar.",
+      "Current general T+2/weekend rules were read; their historical effective version and special settlement exceptions for these dates were not independently established. Candidates are not promoted to direct dated official confirmations."
+    ]
+  },
+  "payment_reconciliation": [
+    {
+      "symbol": "000660",
+      "supplier_marker_date": "2025-11-27",
+      "record_date": "2025-11-30",
+      "common_dividend_krw": 375,
+      "prior_scheduled_payment_date": null,
+      "ksd_displayed_payment_date": "2025-12-30",
+      "ksd_dividend_confirmation_source_id": "ksd-confirm-000660-20251130",
+      "ksd_dividend_confirmed_literal_observed": true,
+      "payment_date_conflict": false,
+      "payment_date_future_at_check": false,
+      "actual_payment_transaction_verified": false,
+      "same_account_receipt_at": null,
+      "withholding_verified": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "000660",
+      "supplier_marker_date": "2026-02-26",
+      "record_date": "2026-02-28",
+      "common_dividend_krw": 1875,
+      "prior_scheduled_payment_date": null,
+      "ksd_displayed_payment_date": "2026-04-24",
+      "ksd_dividend_confirmation_source_id": "ksd-confirm-000660-20260228",
+      "ksd_dividend_confirmed_literal_observed": true,
+      "payment_date_conflict": false,
+      "payment_date_future_at_check": false,
+      "actual_payment_transaction_verified": false,
+      "same_account_receipt_at": null,
+      "withholding_verified": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "000660",
+      "supplier_marker_date": "2026-05-28",
+      "record_date": "2026-05-31",
+      "common_dividend_krw": 375,
+      "prior_scheduled_payment_date": null,
+      "ksd_displayed_payment_date": "2026-06-30",
+      "ksd_dividend_confirmation_source_id": "ksd-confirm-000660-20260531",
+      "ksd_dividend_confirmed_literal_observed": true,
+      "payment_date_conflict": false,
+      "payment_date_future_at_check": false,
+      "actual_payment_transaction_verified": false,
+      "same_account_receipt_at": null,
+      "withholding_verified": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "000660",
+      "supplier_marker_date": "2026-08-28",
+      "record_date": "2026-08-31",
+      "common_dividend_krw": 375,
+      "prior_scheduled_payment_date": null,
+      "ksd_displayed_payment_date": "2026-09-30",
+      "ksd_dividend_confirmation_source_id": "ksd-confirm-000660-20260831",
+      "ksd_dividend_confirmed_literal_observed": true,
+      "payment_date_conflict": false,
+      "payment_date_future_at_check": false,
+      "actual_payment_transaction_verified": false,
+      "same_account_receipt_at": null,
+      "withholding_verified": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "005930",
+      "supplier_marker_date": "2025-12-29",
+      "record_date": "2025-12-31",
+      "common_dividend_krw": 566,
+      "prior_scheduled_payment_date": null,
+      "ksd_displayed_payment_date": "2026-04-17",
+      "ksd_dividend_confirmation_source_id": "ksd-confirm-005930-20251231",
+      "ksd_dividend_confirmed_literal_observed": true,
+      "payment_date_conflict": false,
+      "payment_date_future_at_check": false,
+      "actual_payment_transaction_verified": false,
+      "same_account_receipt_at": null,
+      "withholding_verified": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "005930",
+      "supplier_marker_date": "2026-09-29",
+      "record_date": "2026-09-30",
+      "common_dividend_krw": 4601,
+      "prior_scheduled_payment_date": "2026-11-27",
+      "ksd_displayed_payment_date": "2026-11-27",
+      "ksd_dividend_confirmation_source_id": "ksd-confirm-005930-20260930",
+      "ksd_dividend_confirmed_literal_observed": true,
+      "payment_date_conflict": false,
+      "payment_date_future_at_check": true,
+      "actual_payment_transaction_verified": false,
+      "same_account_receipt_at": null,
+      "withholding_verified": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "009150",
+      "supplier_marker_date": "2025-12-29",
+      "record_date": "2025-12-31",
+      "common_dividend_krw": 2350,
+      "prior_scheduled_payment_date": null,
+      "ksd_displayed_payment_date": "2026-04-17",
+      "ksd_dividend_confirmation_source_id": "ksd-confirm-009150-20251231",
+      "ksd_dividend_confirmed_literal_observed": true,
+      "payment_date_conflict": false,
+      "payment_date_future_at_check": false,
+      "actual_payment_transaction_verified": false,
+      "same_account_receipt_at": null,
+      "withholding_verified": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "036930",
+      "supplier_marker_date": "2025-12-29",
+      "record_date": "2025-12-31",
+      "common_dividend_krw": 53,
+      "prior_scheduled_payment_date": "2026-04-24",
+      "ksd_displayed_payment_date": "2026-04-23",
+      "ksd_dividend_confirmation_source_id": "ksd-confirm-036930-20251231",
+      "ksd_dividend_confirmed_literal_observed": true,
+      "payment_date_conflict": true,
+      "payment_date_future_at_check": false,
+      "actual_payment_transaction_verified": false,
+      "same_account_receipt_at": null,
+      "withholding_verified": false,
+      "eligibility": "HOLD"
+    }
+  ],
+  "conflicts": [
+    {
+      "symbol": "036930",
+      "record_date": "2025-12-31",
+      "issuer_original_notice_id": "20260210000736",
+      "issuer_original_scheduled_payment": "2026-04-24",
+      "ksd_displayed_payment": "2026-04-23",
+      "difference_calendar_days": 1,
+      "resolved": false,
+      "issuer_payment_change_notice_obtained": false,
+      "treatment": "Preserve both dates; do not assume either is the actual same-account receipt."
+    }
+  ],
+  "method_limits": {
+    "seibro_current_snapshot_not_historical_availability": true,
+    "capture_time_is_after_render_not_wire_receipt": true,
+    "visible_rows_only": true,
+    "hidden_stale_grid_rows_excluded": true,
+    "symbol_common_share_amount_and_record_date_checked": true,
+    "current_total_shares_or_other_unrelated_basic_fields_used_for_history": false,
+    "ksd_confirmation_does_not_prove_cash_receipt": true,
+    "scheduled_future_payment_treated_as_paid": false,
+    "all_amendments_or_first_disclosures_checked": false
+  },
+  "decision": {
+    "status": "PARTIAL",
+    "additional_year_end_ex_date_support": 3,
+    "ex_dates_with_direct_exchange_notices_from_previous_stage": 3,
+    "ex_dates_with_direct_notice_or_official_broker_condition_application_total": 6,
+    "rule_derived_candidates_still_not_directly_confirmed": 2,
+    "agm_dividend_amounts_reconciled": 4,
+    "ksd_dividend_finality_literals_observed": 8,
+    "ksd_payment_dates_displayed": 8,
+    "unresolved_payment_date_conflicts": 1,
+    "actual_same_account_payment_verified": false,
+    "issue11_acceptance_checked": [
+      1
+    ],
+    "issue11_acceptance_unchecked": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "backtest_ready": false,
+    "orders_enabled": false,
+    "orders_sent": 0,
+    "authenticated_broker_requests": 0,
+    "new_codex_session_created": false,
+    "code_changed": false
+  },
+  "next_conditions": [
+    "Obtain the historical effective settlement/calendar evidence or direct dated ex-dividend notices for the two SK hynix candidates.",
+    "Reconcile the Jusung planned/displayed payment date difference with an authoritative change/payment record.",
+    "Keep public dividend finality distinct from actual payment and same-account net receipt/withholding. Preserve point-in-time availability and provider price/share adjustment blockers.",
+    "Retain the remaining dated-session/halt, bar-finality, complete-session/missingness, same-account fee/execution-cost and live-market capture gates."
+  ],
+  "retention": {
+    "local_temporary_directory": "/mnt/data/tmp/gs02-dividend-followup-20261114",
+    "full_sources_committed": false,
+    "repository_contains": "Selected public facts, query conditions, observation times, hashes and guarded reconciliation. Raw HTML and browser envelopes remain local.",
+    "originals_and_prior_evidence_overwritten": false,
+    "existing_separate_changes": [
+      "?? .infisical.yaml"
+    ],
+    "research_browser_closed": true
+  },
+  "validation": {
+    "json_parse": "PASS",
+    "source_hashes_and_reconciliation": "PASS: 3 public pages, 4 AGM bodies, 4 visible-row lookups, 8 confirmation captures, 5 date annotations, 8 payment rows, 1 conflict, 1 future date, 6 old daily rows and unchanged prior evidence.",
+    "relative_links": {
+      "checked": 30,
+      "broken": 0
+    },
+    "git_diff_check": "PASS",
+    "market_runtime": "NOT_RUN",
+    "local_code_tests": "NOT_RUN: no production-code changes; repository PR CI required."
+  },
+  "calendar_annotation": {
+    "prior_evidence_path": "docs/evidence/data-contract-2026-11-13.json",
+    "prior_evidence_sha256": "83c4356ed1b2d46194bb9e513ae8ffd3ea7e789d96ae067f102e4c9b88828f08",
+    "prior_unclassified_count": 17,
+    "newly_supported_closed_non_settlement_dates": [
+      {
+        "date": "2025-12-31",
+        "source_id": "kis-yearend"
+      }
+    ],
+    "remaining_unclassified_count": 16,
+    "original_list_changed": false
+  }
+}
