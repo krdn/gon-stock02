@@ -1,0 +1,3213 @@
+{
+  "schema_version": 1,
+  "task": "11-settlement-rule-versions-20261114",
+  "transition_id": "issue11-settlement-rule-versions-20261114",
+  "created_at": "2026-11-14T07:15:24.651171+00:00",
+  "authorization_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6873439384",
+  "started_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6873522719",
+  "session_gate": {
+    "thread_id": "01a1d8db-9cee-75d1-88f2-b9e11d0785e1",
+    "self_id_matches_app_read_thread": true,
+    "baseline_sha": "dddf10b25674e82352c6f191743be36bdb320053",
+    "handoff_blob": "6adaf172e0946a131d3632b5f9f35938eb4c812b",
+    "state_blob": "6f9857635e847b8f1ac4ba76709770d2ecce1adb",
+    "tab_verified": true,
+    "herdr_tab_id": "tb9083b67219f97e5add45c268003d8329",
+    "herdr_terminal_id": "t63",
+    "proof_path": "/mnt/data/tmp/gs02-rule-version-handoff-20261114/tab-proof.json",
+    "proof_sha256": "7a86e741206e34e1a0d91a670ab5123f7668821e993fc7072b29a689d06aa632",
+    "screenshot_path": "/mnt/data/tmp/gs02-rule-version-handoff-20261114/new-tab.png",
+    "screenshot_sha256": "638c86215261284d9a797d2352cc85def1f26e8c541e059d84e3b3a74c7049e7",
+    "initial_wait": "started 부재 5초 간격3회 후 조사/편집 없이 종료; 부모의 같은 세션 명시재개 후 재대조."
+  },
+  "inputs": {
+    "prior_evidence_path": "docs/evidence/settlement-reconciliation-2026-11-14.json",
+    "prior_evidence_sha256": "62eef6e39e70d7406318d711f0622ebf2d16489a28b600c41a00e57e88686d8a",
+    "target_dates": [
+      "2025-12-25",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ],
+    "baseline_hashes": {
+      "docs/evidence/corporate-actions-2026-11-14.json": "ba0156e63abd7b2b4af18e99112a84fbc3567f1e0b33ce4b41f2515a9b18e20b",
+      "docs/evidence/data-contract-2026-11-13.json": "83c4356ed1b2d46194bb9e513ae8ffd3ea7e789d96ae067f102e4c9b88828f08",
+      "docs/evidence/data-contract-followup-2026-11-14.json": "9c42ddd3adcb41e7d9c0401f9c9e58ea0fa337d6e84570008fa7326fdc052921",
+      "docs/evidence/data-readiness-2026-11-13.json": "238373fd557b2fcca789adb47de5bc6a8d98fccabf8322fd6a9a1491770cef44",
+      "docs/evidence/dividend-followup-2026-11-14.json": "9639f44249708a2b1b32dda69887f6bcac4b08cb4c766a4868c99a3d5e249343",
+      "docs/evidence/dividend-gaps-2026-11-14.json": "d2814675755ce9f47708fd92782256cbabc18ea9c32169f236f6afbe24683fad",
+      "docs/evidence/evolve-runtime-2026-11-14.json": "380939e1209cdae39d4c910d8510526f725ee846cbe59eaba5bc4582d0b4241f",
+      "docs/evidence/halt-reconciliation-2026-11-14.json": "c88cae861a032a28efc7cf5dfcdc3fa88b8688e6a288180de9d8a7c52f9fc9d7",
+      "docs/evidence/historical-data-2026-11-13.json": "340c8f1802a5f68101ac47bf62a515ab39be8737769f2e671608e0f35631fdeb",
+      "docs/evidence/minute-capture-2026-11-14.json": "b57aff3e2fa691b9d6761078ee5c283adc3a5adbefb19db8d203fc73cb8cd989",
+      "docs/evidence/native-session-handoff-2026-11-14.json": "9117df4bb6aa4050e26193daeb442290c896a524aeb2ed006aecdc423bd179f1",
+      "docs/evidence/paper-order-ledger-2026-11-13.json": "05b2af32b54bcb8c34e1869e5b024edef3b6a38541ede7aee02772a738f80800",
+      "docs/evidence/stage1-2026-11-13.json": "22f95ae7831c10eef0ced9fae1958810870d5aad7b127cff92e6417b4bb69233",
+      ".local/history-20261113-run2/pages.jsonl": "33fcb37abab6712ba5ff19b60625ff496f7b88cceb462a8b351d0b1588f8eee2",
+      ".local/history-20261113-run2/bars.jsonl": "f42b4b14bdb04638626897293a35f90cff23abbf9acf707718cb6fe873bb84d9",
+      ".local/issue11-contract-20261113/check.py": "257c7b15eadeabb83e424c0a75eebb13dea9e2074b74de56da2765f9f5a9205c",
+      "docs/evidence/calendar-reconciliation-2026-11-14.json": "ba221a99a32073e1923d734648558da431010e9d64826b7d21e1ce41eb50f815",
+      ".local/history-20261113-run2/manifest.json": "0d7320cb041e37edd5baa08cb8d888a735e7fb9e37b97260769788939ccda345",
+      "docs/evidence/settlement-reconciliation-2026-11-14.json": "62eef6e39e70d7406318d711f0622ebf2d16489a28b600c41a00e57e88686d8a"
+    },
+    "original_unclassified_dates_preserved": [
+      "2025-12-25",
+      "2025-12-31",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-06-03",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ]
+  },
+  "method": {
+    "primary_portal": "https://rule.krx.co.kr/out/index.do",
+    "rule_request_method": "POST /out/regulation/regulationViewPop.do; public form bookid/noformyn; anonymous-session anti-CSRF bootstrap; no broker authentication/account query",
+    "provenance_note": "표제 개정/제정일·시행일·부칙·연혁을 각각 기록. 개정일을 최초 공표시각으로 쓰지 않는다. 원문 전체는 로컬 임시 경로, 저장소는 출처/식별자/해시와 좁은 판단을 보존한다.",
+    "history_selection_note": "4종 시장규정의 연혁 목록에서 대상일 이전 후보를 고른 뒤 후보 원문을 확보했다. 목록 날짜는 제정/개정/시행 표기가 혼재하며 본문과 대조했다. 미확정/상충을 null/HOLD로 유지한다.",
+    "unfetched_gaps": "대상일 사이의 모든 버전 전문을 확보하지 않았다. 현재 포털의 연혁목록이 완전한 전체 이력임을 독립 증명하지 않았다. 최초 공개/정정 이력도 미확정."
+  },
+  "public_sources": [
+    {
+      "id": "kospi-view",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "330007789",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:08:07.863626+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 450001,
+      "sha256": "fa5807c2532efed5b14e43d52dfe9ee4538f3069b7ca214e140be37cd1e59c1e",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-view.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kospi",
+      "identifier": {
+        "bookid": "330007789",
+        "rule_number": "2497"
+      },
+      "header": "[일부개정 2026. 9. 9 규정 제2497호 <시행일 : 2026. 9. 14>]",
+      "amendment_or_enactment_date": "2026-09-09",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-09-14",
+      "effective_date": "2026-09-14",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kospi-view"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "c32cf18b4a948267e41e132b0aa81e98c2f75b65862f1721790176d4f9711372",
+          "text_sha256": "ff667dbb8ee5b1914f983b64a9894c51bf6c230de3cf5c81a278bdb6d3b046bd"
+        },
+        {
+          "locator": "본문 제7조; innerbody",
+          "normalized_text_sha256": "21d71d3fc238fd14f23d329286a7214e58100c58cef44ceaabcbec85fae89a43",
+          "text_sha256": "6d7fa4908de27cb9fe653c271a72f6a73607bc95ca8fbcdad770c19da3f19074"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2497호",
+      "addendum_normalized_sha256": "edb1dddeb37cb97840548807512e5417252ef1e2ea49b1cd272771cec2e4cc39",
+      "effective_notes": []
+    },
+    {
+      "id": "kosdaq-view",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210228704",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:08:43.137853+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 353423,
+      "sha256": "b3bc2832b6073d994f050fbfc1c8a38532da65a8b6891d259b69fd4d91b1fd37",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kosdaq-view.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kosdaq",
+      "identifier": {
+        "bookid": "210228704",
+        "rule_number": "2498"
+      },
+      "header": "[일부개정 2026. 9. 9 규정 제2498호 <시행일 : 2026. 9. 14>]",
+      "amendment_or_enactment_date": "2026-09-09",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-09-14",
+      "effective_date": "2026-09-14",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kosdaq-view"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "f5d0d904c3a822a60f9ed71712f6fcf1c15cca44dfaffe36b9ecb443a678dc8f",
+          "text_sha256": "175e7cb19863c0e88fbcfb9a6e12bddbe1573dec60f86b294a21db8455a706c0"
+        },
+        {
+          "locator": "본문 제7조의2; innerbody",
+          "normalized_text_sha256": "7fee8865737a7820b32e0875f54ac9af3233b773cbcb2bd2b77c72a7a2f13957",
+          "text_sha256": "c27d5909b849c0e45c8b80ca6de15f57912f58e73c5e3e759d584257bf4c6c25"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2498호",
+      "addendum_normalized_sha256": "52dee3c1de9f763e94094b5f026a5ff8dce309442b1da1cec18e0a2698495b8d",
+      "effective_notes": []
+    },
+    {
+      "id": "kospi-enforcement-view",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "330011206",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:08:43.843289+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 1019798,
+      "sha256": "e27cc40a3570bb245334397c72c8a416bcf04c385035da9537e8929606ed31df",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-enforcement-view.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kospi-enforcement",
+      "identifier": {
+        "bookid": "330011206",
+        "rule_number": "2499"
+      },
+      "header": "[일부개정 2026. 9. 11 규정 제2499호 <시행일 : 2026. 9. 14>]",
+      "amendment_or_enactment_date": "2026-09-11",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-09-14",
+      "effective_date": "2026-09-14",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kospi-enforcement-view"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제9조; innerbody",
+          "normalized_text_sha256": "7c80ff174d8b772ec9a1ea84cda772c51f06ab2377e7a4a21547ae5892c3b402",
+          "text_sha256": "790bc68e244173cdd3949e7c3c4e166034907eedfbcdf36badabfc1a7fe0b31d"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2499호",
+      "addendum_normalized_sha256": "edc38e76f9f53b868c595c7d7b1d5422dc87f3c4c76277454cacda8dbd9d6bc5",
+      "effective_notes": [
+        "부칙은 일부 시장조성 조항의 2026년4분기/2027-09-30 이후 적용을 별도로 둔다. 규정 전체에 단일 시행일을 일괄 적용하지 않았다. 이번 결제종류 조항과 구분한다."
+      ]
+    },
+    {
+      "id": "kosdaq-enforcement-view",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "230001398",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:08:45.052712+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 719480,
+      "sha256": "da9ae660f5a005bb69411944f6468216073ce38aed06b262f61f462ab1c8c0c4",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kosdaq-enforcement-view.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kosdaq-enforcement",
+      "identifier": {
+        "bookid": "230001398",
+        "rule_number": "2500"
+      },
+      "header": "[일부개정 2026. 9. 10 규정 제2500호 <시행일 : 2026. 9. 14>]",
+      "amendment_or_enactment_date": "2026-09-10",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-09-14",
+      "effective_date": "2026-09-14",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kosdaq-enforcement-view"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제4조의2; innerbody",
+          "normalized_text_sha256": "1fa524804f66d5ae3531e2fc67df0a1bb2dd93e0b40c86d1e68c614d9cfd7187",
+          "text_sha256": "e2b38a7908981f6018096d13b2d4e26622e77599607ece42f3ac9aca65282d44"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2500호",
+      "addendum_normalized_sha256": "5a370979037371db858915cc815d2a13d62d19ebf84b57b4abe3e1f0b4ad1e45",
+      "effective_notes": [
+        "부칙은 일부 시장조성 조항의 2026년4분기/2027-09-30 이후 적용을 별도로 둔다. 규정 전체에 단일 시행일을 일괄 적용하지 않았다. 이번 결제종류 조항과 구분한다."
+      ]
+    },
+    {
+      "id": "kospi-210025251",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210025251",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:17.429109+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 444306,
+      "sha256": "ce90a711ae6f37726a5b9162280a98a76e1b117d6c33ec9c83dca61a5c3eb030",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-210025251.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kospi",
+      "identifier": {
+        "bookid": "210025251",
+        "rule_number": "2285"
+      },
+      "header": "[개정 2025. 2. 5 규정 제2285호 <시행일 : 2025. 3. 4.>]",
+      "amendment_or_enactment_date": "2025-02-05",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2025-03-04",
+      "effective_date": "2025-03-04",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kospi-210025251",
+        "kospi-enforcement-210144538"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "7cb6d263eed26e6e7551b848d1a4122f446f13443d682993033e79e666e4382e",
+          "text_sha256": "57fabd164d8e1b713fec30356ba13d703c08468292e09f4f53be971fac132f1c"
+        },
+        {
+          "locator": "본문 제7조; innerbody",
+          "normalized_text_sha256": "21d71d3fc238fd14f23d329286a7214e58100c58cef44ceaabcbec85fae89a43",
+          "text_sha256": "6d7fa4908de27cb9fe653c271a72f6a73607bc95ca8fbcdad770c19da3f19074"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2285호",
+      "addendum_normalized_sha256": "6990e3ee952cf76848e68dafc19957a0eae8f17d3bd4aaf7fdd04b687da8d369",
+      "effective_notes": [
+        "부칙은 시행일을 세칙에 위임. 보존한 세칙의 제2303호 부칙 제2조가 2025-03-04를 명시한다."
+      ]
+    },
+    {
+      "id": "kospi-210163555",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210163555",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:17.939528+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 471638,
+      "sha256": "2678ae00ecf22b045a5877a448d69cb576e95e62c3f29ce94fffe36195a10707",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-210163555.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kospi",
+      "identifier": {
+        "bookid": "210163555",
+        "rule_number": "2405"
+      },
+      "header": "[일부개정 2026. 1. 28 규정 제2405호 <시행일 : 2026. 1. 29>]",
+      "amendment_or_enactment_date": "2026-01-28",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-01-29",
+      "effective_date": null,
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kospi-210163555"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "7cb6d263eed26e6e7551b848d1a4122f446f13443d682993033e79e666e4382e",
+          "text_sha256": "57fabd164d8e1b713fec30356ba13d703c08468292e09f4f53be971fac132f1c"
+        },
+        {
+          "locator": "본문 제7조; innerbody",
+          "normalized_text_sha256": "21d71d3fc238fd14f23d329286a7214e58100c58cef44ceaabcbec85fae89a43",
+          "text_sha256": "6d7fa4908de27cb9fe653c271a72f6a73607bc95ca8fbcdad770c19da3f19074"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2405호",
+      "addendum_normalized_sha256": "3bf5f3df8883630e83187adfb11a892e69037f988b6c5ae2144e1c9b2dfdcb5f",
+      "effective_notes": [
+        "표제/연혁은 2026-01-29, 해당 부칙 본문은 2026-01-28이다. 1일 상충을 해소하지 않았다. 대상4일은 두 후보보다 뒤지만 정확한 적용 경계는 HOLD다."
+      ],
+      "effective_date_candidates": [
+        "2026-01-28",
+        "2026-01-29"
+      ]
+    },
+    {
+      "id": "kospi-210200859",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210200859",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:18.455498+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 451476,
+      "sha256": "7a405b1cf77155d9107238afbb4ee54195b53650fbfcf86c69c2e6b6fc1b5868",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-210200859.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kospi",
+      "identifier": {
+        "bookid": "210200859",
+        "rule_number": "2433"
+      },
+      "header": "[(타)일부개정 2026. 4. 15 규정 제2433호 <시행일 : 2026. 4. 28>]",
+      "amendment_or_enactment_date": "2026-04-15",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-04-28",
+      "effective_date": null,
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kospi-210200859"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "7cb6d263eed26e6e7551b848d1a4122f446f13443d682993033e79e666e4382e",
+          "text_sha256": "57fabd164d8e1b713fec30356ba13d703c08468292e09f4f53be971fac132f1c"
+        },
+        {
+          "locator": "본문 제7조; innerbody",
+          "normalized_text_sha256": "21d71d3fc238fd14f23d329286a7214e58100c58cef44ceaabcbec85fae89a43",
+          "text_sha256": "6d7fa4908de27cb9fe653c271a72f6a73607bc95ca8fbcdad770c19da3f19074"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2433호",
+      "addendum_normalized_sha256": "6987190a113451d55219df90c31650a3ab00baaace05e993aa54c0fe5f90ab24",
+      "effective_notes": [
+        "표제/연혁은 2026-04-28. 부칙은 공고 제2026-53호 시행령 개정안의 공포일에 연동한다. 해당 공포 원문을 이번 단계에서 독립 대조하지 않아 적용 경계 HOLD다."
+      ]
+    },
+    {
+      "id": "kospi-210225665",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210225665",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:19.345202+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 445783,
+      "sha256": "813b928be3ca9e0a2424e4e962a7c76add5a3cb8af333ec7fb822c510bfe0c5a",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-210225665.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kospi",
+      "identifier": {
+        "bookid": "210225665",
+        "rule_number": "2471"
+      },
+      "header": "[일부개정 2026. 7. 1 규정 제2471호 <시행일 : 2026. 7. 2>]",
+      "amendment_or_enactment_date": "2026-07-01",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-07-02",
+      "effective_date": "2026-07-02",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kospi-210225665"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "7cb6d263eed26e6e7551b848d1a4122f446f13443d682993033e79e666e4382e",
+          "text_sha256": "57fabd164d8e1b713fec30356ba13d703c08468292e09f4f53be971fac132f1c"
+        },
+        {
+          "locator": "본문 제7조; innerbody",
+          "normalized_text_sha256": "21d71d3fc238fd14f23d329286a7214e58100c58cef44ceaabcbec85fae89a43",
+          "text_sha256": "6d7fa4908de27cb9fe653c271a72f6a73607bc95ca8fbcdad770c19da3f19074"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2471호",
+      "addendum_normalized_sha256": "dc9dedcbbaea65a471ca22fad121829d8309a2af37637091182905e6d068fd94",
+      "effective_notes": []
+    },
+    {
+      "id": "kosdaq-210019450",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210019450",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:19.853554+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 347399,
+      "sha256": "1dc7c033a4f8b5e50f485b8d60c015d942122cea9bf21b2bcfc659fca7870399",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kosdaq-210019450.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kosdaq",
+      "identifier": {
+        "bookid": "210019450",
+        "rule_number": "2287"
+      },
+      "header": "[(타)개정 2025. 2. 5 규정 제2287호 <시행일 : 2025. 3. 4>]",
+      "amendment_or_enactment_date": "2025-02-05",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2025-03-04",
+      "effective_date": "2025-03-04",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kosdaq-210019450"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "f7318ac102700a1f2ac3fe7d2ab3e0f742c41f2be8debbb244d9480725e19143",
+          "text_sha256": "d9328ba432fec4cf977a30fd7db7a4b81b056fdd16a448dc5f915efb8b935b9d"
+        },
+        {
+          "locator": "본문 제7조의2; innerbody",
+          "normalized_text_sha256": "7fee8865737a7820b32e0875f54ac9af3233b773cbcb2bd2b77c72a7a2f13957",
+          "text_sha256": "c27d5909b849c0e45c8b80ca6de15f57912f58e73c5e3e759d584257bf4c6c25"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2287호",
+      "addendum_normalized_sha256": "2452ff83cebfa2d7b12eeb9d2246c9158485a929b7a2795b76782123bc766ca8",
+      "effective_notes": []
+    },
+    {
+      "id": "kosdaq-210150966",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210150966",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:20.303526+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 347500,
+      "sha256": "7ed91ede8668e11ab3fddbf50aa2234632517661db0da8076b1b2ce2f038182f",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kosdaq-210150966.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kosdaq",
+      "identifier": {
+        "bookid": "210150966",
+        "rule_number": "2403"
+      },
+      "header": "[일부개정 2026. 1. 28 규정 제2403호 <시행일 : 2026. 1. 29>]",
+      "amendment_or_enactment_date": "2026-01-28",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-01-29",
+      "effective_date": "2026-01-29",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kosdaq-210150966"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "f7318ac102700a1f2ac3fe7d2ab3e0f742c41f2be8debbb244d9480725e19143",
+          "text_sha256": "d9328ba432fec4cf977a30fd7db7a4b81b056fdd16a448dc5f915efb8b935b9d"
+        },
+        {
+          "locator": "본문 제7조의2; innerbody",
+          "normalized_text_sha256": "7fee8865737a7820b32e0875f54ac9af3233b773cbcb2bd2b77c72a7a2f13957",
+          "text_sha256": "c27d5909b849c0e45c8b80ca6de15f57912f58e73c5e3e759d584257bf4c6c25"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2403호",
+      "addendum_normalized_sha256": "d93a36857bdbfce54a9eeffe07f092cd91e4f993649c20e219e33ebe51922906",
+      "effective_notes": []
+    },
+    {
+      "id": "kosdaq-210164370",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210164370",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:20.717318+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 357489,
+      "sha256": "11adc2e5bf935ec0cfb7235ce9007682399d247f3be957b68beac144e0099da9",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kosdaq-210164370.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kosdaq",
+      "identifier": {
+        "bookid": "210164370",
+        "rule_number": "2416"
+      },
+      "header": "[일부개정 2026. 3. 4 규정 제2416호 <시행일 : 2026. 4. 27>]",
+      "amendment_or_enactment_date": "2026-03-04",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-04-27",
+      "effective_date": "2026-04-27",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kosdaq-210164370",
+        "kosdaq-enforcement-210184365"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "f7318ac102700a1f2ac3fe7d2ab3e0f742c41f2be8debbb244d9480725e19143",
+          "text_sha256": "d9328ba432fec4cf977a30fd7db7a4b81b056fdd16a448dc5f915efb8b935b9d"
+        },
+        {
+          "locator": "본문 제7조의2; innerbody",
+          "normalized_text_sha256": "7fee8865737a7820b32e0875f54ac9af3233b773cbcb2bd2b77c72a7a2f13957",
+          "text_sha256": "c27d5909b849c0e45c8b80ca6de15f57912f58e73c5e3e759d584257bf4c6c25"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2416호",
+      "addendum_normalized_sha256": "7e992ccde252d904c41ebd4cd63daa99e2f724fdbd4b3ab893542378b752f1d0",
+      "effective_notes": [
+        "제2416호 부칙의 위임일은 제2422호 세칙 부칙 제2조에서 2026-04-27로 명시한다."
+      ]
+    },
+    {
+      "id": "kosdaq-210223407",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210223407",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:21.138798+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 351047,
+      "sha256": "dafec97cf8fccdd6ddfa0b289585ae90872027de058b516545b0fd35c723a821",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kosdaq-210223407.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kosdaq",
+      "identifier": {
+        "bookid": "210223407",
+        "rule_number": "2469"
+      },
+      "header": "[일부개정 2026. 7. 1 규정 제2469호 <시행일 : 2026. 7. 2>]",
+      "amendment_or_enactment_date": "2026-07-01",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-07-02",
+      "effective_date": "2026-07-02",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kosdaq-210223407"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "f7318ac102700a1f2ac3fe7d2ab3e0f742c41f2be8debbb244d9480725e19143",
+          "text_sha256": "d9328ba432fec4cf977a30fd7db7a4b81b056fdd16a448dc5f915efb8b935b9d"
+        },
+        {
+          "locator": "본문 제7조의2; innerbody",
+          "normalized_text_sha256": "7fee8865737a7820b32e0875f54ac9af3233b773cbcb2bd2b77c72a7a2f13957",
+          "text_sha256": "c27d5909b849c0e45c8b80ca6de15f57912f58e73c5e3e759d584257bf4c6c25"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2469호",
+      "addendum_normalized_sha256": "c1cfa3db23750a850f7cf7b053df3cc6bbfcd09e1370c7b8907c0c8404d4031b",
+      "effective_notes": []
+    },
+    {
+      "id": "kospi-enforcement-210144538",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210144538",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:21.522582+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 920987,
+      "sha256": "55665d857610a5ff064784b48b9ae653137d02f2f142c11421f4cc089365d4da",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-enforcement-210144538.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kospi-enforcement",
+      "identifier": {
+        "bookid": "210144538",
+        "rule_number": "2377"
+      },
+      "header": "[일부개정 2025. 11. 27 규정 제2377호 <시행일 : 2025.12.1.>]",
+      "amendment_or_enactment_date": "2025-11-27",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2025-12-01",
+      "effective_date": "2025-12-01",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kospi-enforcement-210144538"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제9조; innerbody",
+          "normalized_text_sha256": "7c80ff174d8b772ec9a1ea84cda772c51f06ab2377e7a4a21547ae5892c3b402",
+          "text_sha256": "e3766bd6ed6aad20156146da0fe12af7341a2df25ebb95dc57c4f51fda3822a1"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2377호",
+      "addendum_normalized_sha256": "600f115e26390fbc0695cc5946d4455b1aff77b2005d18ce0ed05916849a66e1",
+      "effective_notes": [
+        "표제의 개정일과 부칙 표제의 날짜가 다르다. 시행일 본문은 표제의 시행일과 같으며 최초 공표시각은 확정하지 않았다."
+      ]
+    },
+    {
+      "id": "kospi-enforcement-210162119",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210162119",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:22.423686+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 939176,
+      "sha256": "3dcdf7ed8daf8f4d13ffb5e7dd7056ddad2c6fb7260a53c3f337f7fffa840861",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-enforcement-210162119.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kospi-enforcement",
+      "identifier": {
+        "bookid": "210162119",
+        "rule_number": "2399"
+      },
+      "header": "[일부개정 2026. 1. 27 규정 제2399호 <시행일 : 2026. 2. 9>]",
+      "amendment_or_enactment_date": "2026-01-27",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-02-09",
+      "effective_date": "2026-02-09",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kospi-enforcement-210162119"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제9조; innerbody",
+          "normalized_text_sha256": "7c80ff174d8b772ec9a1ea84cda772c51f06ab2377e7a4a21547ae5892c3b402",
+          "text_sha256": "e3766bd6ed6aad20156146da0fe12af7341a2df25ebb95dc57c4f51fda3822a1"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2399호",
+      "addendum_normalized_sha256": "419e605f6a5330646ebc8f9da24c1b980b79b7bc6450f778051b4cc327328371",
+      "effective_notes": []
+    },
+    {
+      "id": "kospi-enforcement-210203562",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210203562",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:23.308134+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 1000874,
+      "sha256": "1e94054e2805ae76a92b4f9204188b3aa2522c0f74a80b17b4748f934cf6e8e2",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-enforcement-210203562.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kospi-enforcement",
+      "identifier": {
+        "bookid": "210203562",
+        "rule_number": "2436"
+      },
+      "header": "[(타)일부개정 2026. 4. 27 규정 제2436호 <시행일 : 2026. 4. 28>]",
+      "amendment_or_enactment_date": "2026-04-27",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-04-28",
+      "effective_date": "2026-04-28",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kospi-enforcement-210203562"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제9조; innerbody",
+          "normalized_text_sha256": "7c80ff174d8b772ec9a1ea84cda772c51f06ab2377e7a4a21547ae5892c3b402",
+          "text_sha256": "790bc68e244173cdd3949e7c3c4e166034907eedfbcdf36badabfc1a7fe0b31d"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2436호",
+      "addendum_normalized_sha256": "a89c5096aecc081e5fa36f8e599b90f53c974df80e0d0b72232e0f52f23c58a0",
+      "effective_notes": []
+    },
+    {
+      "id": "kospi-enforcement-210225129",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210225129",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:24.356730+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 1003117,
+      "sha256": "98866675d9142e2723601a64fcc6b8018ff0cd5049698a64a428f3655da9f3be",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-enforcement-210225129.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kospi-enforcement",
+      "identifier": {
+        "bookid": "210225129",
+        "rule_number": "2472"
+      },
+      "header": "[일부개정 2026. 7. 2 규정 제2472호 <시행일 : 2026. 7. 2>]",
+      "amendment_or_enactment_date": "2026-07-02",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-07-02",
+      "effective_date": "2026-07-02",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kospi-enforcement-210225129"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제9조; innerbody",
+          "normalized_text_sha256": "7c80ff174d8b772ec9a1ea84cda772c51f06ab2377e7a4a21547ae5892c3b402",
+          "text_sha256": "790bc68e244173cdd3949e7c3c4e166034907eedfbcdf36badabfc1a7fe0b31d"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2472호",
+      "addendum_normalized_sha256": "f576661eae9981e0da78cec013249e4a04abb9ea6158c118ef2984a11b1ca747",
+      "effective_notes": []
+    },
+    {
+      "id": "kospi-enforcement-210232087",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210232087",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:25.288290+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 1003259,
+      "sha256": "b069bb64e083f1bf9e5d235dd91f003f329ad121fd475f519f174a73527f7b5c",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kospi-enforcement-210232087.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kospi-enforcement",
+      "identifier": {
+        "bookid": "210232087",
+        "rule_number": "2479"
+      },
+      "header": "[일부개정 2026. 7. 30 규정 제2479호 <시행일 : 2026. 7. 31>]",
+      "amendment_or_enactment_date": "2026-07-30",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-07-31",
+      "effective_date": "2026-07-31",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kospi-enforcement-210232087"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제9조; innerbody",
+          "normalized_text_sha256": "7c80ff174d8b772ec9a1ea84cda772c51f06ab2377e7a4a21547ae5892c3b402",
+          "text_sha256": "790bc68e244173cdd3949e7c3c4e166034907eedfbcdf36badabfc1a7fe0b31d"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2479호",
+      "addendum_normalized_sha256": "dd549731264fefa05e49c80d450ca008cdac83cc0fcd045d3c693663db5bb7d4",
+      "effective_notes": [
+        "표제의 개정일과 부칙 표제의 날짜가 다르다. 시행일 본문은 표제의 시행일과 같으며 최초 공표시각은 확정하지 않았다."
+      ]
+    },
+    {
+      "id": "kosdaq-enforcement-210047679",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210047679",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:26.275934+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 695250,
+      "sha256": "58bd1d750b9e0370a2ee64824c4fea325109262c96190a5645371e6dde14b09b",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kosdaq-enforcement-210047679.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kosdaq-enforcement",
+      "identifier": {
+        "bookid": "210047679",
+        "rule_number": "2316"
+      },
+      "header": "[개정 2025. 3. 26 규정 제2316호 <시행일 : 2025. 3. 31.>]",
+      "amendment_or_enactment_date": "2025-03-26",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2025-03-31",
+      "effective_date": "2025-03-31",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kosdaq-enforcement-210047679"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제4조의2; innerbody",
+          "normalized_text_sha256": "1fa524804f66d5ae3531e2fc67df0a1bb2dd93e0b40c86d1e68c614d9cfd7187",
+          "text_sha256": "e2b38a7908981f6018096d13b2d4e26622e77599607ece42f3ac9aca65282d44"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2316호",
+      "addendum_normalized_sha256": "5a8d3b82f2c08d2c20ac61974261bf8961e679497027d856b83ea9a13c162ac0",
+      "effective_notes": [
+        "연혁 목록은 2025-03-26을 표시하지만 표제/부칙은 2025-03-31 시행을 명시한다. 시행일에는 본문을 사용하고 목록 표기를 보존한다."
+      ],
+      "history_display_date": "2025-03-26"
+    },
+    {
+      "id": "kosdaq-enforcement-210155599",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210155599",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:26.995297+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 652473,
+      "sha256": "e3fea855290eb42b1d1360ae9109c34ebc90a863ab19cd002f13a57af1eed023",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kosdaq-enforcement-210155599.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kosdaq-enforcement",
+      "identifier": {
+        "bookid": "210155599",
+        "rule_number": "2394"
+      },
+      "header": "[일부개정 2026. 1. 15 규정 제2394호 <시행일 : 2026. 2. 9>]",
+      "amendment_or_enactment_date": "2026-01-15",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-02-09",
+      "effective_date": "2026-02-09",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kosdaq-enforcement-210155599"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제4조의2; innerbody",
+          "normalized_text_sha256": "1fa524804f66d5ae3531e2fc67df0a1bb2dd93e0b40c86d1e68c614d9cfd7187",
+          "text_sha256": "1d50e94eebffb2799625c22ffac9a5b6aa87e7f297256dd435de9d725af49a69"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2394호",
+      "addendum_normalized_sha256": "23ab47ed4032ac0daa7938f0958cf25e11e049f7d3ca16ae7c853c0adb7b5a82",
+      "effective_notes": []
+    },
+    {
+      "id": "kosdaq-enforcement-210184365",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210184365",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:27.632794+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 706045,
+      "sha256": "21a0661c391b1c0e7bb49691b1d85df873c8585067ea6c97c7f65544e48bee75",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kosdaq-enforcement-210184365.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kosdaq-enforcement",
+      "identifier": {
+        "bookid": "210184365",
+        "rule_number": "2422"
+      },
+      "header": "[일부개정 2026. 3. 16 규정 제2422호 <시행일 : 2026. 4. 27>]",
+      "amendment_or_enactment_date": "2026-03-16",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-04-27",
+      "effective_date": "2026-04-27",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kosdaq-enforcement-210184365"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제4조의2; innerbody",
+          "normalized_text_sha256": "1fa524804f66d5ae3531e2fc67df0a1bb2dd93e0b40c86d1e68c614d9cfd7187",
+          "text_sha256": "e2b38a7908981f6018096d13b2d4e26622e77599607ece42f3ac9aca65282d44"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2422호",
+      "addendum_normalized_sha256": "5bc6fbe45139514f6ba45d15d3434ec1affa04ab41c02c16990f8f4b3093fb6b",
+      "effective_notes": []
+    },
+    {
+      "id": "kosdaq-enforcement-210223538",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210223538",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:09:28.311322+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 705624,
+      "sha256": "95d2bfaeb46dc3ff05efe4016c2bebdf0896862439452776d9add1486f52e3d4",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kosdaq-enforcement-210223538.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "kosdaq-enforcement",
+      "identifier": {
+        "bookid": "210223538",
+        "rule_number": "2470"
+      },
+      "header": "[일부개정 2026. 7. 1 규정 제2470호 <시행일 : 2026. 7. 2>]",
+      "amendment_or_enactment_date": "2026-07-01",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-07-02",
+      "effective_date": "2026-07-02",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "kosdaq-enforcement-210223538"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제4조의2; innerbody",
+          "normalized_text_sha256": "1fa524804f66d5ae3531e2fc67df0a1bb2dd93e0b40c86d1e68c614d9cfd7187",
+          "text_sha256": "e2b38a7908981f6018096d13b2d4e26622e77599607ece42f3ac9aca65282d44"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2470호",
+      "addendum_normalized_sha256": "c63cd3a9e1c6083b85a323672a2a070c96e52550a60b3d417f61234262e4f31c",
+      "effective_notes": []
+    },
+    {
+      "id": "clearing-view",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210185757",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:11:19.363564+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 124664,
+      "sha256": "c3194ce7776b822e195679a98026e1c94878ff482389860ac5a65b3ceb79c3ca",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/clearing-view.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "clearing",
+      "identifier": {
+        "bookid": "210185757",
+        "rule_number": "2418"
+      },
+      "header": "[일부개정 2026. 3. 4 규정 제2418호 <시행일 : 2026. 4. 27>]",
+      "amendment_or_enactment_date": "2026-03-04",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-04-27",
+      "effective_date": "2026-04-27",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "clearing-view",
+        "clearing-enforcement-210199110"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제3조; innerbody",
+          "normalized_text_sha256": "9ca04f1e7e24d033d8959f9b21333dcf202ef7aca575b9716045d485ab173857",
+          "text_sha256": "55ec3a8d25da945e519cae8d70e9a375ce924eb61865a1fdc75861200e2b935e"
+        },
+        {
+          "locator": "본문 제6조; innerbody",
+          "normalized_text_sha256": "e7fde0e9d6a599428e82e84499903e8635d00c5a543cfaf9ad596d07741f59c3",
+          "text_sha256": "f051e12cfe394ccfaa964bcc6e00c3bb65cd56e14961738b634ed77c90ba74ee"
+        },
+        {
+          "locator": "본문 제22조; innerbody",
+          "normalized_text_sha256": "7a53346658d1f6e132d3aa84bd4580021cff3b04e707165cd3cbc24258127c23",
+          "text_sha256": "53aa15824592e303f7d34d1236d43aa60dfd859c0466cc325f323a50a4dc6178"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2418호",
+      "addendum_normalized_sha256": "ff18b0736f60df8c22a6063a71c8954d8e8ae27b3a86e8ad7d3823aa89dbb8b9",
+      "effective_notes": [
+        "제2418호 위임일은 제2431호 세칙 부칙 제2조의 2026-04-27이다."
+      ]
+    },
+    {
+      "id": "clearing-210018187",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210018187",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:12:07.053596+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 132917,
+      "sha256": "872658412272bd0c788272da8cd2f6c66e0bb18eb1131d2f6df44bb4b9fd223d",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/clearing-210018187.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "clearing",
+      "identifier": {
+        "bookid": "210018187",
+        "rule_number": "2287"
+      },
+      "header": "[제정 2025. 2. 5 규정 제2287호 <시행일 : 2025. 3. 4.>]",
+      "amendment_or_enactment_date": "2025-02-05",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2025-03-04",
+      "effective_date": "2025-03-04",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "clearing-210018187"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제3조; innerbody",
+          "normalized_text_sha256": "9ca04f1e7e24d033d8959f9b21333dcf202ef7aca575b9716045d485ab173857",
+          "text_sha256": "55ec3a8d25da945e519cae8d70e9a375ce924eb61865a1fdc75861200e2b935e"
+        },
+        {
+          "locator": "본문 제6조; innerbody",
+          "normalized_text_sha256": "e7fde0e9d6a599428e82e84499903e8635d00c5a543cfaf9ad596d07741f59c3",
+          "text_sha256": "f051e12cfe394ccfaa964bcc6e00c3bb65cd56e14961738b634ed77c90ba74ee"
+        },
+        {
+          "locator": "본문 제22조; innerbody",
+          "normalized_text_sha256": "7a53346658d1f6e132d3aa84bd4580021cff3b04e707165cd3cbc24258127c23",
+          "text_sha256": "38ceb6675174d21abec37d440ab19de57d93027c5350440a68ad99032e0fc09e"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2287호",
+      "addendum_normalized_sha256": "2e0698cc9319511b7960a1a8797c23ae01f4ca7043a5b46ec7fcbaf0dea62149",
+      "effective_notes": [
+        "제정 연혁 목록은 2025-02-05, 표제/부칙은 2025-03-04 시행이다. 제정일을 시행일로 쓰지 않았다."
+      ]
+    },
+    {
+      "id": "clearing-enforcement-view",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210232847",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:12:07.534290+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 215658,
+      "sha256": "49196204dcf7d457e4aa962d77ee357a42005016a9b11c7f6f9f49ed58fa3a91",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/clearing-enforcement-view.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "clearing-enforcement",
+      "identifier": {
+        "bookid": "210232847",
+        "rule_number": "2502"
+      },
+      "header": "[일부개정 2026. 9. 11 규정 제2502호 <시행일 : 2026. 9. 14>]",
+      "amendment_or_enactment_date": "2026-09-11",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-09-14",
+      "effective_date": "2026-09-14",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "clearing-enforcement-view"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "a73c1ea67449de6c72e2756e945855aa589c7e77833e49e40b7fb96bf966754f",
+          "text_sha256": "af0023765191bd20a15d6d4a1c49a6913eb6fe0511eb741a8ea694da27e91e98"
+        },
+        {
+          "locator": "본문 제11조; innerbody",
+          "normalized_text_sha256": "a09aeae5f05d06dfed8576cf7e6071486fa34ba2c7c814d906005443bbe067bd",
+          "text_sha256": "370adbad10bfef750a538d36048a1e1e679c42a8884952ad40f510f81d583315"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2502호",
+      "addendum_normalized_sha256": "8b0f8d9fc26ba483f364f6b7e3d3da4a0347ef5afb2cf93258daebea90f466fc",
+      "effective_notes": []
+    },
+    {
+      "id": "clearing-enforcement-210199110",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210199110",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:12:35.568897+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 216083,
+      "sha256": "96784377df98403c75e135b19f27e046f37909d682d047f6bcb6216d1c7ef220",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/clearing-enforcement-210199110.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "clearing-enforcement",
+      "identifier": {
+        "bookid": "210199110",
+        "rule_number": "2431"
+      },
+      "header": "[일부개정 2026. 4. 17 규정 제2431호 <시행일 : 2026. 4. 27>]",
+      "amendment_or_enactment_date": "2026-04-17",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2026-04-27",
+      "effective_date": "2026-04-27",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "clearing-enforcement-210199110"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "a73c1ea67449de6c72e2756e945855aa589c7e77833e49e40b7fb96bf966754f",
+          "text_sha256": "af0023765191bd20a15d6d4a1c49a6913eb6fe0511eb741a8ea694da27e91e98"
+        },
+        {
+          "locator": "본문 제11조; innerbody",
+          "normalized_text_sha256": "a09aeae5f05d06dfed8576cf7e6071486fa34ba2c7c814d906005443bbe067bd",
+          "text_sha256": "370adbad10bfef750a538d36048a1e1e679c42a8884952ad40f510f81d583315"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2431호",
+      "addendum_normalized_sha256": "cee212286c1c5b29683b3f08a4cdb3b358f80e3297dc497e783d0b77cf5067d4",
+      "effective_notes": []
+    },
+    {
+      "id": "clearing-enforcement-210028640",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "method": "POST",
+      "parameters": {
+        "bookid": "210028640",
+        "noformyn": "N"
+      },
+      "checked_at": "2026-11-14T07:12:35.982028+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationViewPop.do",
+      "bytes": 209396,
+      "sha256": "feda3bd4bccb95adf36e5acce13c4122023a84864359747dc1b0a2e830389d2f",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/clearing-enforcement-210028640.html",
+      "publisher": "한국거래소",
+      "source_type": "official_rule_version",
+      "kind": "clearing-enforcement",
+      "identifier": {
+        "bookid": "210028640",
+        "rule_number": "2297"
+      },
+      "header": "[제정 2025. 2. 27 규정 제2297호 <시행일 : 2025. 3. 4.>]",
+      "amendment_or_enactment_date": "2025-02-27",
+      "published_at": null,
+      "publication_precision": "not_displayed; amendment date is not a publication timestamp",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "header_effective_date": "2025-03-04",
+      "effective_date": "2025-03-04",
+      "effective_basis": "header and addendum or delegated date in referenced enforcement version",
+      "effective_basis_source_ids": [
+        "clearing-enforcement-210028640"
+      ],
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "clause_checks": [
+        {
+          "locator": "본문 제5조; innerbody",
+          "normalized_text_sha256": "a73c1ea67449de6c72e2756e945855aa589c7e77833e49e40b7fb96bf966754f",
+          "text_sha256": "af0023765191bd20a15d6d4a1c49a6913eb6fe0511eb741a8ea694da27e91e98"
+        },
+        {
+          "locator": "본문 제11조; innerbody",
+          "normalized_text_sha256": "a09aeae5f05d06dfed8576cf7e6071486fa34ba2c7c814d906005443bbe067bd",
+          "text_sha256": "370adbad10bfef750a538d36048a1e1e679c42a8884952ad40f510f81d583315"
+        }
+      ],
+      "addendum_locator": "본문 마지막 부칙 제2297호",
+      "addendum_normalized_sha256": "a8bb8edd9f6d269e17d942e18786b31cd050b782c92a823bebc115f2ba0977a2",
+      "effective_notes": [
+        "제정 연혁 목록은 2025-02-27, 표제/부칙은 2025-03-04 시행이다."
+      ]
+    },
+    {
+      "id": "kis-terms-20251024",
+      "url": "https://file.koreainvestment.com/updata/namo/02085953%EB%A7%A4%EB%A7%A4%EA%B1%B0%EB%9E%98%EA%B3%84%EC%A2%8C%EC%84%A4%EC%A0%95%EC%95%BD%EA%B4%80_%EC%A0%84%EB%AC%B8.pdf",
+      "checked_at": "2026-11-14T07:07:58.995756+00:00",
+      "http_status": 200,
+      "final_url": "https://file.koreainvestment.com/updata/namo/02085953%EB%A7%A4%EB%A7%A4%EA%B1%B0%EB%9E%98%EA%B3%84%EC%A2%8C%EC%84%A4%EC%A0%95%EC%95%BD%EA%B4%80_%EC%A0%84%EB%AC%B8.pdf",
+      "bytes": 306185,
+      "sha256": "1f9424ec0d51b248fdfe76f69dbe46c95afa83c80f7e91ccbc6bfd5a54268af6",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kis-terms-20251024.html",
+      "publisher": "한국투자증권",
+      "source_type": "official_broker_public_account_terms",
+      "content_type": "application/pdf",
+      "identifier": "02085953%EB%A7%A4%EB%A7%A4%EA%B1%B0%EB%9E%98%EA%B3%84%EC%A2%8C%EC%84%A4%EC%A0%95%EC%95%BD%EA%B4%80_%EC%A0%84%EB%AC%B8.pdf",
+      "amendment_or_enactment_date": "2025-10-24",
+      "published_at": null,
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "effective_date": "2025-10-24",
+      "locator": "매매거래계좌설정약관 제1·10·17·19·26·29조 및 해당 부칙; PDF p1/p3/p5/p6-7/p9",
+      "summary": "KRX 국내시장 거래에 적용되는 공개 약관이며 관계법규 준수와 약관 변경 통지/특약·비상사유를 둔다. 날짜별 결제 출력이나 현재 OpenAPI 모의계좌 적용 확인이 아니다.",
+      "date_specific_settlement_output": false,
+      "account_application_verified": false
+    },
+    {
+      "id": "kis-terms-20260403",
+      "url": "https://file.koreainvestment.com/updata/namo/02125213%EB%A7%A4%EB%A7%A4%EA%B1%B0%EB%9E%98%EA%B3%84%EC%A2%8C%EC%84%A4%EC%A0%95%EC%95%BD%EA%B4%80_%EC%A0%84%EB%AC%B8.pdf",
+      "checked_at": "2026-11-14T07:07:58.994491+00:00",
+      "http_status": 200,
+      "final_url": "https://file.koreainvestment.com/updata/namo/02125213%EB%A7%A4%EB%A7%A4%EA%B1%B0%EB%9E%98%EA%B3%84%EC%A2%8C%EC%84%A4%EC%A0%95%EC%95%BD%EA%B4%80_%EC%A0%84%EB%AC%B8.pdf",
+      "bytes": 311579,
+      "sha256": "7111512aa737cfd3a54e020e8a96cde43036c52ca99d9aab98d764d1ed4fd496",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/kis-terms-20260403.html",
+      "publisher": "한국투자증권",
+      "source_type": "official_broker_public_account_terms",
+      "content_type": "application/pdf",
+      "identifier": "02125213%EB%A7%A4%EB%A7%A4%EA%B1%B0%EB%9E%98%EA%B3%84%EC%A2%8C%EC%84%A4%EC%A0%95%EC%95%BD%EA%B4%80_%EC%A0%84%EB%AC%B8.pdf",
+      "amendment_or_enactment_date": "2026-04-03",
+      "published_at": null,
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "effective_date": "2026-04-03",
+      "locator": "매매거래계좌설정약관 제1·10·17·19·26·29조 및 해당 부칙; PDF p1/p3/p5/p6-7/p9",
+      "summary": "KRX 국내시장 거래에 적용되는 공개 약관이며 관계법규 준수와 약관 변경 통지/특약·비상사유를 둔다. 날짜별 결제 출력이나 현재 OpenAPI 모의계좌 적용 확인이 아니다.",
+      "date_specific_settlement_output": false,
+      "account_application_verified": false
+    },
+    {
+      "id": "krx-rule-guide",
+      "url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T1.jsp",
+      "final_url": "https://regulation.krx.co.kr/contents/RGL/03/03010100/RGL03010100T1.jsp",
+      "http_status": 200,
+      "bytes": 4278,
+      "checked_at": "2026-11-14T06:40:31.034675+00:00",
+      "sha256": "fb10f1d109b37e8ab1f06c277a7f4a091a73fd398e4c7b3890caae12efdc1ffb",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/krx-rule-guide.html",
+      "published_at_kst": null,
+      "publication_precision": "not_displayed",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "account_application_verified": false,
+      "adopted_as_date_specific_krx_settlement_output": false,
+      "publisher": "한국거래소",
+      "source_type": "official_krx_general_guide",
+      "identifier": "RGL03010100T1.jsp",
+      "locator": "매매거래의 일반절차; 휴장일",
+      "market_scope_as_published": "거래소시장 유가증권 매매 및 결제의 일반절차",
+      "summary": "휴장일의 매매·결제 중단 원칙과 T+2 납부 절차를 설명한다. 개별 연도/날짜와 과거 적용 규정 버전은 제시하지 않는다.",
+      "dated_settlement_dates": [],
+      "effective_version_for_target_dates": null,
+      "transport_note": "직접 공개 HTTP 조회는200/4278바이트 본문을 수신했다. 웹 검색 도구의 같은 URL 조회는403이었으며 검색 색인을 채택하지 않았다.",
+      "reused_without_http_refetch": true,
+      "published_at": null,
+      "effective_date": null
+    },
+    {
+      "id": "fsc-seollal",
+      "url": "https://www.fsc.go.kr/no010101/86226",
+      "final_url": "https://www.fsc.go.kr/no010101/86226",
+      "http_status": 200,
+      "bytes": 153218,
+      "checked_at": "2026-11-14T06:40:43.146043+00:00",
+      "sha256": "1c2f44300df7349a807a73ed8421859d40ee792138b591a72cb18dfb36fcfcba",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/fsc-seollal.html",
+      "published_at_kst": "2026-02-09",
+      "publication_precision": "date_only",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "account_application_verified": false,
+      "adopted_as_date_specific_krx_settlement_output": false,
+      "publisher": "금융위원회",
+      "source_type": "official_regulator_period_notice",
+      "identifier": "no010101/86226",
+      "locator": "도입부 연휴 기간; II (3) 증권 매매대금 지급일",
+      "market_scope_as_published": "주식(ETF 포함) 매도대금; 해외주식은 증권사 별도 안내",
+      "period": {
+        "start": "2026-02-14",
+        "end": "2026-02-18"
+      },
+      "target_dates": [
+        "2026-02-16",
+        "2026-02-17",
+        "2026-02-18"
+      ],
+      "reported_payment_window": [
+        "2026-02-19",
+        "2026-02-20"
+      ],
+      "reported_example": {
+        "trade_date": "2026-02-13",
+        "before_payment_date": "2026-02-17",
+        "deferred_payment_date": "2026-02-20"
+      },
+      "summary": "해당 연휴 중 도래하는 주식·ETF 매도대금의 연휴 이후 지급 순연과 구체적인 거래일 사례를 안내한다. KRX 날짜별 원출력이나 한국투자 계좌 관측은 아니다.",
+      "reused_without_http_refetch": true,
+      "published_at": "2026-02-09",
+      "effective_date": null
+    },
+    {
+      "id": "fsc-chuseok",
+      "url": "https://www.fsc.go.kr/no010101/87706",
+      "final_url": "https://www.fsc.go.kr/no010101/87706",
+      "http_status": 200,
+      "bytes": 155604,
+      "checked_at": "2026-11-14T06:40:43.169197+00:00",
+      "sha256": "e2382be8abdaeea830d633575166e76d3e52e7e13d61794d197b15a052ca4d5e",
+      "local_source": "/mnt/data/tmp/gs02-settlement-20261114/fsc-chuseok.html",
+      "published_at_kst": "2026-09-14",
+      "publication_precision": "date_only",
+      "first_available_at": null,
+      "correction_history_verified": false,
+      "account_application_verified": false,
+      "adopted_as_date_specific_krx_settlement_output": false,
+      "publisher": "금융위원회",
+      "source_type": "official_regulator_period_notice",
+      "identifier": "no010101/87706",
+      "locator": "도입부 연휴 기간; II (3) 증권 매매대금 지급일",
+      "market_scope_as_published": "주식(ETF 포함) 매도대금; 해외주식은 증권사 별도 안내",
+      "period": {
+        "start": "2026-09-24",
+        "end": "2026-09-27"
+      },
+      "target_dates": [
+        "2026-09-24",
+        "2026-09-25"
+      ],
+      "reported_payment_window": [
+        "2026-09-28",
+        "2026-09-30"
+      ],
+      "reported_example": {
+        "trade_date": "2026-09-23",
+        "before_payment_date": "2026-09-25",
+        "deferred_payment_date": "2026-09-29"
+      },
+      "summary": "해당 연휴 중 도래하는 주식·ETF 매도대금의 연휴 이후 지급 순연과 구체적인 거래일 사례를 안내한다. KRX 날짜별 원출력이나 한국투자 계좌 관측은 아니다.",
+      "reused_without_http_refetch": true,
+      "published_at": "2026-09-14",
+      "effective_date": null
+    }
+  ],
+  "version_groups": {
+    "kospi": [
+      {
+        "source_id": "kospi-210025251",
+        "bookid": "210025251",
+        "rule_number": "2285",
+        "history_display_date": "2025-03-04",
+        "header_effective_date": "2025-03-04",
+        "effective_date": "2025-03-04",
+        "next_history_display_date": "2026-01-29",
+        "target_dates": [
+          "2025-12-25",
+          "2026-01-01"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kospi-210163555",
+        "bookid": "210163555",
+        "rule_number": "2405",
+        "history_display_date": "2026-01-29",
+        "header_effective_date": "2026-01-29",
+        "effective_date": null,
+        "next_history_display_date": "2026-04-28",
+        "target_dates": [
+          "2026-02-16",
+          "2026-02-17",
+          "2026-02-18",
+          "2026-03-02"
+        ],
+        "interval_verdict": "HOLD",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kospi-210200859",
+        "bookid": "210200859",
+        "rule_number": "2433",
+        "history_display_date": "2026-04-28",
+        "header_effective_date": "2026-04-28",
+        "effective_date": null,
+        "next_history_display_date": "2026-07-02",
+        "target_dates": [
+          "2026-05-01",
+          "2026-05-05",
+          "2026-05-25"
+        ],
+        "interval_verdict": "HOLD",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kospi-210225665",
+        "bookid": "210225665",
+        "rule_number": "2471",
+        "history_display_date": "2026-07-02",
+        "header_effective_date": "2026-07-02",
+        "effective_date": "2026-07-02",
+        "next_history_display_date": "2026-08-19",
+        "target_dates": [
+          "2026-07-17",
+          "2026-08-17"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kospi-view",
+        "bookid": "330007789",
+        "rule_number": "2497",
+        "history_display_date": "2026-09-14",
+        "header_effective_date": "2026-09-14",
+        "effective_date": "2026-09-14",
+        "next_history_display_date": null,
+        "target_dates": [
+          "2026-09-24",
+          "2026-09-25",
+          "2026-10-05",
+          "2026-10-09"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      }
+    ],
+    "kosdaq": [
+      {
+        "source_id": "kosdaq-210019450",
+        "bookid": "210019450",
+        "rule_number": "2287",
+        "history_display_date": "2025-03-04",
+        "header_effective_date": "2025-03-04",
+        "effective_date": "2025-03-04",
+        "next_history_display_date": "2026-01-29",
+        "target_dates": [
+          "2025-12-25",
+          "2026-01-01"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kosdaq-210150966",
+        "bookid": "210150966",
+        "rule_number": "2403",
+        "history_display_date": "2026-01-29",
+        "header_effective_date": "2026-01-29",
+        "effective_date": "2026-01-29",
+        "next_history_display_date": "2026-04-27",
+        "target_dates": [
+          "2026-02-16",
+          "2026-02-17",
+          "2026-02-18",
+          "2026-03-02"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kosdaq-210164370",
+        "bookid": "210164370",
+        "rule_number": "2416",
+        "history_display_date": "2026-04-27",
+        "header_effective_date": "2026-04-27",
+        "effective_date": "2026-04-27",
+        "next_history_display_date": "2026-07-02",
+        "target_dates": [
+          "2026-05-01",
+          "2026-05-05",
+          "2026-05-25"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kosdaq-210223407",
+        "bookid": "210223407",
+        "rule_number": "2469",
+        "history_display_date": "2026-07-02",
+        "header_effective_date": "2026-07-02",
+        "effective_date": "2026-07-02",
+        "next_history_display_date": "2026-09-14",
+        "target_dates": [
+          "2026-07-17",
+          "2026-08-17"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kosdaq-view",
+        "bookid": "210228704",
+        "rule_number": "2498",
+        "history_display_date": "2026-09-14",
+        "header_effective_date": "2026-09-14",
+        "effective_date": "2026-09-14",
+        "next_history_display_date": null,
+        "target_dates": [
+          "2026-09-24",
+          "2026-09-25",
+          "2026-10-05",
+          "2026-10-09"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      }
+    ],
+    "kospi-enforcement": [
+      {
+        "source_id": "kospi-enforcement-210144538",
+        "bookid": "210144538",
+        "rule_number": "2377",
+        "history_display_date": "2025-12-01",
+        "header_effective_date": "2025-12-01",
+        "effective_date": "2025-12-01",
+        "next_history_display_date": "2026-01-12",
+        "target_dates": [
+          "2025-12-25",
+          "2026-01-01"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kospi-enforcement-210162119",
+        "bookid": "210162119",
+        "rule_number": "2399",
+        "history_display_date": "2026-02-09",
+        "header_effective_date": "2026-02-09",
+        "effective_date": "2026-02-09",
+        "next_history_display_date": "2026-04-01",
+        "target_dates": [
+          "2026-02-16",
+          "2026-02-17",
+          "2026-02-18",
+          "2026-03-02"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kospi-enforcement-210203562",
+        "bookid": "210203562",
+        "rule_number": "2436",
+        "history_display_date": "2026-04-28",
+        "header_effective_date": "2026-04-28",
+        "effective_date": "2026-04-28",
+        "next_history_display_date": "2026-07-02",
+        "target_dates": [
+          "2026-05-01",
+          "2026-05-05",
+          "2026-05-25"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kospi-enforcement-210225129",
+        "bookid": "210225129",
+        "rule_number": "2472",
+        "history_display_date": "2026-07-02",
+        "header_effective_date": "2026-07-02",
+        "effective_date": "2026-07-02",
+        "next_history_display_date": "2026-07-31",
+        "target_dates": [
+          "2026-07-17"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kospi-enforcement-210232087",
+        "bookid": "210232087",
+        "rule_number": "2479",
+        "history_display_date": "2026-07-31",
+        "header_effective_date": "2026-07-31",
+        "effective_date": "2026-07-31",
+        "next_history_display_date": "2026-08-19",
+        "target_dates": [
+          "2026-08-17"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kospi-enforcement-view",
+        "bookid": "330011206",
+        "rule_number": "2499",
+        "history_display_date": "2026-09-14",
+        "header_effective_date": "2026-09-14",
+        "effective_date": "2026-09-14",
+        "next_history_display_date": null,
+        "target_dates": [
+          "2026-09-24",
+          "2026-09-25",
+          "2026-10-05",
+          "2026-10-09"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      }
+    ],
+    "kosdaq-enforcement": [
+      {
+        "source_id": "kosdaq-enforcement-210047679",
+        "bookid": "210047679",
+        "rule_number": "2316",
+        "history_display_date": "2025-03-26",
+        "header_effective_date": "2025-03-31",
+        "effective_date": "2025-03-31",
+        "next_history_display_date": "2026-01-12",
+        "target_dates": [
+          "2025-12-25",
+          "2026-01-01"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kosdaq-enforcement-210155599",
+        "bookid": "210155599",
+        "rule_number": "2394",
+        "history_display_date": "2026-02-09",
+        "header_effective_date": "2026-02-09",
+        "effective_date": "2026-02-09",
+        "next_history_display_date": "2026-04-27",
+        "target_dates": [
+          "2026-02-16",
+          "2026-02-17",
+          "2026-02-18",
+          "2026-03-02"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kosdaq-enforcement-210184365",
+        "bookid": "210184365",
+        "rule_number": "2422",
+        "history_display_date": "2026-04-27",
+        "header_effective_date": "2026-04-27",
+        "effective_date": "2026-04-27",
+        "next_history_display_date": "2026-07-02",
+        "target_dates": [
+          "2026-05-01",
+          "2026-05-05",
+          "2026-05-25"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kosdaq-enforcement-210223538",
+        "bookid": "210223538",
+        "rule_number": "2470",
+        "history_display_date": "2026-07-02",
+        "header_effective_date": "2026-07-02",
+        "effective_date": "2026-07-02",
+        "next_history_display_date": "2026-09-14",
+        "target_dates": [
+          "2026-07-17",
+          "2026-08-17"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      },
+      {
+        "source_id": "kosdaq-enforcement-view",
+        "bookid": "230001398",
+        "rule_number": "2500",
+        "history_display_date": "2026-09-14",
+        "header_effective_date": "2026-09-14",
+        "effective_date": "2026-09-14",
+        "next_history_display_date": null,
+        "target_dates": [
+          "2026-09-24",
+          "2026-09-25",
+          "2026-10-05",
+          "2026-10-09"
+        ],
+        "interval_verdict": "DOCUMENT_SUPPORTED",
+        "limitations": "연혁/표제/부칙을 대조한 문서 구간. 개별 공지·비상 예외의 실제 발동 여부와 계좌 적용을 증명하지 않는다."
+      }
+    ],
+    "clearing": [
+      {
+        "source_id": "clearing-210018187",
+        "effective_date": "2025-03-04",
+        "next_effective_date": "2026-04-27",
+        "target_dates": [
+          "2025-12-25",
+          "2026-01-01",
+          "2026-02-16",
+          "2026-02-17",
+          "2026-02-18",
+          "2026-03-02"
+        ]
+      },
+      {
+        "source_id": "clearing-view",
+        "effective_date": "2026-04-27",
+        "next_effective_date": null,
+        "target_dates": [
+          "2026-05-01",
+          "2026-05-05",
+          "2026-05-25",
+          "2026-07-17",
+          "2026-08-17",
+          "2026-09-24",
+          "2026-09-25",
+          "2026-10-05",
+          "2026-10-09"
+        ]
+      }
+    ],
+    "clearing-enforcement": [
+      {
+        "source_id": "clearing-enforcement-210028640",
+        "effective_date": "2025-03-04",
+        "next_effective_date": "2026-04-27",
+        "target_dates": [
+          "2025-12-25",
+          "2026-01-01",
+          "2026-02-16",
+          "2026-02-17",
+          "2026-02-18",
+          "2026-03-02"
+        ]
+      },
+      {
+        "source_id": "clearing-enforcement-210199110",
+        "effective_date": "2026-04-27",
+        "next_effective_date": "2026-09-14",
+        "target_dates": [
+          "2026-05-01",
+          "2026-05-05",
+          "2026-05-25",
+          "2026-07-17",
+          "2026-08-17"
+        ]
+      },
+      {
+        "source_id": "clearing-enforcement-view",
+        "effective_date": "2026-09-14",
+        "next_effective_date": null,
+        "target_dates": [
+          "2026-09-24",
+          "2026-09-25",
+          "2026-10-05",
+          "2026-10-09"
+        ]
+      }
+    ]
+  },
+  "rule_checks": [
+    {
+      "kind": "kospi",
+      "clause": "7",
+      "source_count": 5,
+      "whitespace_and_quote_normalized_distinct_count": 1,
+      "normalized_sha256_values": [
+        "21d71d3fc238fd14f23d329286a7214e58100c58cef44ceaabcbec85fae89a43"
+      ],
+      "method": "공백 제거와 곡선 인용부호 정규화만 수행. 문서 전체/모든 예외의 동일성 검사가 아니다."
+    },
+    {
+      "kind": "kosdaq",
+      "clause": "7의2",
+      "source_count": 5,
+      "whitespace_and_quote_normalized_distinct_count": 1,
+      "normalized_sha256_values": [
+        "7fee8865737a7820b32e0875f54ac9af3233b773cbcb2bd2b77c72a7a2f13957"
+      ],
+      "method": "공백 제거와 곡선 인용부호 정규화만 수행. 문서 전체/모든 예외의 동일성 검사가 아니다."
+    },
+    {
+      "kind": "kospi-enforcement",
+      "clause": "9",
+      "source_count": 6,
+      "whitespace_and_quote_normalized_distinct_count": 1,
+      "normalized_sha256_values": [
+        "7c80ff174d8b772ec9a1ea84cda772c51f06ab2377e7a4a21547ae5892c3b402"
+      ],
+      "method": "공백 제거와 곡선 인용부호 정규화만 수행. 문서 전체/모든 예외의 동일성 검사가 아니다."
+    },
+    {
+      "kind": "kosdaq-enforcement",
+      "clause": "4의2",
+      "source_count": 5,
+      "whitespace_and_quote_normalized_distinct_count": 1,
+      "normalized_sha256_values": [
+        "1fa524804f66d5ae3531e2fc67df0a1bb2dd93e0b40c86d1e68c614d9cfd7187"
+      ],
+      "method": "공백 제거와 곡선 인용부호 정규화만 수행. 문서 전체/모든 예외의 동일성 검사가 아니다."
+    }
+  ],
+  "exception_analysis": [
+    {
+      "id": "ordinary-closed-days",
+      "source_ids": [
+        "kospi-210025251",
+        "kospi-view",
+        "kosdaq-210019450",
+        "kosdaq-view",
+        "clearing-210018187",
+        "clearing-view"
+      ],
+      "locators": [
+        "유가증권 제7조제1항제3호·제2항",
+        "코스닥 제7조의2제1항제2호·제2항",
+        "청산결제 제6조제1항제3호·제3항"
+      ],
+      "finding": "보통거래는 체결일 포함 세 번째 날 결제이며 휴장일은 일수에서 제외한다.",
+      "date_application_verified": false
+    },
+    {
+      "id": "closed-day-clearing-discretion",
+      "source_ids": [
+        "clearing-210018187",
+        "clearing-view"
+      ],
+      "locators": [
+        "제3조제1항·제2항"
+      ],
+      "finding": "휴장일 청산업무 중단 원칙에 업무상 필요할 때 청산업무를 할 수 있는 예외가 있다. 청산업무 허용을 특정 주식 보통결제일 허용과 동일시하지 않는다.",
+      "date_application_verified": false
+    },
+    {
+      "id": "emergency-date-change",
+      "source_ids": [
+        "kospi-210025251",
+        "kospi-view",
+        "kosdaq-210019450",
+        "kosdaq-view",
+        "clearing-210018187",
+        "clearing-view"
+      ],
+      "locators": [
+        "유가증권 제7조제3항",
+        "코스닥 제7조의2제3항",
+        "청산결제 제6조제4항"
+      ],
+      "finding": "비상사태·전산장애 등으로 정상 결제가 곤란하다고 거래소가 인정하면 결제일 변경이 가능하다.",
+      "date_application_verified": false
+    },
+    {
+      "id": "same-day-and-other-products",
+      "source_ids": [
+        "kospi-enforcement-210144538",
+        "kospi-enforcement-view",
+        "kosdaq-enforcement-210047679",
+        "kosdaq-enforcement-view",
+        "clearing-enforcement-210028640",
+        "clearing-enforcement-view"
+      ],
+      "locators": [
+        "유가증권 세칙 제9조",
+        "코스닥 세칙 제4조의2",
+        "청산결제 세칙 제5조 및 규정 제22조"
+      ],
+      "finding": "특정 단일회원 주권 거래의 사전 신청·거래소 인정과 미납부종목 매입인도에는 당일결제 예외가 있다. 국채/채무증권의 익일·당일결제와 지급준비금 예외는 일반 주식 보통거래로 전용하지 않는다.",
+      "date_application_verified": false
+    }
+  ],
+  "date_results": [
+    {
+      "date": "2025-12-25",
+      "reason": "크리스마스",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-6889"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=6889",
+        "source_identifier": "notice id=6889",
+        "source_sha256": "b88a9b1c596f99382a481b2134bc2ac14e7fbb8fa8a2c3c9271f939b4b16779b",
+        "published_at_kst": "2025-11-10T09:59:14+09:00",
+        "checked_at": "2026-11-14T06:07:22.567318+00:00",
+        "source_locator": "국내주식 > 12월 25일(목)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-210025251",
+        "kosdaq": "kosdaq-210019450",
+        "kospi-enforcement": "kospi-enforcement-210144538",
+        "kosdaq-enforcement": "kosdaq-enforcement-210047679",
+        "clearing": "clearing-210018187",
+        "clearing-enforcement": "clearing-enforcement-210028640"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20251024",
+      "effective_boundary_hold_source_ids": [],
+      "regulator_period_deferral_source_id": null,
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938591+00:00"
+    },
+    {
+      "date": "2026-01-01",
+      "reason": "신정",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-6944"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=6944",
+        "source_identifier": "notice id=6944",
+        "source_sha256": "6600772a9e4d4976519fc661f90bf8a418a44bf3d461fc262ae3cb0806f970e8",
+        "published_at_kst": "2025-12-12T14:43:46+09:00",
+        "checked_at": "2026-11-14T06:07:38.477795+00:00",
+        "source_locator": "국내주식 > 1월 1일(목)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-210025251",
+        "kosdaq": "kosdaq-210019450",
+        "kospi-enforcement": "kospi-enforcement-210144538",
+        "kosdaq-enforcement": "kosdaq-enforcement-210047679",
+        "clearing": "clearing-210018187",
+        "clearing-enforcement": "clearing-enforcement-210028640"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20251024",
+      "effective_boundary_hold_source_ids": [],
+      "regulator_period_deferral_source_id": null,
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938619+00:00"
+    },
+    {
+      "date": "2026-02-16",
+      "reason": "설 연휴",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7013"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7013",
+        "source_identifier": "notice id=7013",
+        "source_sha256": "96d118e0e71012d13bf9fa2e826c4ea4681e932b55b83b3151774754bf28effb",
+        "published_at_kst": "2026-01-23T14:55:44+09:00",
+        "checked_at": "2026-11-14T06:07:22.625293+00:00",
+        "source_locator": "국내주식 > 2월 16일(월) ~ 18일(수)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-210163555",
+        "kosdaq": "kosdaq-210150966",
+        "kospi-enforcement": "kospi-enforcement-210162119",
+        "kosdaq-enforcement": "kosdaq-enforcement-210155599",
+        "clearing": "clearing-210018187",
+        "clearing-enforcement": "clearing-enforcement-210028640"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20251024",
+      "effective_boundary_hold_source_ids": [
+        "kospi-210163555"
+      ],
+      "regulator_period_deferral_source_id": "fsc-seollal",
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인.",
+        "표제/부칙 상충 또는 조건부 시행 원문 연결의 남은 조건을 해소해야 한다."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938628+00:00"
+    },
+    {
+      "date": "2026-02-17",
+      "reason": "설날",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7013"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7013",
+        "source_identifier": "notice id=7013",
+        "source_sha256": "96d118e0e71012d13bf9fa2e826c4ea4681e932b55b83b3151774754bf28effb",
+        "published_at_kst": "2026-01-23T14:55:44+09:00",
+        "checked_at": "2026-11-14T06:07:22.625293+00:00",
+        "source_locator": "국내주식 > 2월 16일(월) ~ 18일(수)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-210163555",
+        "kosdaq": "kosdaq-210150966",
+        "kospi-enforcement": "kospi-enforcement-210162119",
+        "kosdaq-enforcement": "kosdaq-enforcement-210155599",
+        "clearing": "clearing-210018187",
+        "clearing-enforcement": "clearing-enforcement-210028640"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20251024",
+      "effective_boundary_hold_source_ids": [
+        "kospi-210163555"
+      ],
+      "regulator_period_deferral_source_id": "fsc-seollal",
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인.",
+        "표제/부칙 상충 또는 조건부 시행 원문 연결의 남은 조건을 해소해야 한다."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938636+00:00"
+    },
+    {
+      "date": "2026-02-18",
+      "reason": "설 연휴",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7013"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7013",
+        "source_identifier": "notice id=7013",
+        "source_sha256": "96d118e0e71012d13bf9fa2e826c4ea4681e932b55b83b3151774754bf28effb",
+        "published_at_kst": "2026-01-23T14:55:44+09:00",
+        "checked_at": "2026-11-14T06:07:22.625293+00:00",
+        "source_locator": "국내주식 > 2월 16일(월) ~ 18일(수)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-210163555",
+        "kosdaq": "kosdaq-210150966",
+        "kospi-enforcement": "kospi-enforcement-210162119",
+        "kosdaq-enforcement": "kosdaq-enforcement-210155599",
+        "clearing": "clearing-210018187",
+        "clearing-enforcement": "clearing-enforcement-210028640"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20251024",
+      "effective_boundary_hold_source_ids": [
+        "kospi-210163555"
+      ],
+      "regulator_period_deferral_source_id": "fsc-seollal",
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인.",
+        "표제/부칙 상충 또는 조건부 시행 원문 연결의 남은 조건을 해소해야 한다."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938645+00:00"
+    },
+    {
+      "date": "2026-03-02",
+      "reason": "삼일절 대체휴일",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7043"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7043",
+        "source_identifier": "notice id=7043",
+        "source_sha256": "a17dc201b2d2e886d18ae37be53287b91342cbd1b1e8516a3fc35beed39b8329",
+        "published_at_kst": "2026-02-11T08:06:13+09:00",
+        "checked_at": "2026-11-14T06:07:22.618151+00:00",
+        "source_locator": "국내주식 > 3월 2일 (월)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-210163555",
+        "kosdaq": "kosdaq-210150966",
+        "kospi-enforcement": "kospi-enforcement-210162119",
+        "kosdaq-enforcement": "kosdaq-enforcement-210155599",
+        "clearing": "clearing-210018187",
+        "clearing-enforcement": "clearing-enforcement-210028640"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20251024",
+      "effective_boundary_hold_source_ids": [
+        "kospi-210163555"
+      ],
+      "regulator_period_deferral_source_id": null,
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인.",
+        "표제/부칙 상충 또는 조건부 시행 원문 연결의 남은 조건을 해소해야 한다."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938653+00:00"
+    },
+    {
+      "date": "2026-05-01",
+      "reason": "근로자의 날",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7163"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7163",
+        "source_identifier": "notice id=7163",
+        "source_sha256": "917a5279d11f59f37b76124a65af3dfdaa63599a48746590315168ca383a3438",
+        "published_at_kst": "2026-04-13T16:50:59+09:00",
+        "checked_at": "2026-11-14T06:07:22.692381+00:00",
+        "source_locator": "국내주식 > 5월 1일(금)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-210200859",
+        "kosdaq": "kosdaq-210164370",
+        "kospi-enforcement": "kospi-enforcement-210203562",
+        "kosdaq-enforcement": "kosdaq-enforcement-210184365",
+        "clearing": "clearing-view",
+        "clearing-enforcement": "clearing-enforcement-210199110"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20260403",
+      "effective_boundary_hold_source_ids": [
+        "kospi-210200859"
+      ],
+      "regulator_period_deferral_source_id": null,
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인.",
+        "표제/부칙 상충 또는 조건부 시행 원문 연결의 남은 조건을 해소해야 한다."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938661+00:00"
+    },
+    {
+      "date": "2026-05-05",
+      "reason": "어린이날",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7163"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7163",
+        "source_identifier": "notice id=7163",
+        "source_sha256": "917a5279d11f59f37b76124a65af3dfdaa63599a48746590315168ca383a3438",
+        "published_at_kst": "2026-04-13T16:50:59+09:00",
+        "checked_at": "2026-11-14T06:07:22.692381+00:00",
+        "source_locator": "국내주식 > 5월 5일(화)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-210200859",
+        "kosdaq": "kosdaq-210164370",
+        "kospi-enforcement": "kospi-enforcement-210203562",
+        "kosdaq-enforcement": "kosdaq-enforcement-210184365",
+        "clearing": "clearing-view",
+        "clearing-enforcement": "clearing-enforcement-210199110"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20260403",
+      "effective_boundary_hold_source_ids": [
+        "kospi-210200859"
+      ],
+      "regulator_period_deferral_source_id": null,
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인.",
+        "표제/부칙 상충 또는 조건부 시행 원문 연결의 남은 조건을 해소해야 한다."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938669+00:00"
+    },
+    {
+      "date": "2026-05-25",
+      "reason": "부처님오신날 대체휴일",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7163"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7163",
+        "source_identifier": "notice id=7163",
+        "source_sha256": "917a5279d11f59f37b76124a65af3dfdaa63599a48746590315168ca383a3438",
+        "published_at_kst": "2026-04-13T16:50:59+09:00",
+        "checked_at": "2026-11-14T06:07:22.692381+00:00",
+        "source_locator": "국내주식 > 5월 25일(월)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-210200859",
+        "kosdaq": "kosdaq-210164370",
+        "kospi-enforcement": "kospi-enforcement-210203562",
+        "kosdaq-enforcement": "kosdaq-enforcement-210184365",
+        "clearing": "clearing-view",
+        "clearing-enforcement": "clearing-enforcement-210199110"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20260403",
+      "effective_boundary_hold_source_ids": [
+        "kospi-210200859"
+      ],
+      "regulator_period_deferral_source_id": null,
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인.",
+        "표제/부칙 상충 또는 조건부 시행 원문 연결의 남은 조건을 해소해야 한다."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938677+00:00"
+    },
+    {
+      "date": "2026-07-17",
+      "reason": "제헌절",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7298"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7298",
+        "source_identifier": "notice id=7298",
+        "source_sha256": "1f01ac50b300ed621b88cc6a6deb794287e6e8e21e7ecc23dbf16273b6aef41b",
+        "published_at_kst": "2026-06-16T23:26:34+09:00",
+        "checked_at": "2026-11-14T06:07:22.768835+00:00",
+        "source_locator": "국내주식 > 7월 17일(금)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-210225665",
+        "kosdaq": "kosdaq-210223407",
+        "kospi-enforcement": "kospi-enforcement-210225129",
+        "kosdaq-enforcement": "kosdaq-enforcement-210223538",
+        "clearing": "clearing-view",
+        "clearing-enforcement": "clearing-enforcement-210199110"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20260403",
+      "effective_boundary_hold_source_ids": [],
+      "regulator_period_deferral_source_id": null,
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938685+00:00"
+    },
+    {
+      "date": "2026-08-17",
+      "reason": "광복절 대체휴일",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7353"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7353",
+        "source_identifier": "notice id=7353",
+        "source_sha256": "09bd94334eee046249ea091d0411e11fd4fd429907f7a580f23fa070587d370b",
+        "published_at_kst": "2026-07-21T06:48:31+09:00",
+        "checked_at": "2026-11-14T06:07:22.879350+00:00",
+        "source_locator": "국내주식 > 8월 17일(월)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-210225665",
+        "kosdaq": "kosdaq-210223407",
+        "kospi-enforcement": "kospi-enforcement-210232087",
+        "kosdaq-enforcement": "kosdaq-enforcement-210223538",
+        "clearing": "clearing-view",
+        "clearing-enforcement": "clearing-enforcement-210199110"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20260403",
+      "effective_boundary_hold_source_ids": [],
+      "regulator_period_deferral_source_id": null,
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938694+00:00"
+    },
+    {
+      "date": "2026-09-24",
+      "reason": "추석 연휴",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7402"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7402",
+        "source_identifier": "notice id=7402",
+        "source_sha256": "5bf961bb64667dbb7b21ae168a1f151422a53a13887b32633ea85aaa5fc79bcf",
+        "published_at_kst": "2026-08-11T13:39:15+09:00",
+        "checked_at": "2026-11-14T06:07:22.955782+00:00",
+        "source_locator": "국내주식 > 9월 24일(목)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-view",
+        "kosdaq": "kosdaq-view",
+        "kospi-enforcement": "kospi-enforcement-view",
+        "kosdaq-enforcement": "kosdaq-enforcement-view",
+        "clearing": "clearing-view",
+        "clearing-enforcement": "clearing-enforcement-view"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20260403",
+      "effective_boundary_hold_source_ids": [],
+      "regulator_period_deferral_source_id": "fsc-chuseok",
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938701+00:00"
+    },
+    {
+      "date": "2026-09-25",
+      "reason": "추석",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7402"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7402",
+        "source_identifier": "notice id=7402",
+        "source_sha256": "5bf961bb64667dbb7b21ae168a1f151422a53a13887b32633ea85aaa5fc79bcf",
+        "published_at_kst": "2026-08-11T13:39:15+09:00",
+        "checked_at": "2026-11-14T06:07:22.955782+00:00",
+        "source_locator": "국내주식 > 9월 25일(금)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-view",
+        "kosdaq": "kosdaq-view",
+        "kospi-enforcement": "kospi-enforcement-view",
+        "kosdaq-enforcement": "kosdaq-enforcement-view",
+        "clearing": "clearing-view",
+        "clearing-enforcement": "clearing-enforcement-view"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20260403",
+      "effective_boundary_hold_source_ids": [],
+      "regulator_period_deferral_source_id": "fsc-chuseok",
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938708+00:00"
+    },
+    {
+      "date": "2026-10-05",
+      "reason": "개천절 대체휴일",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7478"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7478",
+        "source_identifier": "notice id=7478",
+        "source_sha256": "d6890c86f397ac81edcc31c8b9f491886becc9344e43584666e08d264d044a35",
+        "published_at_kst": "2026-09-16T13:30:05+09:00",
+        "checked_at": "2026-11-14T06:07:22.905473+00:00",
+        "source_locator": "국내주식 > 10월 5일(월)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-view",
+        "kosdaq": "kosdaq-view",
+        "kospi-enforcement": "kospi-enforcement-view",
+        "kosdaq-enforcement": "kosdaq-enforcement-view",
+        "clearing": "clearing-view",
+        "clearing-enforcement": "clearing-enforcement-view"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20260403",
+      "effective_boundary_hold_source_ids": [],
+      "regulator_period_deferral_source_id": null,
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938715+00:00"
+    },
+    {
+      "date": "2026-10-09",
+      "reason": "한글날",
+      "inherited_closure": {
+        "source_ids": [
+          "kakao-7478"
+        ],
+        "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7478",
+        "source_identifier": "notice id=7478",
+        "source_sha256": "d6890c86f397ac81edcc31c8b9f491886becc9344e43584666e08d264d044a35",
+        "published_at_kst": "2026-09-16T13:30:05+09:00",
+        "checked_at": "2026-11-14T06:07:22.905473+00:00",
+        "source_locator": "국내주식 > 10월 9일(금)",
+        "broker_reported_scope": "국내주식",
+        "broker_reported_market_open": false
+      },
+      "rule_snapshot_candidates": {
+        "kospi": "kospi-view",
+        "kosdaq": "kosdaq-view",
+        "kospi-enforcement": "kospi-enforcement-view",
+        "kosdaq-enforcement": "kosdaq-enforcement-view",
+        "clearing": "clearing-view",
+        "clearing-enforcement": "clearing-enforcement-view"
+      },
+      "broker_terms_candidate_source_id": "kis-terms-20260403",
+      "effective_boundary_hold_source_ids": [],
+      "regulator_period_deferral_source_id": null,
+      "general_guide_source_id": "krx-rule-guide",
+      "ordinary_trade_holiday_exclusion_supported_by_rule": true,
+      "rule_only_non_settlement_inference": "조건부 정합. 기존 국내주식 휴장 주석과 보통거래/휴장일 제외 규정은 부합한다. 날짜별 KRX 확인이나 계좌 관측으로 채택하지 않았다.",
+      "rule_calculated_settlement_day": null,
+      "calculation_performed": false,
+      "date_specific_krx_settlement_day": null,
+      "broker_reported_settlement_day": null,
+      "kis_account_settlement_day": null,
+      "exceptions_triggered_on_date": null,
+      "all_exceptions_resolved": false,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "날짜별 KRX 원출력/원공지 또는 국내주식 결제일을 명시한 증권사 공지 미확보.",
+        "휴장일 청산/비상 결제일 변경/특별 당일결제의 해당 날짜·해당 거래 적용 또는 미적용 근거 미확보.",
+        "모의계좌에 적용되는 약관 버전·특약/변경 통지·실제 결제 적용 미확인."
+      ],
+      "checked_at": "2026-11-14T07:15:23.938722+00:00"
+    }
+  ],
+  "inherited_settlement_annotations": [
+    {
+      "date": "2026-06-03",
+      "prior_evidence_path": "docs/evidence/calendar-reconciliation-2026-11-14.json",
+      "prior_source_id": "yuanta-2026-06-03",
+      "url": "https://account.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202605281454350000000004&gubun=norNotice",
+      "published_at_kst": "2026-05-28",
+      "checked_at": "2026-11-14T06:09:46.212293+00:00",
+      "sha256": "f616c7b8777c4b9e344d316d7da14188831ac58befad291ce7ba0c36bc84296a",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/yuanta-2026-06-03.html",
+      "local_snapshot_hash_matches": true,
+      "http_refetched_this_run": false,
+      "broker_reported_settlement_day": false
+    },
+    {
+      "date": "2025-12-31",
+      "prior_evidence_path": "docs/evidence/dividend-followup-2026-11-14.json",
+      "prior_evidence_sha256": "9639f44249708a2b1b32dda69887f6bcac4b08cb4c766a4868c99a3d5e249343",
+      "prior_source_id": "kis-yearend",
+      "url": "https://securities.koreainvestment.com/main/customer/notice/Notice.jsp?cmd=TF04ga000002&num=45922",
+      "published_at_kst": "2025-12-26 10:12",
+      "prior_http_checked_at": "2026-11-14T05:06:11.662070+00:00",
+      "source_sha256": "9cecc9659e31784c79b1fc4502e1daf7eb621dad4ff1fa7729244b83650d646f",
+      "local_source": "/mnt/data/tmp/gs02-dividend-followup-20261114/kis-yearend.html",
+      "local_snapshot_rehashed_at": "2026-11-14T06:12:52.205934+00:00",
+      "local_snapshot_hash_matches": true,
+      "http_refetched_this_run": false,
+      "broker_reported_market_open": false,
+      "broker_reported_settlement_day": false,
+      "krx_original_verified": false,
+      "scope": "Inherited year-end broker notice; prior annotation preserved, not upgraded to direct KRX or full settlement-contract verification."
+    }
+  ],
+  "access_attempts": [
+    {
+      "id": "kosdaq-current",
+      "url": "https://law.krx.co.kr/las/LawBon.jsp?lawid=000021",
+      "checked_at": "2026-11-14T07:06:18.968707+00:00",
+      "http_status": null,
+      "error": "TimeoutError: The read operation timed out",
+      "sha256": null,
+      "local_source": null,
+      "local_snapshot_hash_matches": false,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "kospi-enforcement-current",
+      "url": "https://law.krx.co.kr/las/LawBon.jsp?lawid=000111",
+      "checked_at": "2026-11-14T07:06:18.969419+00:00",
+      "http_status": null,
+      "error": "TimeoutError: The read operation timed out",
+      "sha256": null,
+      "local_source": null,
+      "local_snapshot_hash_matches": false,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-regulation-home",
+      "url": "https://regulation.krx.co.kr/",
+      "checked_at": "2026-11-14T07:06:18.969649+00:00",
+      "http_status": 200,
+      "final_url": "https://regulation.krx.co.kr/",
+      "bytes": 178,
+      "sha256": "4c5be32c67c1bb92d260485732392752d0b7c72d5b46100b35ea6d93971a9c3f",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-regulation-home.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-new-law-root",
+      "url": "https://rule.krx.co.kr",
+      "checked_at": "2026-11-14T07:06:31.081234+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/index.do",
+      "bytes": 14523,
+      "sha256": "7396ea619a03889f1b930b199f4d4bdbfd4b9c077dafddf299feee523a73595a",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-new-law-root.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-rule-index",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationMain.do?Menucd=BYLAW&index=law_rule&gbn=out",
+      "checked_at": "2026-11-14T07:06:43.970455+00:00",
+      "http_status": 405,
+      "bytes": 1534,
+      "sha256": "455a3b8520174161f60cdc50abb72ad9035488a347d202d6c5db30d412e5ebe4",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-rule-index.html",
+      "error": "HTTPError",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-portal-session",
+      "url": "https://rule.krx.co.kr/out/index.do",
+      "method": "GET",
+      "parameters": {},
+      "checked_at": "2026-11-14T07:07:05.424052+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/index.do",
+      "bytes": 14523,
+      "sha256": "fdd955c70f0a1c2cffd005715af8a7cbc0dc2eeb5fb5ce8b3a0d83b9fb2dde96",
+      "local_source": null,
+      "local_snapshot_hash_matches": false,
+      "adopted_as_rule_evidence": false,
+      "outcome": "공개 포털 초기 연결 응답. 후속 초기 연결로 보존본이 덮여 원응답 재검증 불가; 규정 증거/원문 보존 수에서 제외."
+    },
+    {
+      "id": "krx-rule-index-post",
+      "url": "https://rule.krx.co.kr/out/regulation/regulationMain.do",
+      "method": "POST",
+      "parameters": {
+        "Menucd": "BYLAW",
+        "index": "law_rule",
+        "gbn": "out"
+      },
+      "checked_at": "2026-11-14T07:07:05.699846+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/regulationMain.do",
+      "bytes": 18025,
+      "sha256": "dbda3692444945faadc415519174149dcea03ccae3459c6fb16741041a490c24",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-rule-index-post.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-portal-session",
+      "url": "https://rule.krx.co.kr/out/index.do",
+      "method": "GET",
+      "parameters": {},
+      "checked_at": "2026-11-14T07:07:28.413343+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/index.do",
+      "bytes": 14523,
+      "sha256": "ca67659b4e66ada35b9c1141f286996390fb1e5cdbbbb5ea29c791fd0d3a0e85",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-portal-session.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-tree-root",
+      "url": "https://rule.krx.co.kr/out/regulation/getTreeNode.do",
+      "method": "POST",
+      "parameters": {
+        "statecd": "현행",
+        "mtype": "htree",
+        "Menucd": "BYLAW",
+        "webgbn": "OUT",
+        "gbnid": "0",
+        "gbn2": "out",
+        "node": "0"
+      },
+      "checked_at": "2026-11-14T07:07:28.736229+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/getTreeNode.do",
+      "bytes": 702,
+      "sha256": "9a011a20a265c8d4911a1c73c80aa45b6aba7ec1cf7312842f38077647ce5258",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-tree-root.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-portal-session-krx-tree-business",
+      "url": "https://rule.krx.co.kr/out/index.do",
+      "method": "GET",
+      "parameters": {},
+      "checked_at": "2026-11-14T07:07:42.436939+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/index.do",
+      "bytes": 14523,
+      "sha256": "c89c74bfa0e4f157292a1b1e7314f4f8d6d4ac6143312445b7a8246d28806dd7",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-portal-session-krx-tree-business.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-tree-business",
+      "url": "https://rule.krx.co.kr/out/regulation/getTreeNode.do",
+      "method": "POST",
+      "parameters": {
+        "statecd": "현행",
+        "mtype": "htree",
+        "Menucd": "BYLAW",
+        "webgbn": "OUT",
+        "gbnid": "0",
+        "gbn2": "out",
+        "node": "204789005"
+      },
+      "checked_at": "2026-11-14T07:07:42.749418+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/getTreeNode.do",
+      "bytes": 4438,
+      "sha256": "3672c288e14a29608bb3f2bb0cd376d968da5be1d910e920b4f7d2951b4d130a",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-tree-business.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-portal-session-groups",
+      "url": "https://rule.krx.co.kr/out/index.do",
+      "method": "GET",
+      "parameters": {},
+      "checked_at": "2026-11-14T07:07:57.866847+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/index.do",
+      "bytes": 14523,
+      "sha256": "edc4c9d33afeef97afd82da1ab44bff2589f11313ed17aa54072ed711f2d8c84",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-portal-session-groups.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-tree-kospi",
+      "url": "https://rule.krx.co.kr/out/regulation/getTreeNode.do",
+      "method": "POST",
+      "parameters": {
+        "statecd": "현행",
+        "mtype": "htree",
+        "Menucd": "BYLAW",
+        "webgbn": "OUT",
+        "gbnid": "0",
+        "gbn2": "out",
+        "node": 204789022
+      },
+      "checked_at": "2026-11-14T07:07:57.994352+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/getTreeNode.do",
+      "bytes": 7873,
+      "sha256": "680fa736d4307bd48f082130a89c5577c30c5d1529295d5d665f6f746f05871e",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-tree-kospi.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-tree-kosdaq",
+      "url": "https://rule.krx.co.kr/out/regulation/getTreeNode.do",
+      "method": "POST",
+      "parameters": {
+        "statecd": "현행",
+        "mtype": "htree",
+        "Menucd": "BYLAW",
+        "webgbn": "OUT",
+        "gbnid": "0",
+        "gbn2": "out",
+        "node": 204789019
+      },
+      "checked_at": "2026-11-14T07:07:58.267237+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/getTreeNode.do",
+      "bytes": 7572,
+      "sha256": "f253e64eef5fca33fe7461dd1b8f7533166915a8b313b77cec93162c9bf6a187",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-tree-kosdaq.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-tree-common",
+      "url": "https://rule.krx.co.kr/out/regulation/getTreeNode.do",
+      "method": "POST",
+      "parameters": {
+        "statecd": "현행",
+        "mtype": "htree",
+        "Menucd": "BYLAW",
+        "webgbn": "OUT",
+        "gbnid": "0",
+        "gbn2": "out",
+        "node": 204789020
+      },
+      "checked_at": "2026-11-14T07:07:58.515158+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/getTreeNode.do",
+      "bytes": 3842,
+      "sha256": "437acc7a2e20c309b13440a6d1c2e836cb38f7b4cd392f0c6ebe560aff3dc2a6",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-tree-common.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-portal-session-kospi-view",
+      "url": "https://rule.krx.co.kr/out/index.do",
+      "method": "GET",
+      "parameters": {},
+      "checked_at": "2026-11-14T07:08:07.577253+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/index.do",
+      "bytes": 14523,
+      "sha256": "0592554f54939bcb3a810605a1a8e7ab2e8cac4008530c63e113c06658b5c140",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-portal-session-kospi-view.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-portal-session-four-current",
+      "url": "https://rule.krx.co.kr/out/index.do",
+      "method": "GET",
+      "parameters": {},
+      "checked_at": "2026-11-14T07:08:42.800105+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/index.do",
+      "bytes": 14523,
+      "sha256": "141808e334750d5274a176182624c5675a6079cb6d476b803982cbea8fcbd181",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-portal-session-four-current.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-portal-session-target-versions",
+      "url": "https://rule.krx.co.kr/out/index.do",
+      "method": "GET",
+      "parameters": {},
+      "checked_at": "2026-11-14T07:09:17.199331+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/index.do",
+      "bytes": 14523,
+      "sha256": "7bc4d072609f9c08ca26ab14679ae0581dbea3874b5210b49c2f7fc2531c9bba",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-portal-session-target-versions.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-portal-session-clearing",
+      "url": "https://rule.krx.co.kr/out/index.do",
+      "method": "GET",
+      "parameters": {},
+      "checked_at": "2026-11-14T07:11:18.942035+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/index.do",
+      "bytes": 14523,
+      "sha256": "697fb149a221cc04eabcb383163652f7297b78a8c0e8a086a14e292097b72fe0",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-portal-session-clearing.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-portal-session-clearing-tree",
+      "url": "https://rule.krx.co.kr/out/index.do",
+      "method": "GET",
+      "parameters": {},
+      "checked_at": "2026-11-14T07:11:54.697810+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/index.do",
+      "bytes": 14523,
+      "sha256": "c5c7db646e8ce53b8fbd8d733768034833a5acda44856d00be9dccca9934c991",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-portal-session-clearing-tree.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-tree-clearing",
+      "url": "https://rule.krx.co.kr/out/regulation/getTreeNode.do",
+      "method": "POST",
+      "parameters": {
+        "statecd": "현행",
+        "mtype": "htree",
+        "Menucd": "BYLAW",
+        "webgbn": "OUT",
+        "gbnid": "0",
+        "gbn2": "out",
+        "node": "210019517"
+      },
+      "checked_at": "2026-11-14T07:11:55.097794+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/regulation/getTreeNode.do",
+      "bytes": 1153,
+      "sha256": "636bf06714e8755afbc142914ad7db6c747b3bb7893f97e75d98cf6fa7c73b3d",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-tree-clearing.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-portal-session-clearing-versions",
+      "url": "https://rule.krx.co.kr/out/index.do",
+      "method": "GET",
+      "parameters": {},
+      "checked_at": "2026-11-14T07:12:06.817277+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/index.do",
+      "bytes": 14523,
+      "sha256": "529a97671013c05813a93885a2caf60f50f5bf1175f964e4a0792e7f2aa7b2de",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-portal-session-clearing-versions.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    },
+    {
+      "id": "krx-portal-session-clearing-enf-versions",
+      "url": "https://rule.krx.co.kr/out/index.do",
+      "method": "GET",
+      "parameters": {},
+      "checked_at": "2026-11-14T07:12:35.184155+00:00",
+      "http_status": 200,
+      "final_url": "https://rule.krx.co.kr/out/index.do",
+      "bytes": 14523,
+      "sha256": "76cc2439f8ac1b16abec011a4ed44b2815fd887654a26e2f5b14ddf1812b9640",
+      "local_source": "/mnt/data/tmp/gs02-rule-versions-20261114/krx-portal-session-clearing-enf-versions.html",
+      "local_snapshot_hash_matches": true,
+      "adopted_as_rule_evidence": false
+    }
+  ],
+  "prior_failures_reused": {
+    "prior_evidence_path": "docs/evidence/settlement-reconciliation-2026-11-14.json",
+    "same_condition_requests_repeated": 0,
+    "note": "기존 KRX 날짜행/빈본문/PDF 미확보·접근거부, KIND0건, 한국투자 공지목록 오류/삼성410·유안타 휴장검색66건은 반복하지 않았다. 새 법무포털/규정bookid와 한국투자 공개약관 식별자를 조회했다. law.krx 새 원규정 경로는 시간초과, rule.krx 목록 GET405 후 공식 공개 POST로 원문을 확보했다."
+  },
+  "summary": {
+    "target_count": 15,
+    "new_official_rule_version_count": 26,
+    "market_rule_and_enforcement_version_count": 21,
+    "clearing_rule_and_enforcement_version_count": 5,
+    "new_broker_public_terms_count": 2,
+    "reused_general_and_period_sources_count": 3,
+    "new_date_specific_krx_or_broker_settlement_verified_count": 0,
+    "target_hold_count": 15,
+    "effective_boundary_hold_source_ids": [
+      "kospi-210163555",
+      "kospi-210200859"
+    ],
+    "target_dates_with_effective_boundary_hold_count": 7,
+    "account_application_verified_count": 0,
+    "baseline_unchanged_file_count": 19,
+    "broker_authenticated_calls": 0,
+    "orders_sent": 0,
+    "followup_sessions_created": 0,
+    "backtest_ready": false,
+    "issue11_state": "OPEN",
+    "corporate_actions_hold_count": 8,
+    "code_tests_locally": "NOT_RUN; no code change",
+    "external_review": "NOT_RUN; document-only public research; explicitly not auto-added"
+  }
+}
