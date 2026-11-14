@@ -1,8 +1,8 @@
 # 현재 작업과 인수인계
 
-- 현재 작업: [Issue #11](https://github.com/krdn/gon-stock02/issues/11) · [단계 기록](tasks/11-data-contract-next.md). 공개 조사 PR #19·정지 대조 PR #20 이후 같은 세션에서 기업행동을 대조했다. [결과](research/data-contract-2026-11.md#2026-11-14-기업행동-공시-대조)·[증거](evidence/corporate-actions-2026-11-14.json)의 PR/CI·최종 전달 상태는 Issue #11 댓글이 기준이다. 배당락 적용일 3건은 일치, 5건과 현금/수량 조정 계약은 미완료이며 8건 모두 HOLD다.
+- 현재 작업: [Issue #11](https://github.com/krdn/gon-stock02/issues/11) · [단계 기록](tasks/11-data-contract-next.md). PR #21 이후 같은 세션에서 배당 승인·지급을 후속 대조했다. [결과](research/data-contract-2026-11.md#2026-11-14-배당-승인-및-지급-후속)·[증거](evidence/dividend-followup-2026-11-14.json)의 PR/CI·최종 전달 상태는 Issue #11 댓글이 기준이다. 배당락일은 기존 거래소 공지 3건+연말 공지 조건 적용 3건, SK 2건은 계산 후보다. 주총 금액 4건·SEIBro 확정 표시 8건을 확인했으나 주성 지급일 차이·실입금·전체 조정 계약은 미완료이며 8건 모두 HOLD다.
 - 새 세션 필수 읽기: AGENTS.md → docs/WORKFLOW.md → 이 파일 → 지정된 작업 파일과 그 필수 자료. 전체 과거 대화·작업 기록·로그를 반복 읽지 않는다.
-- 자동 전환: [운영 절차](operations/session-handoff.md). 이전 공개 조사·정지 대조 단계는 종료됐다. 사용자 추가 지시의 이번 범위는 `11-corporate-actions-20261114` 한 단계이며 현재 세션에서 진행한다. 새 Codex 세션은 만들지 않았고 이 단계에서 종료한다. Issue #16은 재실행하지 않는다.
+- 자동 전환: [운영 절차](operations/session-handoff.md). 이전 조사 단계들은 종료됐다. 사용자 추가 지시의 이번 범위는 `11-dividend-followup-20261114` 한 단계이며 현재 세션에서 진행한다. 새 Codex 세션은 만들지 않았고 이 단계에서 종료한다. Issue #16은 재실행하지 않는다.
 - 공통 목표·결정: 4종목 단기 전략 모의 검증, [3단계 계획](plans/short-term-trading-2026-11.md). 주문 OFF, 백테스트 HOLD, 실주문·추가 유료 지출 범위 밖. `.infisical.yaml`은 기존 별도 변경으로 보존한다.
 - 남은 계약 검증: 과거 날짜별 세션·종목별 정지·기업행동·봉 확정·같은 계좌 비용·장중 실제 수신. 첫 수용 기준 외 네 기준은 미완료다. 이번 조사에서는 공개 자료만 조회했고 인증 브로커 호출·주문은 0건이다. 재개 시 [단계 기록](tasks/11-data-contract-next.md), [수신 운영](operations/minute-capture.md), 최신 Issue #11/PR/CI를 확인하며 자동 재개하지 않는다.
 - 대기 작업: [Issue #5](https://github.com/krdn/gon-stock02/issues/5) 실제 모의 접수·체결·취소. 재개 시 [주문 운영](operations/paper-order-ledger.md)과 [리뷰](reviews/paper-order-ledger-2026-11-13.md)를 읽고 공식 개장일·시간을 재확인한다. 기존 주문 0건이며 자동 재개하지 않는다.
