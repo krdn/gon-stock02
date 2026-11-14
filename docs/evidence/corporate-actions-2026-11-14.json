@@ -1,0 +1,549 @@
+{
+  "checked_at": "2026-11-14T03:52:42.632072+00:00",
+  "issue": "https://github.com/krdn/gon-stock02/issues/11",
+  "stage": "11-corporate-actions-20261114",
+  "authorization_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6871186212",
+  "owner_thread_id": "01a1d7da-b8cf-7031-ac86-0b8c5a680972",
+  "base_commit": "18980a8df4525bb24c23c1691933e3ba30a44e61",
+  "input_markers": {
+    "path": "docs/evidence/data-contract-2026-11-13.json",
+    "sha256": "83c4356ed1b2d46194bb9e513ae8ffd3ea7e789d96ae067f102e4c9b88828f08",
+    "count": 8,
+    "original_file_changed": false
+  },
+  "method": {
+    "browser": "Isolated agent-browser Chromium; closed after capture.",
+    "query_period": [
+      "2025-09-01",
+      "2026-11-14"
+    ],
+    "report_title_filter": "배당",
+    "source_count": 12,
+    "publication_time": "Minute-resolution posting time displayed in KIND search, in Asia/Seoul. Board decision date is recorded separately.",
+    "capture_time": "After document rendering, not a measured network receipt timestamp.",
+    "selection": "Four company/dividend searches; 12 selected full document bodies, including the previously identified cancellation listing notice. Not all search results or all corporate-action classes were opened.",
+    "first_publication_or_latest_amendment_exhaustively_verified": false
+  },
+  "searches": [
+    {
+      "symbol": "000660",
+      "query": {
+        "repIsuSrtCd": "A000660",
+        "reportNm": "배당",
+        "fromDate": "2025-09-01",
+        "toDate": "2026-11-14",
+        "reportNmTemp": "배당"
+      },
+      "observed_at": "2026-11-14T03:47:38.633Z",
+      "result_count": 12,
+      "all_result_pages_read": true,
+      "local_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/000660-dividend-search.json",
+      "capture_sha256": "4fea354bb2a28f613bd0b7e71829c893cd32a63842bd9302ff3a67f173b20db5"
+    },
+    {
+      "symbol": "005930",
+      "query": {
+        "repIsuSrtCd": "A005930",
+        "reportNm": "배당",
+        "fromDate": "2025-09-01",
+        "toDate": "2026-11-14",
+        "reportNmTemp": "배당"
+      },
+      "observed_at": "2026-11-14T03:47:39.596Z",
+      "result_count": 7,
+      "all_result_pages_read": true,
+      "local_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/005930-dividend-search.json",
+      "capture_sha256": "0d5e44d3923cd6907f2f915ecc37185bfdf896a0a5289b2337c2a3f777f8b152"
+    },
+    {
+      "symbol": "009150",
+      "query": {
+        "repIsuSrtCd": "A009150",
+        "reportNm": "배당",
+        "fromDate": "2025-09-01",
+        "toDate": "2026-11-14",
+        "reportNmTemp": "배당"
+      },
+      "observed_at": "2026-11-14T03:47:40.539Z",
+      "result_count": 1,
+      "all_result_pages_read": true,
+      "local_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/009150-dividend-search.json",
+      "capture_sha256": "2e597fd677e0a8757b29a22a14a909e91bc13dead06d8e8e130b25412e80447f"
+    },
+    {
+      "symbol": "036930",
+      "query": {
+        "repIsuSrtCd": "A036930",
+        "reportNm": "배당",
+        "fromDate": "2025-09-01",
+        "toDate": "2026-11-14",
+        "reportNmTemp": "배당"
+      },
+      "observed_at": "2026-11-14T03:47:41.486Z",
+      "result_count": 1,
+      "all_result_pages_read": true,
+      "local_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/036930-dividend-search.json",
+      "capture_sha256": "1a714c6ad25a99c337ee9f883b9f26e6bb64ce9ff3ab44a28e9f53cc81b38f19"
+    }
+  ],
+  "sources": [
+    {
+      "id": "20251029000738",
+      "symbol": "000660",
+      "title": "현금ㆍ현물 배당 결정",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251029000738&docno=&viewerhost=&viewerport=",
+      "published_at_kst": "2025-10-29 17:23",
+      "captured_at": "2026-11-14T03:48:51.904Z",
+      "local_dom_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/20251029000738-document.json",
+      "capture_sha256": "1fc906596e383e4a841831f5d80f060cdf8767364f254cd361d40633dc95c94d",
+      "document_text_sha256": "cdb936ed4776729341f3f81d3e17a261e447a18d74dc1066349be5a950c71eb8",
+      "facts": {
+        "common_dividend_krw": 375,
+        "record_date": "2025-11-30",
+        "scheduled_payment_date": null,
+        "board_decision_date": "2025-10-29",
+        "actual_payment_verified": false
+      }
+    },
+    {
+      "id": "20251126000457",
+      "symbol": "000660",
+      "title": "중간(분기)배당락 기준가격 안내",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251126000457&docno=&viewerhost=&viewerport=",
+      "published_at_kst": "2025-11-26 16:02",
+      "captured_at": "2026-11-14T03:48:52.580Z",
+      "local_dom_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/20251126000457-document.json",
+      "capture_sha256": "0b5006787273650170f0d2c091215e89c2e133298115e84f5b67adef111c0242",
+      "document_text_sha256": "ee18047bed6f45baf4073be1a80427104c3490e554b5b1f67643325144cc0df2",
+      "facts": {
+        "ex_dividend_effective_date": "2025-11-27",
+        "reference_price_unchanged": true
+      }
+    },
+    {
+      "id": "20260128000597",
+      "symbol": "000660",
+      "title": "현금ㆍ현물 배당 결정",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260128000597&docno=&viewerhost=&viewerport=",
+      "published_at_kst": "2026-01-28 16:04",
+      "captured_at": "2026-11-14T03:48:53.220Z",
+      "local_dom_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/20260128000597-document.json",
+      "capture_sha256": "77a2bec8f40a53aa786f52a0d582479f3b176d47904685316317f89be7dc39dd",
+      "document_text_sha256": "d4e9b3a7adec9cbd94da4c59b388a67d53141b57d28c5b9b871a4e4c1bbc69f6",
+      "facts": {
+        "common_dividend_krw": 1875,
+        "record_date": "2026-02-28",
+        "scheduled_payment_date": null,
+        "board_decision_date": "2026-01-28",
+        "actual_payment_verified": false
+      }
+    },
+    {
+      "id": "20260422000788",
+      "symbol": "000660",
+      "title": "현금ㆍ현물 배당 결정",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260422000788&docno=&viewerhost=&viewerport=",
+      "published_at_kst": "2026-04-22 17:35",
+      "captured_at": "2026-11-14T03:48:53.947Z",
+      "local_dom_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/20260422000788-document.json",
+      "capture_sha256": "4bf9c0d117f1431db6e370d8439364c3409a4a9dce7bbea09a246c3bd8bcca15",
+      "document_text_sha256": "f08da11817767ae311e208576dcb8a6a8ec03b71de8c87c31674bce4c190e7c3",
+      "facts": {
+        "common_dividend_krw": 375,
+        "record_date": "2026-05-31",
+        "scheduled_payment_date": null,
+        "board_decision_date": "2026-04-22",
+        "actual_payment_verified": false
+      }
+    },
+    {
+      "id": "20260527000541",
+      "symbol": "000660",
+      "title": "중간(분기)배당락 기준가격 안내",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260527000541&docno=&viewerhost=&viewerport=",
+      "published_at_kst": "2026-05-27 15:52",
+      "captured_at": "2026-11-14T03:48:54.540Z",
+      "local_dom_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/20260527000541-document.json",
+      "capture_sha256": "934bbb84ac6a3a6c125664c0d7cab137bd03b8ae5555f82369b02ca2112ee3c0",
+      "document_text_sha256": "f0d6eaf76c2956a982e3eec9480bed7f683dc91709a070befcaa0467edca4a7c",
+      "facts": {
+        "ex_dividend_effective_date": "2026-05-28",
+        "reference_price_unchanged": true
+      }
+    },
+    {
+      "id": "20260807000589",
+      "symbol": "000660",
+      "title": "현금ㆍ현물 배당 결정",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260807000589&docno=&viewerhost=&viewerport=",
+      "published_at_kst": "2026-08-07 15:57",
+      "captured_at": "2026-11-14T03:48:55.232Z",
+      "local_dom_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/20260807000589-document.json",
+      "capture_sha256": "d1e6da26b95f49efa1548634357e7424dc6140ec73fe3462048de3c22293537a",
+      "document_text_sha256": "edc56ee3ec23d89d04a6ee343303eac2024768d12c9c9fdff425c1a3a501f752",
+      "facts": {
+        "common_dividend_krw": 375,
+        "record_date": "2026-08-31",
+        "scheduled_payment_date": null,
+        "board_decision_date": "2026-08-07",
+        "actual_payment_verified": false
+      }
+    },
+    {
+      "id": "20260129000004",
+      "symbol": "005930",
+      "title": "현금ㆍ현물 배당 결정",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260129000004&docno=&viewerhost=&viewerport=",
+      "published_at_kst": "2026-01-29 07:32",
+      "captured_at": "2026-11-14T03:48:56.021Z",
+      "local_dom_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/20260129000004-document.json",
+      "capture_sha256": "a6743f2d945ace323c2710fb278f5da9b0eeb31ad5867e28c9e5672e466fc63b",
+      "document_text_sha256": "9d1ef95afd2bb3050144618f2414dacc2c3bed70742139d1b512e1ed11c7c510",
+      "facts": {
+        "common_dividend_krw": 566,
+        "record_date": "2025-12-31",
+        "scheduled_payment_date": null,
+        "board_decision_date": "2026-01-28",
+        "actual_payment_verified": false
+      }
+    },
+    {
+      "id": "20260928000389",
+      "symbol": "005930",
+      "title": "중간(분기)배당락 기준가격 안내",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260928000389&docno=&viewerhost=&viewerport=",
+      "published_at_kst": "2026-09-28 15:52",
+      "captured_at": "2026-11-14T03:48:56.796Z",
+      "local_dom_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/20260928000389-document.json",
+      "capture_sha256": "4d43123e973312a0ce83d4db857715eedf2734eb2d44ca80702a33b5824c1987",
+      "document_text_sha256": "12f9198063cb7ee34a9acf3ad632840c409801c3e489ae4d613930989e7ac0a7",
+      "facts": {
+        "ex_dividend_effective_date": "2026-09-29",
+        "reference_price_unchanged": true
+      }
+    },
+    {
+      "id": "20261029000101",
+      "symbol": "005930",
+      "title": "현금ㆍ현물 배당 결정",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261029000101&docno=&viewerhost=&viewerport=",
+      "published_at_kst": "2026-10-29 09:53",
+      "captured_at": "2026-11-14T03:48:57.494Z",
+      "local_dom_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/20261029000101-document.json",
+      "capture_sha256": "647df30460c750790d777e138ec3eb782f14b2af15202bbccbb4ab29f473f7bb",
+      "document_text_sha256": "50ac87c2c1c3a6f8318f526495dea29348189cd3eec3b67a06848569078506a4",
+      "facts": {
+        "common_dividend_krw": 4601,
+        "record_date": "2026-09-30",
+        "scheduled_payment_date": "2026-11-27",
+        "board_decision_date": "2026-10-29",
+        "actual_payment_verified": false
+      }
+    },
+    {
+      "id": "20260123000210",
+      "symbol": "009150",
+      "title": "현금ㆍ현물 배당 결정",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260123000210&docno=&viewerhost=&viewerport=",
+      "published_at_kst": "2026-01-23 12:34",
+      "captured_at": "2026-11-14T03:48:58.105Z",
+      "local_dom_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/20260123000210-document.json",
+      "capture_sha256": "6be9807dfca520c6dea91fcd9b57e67a5348f0090a1fdc72d80c7836cf622874",
+      "document_text_sha256": "af4b4c4d3096c2c520419ca3c6231c7fb2f3d1b900edf5a8c01aa1c74dbd63b5",
+      "facts": {
+        "common_dividend_krw": 2350,
+        "record_date": "2025-12-31",
+        "scheduled_payment_date": null,
+        "board_decision_date": "2026-01-23",
+        "actual_payment_verified": false
+      }
+    },
+    {
+      "id": "20260210000736",
+      "symbol": "036930",
+      "title": "현금ㆍ현물배당 결정",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260210000736&docno=&viewerhost=&viewerport=",
+      "published_at_kst": "2026-02-10 16:02",
+      "captured_at": "2026-11-14T03:48:58.787Z",
+      "local_dom_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/20260210000736-document.json",
+      "capture_sha256": "e270148f2e5b10a2eb3d84b2c85c9539a04955342c9ee39beb44c84f46e19992",
+      "document_text_sha256": "366bb99baf5f8a925b87e118b595e77f4a32d070e4b4e6fbd2d53df994e5c60f",
+      "facts": {
+        "common_dividend_krw": 53,
+        "record_date": "2025-12-31",
+        "scheduled_payment_date": "2026-04-24",
+        "board_decision_date": "2026-02-10",
+        "actual_payment_verified": false
+      }
+    },
+    {
+      "id": "20261112000210",
+      "symbol": "000660",
+      "title": "변경상장(주식소각)",
+      "url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261112000210&docno=&viewerhost=&viewerport=",
+      "published_at_kst": "2026-11-12 17:03",
+      "captured_at": "2026-11-14T03:48:59.375Z",
+      "local_dom_capture": "/mnt/data/tmp/gs02-corporate-actions-20261114/20261112000210-document.json",
+      "capture_sha256": "5db2f3731b303cdd496e5285f5cf5dcb8ebcbc74985c9d8cb3e7ffa49c27beec",
+      "document_text_sha256": "87d129188ce778257677538caf68dfb94de09a0f35bec13982a2226b53e7c927",
+      "facts": {
+        "shares_before": 730492365,
+        "shares_after": 706799093,
+        "shares_cancelled": 23693272,
+        "stated_cancellation_date": "2026-11-05",
+        "announced_listing_change_date": "2026-11-17",
+        "listing_change_future_at_check": true,
+        "account_holding_quantity_change_verified": false
+      }
+    }
+  ],
+  "events": [
+    {
+      "symbol": "000660",
+      "supplier_marker_date": "2025-11-27",
+      "supplier_marker_code": "05",
+      "supplier_split_rate_literal": "0.00",
+      "cash_decision_source_id": "20251029000738",
+      "record_date": "2025-11-30",
+      "disclosed_common_dividend_krw": 375,
+      "cash_decision_published_at_kst": "2025-10-29 17:23",
+      "cash_notice_after_supplier_marker": false,
+      "exact_ex_date_source_id": "20251126000457",
+      "official_ex_date": "2025-11-27",
+      "exact_ex_date_matches_supplier": true,
+      "reconciliation": "EX_DATE_MATCHED",
+      "actual_payment_date": null,
+      "account_cash_adjustment_verified": false,
+      "provider_price_adjustment_factor": null,
+      "historical_received_at": null,
+      "strategy_eligible": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "000660",
+      "supplier_marker_date": "2026-02-26",
+      "supplier_marker_code": "02",
+      "supplier_split_rate_literal": "0.00",
+      "cash_decision_source_id": "20260128000597",
+      "record_date": "2026-02-28",
+      "disclosed_common_dividend_krw": 1875,
+      "cash_decision_published_at_kst": "2026-01-28 16:04",
+      "cash_notice_after_supplier_marker": false,
+      "exact_ex_date_source_id": null,
+      "official_ex_date": null,
+      "exact_ex_date_matches_supplier": null,
+      "reconciliation": "RECORD_DATE_AND_CASH_NOTICE_ONLY",
+      "actual_payment_date": null,
+      "account_cash_adjustment_verified": false,
+      "provider_price_adjustment_factor": null,
+      "historical_received_at": null,
+      "strategy_eligible": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "000660",
+      "supplier_marker_date": "2026-05-28",
+      "supplier_marker_code": "05",
+      "supplier_split_rate_literal": "0.00",
+      "cash_decision_source_id": "20260422000788",
+      "record_date": "2026-05-31",
+      "disclosed_common_dividend_krw": 375,
+      "cash_decision_published_at_kst": "2026-04-22 17:35",
+      "cash_notice_after_supplier_marker": false,
+      "exact_ex_date_source_id": "20260527000541",
+      "official_ex_date": "2026-05-28",
+      "exact_ex_date_matches_supplier": true,
+      "reconciliation": "EX_DATE_MATCHED",
+      "actual_payment_date": null,
+      "account_cash_adjustment_verified": false,
+      "provider_price_adjustment_factor": null,
+      "historical_received_at": null,
+      "strategy_eligible": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "000660",
+      "supplier_marker_date": "2026-08-28",
+      "supplier_marker_code": "05",
+      "supplier_split_rate_literal": "0.00",
+      "cash_decision_source_id": "20260807000589",
+      "record_date": "2026-08-31",
+      "disclosed_common_dividend_krw": 375,
+      "cash_decision_published_at_kst": "2026-08-07 15:57",
+      "cash_notice_after_supplier_marker": false,
+      "exact_ex_date_source_id": null,
+      "official_ex_date": null,
+      "exact_ex_date_matches_supplier": null,
+      "reconciliation": "RECORD_DATE_AND_CASH_NOTICE_ONLY",
+      "actual_payment_date": null,
+      "account_cash_adjustment_verified": false,
+      "provider_price_adjustment_factor": null,
+      "historical_received_at": null,
+      "strategy_eligible": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "005930",
+      "supplier_marker_date": "2025-12-29",
+      "supplier_marker_code": "02",
+      "supplier_split_rate_literal": "0.00",
+      "cash_decision_source_id": "20260129000004",
+      "record_date": "2025-12-31",
+      "disclosed_common_dividend_krw": 566,
+      "cash_decision_published_at_kst": "2026-01-29 07:32",
+      "cash_notice_after_supplier_marker": true,
+      "exact_ex_date_source_id": null,
+      "official_ex_date": null,
+      "exact_ex_date_matches_supplier": null,
+      "reconciliation": "RECORD_DATE_AND_CASH_NOTICE_ONLY",
+      "actual_payment_date": null,
+      "account_cash_adjustment_verified": false,
+      "provider_price_adjustment_factor": null,
+      "historical_received_at": null,
+      "strategy_eligible": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "005930",
+      "supplier_marker_date": "2026-09-29",
+      "supplier_marker_code": "05",
+      "supplier_split_rate_literal": "0.00",
+      "cash_decision_source_id": "20261029000101",
+      "record_date": "2026-09-30",
+      "disclosed_common_dividend_krw": 4601,
+      "cash_decision_published_at_kst": "2026-10-29 09:53",
+      "cash_notice_after_supplier_marker": true,
+      "exact_ex_date_source_id": "20260928000389",
+      "official_ex_date": "2026-09-29",
+      "exact_ex_date_matches_supplier": true,
+      "reconciliation": "EX_DATE_MATCHED",
+      "actual_payment_date": null,
+      "account_cash_adjustment_verified": false,
+      "provider_price_adjustment_factor": null,
+      "historical_received_at": null,
+      "strategy_eligible": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "009150",
+      "supplier_marker_date": "2025-12-29",
+      "supplier_marker_code": "02",
+      "supplier_split_rate_literal": "0.00",
+      "cash_decision_source_id": "20260123000210",
+      "record_date": "2025-12-31",
+      "disclosed_common_dividend_krw": 2350,
+      "cash_decision_published_at_kst": "2026-01-23 12:34",
+      "cash_notice_after_supplier_marker": true,
+      "exact_ex_date_source_id": null,
+      "official_ex_date": null,
+      "exact_ex_date_matches_supplier": null,
+      "reconciliation": "RECORD_DATE_AND_CASH_NOTICE_ONLY",
+      "actual_payment_date": null,
+      "account_cash_adjustment_verified": false,
+      "provider_price_adjustment_factor": null,
+      "historical_received_at": null,
+      "strategy_eligible": false,
+      "eligibility": "HOLD"
+    },
+    {
+      "symbol": "036930",
+      "supplier_marker_date": "2025-12-29",
+      "supplier_marker_code": "02",
+      "supplier_split_rate_literal": "0.00",
+      "cash_decision_source_id": "20260210000736",
+      "record_date": "2025-12-31",
+      "disclosed_common_dividend_krw": 53,
+      "cash_decision_published_at_kst": "2026-02-10 16:02",
+      "cash_notice_after_supplier_marker": true,
+      "exact_ex_date_source_id": null,
+      "official_ex_date": null,
+      "exact_ex_date_matches_supplier": null,
+      "reconciliation": "RECORD_DATE_AND_CASH_NOTICE_ONLY",
+      "actual_payment_date": null,
+      "account_cash_adjustment_verified": false,
+      "provider_price_adjustment_factor": null,
+      "historical_received_at": null,
+      "strategy_eligible": false,
+      "eligibility": "HOLD"
+    }
+  ],
+  "cancellation": {
+    "source_id": "20261112000210",
+    "shares_before": 730492365,
+    "shares_after": 706799093,
+    "shares_cancelled": 23693272,
+    "stated_cancellation_date": "2026-11-05",
+    "announced_listing_change_date": "2026-11-17",
+    "listing_change_future_at_check": true,
+    "account_holding_quantity_change_verified": false,
+    "share_count_delta_check": true,
+    "holding_share_adjustment_factor": null,
+    "provider_historical_reflection_verified": false,
+    "first_cancellation_decision_disclosure_verified": false,
+    "earliest_information_available_at": null,
+    "eligibility": "HOLD"
+  },
+  "temporal_guards": {
+    "post_marker_cash_notice_count": 4,
+    "post_marker_cash_notice_event_keys": [
+      "005930:2025-12-29",
+      "005930:2026-09-29",
+      "009150:2025-12-29",
+      "036930:2025-12-29"
+    ],
+    "later_notices_may_be_used_as_prior_signal_inputs": false,
+    "historical_process_receipt_reconstructed": false,
+    "actual_dividend_receipt_or_withholding_verified": false,
+    "common_shares_only": true,
+    "sk_hynix_1875_excludes_previously_paid_quarterly_1125": true,
+    "dividend_decisions_treated_as_actual_payment": false
+  },
+  "decision": {
+    "status": "PARTIAL",
+    "exact_ex_dates_matched": 3,
+    "related_record_date_cash_notices_only": 5,
+    "all_eight_full_adjustment_contracts_verified": false,
+    "issue11_acceptance_checked": [
+      1
+    ],
+    "issue11_acceptance_unchecked": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "backtest_ready": false,
+    "orders_enabled": false,
+    "authenticated_broker_requests": 0,
+    "orders_sent": 0,
+    "new_codex_session_created": false,
+    "code_changed": false
+  },
+  "remaining": [
+    "Obtain explicit ex-dividend date or a fully evidenced dated-calendar/settlement derivation for the remaining five supplier markers; do not substitute record dates.",
+    "Verify final approval and actual payment, common-share entitlement, withholding and same-account ledger application; scheduled dates and board decisions are not payment evidence.",
+    "Verify provider adjustment conventions and point-in-time availability. Do not infer price/holding quantity factors from raw split-rate 0.00 or modification flag N.",
+    "For the cancellation, reconcile the original decision and its first disclosure with the stated cancellation date and the future listing-change date; verify provider share counts separately.",
+    "Retain the separate dated-session/halt, bar-finality, complete-session/missingness, same-account fee and execution-cost blockers."
+  ],
+  "retention": {
+    "local_temporary_directory": "/mnt/data/tmp/gs02-corporate-actions-20261114",
+    "raw_document_files_committed": false,
+    "repository_contains": "Source URLs, publication/capture times, hashes, selected date/cash/share facts and HOLD annotations. Original raw sources are not a self-contained repository archive.",
+    "old_raw_data_overwritten": false,
+    "existing_separate_changes": [
+      "?? .infisical.yaml"
+    ]
+  },
+  "validation": {
+    "json_parse": "PASS",
+    "source_hashes_and_parsed_facts": "PASS: 12 captured bodies, 8 cash/date pairs, 3 ex-date matches, 4 later notices, share-count delta; input evidence unchanged.",
+    "relative_links": {
+      "checked": 27,
+      "broken": 0
+    },
+    "git_diff_check": "PASS",
+    "market_runtime": "NOT_RUN",
+    "local_code_tests": "NOT_RUN: documentation research only; repository PR CI required."
+  }
+}
