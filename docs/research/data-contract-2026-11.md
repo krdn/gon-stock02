@@ -167,3 +167,30 @@ SK하이닉스 **2026-02-26 배당락일을 직접 확인**했다. [거래소 �
 주성의 회사별 배당 검색은 01-01~11-14·최종보고서 필터 해제로 한 건을 반환했다. 발행사 공지·IR 자료를 추가로 조사했으나 지급일 차이를 해소할 변경 근거는 확보하지 못했다. 기존 SEIBro 04-23 관측값과 최초 04-24 예정일을 함께 보존한다. 초기 조회와 후속 검색 응답이 겹친 캡처 두 개는 조건과 표가 달라 제외했고, 초기 로드 후 결과 건수·종목·공시 ID가 맞는 출력으로 검증했다.
 
 조사 브라우저는 종료했다. 주성 지급일 차이·SK 08-28·전체 조정/정보 가용 시각·계좌 비용·장중 실증은 미완료다. 여덟 기업행동 HOLD, Issue #11 첫 기준만 완료, 주문/인증 브로커 호출 0건, 주문 OFF·`backtest_ready=false`를 유지한다.
+
+## 2026-11-14 미분류 평일의 시장 일정 대조
+
+**대상 16일 모두 증권사 공식 공지의 국내주식 표에서 휴장 표시를 확인했다. KRX 직접 출력과 결제 계약은 미완료다.** [승인](https://github.com/krdn/gon-stock02/issues/11#issuecomment-6872736436) · [날짜별 URL·공표/확인 시각·해시·판정](../evidence/calendar-reconciliation-2026-11-14.json). 원본 17일 목록은 보존했다. 아래 날짜는 법정 공휴일이나 일봉 부재에서 추론한 결과가 아니다.
+
+| 대상 날짜 | 공지의 사유 | 카카오페이증권 공식 공지 · 표시 공표 시각(KST) |
+|---|---|---|
+| 2025-12-25 | 크리스마스 | [12월 공지](https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=6889) · 2025-11-10 09:59:14 |
+| 2026-01-01 | 신정 | [1월 공지](https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=6944) · 2025-12-12 14:43:46 |
+| 2026-02-16·17·18 | 설 연휴 | [2월 공지](https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7013) · 2026-01-23 14:55:44 |
+| 2026-03-02 | 삼일절 대체휴일 | [3월 공지](https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7043) · 2026-02-11 08:06:13 |
+| 2026-05-01·05·25 | 근로자의 날·어린이날·부처님오신날 대체휴일 | [5월 공지](https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7163) · 2026-04-13 16:50:59 |
+| 2026-06-03 | 지방선거 | [6월 공지](https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7220) · 2026-05-13 02:50:16 |
+| 2026-07-17 | 제헌절 | [7월 공지](https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7298) · 2026-06-16 23:26:34 |
+| 2026-08-17 | 광복절 대체휴일 | [8월 공지](https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7353) · 2026-07-21 06:48:31 |
+| 2026-09-24·25 | 추석 연휴·추석 | [9월 공지](https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7402) · 2026-08-11 13:39:15 |
+| 2026-10-05·09 | 개천절 대체휴일·한글날 | [10월 공지](https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7478) · 2026-09-16 13:30:05 |
+
+공지의 시장 표기는 **국내주식**이다. KRX 원공지나 시장별 전체 세션을 확보한 것으로 올리지 않았다. 10월 공지의 미국주식 10-12 결제휴장은 별도 표의 내용이므로 국내 대상일에 적용하지 않았다. 화면의 게시 시각은 최초 공개·정정 이력의 독립 검증이 아니며, 당시 정보 가용 시각은 확정하지 않았다.
+
+[유안타증권 05-28 공지](https://account.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202605281454350000000004&gubun=norNotice)는 06-03 휴장과 국내 관련 매매·결제일의 다음 영업일 순연을 명시한다. 이 하루에는 증권사 결제 근거를 추가했다. 다른 15일의 결제 여부는 `null`이다. 이는 한국투자 모의계좌의 실제 결제 관측이나 배당 권리일 계산에 적용할 전체 계약이 아니다. 기존 2025-12-31의 한국투자증권 연말 공지 주석도 유지했고, 보존 HTML 해시를 다시 대조했다. 새 HTTP 조회는 하지 않았다.
+
+[KRX 휴장일 화면](https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp)은 브라우저에서 2026/KRX와 2025/KRX를 각각 선택했으나 날짜 행을 반환하지 않았다. [KRX 보도자료](https://open.krx.co.kr/contents/OPN/05/05000000/OPN05000000.jsp)의 제목 ‘휴장’·2025-11-14~2026-11-14 검색은 전체 건수와 결과가 비어 있었다. 해당 두 네트워크 응답은 HTTP 200이지만 본문이 비었다. 연도별 파생상품 달력은 다운로드 항목만 확인했고 PDF는 미확보다. 공매도 모의 시스템·메인 일부 경로는 접근 거부였으며, KIND 상세검색의 ‘휴장’ 결과 0건도 휴장 근거로 쓰지 않았다. 조작 실패로 연도가 2026에 남은 캡처는 제외하고 실제 2025 선택값을 읽은 캡처로 교체했다.
+
+따라서 **증권사 휴장 근거 16일, KRX 직접 확인 0일, 증권사 결제 근거 1일**로 구분한다. 16일의 `krx_market_open`·`krx_settlement_day`는 `null`, 판정은 모두 `HOLD`다. KRX 날짜별 원출력과 필요한 결제 예외를 확보하면 해당 필드만 별도 후속 증거에서 갱신한다. 원본 17일·과거 증거·일봉/분봉 파일은 바꾸지 않았다. 원문 HTML·브라우저 캡처는 로컬 임시 경로에 보존하고, 저장소에는 식별자·해시·선택 사실을 남겼다.
+
+이번 공개 조사 단계에서 종료한다. 주문·인증 브로커 호출은 0건이며 후속 세션은 생성하지 않았다. Issue #11은 OPEN·첫 수용 기준만 완료, 기업행동 8건 HOLD·주문 OFF·`backtest_ready=false`다. 전체 봉 완전성·개별 종목 정지·비용·장중 실증의 완료를 뜻하지 않는다.

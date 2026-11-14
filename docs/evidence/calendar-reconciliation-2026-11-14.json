@@ -1,0 +1,1063 @@
+{
+  "checked_at": "2026-11-14T06:12:52.209605+00:00",
+  "issue": "https://github.com/krdn/gon-stock02/issues/11",
+  "authorization_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6872736436",
+  "transition_id": "issue11-calendar-reconciliation-20261114",
+  "started_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6872799478",
+  "thread_id": "01a1d8a7-0cc4-70a0-ba60-539eda1e2836",
+  "base_commit": "a08c7446230db57000f643c531049203a276db51",
+  "handoff_blob": "c4c2e48d236b9c59da0ce03751afb9a1d9fefd4a",
+  "inputs": {
+    "prior_evidence_path": "docs/evidence/data-contract-2026-11-13.json",
+    "prior_evidence_sha256": "83c4356ed1b2d46194bb9e513ae8ffd3ea7e789d96ae067f102e4c9b88828f08",
+    "local_bundle": ".local/history-20261113-run2",
+    "request": {
+      "start": "2025-11-14",
+      "end": "2026-11-13",
+      "minute_start": "2026-11-09"
+    },
+    "manifest_sha256": "0d7320cb041e37edd5baa08cb8d888a735e7fb9e37b97260769788939ccda345",
+    "original_sha256": {
+      "pages.jsonl": "33fcb37abab6712ba5ff19b60625ff496f7b88cceb462a8b351d0b1588f8eee2",
+      "bars.jsonl": "f42b4b14bdb04638626897293a35f90cff23abbf9acf707718cb6fe873bb84d9"
+    },
+    "original_unclassified_dates": [
+      "2025-12-25",
+      "2025-12-31",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-06-03",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ],
+    "target_dates": [
+      "2025-12-25",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-06-03",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ],
+    "target_definition": "Original 17 dates minus inherited 2025-12-31 annotation; originals are not rewritten.",
+    "baseline_hashes": {
+      "docs/evidence/corporate-actions-2026-11-14.json": "ba0156e63abd7b2b4af18e99112a84fbc3567f1e0b33ce4b41f2515a9b18e20b",
+      "docs/evidence/data-contract-2026-11-13.json": "83c4356ed1b2d46194bb9e513ae8ffd3ea7e789d96ae067f102e4c9b88828f08",
+      "docs/evidence/data-contract-followup-2026-11-14.json": "9c42ddd3adcb41e7d9c0401f9c9e58ea0fa337d6e84570008fa7326fdc052921",
+      "docs/evidence/data-readiness-2026-11-13.json": "238373fd557b2fcca789adb47de5bc6a8d98fccabf8322fd6a9a1491770cef44",
+      "docs/evidence/dividend-followup-2026-11-14.json": "9639f44249708a2b1b32dda69887f6bcac4b08cb4c766a4868c99a3d5e249343",
+      "docs/evidence/dividend-gaps-2026-11-14.json": "d2814675755ce9f47708fd92782256cbabc18ea9c32169f236f6afbe24683fad",
+      "docs/evidence/evolve-runtime-2026-11-14.json": "380939e1209cdae39d4c910d8510526f725ee846cbe59eaba5bc4582d0b4241f",
+      "docs/evidence/halt-reconciliation-2026-11-14.json": "c88cae861a032a28efc7cf5dfcdc3fa88b8688e6a288180de9d8a7c52f9fc9d7",
+      "docs/evidence/historical-data-2026-11-13.json": "340c8f1802a5f68101ac47bf62a515ab39be8737769f2e671608e0f35631fdeb",
+      "docs/evidence/minute-capture-2026-11-14.json": "b57aff3e2fa691b9d6761078ee5c283adc3a5adbefb19db8d203fc73cb8cd989",
+      "docs/evidence/native-session-handoff-2026-11-14.json": "9117df4bb6aa4050e26193daeb442290c896a524aeb2ed006aecdc423bd179f1",
+      "docs/evidence/paper-order-ledger-2026-11-13.json": "05b2af32b54bcb8c34e1869e5b024edef3b6a38541ede7aee02772a738f80800",
+      "docs/evidence/stage1-2026-11-13.json": "22f95ae7831c10eef0ced9fae1958810870d5aad7b127cff92e6417b4bb69233",
+      ".local/history-20261113-run2/pages.jsonl": "33fcb37abab6712ba5ff19b60625ff496f7b88cceb462a8b351d0b1588f8eee2",
+      ".local/history-20261113-run2/bars.jsonl": "f42b4b14bdb04638626897293a35f90cff23abbf9acf707718cb6fe873bb84d9",
+      ".local/issue11-contract-20261113/check.py": "257c7b15eadeabb83e424c0a75eebb13dea9e2074b74de56da2765f9f5a9205c"
+    }
+  },
+  "method": "Read domestic-stock tables in dated official broker notices. Record broker support separately from unreceived KRX original/date-specific settlement output. No legal-holiday or missing-bar inference is used as closure proof.",
+  "public_sources": [
+    {
+      "id": "kakao-6889",
+      "url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=6889",
+      "http_status": 200,
+      "final_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=6889",
+      "sha256": "b88a9b1c596f99382a481b2134bc2ac14e7fbb8fa8a2c3c9271f939b4b16779b",
+      "checked_at": "2026-11-14T06:07:22.567318+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/kakao-6889.html",
+      "publisher": "카카오페이증권",
+      "source_type": "official_broker_notice",
+      "published_at_kst": "2025-11-10T09:59:14+09:00",
+      "first_available_at": null,
+      "published_time_basis": "Visible posting time; initial publication and amendment history not independently verified.",
+      "identifier": "notice id=6889",
+      "locator": "국내주식 table; not the separate 미국주식 table.",
+      "market_scope_as_published": "국내주식",
+      "krx_original": false,
+      "closure_dates": [
+        "2025-12-25"
+      ],
+      "settlement_statement": null
+    },
+    {
+      "id": "kakao-6944",
+      "url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=6944",
+      "http_status": 200,
+      "final_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=6944",
+      "sha256": "6600772a9e4d4976519fc661f90bf8a418a44bf3d461fc262ae3cb0806f970e8",
+      "checked_at": "2026-11-14T06:07:38.477795+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/kakao-6944.html",
+      "publisher": "카카오페이증권",
+      "source_type": "official_broker_notice",
+      "published_at_kst": "2025-12-12T14:43:46+09:00",
+      "first_available_at": null,
+      "published_time_basis": "Visible posting time; initial publication and amendment history not independently verified.",
+      "identifier": "notice id=6944",
+      "locator": "국내주식 table; not the separate 미국주식 table.",
+      "market_scope_as_published": "국내주식",
+      "krx_original": false,
+      "closure_dates": [
+        "2026-01-01"
+      ],
+      "settlement_statement": null
+    },
+    {
+      "id": "kakao-7013",
+      "url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7013",
+      "http_status": 200,
+      "final_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7013",
+      "sha256": "96d118e0e71012d13bf9fa2e826c4ea4681e932b55b83b3151774754bf28effb",
+      "checked_at": "2026-11-14T06:07:22.625293+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/kakao-7013.html",
+      "publisher": "카카오페이증권",
+      "source_type": "official_broker_notice",
+      "published_at_kst": "2026-01-23T14:55:44+09:00",
+      "first_available_at": null,
+      "published_time_basis": "Visible posting time; initial publication and amendment history not independently verified.",
+      "identifier": "notice id=7013",
+      "locator": "국내주식 table; not the separate 미국주식 table.",
+      "market_scope_as_published": "국내주식",
+      "krx_original": false,
+      "closure_dates": [
+        "2026-02-16",
+        "2026-02-17",
+        "2026-02-18"
+      ],
+      "settlement_statement": null
+    },
+    {
+      "id": "kakao-7043",
+      "url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7043",
+      "http_status": 200,
+      "final_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7043",
+      "sha256": "a17dc201b2d2e886d18ae37be53287b91342cbd1b1e8516a3fc35beed39b8329",
+      "checked_at": "2026-11-14T06:07:22.618151+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/kakao-7043.html",
+      "publisher": "카카오페이증권",
+      "source_type": "official_broker_notice",
+      "published_at_kst": "2026-02-11T08:06:13+09:00",
+      "first_available_at": null,
+      "published_time_basis": "Visible posting time; initial publication and amendment history not independently verified.",
+      "identifier": "notice id=7043",
+      "locator": "국내주식 table; not the separate 미국주식 table.",
+      "market_scope_as_published": "국내주식",
+      "krx_original": false,
+      "closure_dates": [
+        "2026-03-02"
+      ],
+      "settlement_statement": null
+    },
+    {
+      "id": "kakao-7163",
+      "url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7163",
+      "http_status": 200,
+      "final_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7163",
+      "sha256": "917a5279d11f59f37b76124a65af3dfdaa63599a48746590315168ca383a3438",
+      "checked_at": "2026-11-14T06:07:22.692381+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/kakao-7163.html",
+      "publisher": "카카오페이증권",
+      "source_type": "official_broker_notice",
+      "published_at_kst": "2026-04-13T16:50:59+09:00",
+      "first_available_at": null,
+      "published_time_basis": "Visible posting time; initial publication and amendment history not independently verified.",
+      "identifier": "notice id=7163",
+      "locator": "국내주식 table; not the separate 미국주식 table.",
+      "market_scope_as_published": "국내주식",
+      "krx_original": false,
+      "closure_dates": [
+        "2026-05-01",
+        "2026-05-05",
+        "2026-05-25"
+      ],
+      "settlement_statement": null
+    },
+    {
+      "id": "kakao-7220",
+      "url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7220",
+      "http_status": 200,
+      "final_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7220",
+      "sha256": "e7a091618c1aa652995e54ee1ae1cd30caa49a4cc1ecb937605c152c78a54fe7",
+      "checked_at": "2026-11-14T06:07:22.768910+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/kakao-7220.html",
+      "publisher": "카카오페이증권",
+      "source_type": "official_broker_notice",
+      "published_at_kst": "2026-05-13T02:50:16+09:00",
+      "first_available_at": null,
+      "published_time_basis": "Visible posting time; initial publication and amendment history not independently verified.",
+      "identifier": "notice id=7220",
+      "locator": "국내주식 table; not the separate 미국주식 table.",
+      "market_scope_as_published": "국내주식",
+      "krx_original": false,
+      "closure_dates": [
+        "2026-06-03"
+      ],
+      "settlement_statement": null
+    },
+    {
+      "id": "kakao-7298",
+      "url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7298",
+      "http_status": 200,
+      "final_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7298",
+      "sha256": "1f01ac50b300ed621b88cc6a6deb794287e6e8e21e7ecc23dbf16273b6aef41b",
+      "checked_at": "2026-11-14T06:07:22.768835+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/kakao-7298.html",
+      "publisher": "카카오페이증권",
+      "source_type": "official_broker_notice",
+      "published_at_kst": "2026-06-16T23:26:34+09:00",
+      "first_available_at": null,
+      "published_time_basis": "Visible posting time; initial publication and amendment history not independently verified.",
+      "identifier": "notice id=7298",
+      "locator": "국내주식 table; not the separate 미국주식 table.",
+      "market_scope_as_published": "국내주식",
+      "krx_original": false,
+      "closure_dates": [
+        "2026-07-17"
+      ],
+      "settlement_statement": null
+    },
+    {
+      "id": "kakao-7353",
+      "url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7353",
+      "http_status": 200,
+      "final_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7353",
+      "sha256": "09bd94334eee046249ea091d0411e11fd4fd429907f7a580f23fa070587d370b",
+      "checked_at": "2026-11-14T06:07:22.879350+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/kakao-7353.html",
+      "publisher": "카카오페이증권",
+      "source_type": "official_broker_notice",
+      "published_at_kst": "2026-07-21T06:48:31+09:00",
+      "first_available_at": null,
+      "published_time_basis": "Visible posting time; initial publication and amendment history not independently verified.",
+      "identifier": "notice id=7353",
+      "locator": "국내주식 table; not the separate 미국주식 table.",
+      "market_scope_as_published": "국내주식",
+      "krx_original": false,
+      "closure_dates": [
+        "2026-08-17"
+      ],
+      "settlement_statement": null
+    },
+    {
+      "id": "kakao-7402",
+      "url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7402",
+      "http_status": 200,
+      "final_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7402",
+      "sha256": "5bf961bb64667dbb7b21ae168a1f151422a53a13887b32633ea85aaa5fc79bcf",
+      "checked_at": "2026-11-14T06:07:22.955782+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/kakao-7402.html",
+      "publisher": "카카오페이증권",
+      "source_type": "official_broker_notice",
+      "published_at_kst": "2026-08-11T13:39:15+09:00",
+      "first_available_at": null,
+      "published_time_basis": "Visible posting time; initial publication and amendment history not independently verified.",
+      "identifier": "notice id=7402",
+      "locator": "국내주식 table; not the separate 미국주식 table.",
+      "market_scope_as_published": "국내주식",
+      "krx_original": false,
+      "closure_dates": [
+        "2026-09-24",
+        "2026-09-25"
+      ],
+      "settlement_statement": null
+    },
+    {
+      "id": "kakao-7478",
+      "url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7478",
+      "http_status": 200,
+      "final_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7478",
+      "sha256": "d6890c86f397ac81edcc31c8b9f491886becc9344e43584666e08d264d044a35",
+      "checked_at": "2026-11-14T06:07:22.905473+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/kakao-7478.html",
+      "publisher": "카카오페이증권",
+      "source_type": "official_broker_notice",
+      "published_at_kst": "2026-09-16T13:30:05+09:00",
+      "first_available_at": null,
+      "published_time_basis": "Visible posting time; initial publication and amendment history not independently verified.",
+      "identifier": "notice id=7478",
+      "locator": "국내주식 table; not the separate 미국주식 table.",
+      "market_scope_as_published": "국내주식",
+      "krx_original": false,
+      "closure_dates": [
+        "2026-10-05",
+        "2026-10-09"
+      ],
+      "settlement_statement": null
+    },
+    {
+      "id": "yuanta-2026-06-03",
+      "url": "https://account.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202605281454350000000004&gubun=norNotice",
+      "http_status": 200,
+      "final_url": "https://account.myasset.com/myasset/customer/notice/CU_0201000_P2.cmd?SEQ=202605281454350000000004&gubun=norNotice",
+      "sha256": "f616c7b8777c4b9e344d316d7da14188831ac58befad291ce7ba0c36bc84296a",
+      "checked_at": "2026-11-14T06:09:46.212293+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/yuanta-2026-06-03.html",
+      "publisher": "유안타증권",
+      "source_type": "official_broker_notice",
+      "identifier": "SEQ=202605281454350000000004",
+      "published_at_kst": "2026-05-28",
+      "publication_precision": "date_only",
+      "first_available_at": null,
+      "locator": "휴장 일자 2026-06-03; 휴장 관련 내용 > 국내시장",
+      "market_scope_as_published": "증권시장·파생상품시장·금현물시장; 국내 관련 매매 및 결제일",
+      "krx_original": false,
+      "closure_dates": [
+        "2026-06-03"
+      ],
+      "settlement_statement": "Domestic trading and settlement dates deferred to next business day; broker notice, not an account settlement observation."
+    }
+  ],
+  "date_results": [
+    {
+      "date": "2025-12-25",
+      "reason": "크리스마스",
+      "source_ids": [
+        "kakao-6889"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=6889",
+      "source_identifier": "notice id=6889",
+      "source_sha256": "b88a9b1c596f99382a481b2134bc2ac14e7fbb8fa8a2c3c9271f939b4b16779b",
+      "published_at_kst": "2025-11-10T09:59:14+09:00",
+      "checked_at": "2026-11-14T06:07:22.567318+00:00",
+      "source_locator": "국내주식 > 12월 25일(목)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-01-01",
+      "reason": "신정",
+      "source_ids": [
+        "kakao-6944"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=6944",
+      "source_identifier": "notice id=6944",
+      "source_sha256": "6600772a9e4d4976519fc661f90bf8a418a44bf3d461fc262ae3cb0806f970e8",
+      "published_at_kst": "2025-12-12T14:43:46+09:00",
+      "checked_at": "2026-11-14T06:07:38.477795+00:00",
+      "source_locator": "국내주식 > 1월 1일(목)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-02-16",
+      "reason": "설 연휴",
+      "source_ids": [
+        "kakao-7013"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7013",
+      "source_identifier": "notice id=7013",
+      "source_sha256": "96d118e0e71012d13bf9fa2e826c4ea4681e932b55b83b3151774754bf28effb",
+      "published_at_kst": "2026-01-23T14:55:44+09:00",
+      "checked_at": "2026-11-14T06:07:22.625293+00:00",
+      "source_locator": "국내주식 > 2월 16일(월) ~ 18일(수)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-02-17",
+      "reason": "설날",
+      "source_ids": [
+        "kakao-7013"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7013",
+      "source_identifier": "notice id=7013",
+      "source_sha256": "96d118e0e71012d13bf9fa2e826c4ea4681e932b55b83b3151774754bf28effb",
+      "published_at_kst": "2026-01-23T14:55:44+09:00",
+      "checked_at": "2026-11-14T06:07:22.625293+00:00",
+      "source_locator": "국내주식 > 2월 16일(월) ~ 18일(수)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-02-18",
+      "reason": "설 연휴",
+      "source_ids": [
+        "kakao-7013"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7013",
+      "source_identifier": "notice id=7013",
+      "source_sha256": "96d118e0e71012d13bf9fa2e826c4ea4681e932b55b83b3151774754bf28effb",
+      "published_at_kst": "2026-01-23T14:55:44+09:00",
+      "checked_at": "2026-11-14T06:07:22.625293+00:00",
+      "source_locator": "국내주식 > 2월 16일(월) ~ 18일(수)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-03-02",
+      "reason": "삼일절 대체휴일",
+      "source_ids": [
+        "kakao-7043"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7043",
+      "source_identifier": "notice id=7043",
+      "source_sha256": "a17dc201b2d2e886d18ae37be53287b91342cbd1b1e8516a3fc35beed39b8329",
+      "published_at_kst": "2026-02-11T08:06:13+09:00",
+      "checked_at": "2026-11-14T06:07:22.618151+00:00",
+      "source_locator": "국내주식 > 3월 2일 (월)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-05-01",
+      "reason": "근로자의 날",
+      "source_ids": [
+        "kakao-7163"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7163",
+      "source_identifier": "notice id=7163",
+      "source_sha256": "917a5279d11f59f37b76124a65af3dfdaa63599a48746590315168ca383a3438",
+      "published_at_kst": "2026-04-13T16:50:59+09:00",
+      "checked_at": "2026-11-14T06:07:22.692381+00:00",
+      "source_locator": "국내주식 > 5월 1일(금)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-05-05",
+      "reason": "어린이날",
+      "source_ids": [
+        "kakao-7163"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7163",
+      "source_identifier": "notice id=7163",
+      "source_sha256": "917a5279d11f59f37b76124a65af3dfdaa63599a48746590315168ca383a3438",
+      "published_at_kst": "2026-04-13T16:50:59+09:00",
+      "checked_at": "2026-11-14T06:07:22.692381+00:00",
+      "source_locator": "국내주식 > 5월 5일(화)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "reason": "부처님오신날 대체휴일",
+      "source_ids": [
+        "kakao-7163"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7163",
+      "source_identifier": "notice id=7163",
+      "source_sha256": "917a5279d11f59f37b76124a65af3dfdaa63599a48746590315168ca383a3438",
+      "published_at_kst": "2026-04-13T16:50:59+09:00",
+      "checked_at": "2026-11-14T06:07:22.692381+00:00",
+      "source_locator": "국내주식 > 5월 25일(월)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "reason": "지방선거",
+      "source_ids": [
+        "kakao-7220",
+        "yuanta-2026-06-03"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7220",
+      "source_identifier": "notice id=7220",
+      "source_sha256": "e7a091618c1aa652995e54ee1ae1cd30caa49a4cc1ecb937605c152c78a54fe7",
+      "published_at_kst": "2026-05-13T02:50:16+09:00",
+      "checked_at": "2026-11-14T06:07:22.768910+00:00",
+      "source_locator": "국내주식 > 6월 3일(수)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": false,
+      "settlement_source_ids": [
+        "yuanta-2026-06-03"
+      ],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "reason": "제헌절",
+      "source_ids": [
+        "kakao-7298"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7298",
+      "source_identifier": "notice id=7298",
+      "source_sha256": "1f01ac50b300ed621b88cc6a6deb794287e6e8e21e7ecc23dbf16273b6aef41b",
+      "published_at_kst": "2026-06-16T23:26:34+09:00",
+      "checked_at": "2026-11-14T06:07:22.768835+00:00",
+      "source_locator": "국내주식 > 7월 17일(금)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "reason": "광복절 대체휴일",
+      "source_ids": [
+        "kakao-7353"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7353",
+      "source_identifier": "notice id=7353",
+      "source_sha256": "09bd94334eee046249ea091d0411e11fd4fd429907f7a580f23fa070587d370b",
+      "published_at_kst": "2026-07-21T06:48:31+09:00",
+      "checked_at": "2026-11-14T06:07:22.879350+00:00",
+      "source_locator": "국내주식 > 8월 17일(월)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "reason": "추석 연휴",
+      "source_ids": [
+        "kakao-7402"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7402",
+      "source_identifier": "notice id=7402",
+      "source_sha256": "5bf961bb64667dbb7b21ae168a1f151422a53a13887b32633ea85aaa5fc79bcf",
+      "published_at_kst": "2026-08-11T13:39:15+09:00",
+      "checked_at": "2026-11-14T06:07:22.955782+00:00",
+      "source_locator": "국내주식 > 9월 24일(목)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "reason": "추석",
+      "source_ids": [
+        "kakao-7402"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7402",
+      "source_identifier": "notice id=7402",
+      "source_sha256": "5bf961bb64667dbb7b21ae168a1f151422a53a13887b32633ea85aaa5fc79bcf",
+      "published_at_kst": "2026-08-11T13:39:15+09:00",
+      "checked_at": "2026-11-14T06:07:22.955782+00:00",
+      "source_locator": "국내주식 > 9월 25일(금)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "reason": "개천절 대체휴일",
+      "source_ids": [
+        "kakao-7478"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7478",
+      "source_identifier": "notice id=7478",
+      "source_sha256": "d6890c86f397ac81edcc31c8b9f491886becc9344e43584666e08d264d044a35",
+      "published_at_kst": "2026-09-16T13:30:05+09:00",
+      "checked_at": "2026-11-14T06:07:22.905473+00:00",
+      "source_locator": "국내주식 > 10월 5일(월)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "reason": "한글날",
+      "source_ids": [
+        "kakao-7478"
+      ],
+      "source_url": "https://www.kakaopaysec.com/customer/notice/dynamicBoardPageDetail.do?id=7478",
+      "source_identifier": "notice id=7478",
+      "source_sha256": "d6890c86f397ac81edcc31c8b9f491886becc9344e43584666e08d264d044a35",
+      "published_at_kst": "2026-09-16T13:30:05+09:00",
+      "checked_at": "2026-11-14T06:07:22.905473+00:00",
+      "source_locator": "국내주식 > 10월 9일(금)",
+      "broker_reported_scope": "국내주식",
+      "broker_reported_market_open": false,
+      "session_classification": "CLOSED_PER_OFFICIAL_BROKER_NOTICE",
+      "krx_original_verified": false,
+      "krx_market_open": null,
+      "krx_session_hours": null,
+      "broker_reported_settlement_day": null,
+      "settlement_source_ids": [],
+      "krx_settlement_day": null,
+      "verdict": "HOLD",
+      "remaining_conditions": [
+        "Obtain dated KRX cash-equity closure output or original announcement.",
+        "Obtain a date-specific official settlement statement; closure alone is insufficient.",
+        "Verify any settlement exceptions and the applicable KIS account contract before using dates for entitlements or costs."
+      ]
+    }
+  ],
+  "inherited_year_end_annotation": {
+    "date": "2025-12-31",
+    "prior_evidence_path": "docs/evidence/dividend-followup-2026-11-14.json",
+    "prior_evidence_sha256": "9639f44249708a2b1b32dda69887f6bcac4b08cb4c766a4868c99a3d5e249343",
+    "prior_source_id": "kis-yearend",
+    "url": "https://securities.koreainvestment.com/main/customer/notice/Notice.jsp?cmd=TF04ga000002&num=45922",
+    "published_at_kst": "2025-12-26 10:12",
+    "prior_http_checked_at": "2026-11-14T05:06:11.662070+00:00",
+    "source_sha256": "9cecc9659e31784c79b1fc4502e1daf7eb621dad4ff1fa7729244b83650d646f",
+    "local_source": "/mnt/data/tmp/gs02-dividend-followup-20261114/kis-yearend.html",
+    "local_snapshot_rehashed_at": "2026-11-14T06:12:52.205934+00:00",
+    "local_snapshot_hash_matches": true,
+    "http_refetched_this_run": false,
+    "broker_reported_market_open": false,
+    "broker_reported_settlement_day": false,
+    "krx_original_verified": false,
+    "scope": "Inherited year-end broker notice; prior annotation preserved, not upgraded to direct KRX or full settlement-contract verification."
+  },
+  "access_attempts": [
+    {
+      "id": "krx-holidays-2026",
+      "url": "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp",
+      "checked_at": "2026-11-14T06:10:39.474Z",
+      "capture": "/mnt/data/tmp/gs02-calendar-20261114/krx-holidays-2026.json",
+      "capture_sha256": "bb90ad0a5bba93b32c2db9467c7d3642961fe82a4020dd04fc795b4a6f87aa66",
+      "outcome": "2026/KRX selected; headers rendered but no dated rows; not evidence of no holidays.",
+      "adopted_as_closure_evidence": false,
+      "query": {
+        "year": "2026",
+        "market": "KRX"
+      }
+    },
+    {
+      "id": "krx-holidays-2025",
+      "url": "https://open.krx.co.kr/contents/MKD/01/0110/01100305/MKD01100305.jsp",
+      "checked_at": "2026-11-14T06:11:22.593Z",
+      "capture": "/mnt/data/tmp/gs02-calendar-20261114/krx-holidays-2025-verified.json",
+      "capture_sha256": "738f897bba7b660a758dacddecd909f633abebbc75ff9455c15ea64f77244d77",
+      "outcome": "2025/KRX selection verified; headers rendered but no dated rows.",
+      "adopted_as_closure_evidence": false,
+      "query": {
+        "year": "2025",
+        "market": "KRX"
+      }
+    },
+    {
+      "id": "krx-press-search",
+      "url": "https://open.krx.co.kr/contents/OPN/05/05000000/OPN05000000.jsp#fe3647848b826aa1ddee224c4b5526f4=1",
+      "checked_at": "2026-11-14T06:09:56.947Z",
+      "capture": "/mnt/data/tmp/gs02-calendar-20261114/krx-press-holiday.json",
+      "capture_sha256": "6106e7988ce0e46c4465f9d6bca6e347d1d209b357d5239caea9f3ea3f5f0a90",
+      "outcome": "Title 휴장; 20251114..20261114. Blank total count and no result rows; two HTTP 200 responses had empty bodies.",
+      "adopted_as_closure_evidence": false,
+      "query": {
+        "title": "휴장",
+        "fromdate": "20251114",
+        "todate": "20261114"
+      },
+      "har": {
+        "path": "/mnt/data/tmp/gs02-calendar-20261114/krx-press-holiday.har",
+        "sha256": "a7287c131b521eb109977c01f2fecfb4ca333c93d5c4fd219f2157e66620377f",
+        "responses": [
+          {
+            "url": "https://open.krx.co.kr/contents/COM/GenerateOTP.jspx?bld=OPN%2F05%2F05000000%2Fopn05000000t1_01&name=list&_=1794636548724",
+            "http_status": 200,
+            "captured_body_bytes": 0
+          },
+          {
+            "url": "https://open.krx.co.kr/contents/OPN/99/OPN99000001.jspx?code=",
+            "http_status": 200,
+            "captured_body_bytes": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "kind-holiday-search",
+      "url": "https://kind.krx.co.kr/disclosure/details.do?method=searchDetailsMain",
+      "checked_at": "2026-11-14T06:08:31.369Z",
+      "capture": "/mnt/data/tmp/gs02-calendar-20261114/kind-holiday-zero.json",
+      "capture_sha256": "e4f41c6604bd4cad96837bcd6bf5d9c3772502bde6a43a7e152c608f08a32e6e",
+      "outcome": "Title 휴장; 2025-11-01..2026-11-14; all-market display returned 0; no notice adopted.",
+      "adopted_as_closure_evidence": false,
+      "query": [
+        {
+          "checked": false,
+          "id": "reportNm",
+          "value": "휴장"
+        },
+        {
+          "checked": false,
+          "id": "reportCd",
+          "value": ""
+        },
+        {
+          "checked": false,
+          "id": "AKCKwd",
+          "value": ""
+        },
+        {
+          "checked": false,
+          "id": "fromDate",
+          "value": "2025-11-01"
+        },
+        {
+          "checked": false,
+          "id": "toDate",
+          "value": "2026-11-14"
+        },
+        {
+          "checked": false,
+          "id": "reportNmTemp",
+          "value": "휴장"
+        },
+        {
+          "checked": false,
+          "id": "lastReport",
+          "value": "T"
+        }
+      ]
+    },
+    {
+      "id": "kind-holiday-search-may",
+      "url": "https://kind.krx.co.kr/disclosure/details.do?method=searchDetailsMain",
+      "checked_at": "2026-11-14T06:08:41.591Z",
+      "capture": "/mnt/data/tmp/gs02-calendar-20261114/kind-holiday-may.json",
+      "capture_sha256": "69d94991cc9e6df4abe53cbbf02c88b1f521e4d3ce6b9a9b9dfaa3898004f8f7",
+      "outcome": "Title 휴장; 2026-05-01..2026-05-31; returned 0; no notice adopted.",
+      "adopted_as_closure_evidence": false,
+      "query": [
+        {
+          "checked": false,
+          "id": "fromDate",
+          "value": "2026-05-01"
+        },
+        {
+          "checked": false,
+          "id": "toDate",
+          "value": "2026-05-31"
+        },
+        {
+          "checked": false,
+          "id": "reportNmTemp",
+          "value": "휴장"
+        },
+        {
+          "checked": false,
+          "id": "reportNm",
+          "value": "휴장"
+        },
+        {
+          "checked": false,
+          "id": "lastReport",
+          "value": "T"
+        }
+      ]
+    },
+    {
+      "id": "kind-holiday-search-deriv-may",
+      "url": "https://kind.krx.co.kr/disclosure/details.do?method=searchDetailsMain",
+      "checked_at": "2026-11-14T06:08:55.669Z",
+      "capture": "/mnt/data/tmp/gs02-calendar-20261114/kind-holiday-deriv-may.json",
+      "capture_sha256": "7a40b5e322c6be5d7d3b4663f1933c318dd79615121aca8c61f535050c5fe41b",
+      "outcome": "Title 휴장; 2026-05-01..2026-05-31; derivative radio selected, returned 0; no notice adopted.",
+      "adopted_as_closure_evidence": false,
+      "query": [
+        {
+          "checked": false,
+          "id": "fromDate",
+          "value": "2026-05-01"
+        },
+        {
+          "checked": false,
+          "id": "toDate",
+          "value": "2026-05-31"
+        },
+        {
+          "checked": false,
+          "id": "reportNmTemp",
+          "value": "휴장"
+        },
+        {
+          "checked": false,
+          "id": "reportNm",
+          "value": "휴장"
+        },
+        {
+          "checked": false,
+          "id": "lastReport",
+          "value": "T"
+        }
+      ]
+    },
+    {
+      "id": "krx-calendar",
+      "url": "https://www.krx.co.kr/contents/MKD/01/0110/01100303/MKD01100303.jsp",
+      "status": 200,
+      "final_url": "https://www.krx.co.kr/contents/MKD/01/0110/01100303/MKD01100303.jsp",
+      "sha256": "970bccb2768636e8e919b8358e613be7d15eea652fe38896d9c1ee8177a76b5c",
+      "checked_at": "2026-11-14T06:04:36.795566+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/krx-calendar.html",
+      "outcome": "Derivative-calendar HTML exposed annual 2025/2026 download controls but no calendar rows; no PDF obtained.",
+      "adopted_as_closure_evidence": false
+    },
+    {
+      "id": "krx-strn",
+      "url": "https://strn.krx.co.kr/corebbs5/BHPSTRN0401/list",
+      "status": 200,
+      "final_url": "https://www.krx.co.kr/contents/COM/AccessDenied.jsp",
+      "sha256": "c5aee94b134802083756bd487117da91ddaa9435b45a16f5404d13531107b721",
+      "checked_at": "2026-11-14T06:04:37.431010+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/krx-strn.html",
+      "outcome": "Redirected to AccessDenied; simulator operations not adopted as cash-market proof.",
+      "adopted_as_closure_evidence": false
+    },
+    {
+      "id": "krx-main-page",
+      "url": "https://www.krx.co.kr/main/main.jsp",
+      "http_status": 200,
+      "final_url": "https://www.krx.co.kr/contents/COM/AccessDenied.jsp",
+      "sha256": "c5aee94b134802083756bd487117da91ddaa9435b45a16f5404d13531107b721",
+      "checked_at": "2026-11-14T06:06:14.896048+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/krx-main-page.html",
+      "outcome": "Redirected to AccessDenied.",
+      "adopted_as_closure_evidence": false
+    },
+    {
+      "id": "krx-otp-probe",
+      "url": "https://www.krx.co.kr/contents/COM/GenerateOTP.jspx?name=fileDown&bld=MKD/01/0110/01100303/mkd01100303_DN&file_nm=K_Trading_Calendar2026.pdf",
+      "http_status": 200,
+      "final_url": "https://www.krx.co.kr/contents/COM/GenerateOTP.jspx?name=fileDown&bld=MKD/01/0110/01100303/mkd01100303_DN&file_nm=K_Trading_Calendar2026.pdf",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "checked_at": "2026-11-14T06:05:59.415167+00:00",
+      "local_source": "/mnt/data/tmp/gs02-calendar-20261114/krx-otp-probe.html",
+      "outcome": "Annual-calendar download-token probe returned empty body; no PDF obtained.",
+      "adopted_as_closure_evidence": false
+    }
+  ],
+  "excluded_captures": [
+    {
+      "path": "/mnt/data/tmp/gs02-calendar-20261114/krx-holidays-2025.json",
+      "reason": "Unsupported find/select command left year at 2026; excluded. Replaced with independently read 2025-selected capture."
+    }
+  ],
+  "summary": {
+    "target_count": 16,
+    "broker_notice_closed_count": 16,
+    "krx_original_verified_count": 0,
+    "broker_non_settlement_supported_count": 1,
+    "broker_settlement_unresolved_count": 15,
+    "krx_settlement_verified_count": 0,
+    "target_hold_count": 16,
+    "remaining_without_official_broker_closure_support": 0,
+    "remaining_without_direct_krx_closure_output": 16,
+    "original_unclassified_count_preserved": 17
+  },
+  "validation": {
+    "all_11_new_source_snapshot_hashes_match": true,
+    "all_16_dates_have_source_and_published_and_checked_times": true,
+    "originals_and_prior_evidence_hashes_match": true,
+    "inherited_yearend_snapshot_hash_matches": true,
+    "json_and_relative_links": "Checked with task-scoped validation; results in PR/Issue handoff.",
+    "local_code_tests": "NOT_RUN: documentation/public research only; required CI results tracked in PR/Issue.",
+    "external_review": "NOT_RUN: no feature or reproducible bug change."
+  },
+  "limits": [
+    "Official broker notices are not KRX original announcements and may cover multiple domestic venues.",
+    "Current source posting timestamps are not independently verified first-publication timestamps.",
+    "No inference from blank KRX results or KIND 0 results; no claim that official announcements do not exist.",
+    "No full source archive is committed. Original HTML and browser captures remain local, identified by hashes.",
+    "Date closure support does not verify per-symbol halts, full sessions, bar finality/completeness, corporate-action adjustments, entitlement dates, or account costs."
+  ],
+  "orders_sent_this_run": 0,
+  "authenticated_broker_calls_this_run": 0,
+  "originals_changed": false,
+  "automatic_orders_enabled": false,
+  "corporate_actions_hold_count": 8,
+  "backtest_ready": false,
+  "verdict": "HOLD"
+}
