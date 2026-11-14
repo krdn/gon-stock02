@@ -1,0 +1,493 @@
+{
+  "stage": "11-dividend-gaps-20261114",
+  "checked_at": "2026-11-14T05:48:29.560442+00:00",
+  "issue": "https://github.com/krdn/gon-stock02/issues/11",
+  "authorization_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6872487810",
+  "owner_thread_id": "01a1d7da-b8cf-7031-ac86-0b8c5a680972",
+  "base_commit": "76ceb3756be29b48e09fbf7b77860b8963605b3b",
+  "session_decision": {
+    "metric_recorded_at": "2026-11-14T05:34:38.354Z",
+    "last_request_input_tokens": 52724,
+    "reported_model_context_window": 475000,
+    "input_to_window_ratio": 0.1109978947368421,
+    "measurement_limit": "Last request input only; not exact live remaining context, cumulative cost, or measured savings.",
+    "action": "continue_current_thread",
+    "new_codex_thread_created": false
+  },
+  "prior_evidence": [
+    {
+      "path": "docs/evidence/data-contract-2026-11-13.json",
+      "sha256": "83c4356ed1b2d46194bb9e513ae8ffd3ea7e789d96ae067f102e4c9b88828f08",
+      "changed": false
+    },
+    {
+      "path": "docs/evidence/corporate-actions-2026-11-14.json",
+      "sha256": "ba0156e63abd7b2b4af18e99112a84fbc3567f1e0b33ce4b41f2515a9b18e20b",
+      "changed": false
+    },
+    {
+      "path": "docs/evidence/dividend-followup-2026-11-14.json",
+      "sha256": "9639f44249708a2b1b32dda69887f6bcac4b08cb4c766a4868c99a3d5e249343",
+      "changed": false
+    }
+  ],
+  "query_sources": [
+    {
+      "id": "feb-exdiv-validated",
+      "url": "https://kind.krx.co.kr/disclosure/details.do?method=searchDetailsMain",
+      "checked_at": "2026-11-14T05:46:14.484Z",
+      "query": [
+        {
+          "name": "currentPageSize",
+          "value": "15"
+        },
+        {
+          "name": "pageIndex",
+          "value": "1"
+        },
+        {
+          "name": "repIsuSrtCd",
+          "value": ""
+        },
+        {
+          "name": "reportNm",
+          "value": "배당락"
+        },
+        {
+          "name": "fromDate",
+          "value": "2026-02-24"
+        },
+        {
+          "name": "toDate",
+          "value": "2026-02-26"
+        }
+      ],
+      "result_count": 5,
+      "page_count": 1,
+      "rows": [
+        {
+          "disclosures": [
+            {
+              "onclick": "openDisclsViewer('20260226001411','')",
+              "title": "배당락"
+            }
+          ],
+          "text": "5\t2026-02-26 17:05\t 씨앤지하이테크\t배당락\t코스닥시장본부\t "
+        },
+        {
+          "disclosures": [
+            {
+              "onclick": "openDisclsViewer('20260225001229','')",
+              "title": "배당락 안내(결산 배당락)"
+            }
+          ],
+          "text": "4\t2026-02-25 16:25\t\t배당락 안내(결산 배당락)\t코스닥시장본부\t"
+        },
+        {
+          "disclosures": [
+            {
+              "onclick": "openDisclsViewer('20260225000958','')",
+              "title": "배당락 기준가격 안내(결산 배당락)"
+            }
+          ],
+          "text": "3\t2026-02-25 15:46\t\t배당락 기준가격 안내(결산 배당락)\t유가증권시장본부\t"
+        },
+        {
+          "disclosures": [
+            {
+              "onclick": "openDisclsViewer('20260224000693','')",
+              "title": "배당락 기준가격 안내"
+            }
+          ],
+          "text": "2\t2026-02-24 15:49\t 무학 \t배당락 기준가격 안내\t유가증권시장본부\t "
+        },
+        {
+          "disclosures": [
+            {
+              "onclick": "openDisclsViewer('20260224000692','')",
+              "title": "배당락 기준가격 안내"
+            }
+          ],
+          "text": "1\t2026-02-24 15:49\t 미원에스씨 \t배당락 기준가격 안내\t유가증권시장본부\t "
+        }
+      ],
+      "capture_sha256": "287b37208f65432177fda337e3812851cba9484bb6c8a2c158ea48e992f63733",
+      "local_capture": "/mnt/data/tmp/gs02-dividend-gaps-20261114/feb-exdiv-validated.json",
+      "absence_of_disclosure_not_proven": true
+    },
+    {
+      "id": "aug-exdiv-search",
+      "url": "https://kind.krx.co.kr/disclosure/details.do?method=searchDetailsMain",
+      "checked_at": "2026-11-14T05:40:50.941Z",
+      "query": [
+        {
+          "name": "currentPageSize",
+          "value": "15"
+        },
+        {
+          "name": "pageIndex",
+          "value": "1"
+        },
+        {
+          "name": "repIsuSrtCd",
+          "value": ""
+        },
+        {
+          "name": "reportNm",
+          "value": "배당락"
+        },
+        {
+          "name": "fromDate",
+          "value": "2026-08-26"
+        },
+        {
+          "name": "toDate",
+          "value": "2026-08-28"
+        }
+      ],
+      "result_count": 4,
+      "page_count": 1,
+      "rows": [
+        {
+          "disclosures": [
+            {
+              "onclick": "openDisclsViewer('20260827000549','')",
+              "title": "배당락"
+            }
+          ],
+          "text": "4\t2026-08-27 16:56\t 풍강\t배당락\t코스닥시장본부\t "
+        },
+        {
+          "disclosures": [
+            {
+              "onclick": "openDisclsViewer('20260827000408','')",
+              "title": "배당락 기준가격 안내"
+            }
+          ],
+          "text": "3\t2026-08-27 16:07\t 코람코라이프인프라리츠\t배당락 기준가격 안내\t유가증권시장본부\t "
+        },
+        {
+          "disclosures": [
+            {
+              "onclick": "openDisclsViewer('20260827000405','')",
+              "title": "배당락 기준가격 안내"
+            }
+          ],
+          "text": "2\t2026-08-27 16:07\t 신한글로벌액티브리츠\t배당락 기준가격 안내\t유가증권시장본부\t "
+        },
+        {
+          "disclosures": [
+            {
+              "onclick": "openDisclsViewer('20260827000392','')",
+              "title": "배당락 기준가격 결정방법 안내"
+            }
+          ],
+          "text": "1\t2026-08-27 16:05\t 코람코더원리츠\t배당락 기준가격 결정방법 안내\t유가증권시장본부\t "
+        }
+      ],
+      "capture_sha256": "d21b370611cf0c29a59985e5bf2eaa3e215f8178ce8bd239f137252671094192",
+      "local_capture": "/mnt/data/tmp/gs02-dividend-gaps-20261114/aug-exdiv-search.json",
+      "absence_of_disclosure_not_proven": true
+    },
+    {
+      "id": "jusung-dividend-validated",
+      "url": "https://kind.krx.co.kr/disclosure/searchdisclosurebycorp.do?method=searchDisclosureByCorpMain",
+      "checked_at": "2026-11-14T05:46:40.199Z",
+      "query": [
+        {
+          "name": "currentPageSize",
+          "value": "15"
+        },
+        {
+          "name": "pageIndex",
+          "value": "1"
+        },
+        {
+          "name": "repIsuSrtCd",
+          "value": "A036930"
+        },
+        {
+          "name": "reportNm",
+          "value": "배당"
+        },
+        {
+          "name": "fromDate",
+          "value": "2026-01-01"
+        },
+        {
+          "name": "toDate",
+          "value": "2026-11-14"
+        },
+        {
+          "checked": false,
+          "name": "lastReport",
+          "value": "T"
+        }
+      ],
+      "result_count": 1,
+      "page_count": 1,
+      "rows": [
+        {
+          "disclosures": [
+            {
+              "onclick": "openDisclsViewer('20260210000736','')",
+              "title": "현금ㆍ현물배당 결정"
+            }
+          ],
+          "text": "1\t2026-02-10 16:02\t 주성엔지니어링  \t현금ㆍ현물배당 결정\t주성엔지니어링\t "
+        }
+      ],
+      "capture_sha256": "06f1cec728ed83b48aecc1d4a5b3f9685fa04b3064883461b14e6b0f0b801c15",
+      "local_capture": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-dividend-validated.json",
+      "absence_of_disclosure_not_proven": true
+    }
+  ],
+  "direct_ex_dividend": {
+    "symbol": "000660",
+    "company": "SK하이닉스",
+    "previous_candidate": "2026-02-26",
+    "explicit_applied_date": "2026-02-26",
+    "verdict": "CONFIRMED_EXPLICIT_KRX_NOTICE",
+    "notice_id": "20260225000958",
+    "notice_published_at_kst": "2026-02-25 15:46",
+    "viewer_url": "https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260225000958&docno=&viewerhost=&viewerport=",
+    "source": {
+      "id": "krx-feb-exdiv-raw",
+      "url": "https://kind.krx.co.kr/external/2026/02/25/000958/20260225000502/99342.htm",
+      "final_url": "https://kind.krx.co.kr/external/2026/02/25/000958/20260225000502/99342.htm",
+      "status": 200,
+      "checked_at": "2026-11-14T05:44:51.982261+00:00",
+      "sha256": "0bd61ad02280b04578be7504ae2d62dee1eccea49258cdcdbc487d83ec7bba2f",
+      "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/krx-feb-exdiv-raw.html"
+    },
+    "browser_observed_at": "2026-11-14T05:40:25.234Z",
+    "browser_dom_sha256": "faf8168c46f1de31802bbedd1b12df310ef08ac086c1528fea9a51a1d717a43a",
+    "notice_is_market_wide": true,
+    "company_cell_in_search_is_empty": true,
+    "reference_price_literal": "배당부 종가(기준가격 변동없음)",
+    "not_established": [
+      "supplier adjusted price calculation",
+      "individual holding adjustment",
+      "full-session completeness",
+      "absence of trading halts"
+    ]
+  },
+  "remaining_ex_dividend": {
+    "symbol": "000660",
+    "supplier_marker_date": "2026-08-28",
+    "record_date": "2026-08-31",
+    "verdict": "CONDITIONAL_SETTLEMENT_CANDIDATE",
+    "independently_confirmed_date": null,
+    "prior_derivation_unchanged": true,
+    "new_direct_notice_obtained": false,
+    "query_source_id": "aug-exdiv-search",
+    "treatment": "Four notices in the selected period did not establish this event; this does not prove no other notice exists."
+  },
+  "jusung_payment": {
+    "symbol": "036930",
+    "record_date": "2025-12-31",
+    "common_dividend_krw": 53,
+    "issuer_notice_id": "20260210000736",
+    "issuer_notice_published_at_kst": "2026-02-10 16:02",
+    "original_scheduled_payment_date": "2026-04-24",
+    "original_source_recheck": {
+      "id": "jusung-decision-raw",
+      "url": "https://kind.krx.co.kr/external/2026/02/10/000736/20260205000318/71500.htm",
+      "final_url": "https://kind.krx.co.kr/external/2026/02/10/000736/20260205000318/71500.htm",
+      "status": 200,
+      "checked_at": "2026-11-14T05:44:51.980234+00:00",
+      "sha256": "823df3e11694a55c09d8d231a6c59425c62a0fd1c1bd1759607b75df57c22841",
+      "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-decision-raw.html"
+    },
+    "ksd_displayed_payment_date_from_prior_evidence": "2026-04-23",
+    "ksd_refreshed_this_stage": false,
+    "issuer_reported_cash_flow": {
+      "source": {
+        "id": "jusung-half-year-report",
+        "url": "https://www.jusung.com/uploads/post/2026/08/e849ea27af20541c25017689a0113cc7.pdf",
+        "status": 200,
+        "final_url": "https://www.jusung.com/uploads/post/2026/08/e849ea27af20541c25017689a0113cc7.pdf",
+        "checked_at": "2026-11-14T05:42:11.144286+00:00",
+        "sha256": "2f0f89f9c3d2f4fc963e9a8a9e582ffe11235358704adda2a09d39303e25b10e",
+        "bytes": 1242927,
+        "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-half-year-report.pdf"
+      },
+      "report_submission_date_on_cover": "2026-08-14",
+      "exact_publication_time": null,
+      "period_start": "2026-01-01",
+      "period_end": "2026-06-30",
+      "unit": "KRW",
+      "row_literal": "배당금지급(영업)",
+      "consolidated_outflow": -2421777866,
+      "separate_outflow": -2421777866,
+      "absolute_amount_matches_board_total": true,
+      "pdf_pages_one_based": {
+        "consolidated_header": 48,
+        "consolidated_payment": 49,
+        "separate_header": 96,
+        "separate_payment": 97
+      },
+      "printed_pages": {
+        "consolidated_header": 44,
+        "consolidated_payment": 45,
+        "separate_header": 92,
+        "separate_payment": 93
+      },
+      "visual_check_pdf_pages": [
+        48,
+        49
+      ],
+      "interpretation": "Issuer-reported aggregate cash outflow for the half year; not an exact payment date, bank transaction verification, or individual receipt."
+    },
+    "payment_date_conflict_resolved": false,
+    "issuer_change_notice_obtained": false,
+    "actual_payment_date": null,
+    "same_account_receipt_at": null,
+    "withholding_verified": false,
+    "eligibility": "HOLD"
+  },
+  "other_official_material_examined": [
+    {
+      "id": "jusung-notices",
+      "url": "https://www.jusung.com/board/online_notice",
+      "final_url": "https://www.jusung.com/board/online_notice",
+      "status": 200,
+      "checked_at": "2026-11-14T05:38:48.520915+00:00",
+      "sha256": "b9df4af746c39ff5406a4fa35d24c0c29c4be612ef4e4ff8c9515342fc56f685",
+      "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-notices.html"
+    },
+    {
+      "id": "jusung-reports",
+      "url": "https://www.jusung.com/board/business_reports",
+      "final_url": "https://www.jusung.com/board/business_reports",
+      "status": 200,
+      "checked_at": "2026-11-14T05:38:48.533179+00:00",
+      "sha256": "1ef45183739b49a626c46130260d1f256a41accd68759af107c94d7f04baf681",
+      "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-reports.html"
+    },
+    {
+      "id": "jusung-irletter",
+      "url": "https://www.jusung.com/board/irletter",
+      "final_url": "https://www.jusung.com/board/irletter",
+      "status": 200,
+      "checked_at": "2026-11-14T05:38:48.533210+00:00",
+      "sha256": "02694cb52b6a495945b57aad5ae62dac2b0bf25ed5675729fee73790d41ae7e1",
+      "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-irletter.html"
+    },
+    {
+      "id": "jusung-annual-notice",
+      "url": "https://www.jusung.com/post/3687",
+      "final_url": "https://www.jusung.com/post/3687",
+      "status": 200,
+      "checked_at": "2026-11-14T05:39:13.784368+00:00",
+      "sha256": "64e2427f853dc3b9e2df650853cb577e71a80ce1c3a36291266f95c62979a1bb",
+      "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-annual-notice.html"
+    },
+    {
+      "id": "jusung-agm-notice",
+      "url": "https://www.jusung.com/post/3683",
+      "final_url": "https://www.jusung.com/post/3683",
+      "status": 200,
+      "checked_at": "2026-11-14T05:39:13.802543+00:00",
+      "sha256": "7aa5e9cdd5f99d74903d2cbf3e4c4bdc96c046415c7dab7300a253425890cbdf",
+      "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-agm-notice.html"
+    },
+    {
+      "id": "jusung-stock",
+      "url": "https://www.jusung.com/document/stock",
+      "final_url": "https://www.jusung.com/document/stock",
+      "status": 200,
+      "checked_at": "2026-11-14T05:41:23.292048+00:00",
+      "sha256": "d33469ad2cbd626d3464f7b5f8b8085f4e279c4f19e47fcbe0aea5b659cd4f58",
+      "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-stock.html"
+    },
+    {
+      "url": "https://www.jusung.com/postact/download/1764",
+      "final_url": "https://www.jusung.com/postact/download/1764",
+      "status": 200,
+      "checked_at": "2026-11-14T05:40:25.593174+00:00",
+      "sha256": "a921851ebc826b693046342890c1ace51c7805871e718a653dfd496c2c11ce98",
+      "bytes": 1718066,
+      "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-2025-annual-report.pdf"
+    },
+    {
+      "id": "jusung-april-letter",
+      "url": "https://www.jusung.com/uploads/post/2026/04/10c3f751e541d55220dec12d35e63e5c.pdf",
+      "status": 200,
+      "final_url": "https://www.jusung.com/uploads/post/2026/04/10c3f751e541d55220dec12d35e63e5c.pdf",
+      "checked_at": "2026-11-14T05:42:10.967496+00:00",
+      "sha256": "57ff817a6092b5549c5e38b9aec36f796d75626b7e7f5e09af8a83c0172aadaf",
+      "bytes": 1615861,
+      "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-april-letter.pdf"
+    },
+    {
+      "id": "jusung-july-letter",
+      "url": "https://www.jusung.com/uploads/post/2026/07/03f0d32f98fa949ca80643e2e2e638e5.pdf",
+      "status": 200,
+      "final_url": "https://www.jusung.com/uploads/post/2026/07/03f0d32f98fa949ca80643e2e2e638e5.pdf",
+      "checked_at": "2026-11-14T05:42:10.879907+00:00",
+      "sha256": "d39a10a0b5829033c2a7b4be164377de610cfb10a4325dadbd384457d3f5acd8",
+      "bytes": 881430,
+      "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-july-letter.pdf"
+    },
+    {
+      "id": "sk-shareholder-return",
+      "url": "https://www.skhynix.com/ir/UI-FR-IR05",
+      "checked_at": "2026-11-14T05:43:09.120Z",
+      "capture_sha256": "e52502f3afd43af5b8869b3f5890d0e90a973ce714ef6bcb0bae17330b36bc8b",
+      "local_source": "/mnt/data/tmp/gs02-dividend-gaps-20261114/sk-shareholder-return.json",
+      "used_to_confirm_ex_dividend_date": false
+    }
+  ],
+  "excluded_captures": [
+    {
+      "local_capture": "/mnt/data/tmp/gs02-dividend-gaps-20261114/feb-exdiv-complete.json",
+      "sha256": "27933be4bbb1c2e7f6afa524b7f3e3b3d56d82b3fc391ab9fe3c5e26607a2092",
+      "reason": "The form had new conditions but the result table still showed the initial broad response. Excluded; initial load and exact result count were awaited before validated captures.",
+      "result_rows": 15,
+      "used_as_evidence": false
+    },
+    {
+      "local_capture": "/mnt/data/tmp/gs02-dividend-gaps-20261114/jusung-dividend-search-complete.json",
+      "sha256": "b95bb918e612e9685fd5aac3974873973d67305778a52fa95528fa89aa1a2978",
+      "reason": "The form had new conditions but the result table still showed the initial broad response. Excluded; initial load and exact result count were awaited before validated captures.",
+      "result_rows": 15,
+      "used_as_evidence": false
+    }
+  ],
+  "decision": {
+    "stage_result": "PARTIAL",
+    "ex_dividend_evidence_count": {
+      "explicit_krx_notices": 4,
+      "official_year_end_condition_plus_issuer_record_dates": 3,
+      "conditional_settlement_candidates": 1
+    },
+    "all_eight_corporate_actions_eligibility": "HOLD",
+    "issue_11_acceptance_criteria_checked": 1,
+    "issue_11_acceptance_criteria_unchecked": 4,
+    "backtest_ready": false,
+    "orders_enabled": false,
+    "orders_sent": 0,
+    "authenticated_broker_calls": 0
+  },
+  "next_conditions": [
+    "Independently confirm SK 2026-08-28 or verify the historical settlement rule and exceptions.",
+    "Reconcile Jusung 04-24 scheduled versus KSD 04-23 using an authoritative change/payment record.",
+    "Verify individual account receipt, withholding, supplier adjustment and point-in-time information before any event is eligible.",
+    "Retain the other session/halt/finality/completeness/cost/intraday gates in Issue 11."
+  ],
+  "retention": {
+    "old_evidence_and_market_raw_unchanged": true,
+    "existing_untracked_infisical_file_read_or_modified": false,
+    "public_raw_sources": "/mnt/data/tmp/gs02-dividend-gaps-20261114",
+    "browser_session_closed": true
+  },
+  "validation": {
+    "source_hashes_and_selected_fields": "PASS",
+    "query_result_counts_and_conditions": "PASS",
+    "pdf_amount_period_columns_and_units": "PASS",
+    "excluded_async_initial_results": 2,
+    "local_production_code_tests": "NOT_RUN: documentation-only research; repository CI is checked before delivery.",
+    "external_review": "NOT_RUN: documentation-only research under project section 0/8."
+  }
+}
