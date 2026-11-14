@@ -1,0 +1,747 @@
+{
+  "schema_version": 1,
+  "task": "11-notice-final-linkage-20261114",
+  "stage_id": "issue11-notice-final-linkage-20261114",
+  "created_at": "2026-11-14T09:36:52.209023+00:00",
+  "authorization_url": "https://github.com/krdn/gon-stock02/issues/11#issuecomment-6875235838",
+  "execution": {
+    "mode": "CONTINUE_SAME_SESSION",
+    "thread_id": "01a1d94f-05d3-77c0-b955-54ad19fcb0c7",
+    "user_turn_id": "01a1d962-9f6f-7582-a346-c656983a23fb",
+    "context_decision": {
+      "checked_at": "2026-11-14T09:30:19.258646+00:00",
+      "record_timestamp": "2026-11-14T09:29:34.701Z",
+      "thread_id": "01a1d94f-05d3-77c0-b955-54ad19fcb0c7",
+      "last_input_tokens": 251595,
+      "last_output_tokens": 585,
+      "model_context_window": 475000,
+      "recent_input_ratio": 0.5297,
+      "ui_observed_context_left": "48%",
+      "ui_observed_weekly_left": "0%",
+      "ui_observed_used": "263K",
+      "ui_observed_window": "475K",
+      "decision": "CONTINUE_SAME_SESSION",
+      "next_task": "11-notice-final-linkage-20261114",
+      "new_sessions_created": 0,
+      "new_tabs_created": 0,
+      "caveat": "UI 표시/최근 요청 수치의 시각 차이가 있다. 정확한 실시간 잔여토큰/비용이 아니다. 주간 한도는 별도 지표다."
+    },
+    "context_decision_file": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/context-decision.json",
+    "context_decision_sha256": "8e2f025cdc93d9707de9fd3ecc9aa5f8fe07840a9d455fbf0f697edc613edea3",
+    "existing_herdr_terminal": "t65",
+    "existing_herdr_tab_id": "tb1ba2fe41a27b8500f92391f3b46b8f8f",
+    "same_id_read_thread_and_foreground_cwd_verified": true,
+    "new_tab_created": false,
+    "new_session_created": false,
+    "baseline_main": "0742d89cc1902c9cc20e951e5c55d09a6592a80f",
+    "existing_separate_changes": [
+      "?? .infisical.yaml"
+    ]
+  },
+  "inputs": {
+    "prior_evidence_path": "docs/evidence/promulgation-provenance-2026-11-14.json",
+    "prior_evidence_sha256": "fee4385f884cbc7c65178fd1e6cb83f7b5952686c6b173df377c0901932f9600",
+    "baseline_hashes": {
+      "docs/evidence/corporate-actions-2026-11-14.json": "ba0156e63abd7b2b4af18e99112a84fbc3567f1e0b33ce4b41f2515a9b18e20b",
+      "docs/evidence/data-contract-2026-11-13.json": "83c4356ed1b2d46194bb9e513ae8ffd3ea7e789d96ae067f102e4c9b88828f08",
+      "docs/evidence/data-contract-followup-2026-11-14.json": "9c42ddd3adcb41e7d9c0401f9c9e58ea0fa337d6e84570008fa7326fdc052921",
+      "docs/evidence/data-readiness-2026-11-13.json": "238373fd557b2fcca789adb47de5bc6a8d98fccabf8322fd6a9a1491770cef44",
+      "docs/evidence/dividend-followup-2026-11-14.json": "9639f44249708a2b1b32dda69887f6bcac4b08cb4c766a4868c99a3d5e249343",
+      "docs/evidence/dividend-gaps-2026-11-14.json": "d2814675755ce9f47708fd92782256cbabc18ea9c32169f236f6afbe24683fad",
+      "docs/evidence/evolve-runtime-2026-11-14.json": "380939e1209cdae39d4c910d8510526f725ee846cbe59eaba5bc4582d0b4241f",
+      "docs/evidence/halt-reconciliation-2026-11-14.json": "c88cae861a032a28efc7cf5dfcdc3fa88b8688e6a288180de9d8a7c52f9fc9d7",
+      "docs/evidence/historical-data-2026-11-13.json": "340c8f1802a5f68101ac47bf62a515ab39be8737769f2e671608e0f35631fdeb",
+      "docs/evidence/minute-capture-2026-11-14.json": "b57aff3e2fa691b9d6761078ee5c283adc3a5adbefb19db8d203fc73cb8cd989",
+      "docs/evidence/native-session-handoff-2026-11-14.json": "9117df4bb6aa4050e26193daeb442290c896a524aeb2ed006aecdc423bd179f1",
+      "docs/evidence/paper-order-ledger-2026-11-13.json": "05b2af32b54bcb8c34e1869e5b024edef3b6a38541ede7aee02772a738f80800",
+      "docs/evidence/stage1-2026-11-13.json": "22f95ae7831c10eef0ced9fae1958810870d5aad7b127cff92e6417b4bb69233",
+      ".local/history-20261113-run2/pages.jsonl": "33fcb37abab6712ba5ff19b60625ff496f7b88cceb462a8b351d0b1588f8eee2",
+      ".local/history-20261113-run2/bars.jsonl": "f42b4b14bdb04638626897293a35f90cff23abbf9acf707718cb6fe873bb84d9",
+      ".local/issue11-contract-20261113/check.py": "257c7b15eadeabb83e424c0a75eebb13dea9e2074b74de56da2765f9f5a9205c",
+      "docs/evidence/calendar-reconciliation-2026-11-14.json": "ba221a99a32073e1923d734648558da431010e9d64826b7d21e1ce41eb50f815",
+      ".local/history-20261113-run2/manifest.json": "0d7320cb041e37edd5baa08cb8d888a735e7fb9e37b97260769788939ccda345",
+      "docs/evidence/settlement-reconciliation-2026-11-14.json": "62eef6e39e70d7406318d711f0622ebf2d16489a28b600c41a00e57e88686d8a",
+      "docs/evidence/settlement-rule-versions-2026-11-14.json": "3f405862dd8818552bf62ef7d3c25134b04386e3f031db41b5ef2412c1395246",
+      "docs/evidence/settlement-effective-boundaries-2026-11-14.json": "f6bbd44954036343da9fd6faf339015fdd898dea05ad4735239a921c5147e243",
+      "docs/evidence/promulgation-provenance-2026-11-14.json": "fee4385f884cbc7c65178fd1e6cb83f7b5952686c6b173df377c0901932f9600"
+    },
+    "target_dates": [
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25"
+    ],
+    "other_dates_unchanged": [
+      "2025-12-25",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ],
+    "all_settlement_hold_dates": [
+      "2025-12-25",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ],
+    "original_unclassified_dates_preserved": [
+      "2025-12-25",
+      "2025-12-31",
+      "2026-01-01",
+      "2026-02-16",
+      "2026-02-17",
+      "2026-02-18",
+      "2026-03-02",
+      "2026-05-01",
+      "2026-05-05",
+      "2026-05-25",
+      "2026-06-03",
+      "2026-07-17",
+      "2026-08-17",
+      "2026-09-24",
+      "2026-09-25",
+      "2026-10-05",
+      "2026-10-09"
+    ]
+  },
+  "method": {
+    "scope": "공고53호(정정155호)→최종36288호의 공식 직접연결. 2405 및 전체계좌계약은 재조사하지 않는다.",
+    "new_identifier_rule": "기존 보존본문/해시를 먼저 대조하고 미취득 새 공식 식별자만 요청했다. 기존 실패 요청은 반복하지 않았다.",
+    "source_separation": "HWPX 본문/미리보기/패키지 메타데이터, 예고/의결 보도/예정/실제 원공포문을 분리한다.",
+    "search_boundary": "검색색인은 발견용이며 검색불발과 이번 원문의 연결키 미확보는 전역 부재를 입증하지 않는다."
+  },
+  "public_sources": [
+    {
+      "id": "lawmaking-draft-10595828",
+      "url": "https://opinion.lawmaking.go.kr/file/download/10595828/6P9FN0XJKM42XFX18INB",
+      "method": "GET",
+      "parameters": {},
+      "final_url": "https://opinion.lawmaking.go.kr/file/download/10595828/6P9FN0XJKM42XFX18INB",
+      "http_status": 200,
+      "checked_at": "2026-11-14T09:31:53.508535+00:00",
+      "sha256": "cd5f1e0c88254b1e8117a27551dbd1560a9a5a1ecc049f803ab471c08302f645",
+      "local_source": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/lawmaking-draft-10595828.hwpx",
+      "bytes": 42323,
+      "content_type": "application/unknown;charset=UTF-8",
+      "publisher": "법제처 국민참여입법센터",
+      "published_at": null,
+      "first_available_at": null,
+      "notice_date": null,
+      "promulgation_date": null,
+      "document_effective_date": null,
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "source_type": "official_proposal_hwpx",
+      "notice_page": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/85478?isOgYn=Y",
+      "identifiers": {
+        "ogLmPp": "85478",
+        "attachment_id": "10595828"
+      },
+      "extractions": [
+        {
+          "path": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/lawmaking-draft-10595828.body.txt",
+          "sha256": "2dbf928f8d8de764f3def4b5c6f07b56cba83715ee9c2e1e8566f154deec3032",
+          "role": "BODY_SECTIONS_ONLY"
+        },
+        {
+          "path": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/lawmaking-draft-10595828.metadata.xml",
+          "sha256": "c51ed48b159f7030159d260ff75f5966b8909e9bafe3c4e096a63ab80d8103b7",
+          "role": "PACKAGE_METADATA_NOT_LEGAL_BODY"
+        },
+        {
+          "path": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/lawmaking-draft-10595828.preview.txt",
+          "sha256": "bebb91d7f51cadf196b856fa589acce8ce09c4037c1ac1ff04b871e2f10e3a42",
+          "role": "PACKAGE_PREVIEW_CROSS_CHECK"
+        }
+      ],
+      "extraction_method": "HWPX ZIP: numeric ordered Contents/sectionN.xml itertext; content.hpf and Preview/PrvText.txt saved separately",
+      "final_identifier_in_body": false,
+      "locator": "Contents/section0.xml 개정안/부칙, section1.xml 신구대비, section2.xml 소관부서; content.hpf keyword 분리",
+      "finding": "본문은 대통령령 번호 공란, 제80조제1항제4호의3/제252조제1항제1호의2 신설 및 공포일부터 시행하는 예고안이다. 본문/미리보기에 최종36288호 연결키는 없다."
+    },
+    {
+      "id": "lawmaking-reasons-10595830",
+      "url": "https://opinion.lawmaking.go.kr/file/download/10595830/MDXRENRMV36C7JGKOU9E",
+      "method": "GET",
+      "parameters": {},
+      "final_url": "https://opinion.lawmaking.go.kr/file/download/10595830/MDXRENRMV36C7JGKOU9E",
+      "http_status": 200,
+      "checked_at": "2026-11-14T09:31:53.475900+00:00",
+      "sha256": "ee9b65be9ac5e9c916c7d0e59d86ed1031940741885194e2e22403ce0413e378",
+      "local_source": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/lawmaking-reasons-10595830.hwpx",
+      "bytes": 25047,
+      "content_type": "application/unknown;charset=UTF-8",
+      "publisher": "법제처 국민참여입법센터",
+      "published_at": null,
+      "first_available_at": null,
+      "notice_date": null,
+      "promulgation_date": null,
+      "document_effective_date": null,
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "source_type": "official_article_reasons_hwpx",
+      "notice_page": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/85478?isOgYn=Y",
+      "identifiers": {
+        "ogLmPp": "85478",
+        "attachment_id": "10595830"
+      },
+      "extractions": [
+        {
+          "path": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/lawmaking-reasons-10595830.body.txt",
+          "sha256": "ca17a5f14530ff473b49bc5441a89556f5a4f981c937a71a5f2233dcdd0df988",
+          "role": "BODY_SECTIONS_ONLY"
+        },
+        {
+          "path": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/lawmaking-reasons-10595830.metadata.xml",
+          "sha256": "3f13d0768fb13a6c9699305887db7d7d7eefe379d3459f1a57bd3d2e781d2cbd",
+          "role": "PACKAGE_METADATA_NOT_LEGAL_BODY"
+        },
+        {
+          "path": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/lawmaking-reasons-10595830.preview.txt",
+          "sha256": "16bef66d2e3a2d693df9a384aed145e2c50acdfe0b47cc3aae3bf56d4b39d034",
+          "role": "PACKAGE_PREVIEW_CROSS_CHECK"
+        }
+      ],
+      "extraction_method": "HWPX ZIP: numeric ordered Contents/sectionN.xml itertext; content.hpf and Preview/PrvText.txt saved separately",
+      "final_identifier_in_body": false,
+      "locator": "Contents/section0.xml 조문별 제개정이유서(2026.1.)",
+      "finding": "동일종목100%/위험평가액200%를 설명한다. 입법추진과정 주요논의는 해당사항 없음이다. 최종36288호 직접 연결키는 확인하지 못했다."
+    },
+    {
+      "id": "fsc-cabinet-86751",
+      "url": "https://www.fsc.go.kr/no010101/86751",
+      "method": "GET",
+      "parameters": {},
+      "final_url": "https://www.fsc.go.kr/no010101/86751",
+      "http_status": 200,
+      "checked_at": "2026-11-14T09:31:55.322177+00:00",
+      "sha256": "e17bba943d5e5d10c10d81f5b08a2aeb5f2ad0e50570783a098283a26e4b6728",
+      "local_source": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/fsc-cabinet-86751.html",
+      "bytes": 137877,
+      "content_type": "text/html;charset=UTF-8",
+      "publisher": "금융위원회",
+      "published_at": null,
+      "first_available_at": null,
+      "notice_date": null,
+      "promulgation_date": null,
+      "document_effective_date": null,
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "source_type": "official_policy_press_html",
+      "extractions": [
+        {
+          "path": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/fsc-cabinet-86751.visible-text.txt",
+          "sha256": "72085cc02ad693153548bcd8f2dae2e6bb9c0178e9670851444453afad18ebd2",
+          "role": "PRESS_TEXT_NOT_FINAL_PROMULGATION"
+        }
+      ],
+      "displayed_publication_date": "2026-04-21",
+      "cabinet_decision_date": "2026-04-21",
+      "planned_promulgation_date": "2026-04-28",
+      "planned_effective_date": "2026-04-28",
+      "locator": "보도자료 첫머리 국무회의 의결/4.28 공포시행 예정, 주요내용 제80조/제252조",
+      "finding": "04-21 국무회의 의결과04-28 공포/시행 예정,04-15 금융위 의결·거래소 상장규정 정비를 설명한다. 당시 예정과 실제 공포를 구분한다. 공고53호/정정155호/최종36288호/정부입법ID의 직접 연결키는 이 보존 자료에서 확인하지 못했다."
+    },
+    {
+      "id": "fsc-cabinet-86751-pdf",
+      "url": "https://www.fsc.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=86751&fileTy=ATTACH&fileNo=4",
+      "method": "GET",
+      "parameters": {},
+      "final_url": "https://www.fsc.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=86751&fileTy=ATTACH&fileNo=4",
+      "http_status": 200,
+      "checked_at": "2026-11-14T09:33:05.811904+00:00",
+      "sha256": "9291fd3fe7e51326349e508db8e8e37f09beaf8ddf30d6e453da637c560aefc0",
+      "local_source": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/fsc-cabinet-86751-pdf.pdf",
+      "bytes": 689376,
+      "content_type": "application/octet-stream",
+      "publisher": "금융위원회",
+      "published_at": null,
+      "first_available_at": null,
+      "notice_date": null,
+      "promulgation_date": null,
+      "document_effective_date": null,
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "source_type": "official_cabinet_press_pdf",
+      "extractions": [
+        {
+          "path": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/fsc-cabinet-86751-pdf.text.txt",
+          "sha256": "671e589f8ef645a255d0c9dde91cc2f908ecaac981c37d5166f91b34e18e74eb",
+          "role": "PRESS_TEXT_NOT_FINAL_PROMULGATION"
+        }
+      ],
+      "displayed_publication_date": "2026-04-21",
+      "cabinet_decision_date": "2026-04-21",
+      "planned_promulgation_date": "2026-04-28",
+      "planned_effective_date": "2026-04-28",
+      "locator": "보도자료 첫머리 국무회의 의결/4.28 공포시행 예정, 주요내용 제80조/제252조",
+      "finding": "04-21 국무회의 의결과04-28 공포/시행 예정,04-15 금융위 의결·거래소 상장규정 정비를 설명한다. 당시 예정과 실제 공포를 구분한다. 공고53호/정정155호/최종36288호/정부입법ID의 직접 연결키는 이 보존 자료에서 확인하지 못했다.",
+      "release_timing_text": "배포시; 2026.4.21 국무회의 의결 이후",
+      "release_timing_is_first_available_at": false
+    },
+    {
+      "id": "fsc-proposal-86178",
+      "url": "https://www.fsc.go.kr/no010101/86178",
+      "method": "GET",
+      "parameters": {},
+      "final_url": "https://www.fsc.go.kr/no010101/86178",
+      "http_status": 200,
+      "checked_at": "2026-11-14T09:33:06.101387+00:00",
+      "sha256": "9ba474d9e6da2cd2ace800d93e8e6f6bc73f4e0459ac67a40b1a60d2d74c5ff2",
+      "local_source": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/fsc-proposal-86178.html",
+      "bytes": 115544,
+      "content_type": "text/html;charset=UTF-8",
+      "publisher": "금융위원회",
+      "published_at": null,
+      "first_available_at": null,
+      "notice_date": null,
+      "promulgation_date": null,
+      "document_effective_date": null,
+      "date_specific_settlement_output": false,
+      "account_application_verified": false,
+      "source_type": "official_policy_press_html",
+      "extractions": [
+        {
+          "path": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/fsc-proposal-86178.visible-text.txt",
+          "sha256": "cf2b5ffd277834f1bf8915dd80feba8ac205689af2ba2f1160688ed0e49cc233",
+          "role": "PRESS_TEXT_NOT_FINAL_PROMULGATION"
+        }
+      ],
+      "displayed_publication_date": "2026-01-30",
+      "notice_period": [
+        "2026-01-30",
+        "2026-03-11"
+      ],
+      "locator": "본문 입법예고 기간/단일종목ETF/제도정비 계획",
+      "finding": "단일종목 ETF 도입을 위한01-30~03-11 입법예고를 설명한다. 공고번호와 최종 공포번호를 직접 연결하는 처리 문서는 아니다."
+    }
+  ],
+  "reused_public_sources": [
+    {
+      "id": "gwanbo-36288-download",
+      "url": "https://gwanbo.go.kr/user/common/ofcttCntntDownload.do",
+      "local_source": "/mnt/data/tmp/gs02-promulgation-provenance-20261114/gwanbo-36288-download.pdf",
+      "sha256": "94bdfff445da5f4beb3bb6a74afa1b28cc330c6475a8f7e153213dee5d651209",
+      "checked_at": "2026-11-14T09:11:25.331866+00:00",
+      "network_requeried": false,
+      "reused_at": "2026-11-14T09:36:52.209023+00:00",
+      "provenance_evidence_path": "docs/evidence/promulgation-provenance-2026-11-14.json"
+    },
+    {
+      "id": "gwanbo-notice-53",
+      "url": "https://gwanbo.go.kr/user/common/ofcttCntntDownload.do",
+      "local_source": "/mnt/data/tmp/gs02-promulgation-provenance-20261114/gwanbo-notice-53.pdf",
+      "sha256": "7951c1b1f7847bf7bc59c6da7e576668285f6d0a18918d3b6ea405ba09cbf526",
+      "checked_at": "2026-11-14T09:13:47.665341+00:00",
+      "network_requeried": false,
+      "reused_at": "2026-11-14T09:36:52.209023+00:00",
+      "provenance_evidence_path": "docs/evidence/promulgation-provenance-2026-11-14.json"
+    },
+    {
+      "id": "gwanbo-correction-155",
+      "url": "https://gwanbo.go.kr/user/common/ofcttCntntDownload.do",
+      "local_source": "/mnt/data/tmp/gs02-promulgation-provenance-20261114/gwanbo-correction-155.pdf",
+      "sha256": "cd65554df8cd8bf9a27399f74e2f1d17f291b437c754ec6f23a9f17942007b61",
+      "checked_at": "2026-11-14T09:13:47.650760+00:00",
+      "network_requeried": false,
+      "reused_at": "2026-11-14T09:36:52.209023+00:00",
+      "provenance_evidence_path": "docs/evidence/promulgation-provenance-2026-11-14.json"
+    },
+    {
+      "id": "lawmaking-notice-85478",
+      "url": "https://opinion.lawmaking.go.kr/gcom/ogLmPp/85478?isOgYn=Y",
+      "local_source": "/mnt/data/tmp/gs02-promulgation-provenance-20261114/lawmaking-notice-85478.html",
+      "sha256": "f1ca648064de672711c8425b95db69e0c77d61277d54be771947405a270a120b",
+      "checked_at": "2026-11-14T09:12:14.506617+00:00",
+      "network_requeried": false,
+      "reused_at": "2026-11-14T09:36:52.209023+00:00",
+      "provenance_evidence_path": "docs/evidence/promulgation-provenance-2026-11-14.json"
+    },
+    {
+      "id": "krx-2433-full",
+      "url": "https://rule.krx.co.kr/Download.do",
+      "local_source": "/mnt/data/tmp/gs02-effective-boundaries-20261114/krx-210200859-JUN-fresh-ui.hwp",
+      "sha256": "c9d716840819bdc04ddecc903f493da596ea67aca62846907dcfdaa4211a89c7",
+      "checked_at": "2026-11-14T08:45:23.630110+00:00",
+      "network_requeried": false,
+      "reused_at": "2026-11-14T09:36:52.209023+00:00",
+      "provenance_evidence_path": "docs/evidence/promulgation-provenance-2026-11-14.json"
+    },
+    {
+      "id": "lawmaking-36288-history",
+      "url": "https://opinion.lawmaking.go.kr/lmSts/govLm/2000000324314/detailRP",
+      "local_source": "/mnt/data/tmp/gs02-effective-boundaries-20261114/lawmaking-2000000324314.html",
+      "sha256": "c258a951d256394fdb098e8151154852a1d026b8dec8e1c4c882866108e24d16",
+      "checked_at": "2026-11-14T08:44:43.655965+00:00",
+      "network_requeried": false,
+      "reused_at": "2026-11-14T09:36:52.209023+00:00",
+      "provenance_evidence_path": "docs/evidence/promulgation-provenance-2026-11-14.json"
+    }
+  ],
+  "access_attempts": [
+    {
+      "id": "lawmaking-draft-10595828",
+      "url": "https://opinion.lawmaking.go.kr/file/download/10595828/6P9FN0XJKM42XFX18INB",
+      "method": "GET",
+      "parameters": {},
+      "final_url": "https://opinion.lawmaking.go.kr/file/download/10595828/6P9FN0XJKM42XFX18INB",
+      "http_status": 200,
+      "checked_at": "2026-11-14T09:31:53.508535+00:00",
+      "sha256": "cd5f1e0c88254b1e8117a27551dbd1560a9a5a1ecc049f803ab471c08302f645",
+      "local_source": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/lawmaking-draft-10595828.hwpx",
+      "bytes": 42323,
+      "content_type": "application/unknown;charset=UTF-8",
+      "verdict": "SOURCE_BODY_ACQUIRED",
+      "metadata_file": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/lawmaking-draft-10595828.meta.json",
+      "metadata_sha256": "880af696793794bc1af9d53cd6ddaf11db1a86fc9f639e84cabe9640b702195a"
+    },
+    {
+      "id": "lawmaking-reasons-10595830",
+      "url": "https://opinion.lawmaking.go.kr/file/download/10595830/MDXRENRMV36C7JGKOU9E",
+      "method": "GET",
+      "parameters": {},
+      "final_url": "https://opinion.lawmaking.go.kr/file/download/10595830/MDXRENRMV36C7JGKOU9E",
+      "http_status": 200,
+      "checked_at": "2026-11-14T09:31:53.475900+00:00",
+      "sha256": "ee9b65be9ac5e9c916c7d0e59d86ed1031940741885194e2e22403ce0413e378",
+      "local_source": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/lawmaking-reasons-10595830.hwpx",
+      "bytes": 25047,
+      "content_type": "application/unknown;charset=UTF-8",
+      "verdict": "SOURCE_BODY_ACQUIRED",
+      "metadata_file": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/lawmaking-reasons-10595830.meta.json",
+      "metadata_sha256": "49c74a926a82d3ea062ac624d7eb156ed32a846449c4c19e654364898ce6bbd3"
+    },
+    {
+      "id": "fsc-cabinet-86751",
+      "url": "https://www.fsc.go.kr/no010101/86751",
+      "method": "GET",
+      "parameters": {},
+      "final_url": "https://www.fsc.go.kr/no010101/86751",
+      "http_status": 200,
+      "checked_at": "2026-11-14T09:31:55.322177+00:00",
+      "sha256": "e17bba943d5e5d10c10d81f5b08a2aeb5f2ad0e50570783a098283a26e4b6728",
+      "local_source": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/fsc-cabinet-86751.html",
+      "bytes": 137877,
+      "content_type": "text/html;charset=UTF-8",
+      "verdict": "SOURCE_BODY_ACQUIRED",
+      "metadata_file": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/fsc-cabinet-86751.meta.json",
+      "metadata_sha256": "763f15015ae455f9d97e517120299fff92897ac9759ab1bf5e27cc73ca076837"
+    },
+    {
+      "id": "fsc-cabinet-86751-pdf",
+      "url": "https://www.fsc.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=86751&fileTy=ATTACH&fileNo=4",
+      "method": "GET",
+      "parameters": {},
+      "final_url": "https://www.fsc.go.kr/comm/getFile?srvcId=BBSTY1&upperNo=86751&fileTy=ATTACH&fileNo=4",
+      "http_status": 200,
+      "checked_at": "2026-11-14T09:33:05.811904+00:00",
+      "sha256": "9291fd3fe7e51326349e508db8e8e37f09beaf8ddf30d6e453da637c560aefc0",
+      "local_source": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/fsc-cabinet-86751-pdf.pdf",
+      "bytes": 689376,
+      "content_type": "application/octet-stream",
+      "verdict": "SOURCE_BODY_ACQUIRED",
+      "metadata_file": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/fsc-cabinet-86751-pdf.meta.json",
+      "metadata_sha256": "e947aaf3b7e29ca03be43dcf892890c6c23dfa130196877e0cb934914831990d"
+    },
+    {
+      "id": "fsc-proposal-86178",
+      "url": "https://www.fsc.go.kr/no010101/86178",
+      "method": "GET",
+      "parameters": {},
+      "final_url": "https://www.fsc.go.kr/no010101/86178",
+      "http_status": 200,
+      "checked_at": "2026-11-14T09:33:06.101387+00:00",
+      "sha256": "9ba474d9e6da2cd2ace800d93e8e6f6bc73f4e0459ac67a40b1a60d2d74c5ff2",
+      "local_source": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/fsc-proposal-86178.html",
+      "bytes": 115544,
+      "content_type": "text/html;charset=UTF-8",
+      "verdict": "SOURCE_BODY_ACQUIRED",
+      "metadata_file": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/fsc-proposal-86178.meta.json",
+      "metadata_sha256": "d442149da0609dbdb906cd486f63abacce66cd010b6d479d2253ae731d41bba9"
+    }
+  ],
+  "package_metadata_finding": {
+    "source_id": "lawmaking-draft-10595828",
+    "body_locator": "Contents/section0.xml 부칙",
+    "body_effective_condition": "공포한 날부터 시행한다",
+    "preview_same_condition": true,
+    "non_body_locator": "Contents/content.hpf/opf:metadata/opf:meta[@name=keyword]",
+    "non_body_date_text": "이 영은 2026년 3월 17일부터 시행한다.",
+    "alternate_date_in_body": false,
+    "alternate_date_in_preview": false,
+    "adopted_as_effective_date_candidate": false,
+    "verdict": "NON_BODY_METADATA_EXCLUDED",
+    "reason": "본문 밖 검색키워드를 시행 부칙으로 승격하지 않는다. 그 문구가 남은 원인은 확인하지 않았으며 법령 간 시행일 상충으로 해석하지 않는다.",
+    "extraction_note": "초기 탐색에서 본문/메타데이터를 함께 출력했으나 최종 증거는 section 본문·content.hpf·미리보기를 따로 저장하고 해시를 고정했다."
+  },
+  "linkage_results": [
+    {
+      "from": "공고53호/예고85478",
+      "to": "첨부10595828/10595830",
+      "type": "DIRECT_OFFICIAL_ATTACHMENT_LINK",
+      "source_ids": [
+        "lawmaking-notice-85478",
+        "lawmaking-draft-10595828",
+        "lawmaking-reasons-10595830"
+      ]
+    },
+    {
+      "from": "정정155호",
+      "to": "공고53호",
+      "type": "DIRECT_CORRECTION_REFERENCE_REUSED",
+      "source_ids": [
+        "gwanbo-correction-155",
+        "gwanbo-notice-53"
+      ]
+    },
+    {
+      "from": "금융위01-30 입법예고 설명",
+      "to": "공고53호/예고85478",
+      "type": "INFERRED_SAME_TOPIC_AND_PERIOD",
+      "source_ids": [
+        "fsc-proposal-86178",
+        "lawmaking-notice-85478"
+      ]
+    },
+    {
+      "from": "04-21 국무회의 보도",
+      "to": "04-28 공포/시행 예정",
+      "type": "DIRECT_OFFICIAL_SCHEDULE_NOT_FINAL_PROMULGATION",
+      "source_ids": [
+        "fsc-cabinet-86751",
+        "fsc-cabinet-86751-pdf"
+      ]
+    },
+    {
+      "from": "정부입법현황2000000324314",
+      "to": "최종36288호/04-28 실제공포",
+      "type": "DIRECT_STATUS_RECORD_REUSED",
+      "source_ids": [
+        "lawmaking-36288-history"
+      ]
+    },
+    {
+      "from": "최종36288호 원관보",
+      "to": "04-28 실제공포/공포일부터시행",
+      "type": "DIRECT_FINAL_TEXT_REUSED",
+      "source_ids": [
+        "gwanbo-36288-download"
+      ]
+    },
+    {
+      "from": "공고53호(정정155호 포함)",
+      "to": "최종36288호",
+      "type": "NOT_DIRECTLY_VERIFIED_CONTENT_AND_PROCESS_INFERENCE_ONLY",
+      "source_ids": [
+        "lawmaking-draft-10595828",
+        "lawmaking-reasons-10595830",
+        "fsc-proposal-86178",
+        "fsc-cabinet-86751-pdf",
+        "gwanbo-36288-download"
+      ],
+      "missing": "같은 안의 최종처리를 직접 명시한 공식 연결키/확정처리 문서"
+    }
+  ],
+  "case": {
+    "id": "kospi-rule-2433",
+    "bookid": "210200859",
+    "amendment_date": "2026-04-15",
+    "notice_date": "2026-01-30",
+    "known_correction_date": "2026-02-06",
+    "final_decree_promulgation_date_verified": "2026-04-28",
+    "final_decree_effective_date_verified": "2026-04-28",
+    "original_gazette_acquired_in_prior_stage": true,
+    "direct_notice_to_final_link_verified": false,
+    "effective_date": null,
+    "candidate_effective_dates": [
+      "2026-04-28"
+    ],
+    "published_at": null,
+    "first_available_at": null,
+    "verdict": "HOLD",
+    "reason": "신규 예고패키지와 당시 보도자료도 번호/확정처리 키를 직접 잇지 못했다. 최종 본문은 기존 원관보로 확인하지만2433의 조건대상 동일안 직접연결은 미확보다.",
+    "remaining_conditions": [
+      "공고53호/정정155호→최종36288호를 직접 잇는 공식 식별자 또는 확정처리 문서.",
+      "최초 공개/정보가용시각과 전체 정정 이력.",
+      "날짜별 직접 결제·예외 발동·모의계좌/전체 백테스트 계약은 별도 미확정."
+    ]
+  },
+  "date_results": [
+    {
+      "date": "2025-12-25",
+      "group": "other-unchanged",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-01-01",
+      "group": "other-unchanged",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-02-16",
+      "group": "other-unchanged",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-02-17",
+      "group": "other-unchanged",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-02-18",
+      "group": "other-unchanged",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-03-02",
+      "group": "other-unchanged",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-05-01",
+      "group": "2433-target",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-05-05",
+      "group": "2433-target",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-05-25",
+      "group": "2433-target",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-07-17",
+      "group": "other-unchanged",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-08-17",
+      "group": "other-unchanged",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-09-24",
+      "group": "other-unchanged",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-09-25",
+      "group": "other-unchanged",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-10-05",
+      "group": "other-unchanged",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    },
+    {
+      "date": "2026-10-09",
+      "group": "other-unchanged",
+      "settlement_verdict": "HOLD",
+      "new_date_specific_settlement_verified": false,
+      "account_application_verified": false
+    }
+  ],
+  "validation": {
+    "source_body_package_metadata_separated": true,
+    "preview_key_conditions_cross_checked": true,
+    "local_code_tests": "NOT_RUN_DOC_ONLY",
+    "external_review": "NOT_RUN_DOC_ONLY",
+    "evolve_commands": "NOT_RUN_EXCLUDED",
+    "remaining": "PR required CI/main SHA/4 remote blobs/Issue handoff; see final Issue11 result comment.",
+    "local_checks": {
+      "checked_at": "2026-11-14T09:37:37.319150+00:00",
+      "json_references_hashes": "PASS",
+      "unchanged_baseline_files": 22,
+      "source_bodies": 5,
+      "reused_bodies": 6,
+      "date_partition": "3+12=15 HOLD",
+      "body_preview_metadata_separation": "PASS",
+      "relative_links_and_anchors_checked": 26,
+      "original_research_prefix_preserved": true,
+      "diff_check": "PASS",
+      "new_tabs_and_sessions": 0
+    },
+    "local_check_evidence": {
+      "path": "/mnt/data/tmp/gs02-notice-final-linkage-20261114/validation-result.json",
+      "sha256": "83d565d4489056d009ed31dd645849eef13e3ed2a7f91105815439674e825d97"
+    }
+  },
+  "summary": {
+    "new_source_bodies_acquired": 5,
+    "new_hwpx_documents": 2,
+    "new_press_html_documents": 2,
+    "new_press_pdf_documents": 1,
+    "reused_source_bodies": 6,
+    "public_http_requests_recorded": 5,
+    "new_direct_notice_to_final_links_verified": 0,
+    "non_body_date_text_excluded_count": 1,
+    "canonical_boundary_resolved_count": 0,
+    "target_dates_count": 3,
+    "other_dates_unchanged_count": 12,
+    "settlement_hold_count": 15,
+    "new_date_specific_settlement_verified_count": 0,
+    "account_application_verified_count": 0,
+    "baseline_unchanged_file_count": 22,
+    "new_tabs_created": 0,
+    "new_sessions_created": 0,
+    "broker_authenticated_calls": 0,
+    "orders_sent": 0,
+    "evolve_runs": 0,
+    "backtests_run": 0,
+    "automatic_orders": "OFF",
+    "backtest_ready": false,
+    "issue11_state": "OPEN",
+    "issue11_acceptance_completed_count": 1,
+    "corporate_actions_hold_count": 8,
+    "stage_deliverable": "동일 세션의 공개 조사와 증거 인계. 전체 계약 완료/사용자 결과 수용 아님."
+  }
+}
