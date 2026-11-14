@@ -103,3 +103,28 @@ SK하이닉스는 2페이지·60행 원본만 받은 미완료 상태이며 나�
 추가 단서는 SK하이닉스의 11-12 17:03 `변경상장(주식소각)` 공시 제목이다(접수번호 `20261112000210`). 본문·효력일·수량/가격 영향은 이번 정지 조회로 확인하지 않았으며 기업행동 후속 조사 대상으로만 남겼다. 기존 공급자 표시 8건도 계속 미검증이다.
 
 다음에는 정상 접근 가능한 KRX의 공식 날짜별 출력 또는 별도 승인된 공식 내보내기 자료를 확보해야 한다. 정지 여부가 확인된 날짜는 공시의 실제 정지·재개 시각과 대조한다. 원문 브라우저 캡처는 로컬 임시 경로에, 선택한 조회 조건·공시 제목/식별자·캡처 해시·판정은 증거 JSON에 보존했다. 주문·인증 브로커 호출은 0건이며 Issue #11의 나머지 네 수용 기준은 완료하지 않았다.
+
+## 2026-11-14 기업행동 공시 대조
+
+[추가 승인](https://github.com/krdn/gon-stock02/issues/11#issuecomment-6871186212)에 따라 현재 세션에서 공식 본문 12건을 읽었다. [출처·공표/관측 시각·필드·해시·8건 판정](../evidence/corporate-actions-2026-11-14.json). **배당락 적용일 3건은 정확히 일치했고, 5건은 배당 기준일과 결정 금액까지만 연결했다.** 기존 공급자 원본과 이전 판정은 덮어쓰지 않았다.
+
+아래 금액은 공시 당시 보통주 1주당 결정 금액이며 실제 입금액이 아니다. 기준일을 배당락일로 대신하지 않는다.
+
+| 종목·공급자 표시일 | 공시상 배당 기준일 | 보통주 배당금(원)·결정 공시 | 배당락 적용일 대조 |
+|---|---|---|---|
+| SK하이닉스 2025-11-27 | 2025-11-30 | 375 · [10-29 공시](https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251029000738&docno=&viewerhost=&viewerport=) | [11-27 일치](https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20251126000457&docno=&viewerhost=&viewerport=) |
+| SK하이닉스 2026-02-26 | 2026-02-28 | 1,875 · [01-28 공시](https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260128000597&docno=&viewerhost=&viewerport=) | 직접 근거 미확보 |
+| SK하이닉스 2026-05-28 | 2026-05-31 | 375 · [04-22 공시](https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260422000788&docno=&viewerhost=&viewerport=) | [05-28 일치](https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260527000541&docno=&viewerhost=&viewerport=) |
+| SK하이닉스 2026-08-28 | 2026-08-31 | 375 · [08-07 공시](https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260807000589&docno=&viewerhost=&viewerport=) | 직접 근거 미확보 |
+| 삼성전자 2025-12-29 | 2025-12-31 | 566 · [2026-01-29 공시](https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260129000004&docno=&viewerhost=&viewerport=) | 직접 근거 미확보 |
+| 삼성전자 2026-09-29 | 2026-09-30 | 4,601 · [10-29 공시](https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261029000101&docno=&viewerhost=&viewerport=) | [09-29 일치](https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260928000389&docno=&viewerhost=&viewerport=) |
+| 삼성전기 2025-12-29 | 2025-12-31 | 2,350 · [2026-01-23 공시](https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260123000210&docno=&viewerhost=&viewerport=) | 직접 근거 미확보 |
+| 주성엔지니어링 2025-12-29 | 2025-12-31 | 53 · [2026-02-10 공시](https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20260210000736&docno=&viewerhost=&viewerport=) | 직접 근거 미확보 |
+
+SK하이닉스 1,875원은 기지급 분기배당 1,125원을 제외한 결산 공시 금액이다. 삼성전자 두 건·삼성전기·주성의 결정 공시는 공급자 표시일보다 늦다. 이사회 결정일과 실제 공표 시각도 구분했다. 뒤의 공시 금액을 앞 시점의 신호 입력으로 사용하지 않으며, 이번 조회 시각을 과거 수신 시각으로 채우지 않는다. 최초 공표·후속 승인·전체 정정 이력·실제 지급·원천징수·같은 계좌 입금은 확인하지 않았다. 주성의 04-24와 삼성전자 3분기의 11-27은 공시상 지급 **예정일**이다.
+
+적용일이 일치한 거래소 공지 세 건은 모두 기준가격 변동 없음이라고 명시한다. 이를 공급자의 수정주가 산식이나 계좌 현금 조정 검증으로 확대하지 않는다. 나머지 다섯 배당락일은 공식 적용일 또는 날짜별 결제·세션 근거가 필요하다. 8건 모두 손익 계산에는 계속 HOLD다.
+
+[SK하이닉스 변경상장 원문](https://kind.krx.co.kr/common/disclsviewer.do?method=search&acptno=20261112000210&docno=&viewerhost=&viewerport=)은 보통주 730,492,365주에서 706,799,093주로 23,693,272주 감소, 공시상 소각일 11-05, 변경상장일 11-17을 구분한다. 11-14 확인 시점에 변경상장일은 아직 미래다. 최초 소각 결정의 공표·공급자 반영·개별 보유수량 변화는 미검증이며 분할비율이나 보유수량 조정 배율을 자동 생성하지 않았다.
+
+원문 전체는 로컬 임시 경로에, 선택한 사실·공시 식별자·해시는 증거 JSON에 보존했다. 날짜별 세션/정지·봉 확정·완전성·계좌 비용·장중 실증도 남는다. 주문·인증 브로커 호출 0건, `backtest_ready=false`와 Issue #11의 미완료 네 기준을 유지한다.
